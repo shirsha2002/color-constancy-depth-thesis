@@ -1,0 +1,7 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+  "python.terminal.activateEnvironment": true,
+  "python.analysis.typeCheckingMode": "basic",
+  "files.exclude": {"**/__pycache__": true},
+  "search.exclude": {".venv": true, "external": true, "checkpoints": true, "results/predictions": true}
+}
