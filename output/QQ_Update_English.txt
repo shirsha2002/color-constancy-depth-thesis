@@ -1,0 +1,14 @@
+Dear Professor, here is my first progress update on my color-constancy-assisted monocular depth estimation thesis.
+
+1. I set up and ran the official Depth Anything V2 Small indoor metric-depth model on my laptop. I evaluated 32 real NYU Depth V2 RGB-depth pairs, one image per held-out scene, with 8 separate development scenes. The clean-image baseline has mean AbsRel 0.2460 and mean per-image RMSE 0.796 m.
+
+2. I tested warm, cool, and green color casts at two strengths, keeping the scene and reference depth fixed. I compared no correction, Gray-World, White-Patch, and fixed half-strength Gray-World. The complete run saved 1,120 numerical depth predictions.
+
+3. The main finding is that correction helps some scenes and harms others. Gray-World improved 19 of 32 scene averages, but its mean AbsRel across the six casts was 0.2409, compared with 0.2394 without correction (0.6% higher). The paired 95% confidence interval includes zero, so this pilot does not establish an average improvement.
+
+4. I also tested correction on clean images. This method reduced their mean error by 1.7%, and its effect varies across scenes. The slides and report include the comparison table and selected helpful/failure cases. Next, I plan to study when correction should be applied, then test a second model and more realistic lighting changes.
+
+These are results from a small controlled pilot with a pretrained model, using the same depth mask and no fitted depth scale. The code, sample IDs, raw metrics, and run configuration are saved for reproduction.
+
+Shirsha Mitra
+Student ID: 2023521460130

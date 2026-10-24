@@ -84,7 +84,7 @@ def paired_bootstrap(rows,method,conditions,seed=20261023):
 
 def summarize(rows,manifest,records,args,elapsed):
     evaluated=[r for r in rows if r['split'] in ('evaluation','test','val','validation')]
-    if not evaluated:evaluated=rows
+    if not evaluated:raise ValueError('No held-out evaluation records; aggregate evaluation cannot use development images.')
     agg=aggregate(evaluated)
     corrupt=[c for c in CASTS if c!='clean']
     method_summaries=[]
@@ -141,6 +141,9 @@ def main():
     manifest,records=load_records(args.manifest)
     if args.split!='all':records=[r for r in records if r['split']==args.split]
     if args.limit:records=records[:args.limit]
+    if not records:raise ValueError('No images match the requested split or limit')
+    if not args.benchmark and not any(r['split'] in ('evaluation','test','val','validation') for r in records):
+        raise ValueError('A held-out evaluation image is required; use --benchmark for a development-only setup check.')
     import torch
     model=create_model(args.threads)
     rgb,_=read_image(records[0]);bgr=np.round(rgb[:,:,::-1]*255).astype(np.uint8)

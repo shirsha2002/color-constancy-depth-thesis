@@ -2,6 +2,11 @@
   "version": "0.2.0",
   "configurations": [
     {"name": "Run depth experiment", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/scripts/run_experiment.py", "args": ["--manifest", "data/nyu_pilot/manifest.json"], "console": "integratedTerminal", "cwd": "${workspaceFolder}"},
-    {"name": "Check laptop setup", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/scripts/check_environment.py", "console": "integratedTerminal", "cwd": "${workspaceFolder}"}
+    {"name": "Check laptop setup", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/scripts/check_environment.py", "console": "integratedTerminal", "cwd": "${workspaceFolder}"},
+    {"name": "Estimate depth of an image", "type": "debugpy", "request": "launch", "program": "${workspaceFolder}/scripts/predict_image.py", "args": ["--image", "${input:thesisImagePath}", "--method", "${input:thesisCorrection}"], "console": "integratedTerminal", "cwd": "${workspaceFolder}"}
+  ],
+  "inputs": [
+    {"id": "thesisImagePath", "type": "promptString", "description": "Path to an indoor photograph", "default": "data/nyu_pilot/rgb/nyu_01065.png"},
+    {"id": "thesisCorrection", "type": "pickString", "description": "Color correction to apply", "options": ["none", "gray_world", "white_patch", "gray_world_half"], "default": "gray_world_half"}
   ]
 }

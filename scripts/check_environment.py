@@ -8,7 +8,7 @@ from pathlib import Path
 def main():
     import torch
     versions = {}
-    for package in ['torch', 'torchvision', 'opencv-python', 'numpy', 'scipy', 'matplotlib', 'h5py']:
+    for package in ['torch', 'torchvision', 'opencv-python', 'numpy', 'scipy', 'matplotlib', 'h5py', 'requests', 'Pillow', 'reportlab', 'PyMuPDF']:
         try:
             versions[package] = importlib.metadata.version(package)
         except importlib.metadata.PackageNotFoundError:
