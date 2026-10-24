@@ -1,0 +1,39 @@
+{
+  "cover": "results/figures/cover_depth.png",
+  "illumination": "results/figures/illumination_examples.png",
+  "best": "results/figures/qualitative_best.png",
+  "failure": "results/figures/qualitative_failure.png",
+  "baseline": "results/figures/baseline_triptych.png",
+  "condition": "results/figures/condition_absrel.png",
+  "method": "results/figures/method_comparison.png",
+  "selection": {
+    "best": {
+      "image_id": "nyu_00668",
+      "condition": "green_strong",
+      "mean_six_cast_absrel_reduction": 0.019750618091874745,
+      "abs_rel_none": 0.23164143238257293,
+      "abs_rel_gray_world": 0.1943757894572204,
+      "rmse_none_m": 1.0324384796968613,
+      "rmse_gray_world_m": 0.9833294268731038,
+      "displayed_absrel_reduction": 0.03726564292535253,
+      "clean_absrel": 0.2075933963260872,
+      "selection": "Extreme image by mean six-cast Gray-World AbsRel reduction; displayed cast is most favorable within that image.",
+      "scene": "bathroom_0017"
+    },
+    "failure": {
+      "image_id": "nyu_01353",
+      "condition": "green_strong",
+      "mean_six_cast_absrel_reduction": -0.041050285453839964,
+      "abs_rel_none": 0.23824366821036957,
+      "abs_rel_gray_world": 0.31126041423965617,
+      "rmse_none_m": 0.9520504210763867,
+      "rmse_gray_world_m": 1.0994646546927873,
+      "displayed_absrel_reduction": -0.0730167460292866,
+      "clean_absrel": 0.27576196035304973,
+      "selection": "Extreme image by mean six-cast Gray-World AbsRel reduction; displayed cast is least favorable within that image.",
+      "scene": "dining_room_0005"
+    }
+  },
+  "failure_report": "results/figures/qualitative_failure_report.png",
+  "cover_pair": "results/figures/cover_pair.png"
+}

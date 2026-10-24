@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "source_files_hash_verified": 80,
+  "unique_scenes": 40,
+  "development_scenes": 8,
+  "evaluation_scenes": 32,
+  "complete_comparisons": 1120,
+  "cached_predictions_recomputed": 1120,
+  "maximum_absolute_score_discrepancy": {
+    "abs_rel": 0.0,
+    "rmse_m": 0.0,
+    "mae_m": 0.0,
+    "delta1": 0.0
+  },
+  "official_split_ids_verified": 40,
+  "official_split_train_count": 795,
+  "official_split_test_count": 654,
+  "configuration_sha256": "3b6e9405bb53b6417363865b0c1e993d17c458c8332f3cc15710e6dd97e107bb",
+  "explanation": "Independent recomputation from saved numerical depth arrays and original reference depth; exact paired coverage and source hashes verified."
+}

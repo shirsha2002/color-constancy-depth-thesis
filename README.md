@@ -31,21 +31,21 @@ dataset samples. No downloaded code or weights are included in this repository.
 
 ## Experimental design
 
-- Model: Depth Anything V2 Metric Hypersim Small,24.8M parameters, indoor maximum20m.
-- Data:8 development scenes from official NYU train;32 evaluation scenes from
+- Model: Depth Anything V2 Metric Hypersim Small, 24.8M parameters, indoor maximum depth 20 m.
+- Data: 8 development scenes from official NYU train; 32 evaluation scenes from
   official NYU test; one frame per scene; no scene overlap.
-- Fixed seed:20261023. Scene selection occurs before predictions or evaluation.
-- Conditions: original RGB plus warm,cool,green casts at mild and strong settings.
-- Processing: none,Gray-World,White-Patch and fixed half-strength Gray-World.
+- Fixed seed: 20261023. Scene selection occurs before predictions or evaluation.
+- Conditions: original RGB plus warm, cool and green casts at mild and strong settings.
+- Processing: none, Gray-World, White-Patch and fixed half-strength Gray-World.
 - Color gains operate in linear RGB, preserving mean luminance before clipping.
-- Evaluation: per-image AbsRel,RMSE(m),MAE(m),delta1; crop rows45:471,columns41:601;
-  valid reference depth strictly between0.1 and10m; prediction clipping[0.1,10]m.
+- Evaluation: per-image AbsRel, RMSE(m), MAE(m), delta1; crop rows 45:471, columns 41:601;
+  valid reference depth strictly between 0.1 and 10 m; prediction clipping [0.1,10] m.
 - No prediction-specific scale or shift fitting, and no parameter selection on
   evaluation reference depth. Model weights remain frozen.
 - Confidence intervals resample whole evaluation images, retaining all six
   casts together. One evaluation image comes from each distinct scene.
 
-This pilot does not reproduce the complete654-image NYU benchmark and does not
+This pilot does not reproduce the complete 654-image NYU benchmark and does not
 establish performance under real changes in lighting. Reference depth includes
 the authors' missing-value filling. Classical correction baselines and a fixed
 strength ablation are not a new algorithm contribution.
@@ -79,6 +79,6 @@ accuracy.
 See [THIRD_PARTY.md](THIRD_PARTY.md) and
 [data/DATA_SOURCES.md](data/DATA_SOURCES.md). Original project code uses the MIT
 license. Model and dataset rights remain with their authors. Environments,
-credentials,upstream source,checkpoints,raw RGB/depth data and large prediction
+credentials, upstream source, checkpoints, raw RGB/depth data and large prediction
 caches are excluded from GitHub. Generated research figures include attributed
 dataset examples.

@@ -15,7 +15,7 @@ The official `images` variable contains aligned uint8 RGB images. The official `
 
 The downloader obtains original scene labels and the official split. Using NumPy PCG64 seed `20261023`, it samples **8 distinct training scenes for development and 32 distinct test scenes for evaluation**, one frame per scene. Development and evaluation scene sets are disjoint. Selection does not depend on depth model predictions, error measurements, or correction performance. The manifest records original one-based frame IDs, scene, split, per-file SHA-256, source, dimensions, and depth range.
 
-The manifest proposes a fixed NYU evaluation crop, zero-based rows `[45:471]` and columns `[41:601]`, combined with finite depth in `(0,10]` meters. The experiment must record its actual mask and resize protocol; this crop suggestion alone does not make the pilot identical to any published benchmark implementation.
+The manifest proposes a fixed NYU evaluation crop, zero-based rows `[45:471]` and columns `[41:601]`, The actual experiment combines this crop with finite reference depth in `(0.1,10)` meters and clips predictions to `[0.1,10]` meters. The experiment must record its actual mask and resize protocol; this crop suggestion alone does not make the pilot identical to any published benchmark implementation.
 
 ## Scope and licensing
 

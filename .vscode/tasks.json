@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {"label": "Thesis: check environment", "type": "process", "command": "${workspaceFolder}/.venv/Scripts/python.exe", "args": ["scripts/check_environment.py"], "options": {"cwd": "${workspaceFolder}"}, "problemMatcher": []},
+    {"label": "Thesis: scientific checks", "type": "process", "command": "${workspaceFolder}/.venv/Scripts/python.exe", "args": ["-m", "unittest", "discover", "-s", "tests", "-v"], "options": {"cwd": "${workspaceFolder}"}, "problemMatcher": []},
+    {"label": "Thesis: run experiment", "type": "process", "command": "${workspaceFolder}/.venv/Scripts/python.exe", "args": ["scripts/run_experiment.py", "--manifest", "data/nyu_pilot/manifest.json", "--input-size", "518", "--threads", "8"], "options": {"cwd": "${workspaceFolder}"}, "problemMatcher": []},
+    {"label": "Thesis: verify completed results", "type": "process", "command": "${workspaceFolder}/.venv/Scripts/python.exe", "args": ["scripts/verify_results.py"], "options": {"cwd": "${workspaceFolder}"}, "problemMatcher": []},
+    {"label": "Thesis: rebuild report", "type": "process", "command": "powershell.exe", "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/scripts/build_report.ps1"], "options": {"cwd": "${workspaceFolder}"}, "problemMatcher": []},
+    {"label": "Thesis: rebuild presentation", "type": "process", "command": "powershell.exe", "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/presentation/build.ps1"], "options": {"cwd": "${workspaceFolder}"}, "problemMatcher": []}
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "evidence_verified": true,
+  "thesis_title": "Design and Implementation of a Color-Constancy-Assisted Monocular Depth Estimation System",
+  "date_label": "24 OCTOBER 2026",
+  "phase_label": "FIRST CONTROLLED PILOT / REAL RGB-D DATA",
+  "cover_figure": {
+    "path": "results/figures/cover_pair.png",
+    "caption": "Actual NYU Depth V2 input and saved model prediction; shared metric-depth scale in the evidence figures."
+  },
+  "cover_stats": [
+    {
+      "value": "32",
+      "label": "held-out evaluation scenes"
+    },
+    {
+      "value": "7",
+      "label": "input color conditions"
+    },
+    {
+      "value": "1,120",
+      "label": "predictions including 8 dev scenes"
+    }
+  ],
+  "executive_takeaway": "Gray-World increased cast-average AbsRel by 0.6%. The Gray-World paired confidence interval includes zero; this pilot does not establish an average benefit.",
+  "hypothesis": "Can simple illumination-color correction reduce the depth error of a frozen pretrained model when the same scene receives controlled color casts?",
+  "implemented_methods": [
+    "Pretrained baseline: Depth Anything V2 Metric Hypersim Small, 24.8M parameters. The network weights remain fixed; this pilot performs inference and evaluation.",
+    "Classical corrections: Gray-World estimates illumination from channel means; White-Patch uses channel maxima. Both apply global channel gains in linear RGB.",
+    "Gentler correction: Gray-World (0.5) uses the square root of full correction gains. Mean luminance is preserved before clipping; strength was fixed before evaluation."
+  ],
+  "depth_explanation": "Each output pixel estimates distance in meters. Colors visualize the saved numerical prediction; every reference and prediction panel uses the same 0.1-10 m color scale.",
+  "protocol_rows": [
+    [
+      "Dataset and split",
+      "32 evaluation scenes + 8 development scenes; one RGB-D frame per scene, using the official NYU test/train splits."
+    ],
+    [
+      "Model and input",
+      "Depth Anything V2 Metric Hypersim Small; input-size parameter 518; 24.8M parameters; output maximum 20 m."
+    ],
+    [
+      "Color conditions",
+      "Clean plus warm, cool, and green casts at two strengths: 7 conditions x 4 processing methods. Linear-RGB gains; luminance normalization."
+    ],
+    [
+      "Scored pixels",
+      "Zero-based rows 45:471, columns 41:601 at 480x640; finite reference depth in (0.1, 10) m."
+    ],
+    [
+      "Prediction handling",
+      "Predictions clipped to [0.1, 10] m. No fitted depth scale or shift; identical mask for every variant."
+    ],
+    [
+      "Aggregation",
+      "Mean of per-image metrics; six casts equally weighted. Image-level paired bootstrap: 10,000 resamples."
+    ]
+  ],
+  "protocol_caution": "Development scenes support setup; reported scores use evaluation scenes only. Reference depth is the original NYU filled-depth field. This paired robustness pilot does not reproduce the full published benchmark.",
+  "results_title": "Classical correction did not improve mean accuracy",
+  "results_subtitle": "Evaluation only: 32 held-out scenes. The four processing rows average the six synthetic casts; the first row is the clean baseline.",
+  "results_headers": [
+    "Input / method",
+    "AbsRel",
+    "RMSE (m)",
+    "Delta-1"
+  ],
+  "results_widths": [
+    208,
+    94,
+    100,
+    107.276
+  ],
+  "results_rows": [
+    [
+      "Clean / no correction",
+      "0.2460",
+      "0.796",
+      "63.1%"
+    ],
+    [
+      "No correction",
+      "0.2394",
+      "0.777",
+      "64.9%"
+    ],
+    [
+      "Gray-World",
+      "0.2409",
+      "0.777",
+      "64.1%"
+    ],
+    [
+      "White-Patch",
+      "0.2445",
+      "0.788",
+      "63.5%"
+    ],
+    [
+      "Gray-World (0.5)",
+      "0.2416",
+      "0.781",
+      "64.0%"
+    ]
+  ],
+  "highlight_row": 2,
+  "results_figure": {
+    "path": "results/figures/method_comparison.png"
+  },
+  "results_takeaway": "Lowest cast-average AbsRel among tested corrections: 0.2409 (Gray-World), versus 0.2394 uncorrected. Delta-1 is the fraction within a 1.25x depth ratio.",
+  "stress_title": "Robustness varies across casts and images",
+  "stress_subtitle": "The same clean result anchors each cast family. Error can respond differently to warm, cool, and green changes.",
+  "stress_figure": {
+    "path": "results/figures/condition_absrel.png"
+  },
+  "stress_findings": [
+    "Without correction, mean AbsRel is 0.2460 on clean inputs and 0.2394 across the six casts (-2.7%).",
+    "Gray-World improves the six-cast mean for 19/32 images. Mean paired AbsRel reduction (uncorrected minus corrected): -0.0015; 95% bootstrap interval [-0.0061, 0.0025].",
+    "Clean-image AbsRel changes by -1.7% with full Gray-World and -0.7% with half strength. These measurements identify the clean-input cost of each fixed strength."
+  ],
+  "statistics_reading_note": "Paired compares the same image under each method. Bootstrap resamples whole images to estimate uncertainty within this pilot. An interval above zero supports an average reduction in AbsRel on these sampled scenes.",
+  "qualitative_subtitle": "Observed harm: nyu_01353, dining_room_0005, green strong.",
+  "qualitative_figure": {
+    "path": "results/figures/qualitative_failure_report.png",
+    "caption": "Selected by the lowest mean six-cast Gray-World benefit; the displayed cast is its least favorable cast. This extreme is not a random or typical example."
+  },
+  "qualitative_stats": [
+    {
+      "title": "No correction",
+      "value": "0.2382",
+      "label": "AbsRel on the displayed cast"
+    },
+    {
+      "title": "Gray-World",
+      "value": "0.3113",
+      "label": "AbsRel on the same pixels"
+    },
+    {
+      "title": "Paired change",
+      "value": "+0.0730",
+      "label": "Corrected minus uncorrected AbsRel"
+    }
+  ],
+  "qualitative_note": "Gray-World assumes the scene average should be neutral. Colored objects and clipping can violate that assumption. Error maps expose where correction changes depth; a visually neutral image is not guaranteed to yield more accurate geometry.",
+  "findings": [
+    {
+      "title": "A working, auditable system is established",
+      "body": "The laptop produced 1,120 saved metric-depth predictions over 40 real RGB-D scenes, with raw metrics for 7 conditions and 4 processing methods."
+    },
+    {
+      "title": "No clear average Gray-World gain is established",
+      "body": "Cast-average error changes by +0.6%. The paired 95% interval [-0.0061, 0.0025] includes zero. Selected helpful cases do not establish an average improvement."
+    },
+    {
+      "title": "Fixed half strength did not outperform bypass",
+      "body": "Cast-average AbsRel is 0.2416 at half strength, 0.2409 at full strength, and 0.2394 uncorrected. The next study should decide when correction is appropriate, using development scenes."
+    }
+  ],
+  "limitations": [
+    "32 evaluation scenes form a small deterministic subset. Bootstrap intervals describe these sampled images and do not establish generalization to all scenes.",
+    "Synthetic global color gains do not recreate mixed lighting, shadows, camera processing, or all real illumination changes.",
+    "NYU filled depth contains sensor and interpolation limitations; the reference is not error-free physical ground truth.",
+    "One pretrained model was tested. No new network was trained, and this pilot does not establish a novel algorithm contribution."
+  ],
+  "next_step": "Next: select correction strength using development scenes, freeze the rule, then evaluate on a larger held-out NYU subset and genuinely different lighting data.",
+  "environment_summary": "Python 3.13.9; PyTorch 2.14.1+cpu. Inference device: CPU; Intel Core Ultra 7 255H; 32 GB RAM; 8 inference threads. Mean saved inference time: 1.13 s/image. Input-size parameter: 518.",
+  "commands": [
+    ".\\.venv\\Scripts\\python.exe scripts\\check_environment.py",
+    ".\\.venv\\Scripts\\python.exe scripts\\run_experiment.py --manifest data\\nyu_pilot\\manifest.json --input-size 518 --threads 8",
+    "python report\\make_figures.py"
+  ],
+  "reproducibility_note": "Checkpoint SHA-256 prefix: b782898d8a3e8be1f639. Upstream revision: a561b849ebae. Full settings, hashes and numerical evidence are saved in results/summary.json and results/metrics.csv. Report build commands are in report/README.md.",
+  "sources": [
+    {
+      "title": "Depth Anything V2: official metric-depth implementation and models",
+      "url": "https://github.com/DepthAnything/Depth-Anything-V2/tree/main/metric_depth"
+    },
+    {
+      "title": "NYU Depth V2: original RGB-D dataset and reference-depth description",
+      "url": "https://cs.nyu.edu/~fergus/datasets/nyu_depth_v2.html"
+    },
+    {
+      "title": "ZoeDepth: primary-source NYU crop, depth clipping and metric code",
+      "url": "https://github.com/isl-org/ZoeDepth/blob/main/zoedepth/utils/misc.py"
+    }
+  ]
+}
