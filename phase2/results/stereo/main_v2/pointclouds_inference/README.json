@@ -1,0 +1,54 @@
+{
+  "domain": "full finite inference support; no GT foreground, visibility or accuracy mask",
+  "note": "Local matching may produce background/outlier points. These are algorithm outputs, not complete benchmark-quality meshes.",
+  "exports": [
+    {
+      "file": "fused_scene006_light0__rgb_ssd.ply",
+      "points": 196048,
+      "voxel_mm": 1,
+      "gt_filter": false
+    },
+    {
+      "file": "fused_scene006_light0__scalar_gain.ply",
+      "points": 193060,
+      "voxel_mm": 1,
+      "gt_filter": false
+    },
+    {
+      "file": "fused_scene006_light0__diagonal_gain.ply",
+      "points": 192738,
+      "voxel_mm": 1,
+      "gt_filter": false
+    },
+    {
+      "file": "fused_scene006_light0__channel_zncc.ply",
+      "points": 193959,
+      "voxel_mm": 1,
+      "gt_filter": false
+    },
+    {
+      "file": "fused_scene006_light3__rgb_ssd.ply",
+      "points": 187595,
+      "voxel_mm": 1,
+      "gt_filter": false
+    },
+    {
+      "file": "fused_scene006_light3__scalar_gain.ply",
+      "points": 185158,
+      "voxel_mm": 1,
+      "gt_filter": false
+    },
+    {
+      "file": "fused_scene006_light3__diagonal_gain.ply",
+      "points": 185466,
+      "voxel_mm": 1,
+      "gt_filter": false
+    },
+    {
+      "file": "fused_scene006_light3__channel_zncc.ply",
+      "points": 185397,
+      "voxel_mm": 1,
+      "gt_filter": false
+    }
+  ]
+}

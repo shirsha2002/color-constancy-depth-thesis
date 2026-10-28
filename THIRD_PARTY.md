@@ -49,3 +49,35 @@ not new algorithms. Synthetic perturbations are documented in scripts/science.py
 Color-constancy background: Finlayson and Trezzi, *Shades of Gray and Colour
 Constancy*, CIC2004.
 https://library.imaging.org/admin/apis/public/api/ist/website/downloadArticle/cic/12/1/art00008
+
+## Follow-up paired-light data and geometry
+
+- Vari/DCA author repository and public dataset links: https://github.com/zzt76/dca
+- Associated paper: https://arxiv.org/abs/2112.08006
+- Dataset acquisition, exact source revision, custom two-room split and explicit
+  depth-decoder refinement: [Vari provenance](phase2/vari_research/README.md).
+- DTU original data, cameras and structured-light reference surfaces:
+  https://roboimagedata.compute.dtu.dk/?page_id=36
+- DTU citation: Jensen et al., *Large Scale Multi-view Stereopsis Evaluation*,
+  CVPR 2014; Aanæs et al., *Large-Scale Data for Multiple-View Stereopsis*, IJCV 2016.
+- Native units, calibrated camera conventions, official/mirror member integrity
+  checks and dataset use conditions: [DTU provenance](phase2/data/dtu/DATA_SOURCES.md).
+
+Report figures include attributed rendered Vari examples and real DTU examples.
+The small DTU point-cloud previews are derived algorithm outputs in millimeters,
+not original reference clouds. Original raw images and reference surfaces are
+not redistributed in this repository. Project licensing does not supersede
+the authors' model or dataset rights.
+
+## Integrated conditioning and radiometric controls
+
+Feature-wise modulation follows established ideas such as
+*FiLM: Visual Reasoning with a General Conditioning Layer*:
+https://arxiv.org/abs/1709.07871
+
+The internal chromatic adapter is an engineering prototype using a global
+relative-channel cue, not verified physical illuminant recovery. Scalar gain,
+diagonal gain and normalized-correlation stereo costs are known controls rather
+than claimed novel algorithms. Equations and implementation references appear
+in [the stereo design audit](phase2/research/stereo_design_audit.md) and the
+[frozen research protocol](phase2/PROTOCOL.md).
