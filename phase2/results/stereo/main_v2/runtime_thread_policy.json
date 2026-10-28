@@ -1,0 +1,8 @@
+{
+  "opencv_threads": 2,
+  "openblas_threads": 1,
+  "omp_threads": 1,
+  "mkl_threads": 1,
+  "execution": "shared CPU laptop; monocular study may run concurrently",
+  "timing_scope": "all five matching costs computed jointly with shared warps; per-method times are not isolated benchmarks"
+}

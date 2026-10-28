@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "run": "main_v2",
+  "report_table": [
+    [
+      "Method",
+      "Matched MAE (mm)",
+      "Changed-light MAE (mm)",
+      "Ratio"
+    ],
+    [
+      "RGB SSD",
+      "13.19",
+      "54.21",
+      "4.11x"
+    ],
+    [
+      "Scalar gain",
+      "9.61",
+      "29.90",
+      "3.11x"
+    ],
+    [
+      "Diagonal gain",
+      "12.17",
+      "36.43",
+      "2.99x"
+    ],
+    [
+      "Gray ZNCC",
+      "22.18",
+      "37.97",
+      "1.71x"
+    ],
+    [
+      "Channel ZNCC",
+      "18.54",
+      "32.84",
+      "1.77x"
+    ]
+  ],
+  "report_interpretation": "On held-out scene 6, raw RGB matching increases from 13.19 mm MAE under matched lighting to 54.21 mm under changed source lighting (4.11 times). Modeling radiometric nuisance inside matching helps, but the diagonal-channel candidate (36.43 mm) is worse than scalar gain (29.90 mm) and established channel ZNCC (32.84 mm). This supports lighting sensitivity in geometry; it does not establish an extra benefit from color constancy.",
+  "report_figure": "phase2/results/stereo/main_v2/figures/heldout_lighting_mae.png",
+  "values": {
+    "rgb_ssd": {
+      "matched_mae_mm": 13.18884245554606,
+      "changed_mae_mm": 54.213883346981476,
+      "changed_over_matched_ratio": 4.110586924494189
+    },
+    "scalar_gain": {
+      "matched_mae_mm": 9.612345377604166,
+      "changed_mae_mm": 29.89638657040066,
+      "changed_over_matched_ratio": 3.1102072799065614
+    },
+    "diagonal_gain": {
+      "matched_mae_mm": 12.168163935343424,
+      "changed_mae_mm": 36.43144268459744,
+      "changed_over_matched_ratio": 2.993996701406968
+    },
+    "gray_zncc": {
+      "matched_mae_mm": 22.18154493967692,
+      "changed_mae_mm": 37.9672532081604,
+      "changed_over_matched_ratio": 1.7116595490265882
+    },
+    "channel_zncc": {
+      "matched_mae_mm": 18.538535435994465,
+      "changed_mae_mm": 32.837894439697266,
+      "changed_over_matched_ratio": 1.7713316433799366
+    }
+  },
+  "aggregation": "Arithmetic mean of per-view/light MAE. Matched: light3, 3 reference views. Changed: lights0,1,2,4,5,6, 18 view/light cases. One evaluation scene.",
+  "audited_scores": 210,
+  "case_count": 42,
+  "raw_rgb_hashes_checked": 42,
+  "code_matches_frozen_run": true,
+  "csv_records_summary_consistent": true,
+  "array_scores_independently_recomputed": true,
+  "method_support_identical": true,
+  "lighting_masks_identical": true,
+  "protocol_sha256": "17cfe924df7207d08dcb52c4ca66f68393accf90a8372bda75f7e9c5a0e224d9",
+  "validation": "phase2/results/stereo/method_validation.json",
+  "scope_limits": [
+    "One held-out scene; descriptive results only, no population confidence intervals",
+    "320x240 plane sweep, finite depth planes and projected point samples, not full-resolution DTU benchmark",
+    "GT source visibility and foreground plane define evaluation mask only; no GT enters inference",
+    "DTU lights primarily change direction; gains model radiometric nuisance, no absolute illuminant recovery claim"
+  ]
+}

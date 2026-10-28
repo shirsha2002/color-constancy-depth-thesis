@@ -1,0 +1,1679 @@
+{
+  "dataset": "DTU MVS 2014 official SampleSet selective subset",
+  "source_page": "https://roboimagedata.compute.dtu.dk/?page_id=36",
+  "archive_url": "https://roboimagedata2.compute.dtu.dk/data/MVS/SampleSet.zip",
+  "archive_bytes": 6905656531,
+  "archive_index_sha256": "b160e6f3c1dc1ab752f377fe533f995da93b93c8de526f65b5037d3883dcfebb",
+  "transport": "verified-mirror",
+  "transport_archive_url": "https://huggingface.co/datasets/rhayat/DTU/resolve/main/SampleSet.zip",
+  "transport_archive_bytes": 6924030144,
+  "mirror_verification": "All2088non-directory member names, uncompressed sizes and CRC32 values match the official ZIP central directory",
+  "stage": "full",
+  "scenes": [
+    1,
+    6
+  ],
+  "selected_views": [
+    25,
+    26,
+    35
+  ],
+  "lighting_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "diffuse_lighting_id": 3,
+  "image_count": 42,
+  "projection_convention": "u~P[X,Y,Z,1]; supplied right-camera P maps the structured-light left-camera reference frame to rectified image pixels",
+  "geometry_units": "millimeters (official evaluation README labels distances 0-10 mm)",
+  "geometry_reference": "Official structured-light point clouds, not MVS baseline outputs or model-predicted depth",
+  "native_dense_depth_provided": false,
+  "images": [
+    {
+      "scene_id": 1,
+      "view_id": 25,
+      "light_id": 0,
+      "lighting_id": 0,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_025_0_r5000.png",
+      "sha256": "8ed56a913e709e388f3d5442618a2a0b8c21f1d8d3ec88b9313a80aeb262cf54",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_025.txt"
+    },
+    {
+      "scene_id": 1,
+      "view_id": 25,
+      "light_id": 1,
+      "lighting_id": 1,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_025_1_r5000.png",
+      "sha256": "705c9cde83378c80957aebd5fd3273aed60d50914b6d4bc5ae3555d3de017fd6",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_025.txt"
+    },
+    {
+      "scene_id": 1,
+      "view_id": 25,
+      "light_id": 2,
+      "lighting_id": 2,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_025_2_r5000.png",
+      "sha256": "3e6b9079b98aaa0dcbc88fda2b333cba684530da731f821191a8f64348a97c9a",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_025.txt"
+    },
+    {
+      "scene_id": 1,
+      "view_id": 25,
+      "light_id": 3,
+      "lighting_id": 3,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_025_3_r5000.png",
+      "sha256": "b12dd34309df958e05400e6f27a7365fe76a69f71feff83636afc950d522c73c",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_025.txt"
+    },
+    {
+      "scene_id": 1,
+      "view_id": 25,
+      "light_id": 4,
+      "lighting_id": 4,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_025_4_r5000.png",
+      "sha256": "07f65983fbc5d8d3df3e55a5c646bd01305100228ffde6820ad0711673de47d3",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_025.txt"
+    },
+    {
+      "scene_id": 1,
+      "view_id": 25,
+      "light_id": 5,
+      "lighting_id": 5,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_025_5_r5000.png",
+      "sha256": "cfd65e9d85f734fa7e379f9f65264f6015e6e384c617a5637fcbb4fcfc633095",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_025.txt"
+    },
+    {
+      "scene_id": 1,
+      "view_id": 25,
+      "light_id": 6,
+      "lighting_id": 6,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_025_6_r5000.png",
+      "sha256": "d972e920b81be103e2e805c2aeffb077dd9b0f630d4524eb9f46a99013fb08e8",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_025.txt"
+    },
+    {
+      "scene_id": 1,
+      "view_id": 26,
+      "light_id": 0,
+      "lighting_id": 0,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_026_0_r5000.png",
+      "sha256": "95fe2d661c4d22bd4ac2983c240e319932016510dedbb775c432ae5a3f9a827b",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_026.txt"
+    },
+    {
+      "scene_id": 1,
+      "view_id": 26,
+      "light_id": 1,
+      "lighting_id": 1,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_026_1_r5000.png",
+      "sha256": "0b265762e61be29800156815f7439f69e85a6f1c5f7897ff6c4640698a26ee9e",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_026.txt"
+    },
+    {
+      "scene_id": 1,
+      "view_id": 26,
+      "light_id": 2,
+      "lighting_id": 2,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_026_2_r5000.png",
+      "sha256": "a0fd807da3d6917e7ae4a7d2b309c8ff6eaf1847df3b22aa602138e18ba9d1c5",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_026.txt"
+    },
+    {
+      "scene_id": 1,
+      "view_id": 26,
+      "light_id": 3,
+      "lighting_id": 3,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_026_3_r5000.png",
+      "sha256": "2f80f1a1d94338461ecf6064e022001a4b8a4e578e5dcb776b3703bb57213587",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_026.txt"
+    },
+    {
+      "scene_id": 1,
+      "view_id": 26,
+      "light_id": 4,
+      "lighting_id": 4,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_026_4_r5000.png",
+      "sha256": "ce9beb1392569a4bdb7df72365c8de82c1d9dc2a69becdf5a80f0758709cfefc",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_026.txt"
+    },
+    {
+      "scene_id": 1,
+      "view_id": 26,
+      "light_id": 5,
+      "lighting_id": 5,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_026_5_r5000.png",
+      "sha256": "e91ff6d73dde844c431aa1322f11b93b43cf27e363c7b9569b2cf5a33092160d",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_026.txt"
+    },
+    {
+      "scene_id": 1,
+      "view_id": 26,
+      "light_id": 6,
+      "lighting_id": 6,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_026_6_r5000.png",
+      "sha256": "b8927712fef89b877b77ba53e0735b2841cb4938c55629eeb26dd44ec3480f54",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_026.txt"
+    },
+    {
+      "scene_id": 1,
+      "view_id": 35,
+      "light_id": 0,
+      "lighting_id": 0,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_035_0_r5000.png",
+      "sha256": "88397c4bd4bd3d415c926ee868926f06d55239e0e58efa93cc84de8f89d0de5f",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_035.txt"
+    },
+    {
+      "scene_id": 1,
+      "view_id": 35,
+      "light_id": 1,
+      "lighting_id": 1,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_035_1_r5000.png",
+      "sha256": "c6847ad8a649b906ae47136d72f0428e5f6e2f8fae0ca7f8e825dadb6db3c40d",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_035.txt"
+    },
+    {
+      "scene_id": 1,
+      "view_id": 35,
+      "light_id": 2,
+      "lighting_id": 2,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_035_2_r5000.png",
+      "sha256": "a6b37ba9c3b47259cad18d6092bfbd20e6dba6a15054d71eb3a4aa89e9542d03",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_035.txt"
+    },
+    {
+      "scene_id": 1,
+      "view_id": 35,
+      "light_id": 3,
+      "lighting_id": 3,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_035_3_r5000.png",
+      "sha256": "7a74a456d232b1bb61a19d11378b70fd92f86c0e8e892cee2f1273c8104c4178",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_035.txt"
+    },
+    {
+      "scene_id": 1,
+      "view_id": 35,
+      "light_id": 4,
+      "lighting_id": 4,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_035_4_r5000.png",
+      "sha256": "06fba4c24685b28d1e8200cf294f2a346a71150a9c37ef722969d9cc3f83e5d1",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_035.txt"
+    },
+    {
+      "scene_id": 1,
+      "view_id": 35,
+      "light_id": 5,
+      "lighting_id": 5,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_035_5_r5000.png",
+      "sha256": "1c247a2a86f44a3b17b4d3b179e91d8f98221bc5373bd396c2a0dfda437370f3",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_035.txt"
+    },
+    {
+      "scene_id": 1,
+      "view_id": 35,
+      "light_id": 6,
+      "lighting_id": 6,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_035_6_r5000.png",
+      "sha256": "546f3cb22bf87f7470e11216cdec722bb769482cba1eecac8ccb02039d740b2f",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_035.txt"
+    },
+    {
+      "scene_id": 6,
+      "view_id": 25,
+      "light_id": 0,
+      "lighting_id": 0,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_025_0_r5000.png",
+      "sha256": "eae84b6f4fd176e83e46bae332dd5bff304124fc0c3cf1b75e3b661d883a5402",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_025.txt"
+    },
+    {
+      "scene_id": 6,
+      "view_id": 25,
+      "light_id": 1,
+      "lighting_id": 1,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_025_1_r5000.png",
+      "sha256": "e5128c1fbb802a2565351d38ce7b8d8404e8a1f15575a2143a09d6f06fefd5ca",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_025.txt"
+    },
+    {
+      "scene_id": 6,
+      "view_id": 25,
+      "light_id": 2,
+      "lighting_id": 2,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_025_2_r5000.png",
+      "sha256": "2b1f887a910dd16978ff71e32b78c57c518cc189058116a63b7b6f82417182b1",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_025.txt"
+    },
+    {
+      "scene_id": 6,
+      "view_id": 25,
+      "light_id": 3,
+      "lighting_id": 3,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_025_3_r5000.png",
+      "sha256": "6a8b78457092c2f24a667e88006b256399cea0c151ae34b264e6b827cead38ff",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_025.txt"
+    },
+    {
+      "scene_id": 6,
+      "view_id": 25,
+      "light_id": 4,
+      "lighting_id": 4,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_025_4_r5000.png",
+      "sha256": "39b104ee228b6c70f196bea6a94fc6bfa269375fcfd0edbb4b3c005906d5a79f",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_025.txt"
+    },
+    {
+      "scene_id": 6,
+      "view_id": 25,
+      "light_id": 5,
+      "lighting_id": 5,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_025_5_r5000.png",
+      "sha256": "0e28083979edf2e38d0eecddfdf39b44d56aea1b7b3390a5c127a2fc5d2d8527",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_025.txt"
+    },
+    {
+      "scene_id": 6,
+      "view_id": 25,
+      "light_id": 6,
+      "lighting_id": 6,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_025_6_r5000.png",
+      "sha256": "35daad5b7c7bf9485998474a8303862707b80a544ebd846154b34d6c3ef605f9",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_025.txt"
+    },
+    {
+      "scene_id": 6,
+      "view_id": 26,
+      "light_id": 0,
+      "lighting_id": 0,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_026_0_r5000.png",
+      "sha256": "bdf6a283813c0cfe620ebbe04b99b37138b51a41bd96a3024363650a991ef1cc",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_026.txt"
+    },
+    {
+      "scene_id": 6,
+      "view_id": 26,
+      "light_id": 1,
+      "lighting_id": 1,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_026_1_r5000.png",
+      "sha256": "29d7dd564b64f91e1f6ed1cc1137302e901d797e906f20c7a9e800164cea0ad1",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_026.txt"
+    },
+    {
+      "scene_id": 6,
+      "view_id": 26,
+      "light_id": 2,
+      "lighting_id": 2,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_026_2_r5000.png",
+      "sha256": "c55dcd06c6e8a2881f1af3a41bc6fdbed0130032a80d8abf50ec2e73fa19e36e",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_026.txt"
+    },
+    {
+      "scene_id": 6,
+      "view_id": 26,
+      "light_id": 3,
+      "lighting_id": 3,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_026_3_r5000.png",
+      "sha256": "be3acb51d3cf8975574245fc16f69903212de58a1d1445963f4547d9ce1115b9",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_026.txt"
+    },
+    {
+      "scene_id": 6,
+      "view_id": 26,
+      "light_id": 4,
+      "lighting_id": 4,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_026_4_r5000.png",
+      "sha256": "9dd40d75d16ccc97446c05cc5c8e68d0337ad5f879486dd895900cc3f2a23ede",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_026.txt"
+    },
+    {
+      "scene_id": 6,
+      "view_id": 26,
+      "light_id": 5,
+      "lighting_id": 5,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_026_5_r5000.png",
+      "sha256": "22fa2710e49d794f31043a27383cc10f65b91d97270f97488bdca742f99575aa",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_026.txt"
+    },
+    {
+      "scene_id": 6,
+      "view_id": 26,
+      "light_id": 6,
+      "lighting_id": 6,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_026_6_r5000.png",
+      "sha256": "4946d4a5754b2a9c373491042c80db6604a351f59a0bef19cb2917091fc8db55",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_026.txt"
+    },
+    {
+      "scene_id": 6,
+      "view_id": 35,
+      "light_id": 0,
+      "lighting_id": 0,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_035_0_r5000.png",
+      "sha256": "3bad7148577bd530e12d5e9766d79318380c18c6d5f673c33bf7e4f7b9118a1d",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_035.txt"
+    },
+    {
+      "scene_id": 6,
+      "view_id": 35,
+      "light_id": 1,
+      "lighting_id": 1,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_035_1_r5000.png",
+      "sha256": "a5870198e686e546f5be46d6d0e8db764cd40c3445cc6da3f38cfb477558227e",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_035.txt"
+    },
+    {
+      "scene_id": 6,
+      "view_id": 35,
+      "light_id": 2,
+      "lighting_id": 2,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_035_2_r5000.png",
+      "sha256": "fb31319d4eee9a9a78bd8fcdac9872f06849a7db63bd711688abeec9d3a44afd",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_035.txt"
+    },
+    {
+      "scene_id": 6,
+      "view_id": 35,
+      "light_id": 3,
+      "lighting_id": 3,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_035_3_r5000.png",
+      "sha256": "8d2598b03d8e95594141d5a85ce28624f1224106247c74d972a33ab38c04671a",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_035.txt"
+    },
+    {
+      "scene_id": 6,
+      "view_id": 35,
+      "light_id": 4,
+      "lighting_id": 4,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_035_4_r5000.png",
+      "sha256": "151e1ce8869d5b08d82ac87d2b82f3a58a1b4a3aecf2809414a6691ff542ad23",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_035.txt"
+    },
+    {
+      "scene_id": 6,
+      "view_id": 35,
+      "light_id": 5,
+      "lighting_id": 5,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_035_5_r5000.png",
+      "sha256": "1e32112694b4c49e6140d426389dfb88979ea0c5b32d4fa72bffe74f4a41e8e6",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_035.txt"
+    },
+    {
+      "scene_id": 6,
+      "view_id": 35,
+      "light_id": 6,
+      "lighting_id": 6,
+      "width": 1600,
+      "height": 1200,
+      "image": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_035_6_r5000.png",
+      "sha256": "5d7e80f56c16ed29fe2c806f5c8afd63b21eb2204d8afc78d27f1616ff53a487",
+      "camera": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_035.txt"
+    }
+  ],
+  "files": [
+    {
+      "archive_member": "SampleSet/CVPR2014bib.txt",
+      "path": "data/dtu/source/SampleSet/CVPR2014bib.txt",
+      "bytes": 227,
+      "sha256": "970c9cd2b16911f08ff609ee363a913f824cd65cd9dee97222b1a348ed324374",
+      "zip_crc32": "8a4cf0e0",
+      "archive_header_offset": 26017652,
+      "compressed_bytes": 166
+    },
+    {
+      "archive_member": "SampleSet/Datasets included.pdf",
+      "path": "data/dtu/source/SampleSet/Datasets included.pdf",
+      "bytes": 1579419,
+      "sha256": "6f5e8fbbdc3962dca4acde1d9e6ac896df72829dd032ebfbcd2efa6606130dce",
+      "zip_crc32": "d64f7a75",
+      "archive_header_offset": 26017921,
+      "compressed_bytes": 1485144
+    },
+    {
+      "archive_member": "SampleSet/Matlab evaluation code/BaseEval2Obj_web.m",
+      "path": "data/dtu/source/SampleSet/Matlab evaluation code/BaseEval2Obj_web.m",
+      "bytes": 1501,
+      "sha256": "cad47b8e7aa35240d2117ac50ceaf18d519d8e7ab9eea1a5e02758b54ef8eddd",
+      "zip_crc32": "9b62cae5",
+      "archive_header_offset": 27503269,
+      "compressed_bytes": 538
+    },
+    {
+      "archive_member": "SampleSet/Matlab evaluation code/BaseEvalMain_web.m",
+      "path": "data/dtu/source/SampleSet/Matlab evaluation code/BaseEvalMain_web.m",
+      "bytes": 2288,
+      "sha256": "f63f79138bc3039e7b9ce2768b1dda31d94fb4849d08dd4b9afffb101dd03487",
+      "zip_crc32": "a13225df",
+      "archive_header_offset": 27503936,
+      "compressed_bytes": 970
+    },
+    {
+      "archive_member": "SampleSet/Matlab evaluation code/ComputeStat_web.m",
+      "path": "data/dtu/source/SampleSet/Matlab evaluation code/ComputeStat_web.m",
+      "bytes": 2414,
+      "sha256": "4fb782bd65c9046aba2025792d44377efa6153e7df983e5683550544ca9158a9",
+      "zip_crc32": "3897e317",
+      "archive_header_offset": 27505035,
+      "compressed_bytes": 915
+    },
+    {
+      "archive_member": "SampleSet/Matlab evaluation code/getPaths.m",
+      "path": "data/dtu/source/SampleSet/Matlab evaluation code/getPaths.m",
+      "bytes": 194,
+      "sha256": "41559ee99e78f56502c6e8c45645969df2023297ea473a8f6bb3e82663e12e7f",
+      "zip_crc32": "da9e5b95",
+      "archive_header_offset": 27506078,
+      "compressed_bytes": 140
+    },
+    {
+      "archive_member": "SampleSet/Matlab evaluation code/GetUsedLightSets.m",
+      "path": "data/dtu/source/SampleSet/Matlab evaluation code/GetUsedLightSets.m",
+      "bytes": 88,
+      "sha256": "9ec4a1bbea122f2c2583f952a932039447b1404dc724073da57167ef4384b0c2",
+      "zip_crc32": "0cc4ac9e",
+      "archive_header_offset": 27506339,
+      "compressed_bytes": 68
+    },
+    {
+      "archive_member": "SampleSet/Matlab evaluation code/GetUsedSets.m",
+      "path": "data/dtu/source/SampleSet/Matlab evaluation code/GetUsedSets.m",
+      "bytes": 380,
+      "sha256": "6a9ce66833782ff5cdea0b9fd6190d99d4666dd06f95dd2585f8c6bef6daf6fc",
+      "zip_crc32": "4e06d036",
+      "archive_header_offset": 27506536,
+      "compressed_bytes": 139
+    },
+    {
+      "archive_member": "SampleSet/Matlab evaluation code/MaxDistCP.m",
+      "path": "data/dtu/source/SampleSet/Matlab evaluation code/MaxDistCP.m",
+      "bytes": 1444,
+      "sha256": "17194c53f20dc4f8d8107ee38553ce3757fa1ab0e6616d4d08990790e8d0ca22",
+      "zip_crc32": "98c4bcca",
+      "archive_header_offset": 27506799,
+      "compressed_bytes": 499
+    },
+    {
+      "archive_member": "SampleSet/Matlab evaluation code/plyread.m",
+      "path": "data/dtu/source/SampleSet/Matlab evaluation code/plyread.m",
+      "bytes": 15651,
+      "sha256": "b402bd14ea0e9b79cc7ecce732579f818ebab5eadfab4afc68eb87e8ca4f8a5d",
+      "zip_crc32": "f0907425",
+      "archive_header_offset": 61399823,
+      "compressed_bytes": 4207
+    },
+    {
+      "archive_member": "SampleSet/Matlab evaluation code/PointCompareMain.m",
+      "path": "data/dtu/source/SampleSet/Matlab evaluation code/PointCompareMain.m",
+      "bytes": 2103,
+      "sha256": "bf8c6ba59e3a6b4aaf175a7ebdde3e8f87cb9ea78cf7ef387e5a12ba717e3e58",
+      "zip_crc32": "baa3a65b",
+      "archive_header_offset": 61404150,
+      "compressed_bytes": 920
+    },
+    {
+      "archive_member": "SampleSet/Matlab evaluation code/reducePts_haa.m",
+      "path": "data/dtu/source/SampleSet/Matlab evaluation code/reducePts_haa.m",
+      "bytes": 900,
+      "sha256": "e0e2592ccbef07581af8f3021fe071c9b1111f1e516ae937a7215ed4f1069d62",
+      "zip_crc32": "63e23b6f",
+      "archive_header_offset": 61405199,
+      "compressed_bytes": 491
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/Calib_Results_left.m",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/Calib_Results_left.m",
+      "bytes": 26959,
+      "sha256": "f09ad4bbbe88f48dcf69618c85921472d24caa27bc39e8918b0ee6f16f32551a",
+      "zip_crc32": "b63dfeae",
+      "archive_header_offset": 61631815,
+      "compressed_bytes": 8574
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/Calib_Results_left.mat",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/Calib_Results_left.mat",
+      "bytes": 1192582,
+      "sha256": "dd287b01dccb9f3a09669ca4f974b72565d121dcf5476a9ab97332fcbcbe1760",
+      "zip_crc32": "1eef03d5",
+      "archive_header_offset": 61640524,
+      "compressed_bytes": 1125523
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/Calib_Results_right.m",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/Calib_Results_right.m",
+      "bytes": 26994,
+      "sha256": "f7a7fad3b491831f2e57739509b4f1eb7a7aa0840f32c62fa78f83776ae6a640",
+      "zip_crc32": "28bebd4e",
+      "archive_header_offset": 62766184,
+      "compressed_bytes": 8578
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/Calib_Results_right.mat",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/Calib_Results_right.mat",
+      "bytes": 1194048,
+      "sha256": "bba1b705a5046cad4b73f54778bbaa0184f6bd09f1477c3b1c1ff8091d7be957",
+      "zip_crc32": "45b32460",
+      "archive_header_offset": 62774898,
+      "compressed_bytes": 1126984
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/Calib_Results_stereo.mat",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/Calib_Results_stereo.mat",
+      "bytes": 109072,
+      "sha256": "4378419bc432f4001f7435179bac64436e256e5021c5523ceb2fef4524ea2b93",
+      "zip_crc32": "78f0848d",
+      "archive_header_offset": 63902020,
+      "compressed_bytes": 56569
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_001.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_001.txt",
+      "bytes": 139,
+      "sha256": "892234b937d511d0e10ab80f7832f2e3316a032aa0221db264c795169273ba20",
+      "zip_crc32": "1d2e855c",
+      "archive_header_offset": 397573576,
+      "compressed_bytes": 91
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_002.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_002.txt",
+      "bytes": 142,
+      "sha256": "ad57a8e6042f616d7c225d944fe5b01ecbfedfcb8fea3148e776139c0a79045a",
+      "zip_crc32": "496ae13d",
+      "archive_header_offset": 397573793,
+      "compressed_bytes": 92
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_003.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_003.txt",
+      "bytes": 144,
+      "sha256": "2ae1bd34ae18b7595cf0c3125aa5d669f69775a885b69ee9e8426cabcba491cb",
+      "zip_crc32": "5cfd1414",
+      "archive_header_offset": 397574011,
+      "compressed_bytes": 93
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_004.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_004.txt",
+      "bytes": 144,
+      "sha256": "b34fbd8b584ee6085ed59ad2656e46dc3abe9fdc0d09b310228a87bd141ff34d",
+      "zip_crc32": "519721e7",
+      "archive_header_offset": 397574230,
+      "compressed_bytes": 94
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_005.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_005.txt",
+      "bytes": 147,
+      "sha256": "54d049c6e0b234ec949e1902d89eec33587f8ad4a53fd7df648ae3707d493642",
+      "zip_crc32": "76a14f6a",
+      "archive_header_offset": 397574450,
+      "compressed_bytes": 97
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_006.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_006.txt",
+      "bytes": 146,
+      "sha256": "d51df3a6d0055c8a01cad8f2f50811594e64360b561ece2f25b54d2bfe1c88b0",
+      "zip_crc32": "5e51a3e9",
+      "archive_header_offset": 397574673,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_007.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_007.txt",
+      "bytes": 146,
+      "sha256": "eba9bcfb252b997348c9cae16a39dad829a29969bc939e681b55cfc0a36dbe46",
+      "zip_crc32": "cf31e638",
+      "archive_header_offset": 397574894,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_008.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_008.txt",
+      "bytes": 145,
+      "sha256": "a04b1d0ea0d80980585b562dad17c283cc6e9564996b9fca352bbe6cdf9e3893",
+      "zip_crc32": "cc2c4437",
+      "archive_header_offset": 397575115,
+      "compressed_bytes": 96
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_009.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_009.txt",
+      "bytes": 144,
+      "sha256": "db1e23ced12f7bf5ca24e46b402dcaace98481a4ff2158d53747bcdac91184c2",
+      "zip_crc32": "77daf6ef",
+      "archive_header_offset": 397575337,
+      "compressed_bytes": 94
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_010.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_010.txt",
+      "bytes": 145,
+      "sha256": "ecc3a331d36a3bc4d8b1c739fb24184a590f017498d2268ab0d52e42a56f6a23",
+      "zip_crc32": "88552adb",
+      "archive_header_offset": 397575557,
+      "compressed_bytes": 94
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_011.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_011.txt",
+      "bytes": 144,
+      "sha256": "a64e9a8a2f4e3408740366f7047c6c9b8b6acd86444ec18af75a07e96fd760d1",
+      "zip_crc32": "7df3c829",
+      "archive_header_offset": 397575777,
+      "compressed_bytes": 94
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_012.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_012.txt",
+      "bytes": 144,
+      "sha256": "67858dd75353b8ddaa837d11cfb193d14afb68af7f184274bd55fe3ea5631591",
+      "zip_crc32": "a3e79c81",
+      "archive_header_offset": 397575997,
+      "compressed_bytes": 94
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_013.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_013.txt",
+      "bytes": 145,
+      "sha256": "8f8975bb6e790a4b81a2d9adc62b9c2c074228558e7baae2b3fb4948ff7eb93b",
+      "zip_crc32": "e7882328",
+      "archive_header_offset": 397576217,
+      "compressed_bytes": 94
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_014.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_014.txt",
+      "bytes": 145,
+      "sha256": "52df3cbc7fb79d2f4e010158f495a144778e899d7a35618ec43177c162ecdb27",
+      "zip_crc32": "88cd0002",
+      "archive_header_offset": 397576437,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_015.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_015.txt",
+      "bytes": 145,
+      "sha256": "267e5f2517fefc205492668df0d7585d9d1d3ceafa68f75712988a40a6479148",
+      "zip_crc32": "e8dc79a1",
+      "archive_header_offset": 397576658,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_016.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_016.txt",
+      "bytes": 144,
+      "sha256": "622056133b5268797c11f7a2f9b26ada9de9afc02e992f50ea32aa0a691ec0e8",
+      "zip_crc32": "2756080f",
+      "archive_header_offset": 397576879,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_017.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_017.txt",
+      "bytes": 146,
+      "sha256": "10be00b1e1321d0e7308dfb63e3355db51899bfc1b5a5283d881bc1243e86783",
+      "zip_crc32": "cf711456",
+      "archive_header_offset": 397577100,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_018.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_018.txt",
+      "bytes": 146,
+      "sha256": "f8add6c54af0fc99d08e6c3f234767ae1eaa06f936a9bdb5d40838dd1cc60cfa",
+      "zip_crc32": "e2fcd85d",
+      "archive_header_offset": 397577321,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_019.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_019.txt",
+      "bytes": 146,
+      "sha256": "570333481a91c7776e8da0e3e2228c542a512eb1ee202d5d931aa93d368fd966",
+      "zip_crc32": "b7019094",
+      "archive_header_offset": 397577542,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_020.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_020.txt",
+      "bytes": 144,
+      "sha256": "bf2344171ffa41969c9761ddbe1c1c097e12070b749673afe4022d959083bcd1",
+      "zip_crc32": "260d5af5",
+      "archive_header_offset": 397577763,
+      "compressed_bytes": 94
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_021.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_021.txt",
+      "bytes": 145,
+      "sha256": "a2e29b287e903d097c8e8673cfa9af29610e92cfb7d148163f59f01f6535fbe4",
+      "zip_crc32": "7b625871",
+      "archive_header_offset": 397577983,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_022.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_022.txt",
+      "bytes": 146,
+      "sha256": "0472bff960feb6e256949e9376de19875b6f1311d4ece06d0eb97f292513e5c6",
+      "zip_crc32": "4bfc7de2",
+      "archive_header_offset": 397578204,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_023.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_023.txt",
+      "bytes": 145,
+      "sha256": "7b6e4f73b727ef3c83947f09f2a9d74d6eb0d7071ec375eeb380e2eb39882014",
+      "zip_crc32": "515c504e",
+      "archive_header_offset": 397578425,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_024.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_024.txt",
+      "bytes": 144,
+      "sha256": "cb030dcd9eff73a611c7bd986ca1be5d050905d789ee9f36e2a473b53ddaacd3",
+      "zip_crc32": "6925708f",
+      "archive_header_offset": 397578646,
+      "compressed_bytes": 94
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_025.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_025.txt",
+      "bytes": 145,
+      "sha256": "a6773cd522ad09d663bb9612477342cda3a930c223ec10493935ef4cf00f549a",
+      "zip_crc32": "4fe374a6",
+      "archive_header_offset": 397578866,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_026.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_026.txt",
+      "bytes": 146,
+      "sha256": "cffb3b8bdda10f8509d457ae23e2841a81d93ba75d878552e8aeb37feea21d10",
+      "zip_crc32": "0e1cd33b",
+      "archive_header_offset": 397579087,
+      "compressed_bytes": 97
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_027.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_027.txt",
+      "bytes": 144,
+      "sha256": "52a871abf5aaf2956603339d87b6baeb6576eaf14ee910582a699e09e5069660",
+      "zip_crc32": "bc658343",
+      "archive_header_offset": 397579310,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_028.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_028.txt",
+      "bytes": 146,
+      "sha256": "e0b30d843e30842e7525adbef54fdecc916b68ba7b07997b1cd480bc1583eae1",
+      "zip_crc32": "954dd0c8",
+      "archive_header_offset": 397579531,
+      "compressed_bytes": 94
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_029.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_029.txt",
+      "bytes": 146,
+      "sha256": "fd40437296bca421aeb75a9a82f09c772d96d41725077994a639f09f7a98c037",
+      "zip_crc32": "56cbe420",
+      "archive_header_offset": 397579751,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_030.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_030.txt",
+      "bytes": 147,
+      "sha256": "998e13d9b6daea39e071690834b38c4295152095dde92ef32b79d125bca5a9ae",
+      "zip_crc32": "45af0fba",
+      "archive_header_offset": 397579972,
+      "compressed_bytes": 93
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_031.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_031.txt",
+      "bytes": 147,
+      "sha256": "9c716db26fdb3efd45dde164ec138c6e3c06b5e5723f9aaf4b2effb9b6432eb3",
+      "zip_crc32": "be7e9523",
+      "archive_header_offset": 397580191,
+      "compressed_bytes": 96
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_032.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_032.txt",
+      "bytes": 147,
+      "sha256": "65f67822f110120233daa92539efe761b3c3e9ac11020dc03aac527a3a2563f6",
+      "zip_crc32": "a1d720d9",
+      "archive_header_offset": 397580413,
+      "compressed_bytes": 94
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_033.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_033.txt",
+      "bytes": 145,
+      "sha256": "21b3210c9c20c8630bc8266f31a1b963457da99f9e465bebe54d4ab83cec64d8",
+      "zip_crc32": "c7b5b141",
+      "archive_header_offset": 397580633,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_034.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_034.txt",
+      "bytes": 144,
+      "sha256": "0691a51e3064fc67fe03bbfce187dca504bb868fd3916086fd02a62fbc31dfd3",
+      "zip_crc32": "0086959c",
+      "archive_header_offset": 397580854,
+      "compressed_bytes": 93
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_035.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_035.txt",
+      "bytes": 144,
+      "sha256": "ff44bd66caf7d030df84339d918b491968b0793860eee0b13bea4eed72221ed4",
+      "zip_crc32": "8b21d414",
+      "archive_header_offset": 397581073,
+      "compressed_bytes": 94
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_036.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_036.txt",
+      "bytes": 146,
+      "sha256": "daab32a8b8a9ff58fc9958ebc8fc59be0314e6da7b52799e03f5d1b6c678ece9",
+      "zip_crc32": "7854fed9",
+      "archive_header_offset": 397581293,
+      "compressed_bytes": 96
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_037.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_037.txt",
+      "bytes": 146,
+      "sha256": "fb110d34849d380b071c8e970e4274895643eeb4693254017a502a1baa43329a",
+      "zip_crc32": "cfe535b6",
+      "archive_header_offset": 397581515,
+      "compressed_bytes": 94
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_038.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_038.txt",
+      "bytes": 144,
+      "sha256": "e234e914afa7c250f4370d6035165e5af4287fdbfc6db5a739dbf0696f8c0e0b",
+      "zip_crc32": "efea3c9c",
+      "archive_header_offset": 397581735,
+      "compressed_bytes": 94
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_039.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_039.txt",
+      "bytes": 146,
+      "sha256": "5e5a9ebcf83d96ef6f1deab22d26f2fefd74879980057d2cd8d46217c9a3b8d4",
+      "zip_crc32": "ff5700f2",
+      "archive_header_offset": 397581955,
+      "compressed_bytes": 94
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_040.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_040.txt",
+      "bytes": 145,
+      "sha256": "2296c1c806b01721f19fde0fa3057f59e4d1e1ece0cd739641e4528281e6d14b",
+      "zip_crc32": "d9cdf754",
+      "archive_header_offset": 397582175,
+      "compressed_bytes": 92
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_041.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_041.txt",
+      "bytes": 146,
+      "sha256": "2d012ab992a1c84a28d292b9b0077fbad0707ff7b64a206e845dfd14acbbe30f",
+      "zip_crc32": "023e4acf",
+      "archive_header_offset": 397582393,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_042.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_042.txt",
+      "bytes": 147,
+      "sha256": "f6338e4136557be009565161eba2236c33dec5940be052d7410a10542680a66a",
+      "zip_crc32": "d36ed33a",
+      "archive_header_offset": 397582614,
+      "compressed_bytes": 96
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_043.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_043.txt",
+      "bytes": 147,
+      "sha256": "259147e0fd812dacc824b693312309617f93ec43f75db2431d7bcd3f74a70c23",
+      "zip_crc32": "c80ebfff",
+      "archive_header_offset": 397582836,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_044.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_044.txt",
+      "bytes": 146,
+      "sha256": "5440f8c5b5081fb61e04b3dafb5ae9a345a3b61f08aa3156c02500a00e61cfeb",
+      "zip_crc32": "7f4d1344",
+      "archive_header_offset": 397583057,
+      "compressed_bytes": 96
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_045.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_045.txt",
+      "bytes": 146,
+      "sha256": "4716b2adc88789e93e574a5e001edf933a55d3e774a7276604e906ceee061b27",
+      "zip_crc32": "d8513bf4",
+      "archive_header_offset": 397583279,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_046.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_046.txt",
+      "bytes": 147,
+      "sha256": "c8bf3ba303628fec3a3b3a36cb7830e7aa7e9897d19fde70eb857de225167fda",
+      "zip_crc32": "22269a35",
+      "archive_header_offset": 397583500,
+      "compressed_bytes": 96
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_047.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_047.txt",
+      "bytes": 147,
+      "sha256": "a56286759d372597b23c91083de74d84ca349b56c191aa1a5fc64609028c15de",
+      "zip_crc32": "1e7faf40",
+      "archive_header_offset": 397583722,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_048.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_048.txt",
+      "bytes": 146,
+      "sha256": "d61d7d07f188c28e9dc512830878e94f91bac1b7564440e78485d69e6621d302",
+      "zip_crc32": "e925d449",
+      "archive_header_offset": 397583943,
+      "compressed_bytes": 94
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_049.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_049.txt",
+      "bytes": 146,
+      "sha256": "5c9a1c167a539895b57c2a6894e875e519544a8870635efefa270f7bc06d7c94",
+      "zip_crc32": "99169220",
+      "archive_header_offset": 397584163,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_050.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_050.txt",
+      "bytes": 145,
+      "sha256": "9d952c852416cedfe93e61b4854ba39ed20b954bb4601cdb337c3b896f491ce7",
+      "zip_crc32": "dacb92c1",
+      "archive_header_offset": 397584384,
+      "compressed_bytes": 94
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_051.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_051.txt",
+      "bytes": 145,
+      "sha256": "51449d2b47054ad499a2ee8cc59e2a0e50c45bb2f952507186cb5696f016dc03",
+      "zip_crc32": "bedc8f3d",
+      "archive_header_offset": 397584604,
+      "compressed_bytes": 96
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_052.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_052.txt",
+      "bytes": 144,
+      "sha256": "68a45b64444348bcc2401f67d5ae4af44fb5e029b65ba7bb01d35266333f66b1",
+      "zip_crc32": "e0c38de3",
+      "archive_header_offset": 397584826,
+      "compressed_bytes": 94
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_053.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_053.txt",
+      "bytes": 145,
+      "sha256": "f6cbad24653bc46ea6e510e42f2fc92db7864efb75dd1fdfd2cf1ba0a659b657",
+      "zip_crc32": "cf2e4347",
+      "archive_header_offset": 397585046,
+      "compressed_bytes": 96
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_054.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_054.txt",
+      "bytes": 146,
+      "sha256": "c4693ceca5a5d6b94079ad0b9e1f09b33ea94524e0e347b50ee9e0c267c2d6e3",
+      "zip_crc32": "4b38d068",
+      "archive_header_offset": 397585268,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_055.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_055.txt",
+      "bytes": 142,
+      "sha256": "8de7f421a4ed7283d467a0a1269245acd90dec1cc30a84e689c02e6dc0ed0c51",
+      "zip_crc32": "cf8403a8",
+      "archive_header_offset": 397585489,
+      "compressed_bytes": 93
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_056.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_056.txt",
+      "bytes": 144,
+      "sha256": "c07613165bd303d99018327ff461f804fe55048b9115018ad23faeb28bdea20d",
+      "zip_crc32": "8924675d",
+      "archive_header_offset": 397585708,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_057.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_057.txt",
+      "bytes": 143,
+      "sha256": "c8c8beca900334177692bac7661534730a668ec55a3510c429cab4ff584a53f8",
+      "zip_crc32": "776e9ac9",
+      "archive_header_offset": 397585929,
+      "compressed_bytes": 94
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_058.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_058.txt",
+      "bytes": 145,
+      "sha256": "782f768ac6cfc9690b437b4c59fd9c2cac26c54ae5a954e15f63693c047be3da",
+      "zip_crc32": "48cb2907",
+      "archive_header_offset": 397586149,
+      "compressed_bytes": 96
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_059.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_059.txt",
+      "bytes": 147,
+      "sha256": "d081a36584ec26d03f39aa04e166db9fbd3d6b03f4f38eec272252ee8b0b6945",
+      "zip_crc32": "ba8feb52",
+      "archive_header_offset": 397586371,
+      "compressed_bytes": 94
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_060.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_060.txt",
+      "bytes": 146,
+      "sha256": "46fdaaea4b9bc94dbf6bd55896a85c880ec5f8a45f57f2a506ec387dfc008d15",
+      "zip_crc32": "35c4c38e",
+      "archive_header_offset": 397586591,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_061.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_061.txt",
+      "bytes": 147,
+      "sha256": "7f7f6b08a82cbe003de5458edc00fe309d58d605cc443b817136d605dba7d54c",
+      "zip_crc32": "d0a167a3",
+      "archive_header_offset": 397586812,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_062.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_062.txt",
+      "bytes": 145,
+      "sha256": "5d113b12ea28581e60abcdf8c2833a313e4221005a42d95a00d6d8c60cd05e4c",
+      "zip_crc32": "454d7a9a",
+      "archive_header_offset": 397587033,
+      "compressed_bytes": 94
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_063.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_063.txt",
+      "bytes": 146,
+      "sha256": "165ca919c0220db61628b9e4d022cca46f1429daf175cc055b4b3474a48e688b",
+      "zip_crc32": "641343e1",
+      "archive_header_offset": 397587253,
+      "compressed_bytes": 96
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Calibration/cal18/pos_064.txt",
+      "path": "data/dtu/source/SampleSet/MVS Data/Calibration/cal18/pos_064.txt",
+      "bytes": 145,
+      "sha256": "f459a3c90e819bb7333d3b8d661fdd4018d746b7cff24c6968a44f06f420cd99",
+      "zip_crc32": "2a0f5648",
+      "archive_header_offset": 397587475,
+      "compressed_bytes": 95
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/ObsMask/ObsMask1_10.mat",
+      "path": "data/dtu/source/SampleSet/MVS Data/ObsMask/ObsMask1_10.mat",
+      "bytes": 408809,
+      "sha256": "0704f3a9b68bea7a21f3d6fa50497f4a58c558209f3992fbe3aa0edaf26a34fa",
+      "zip_crc32": "3bfb5446",
+      "archive_header_offset": 2817343210,
+      "compressed_bytes": 378568
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/ObsMask/ObsMask6_10.mat",
+      "path": "data/dtu/source/SampleSet/MVS Data/ObsMask/ObsMask6_10.mat",
+      "bytes": 425750,
+      "sha256": "d3035476146790a423af23f48b2cfe1fda0975617d79dd3c8f004e957d8d1c1d",
+      "zip_crc32": "3e954b8d",
+      "archive_header_offset": 2874238537,
+      "compressed_bytes": 403114
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/ObsMask/Plane1.mat",
+      "path": "data/dtu/source/SampleSet/MVS Data/ObsMask/Plane1.mat",
+      "bytes": 206,
+      "sha256": "e4a9073b2fe2ecc0b625b13376c682857c63db93230c82ab287764d40ec52e35",
+      "zip_crc32": "4a76cc89",
+      "archive_header_offset": 2910086178,
+      "compressed_bytes": 161
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/ObsMask/Plane6.mat",
+      "path": "data/dtu/source/SampleSet/MVS Data/ObsMask/Plane6.mat",
+      "bytes": 206,
+      "sha256": "ab064141802d232eebd192e7bff10de3b1947d1dc046112e535e9bd077fca83b",
+      "zip_crc32": "cf319bf8",
+      "archive_header_offset": 2910102378,
+      "compressed_bytes": 162
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Points/stl/stl001_total.ply",
+      "path": "data/dtu/source/SampleSet/MVS Data/Points/stl/stl001_total.ply",
+      "bytes": 77783981,
+      "sha256": "91c07cde9e63139120ea4c07fbafcc67b5f8967ed2eb6395ed0eb3e299b89921",
+      "zip_crc32": "640c8160",
+      "archive_header_offset": 4252598105,
+      "compressed_bytes": 44333163
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Points/stl/stl006_total.ply",
+      "path": "data/dtu/source/SampleSet/MVS Data/Points/stl/stl006_total.ply",
+      "bytes": 88559951,
+      "sha256": "cd413559cf259f05ab8b55a0dc3baca8f17485256ffd6d50d2072be4a2d64d89",
+      "zip_crc32": "3d5fe3c4",
+      "archive_header_offset": 4296931392,
+      "compressed_bytes": 50958959
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_025_0_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_025_0_r5000.png",
+      "bytes": 2656995,
+      "sha256": "8ed56a913e709e388f3d5442618a2a0b8c21f1d8d3ec88b9313a80aeb262cf54",
+      "zip_crc32": "ee471490",
+      "archive_header_offset": 4938386820,
+      "compressed_bytes": 2657591
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_025_1_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_025_1_r5000.png",
+      "bytes": 2700906,
+      "sha256": "705c9cde83378c80957aebd5fd3273aed60d50914b6d4bc5ae3555d3de017fd6",
+      "zip_crc32": "91b3b097",
+      "archive_header_offset": 4941044544,
+      "compressed_bytes": 2701518
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_025_2_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_025_2_r5000.png",
+      "bytes": 2722930,
+      "sha256": "3e6b9079b98aaa0dcbc88fda2b333cba684530da731f821191a8f64348a97c9a",
+      "zip_crc32": "c86fba1c",
+      "archive_header_offset": 4943746195,
+      "compressed_bytes": 2723473
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_025_3_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_025_3_r5000.png",
+      "bytes": 2728820,
+      "sha256": "b12dd34309df958e05400e6f27a7365fe76a69f71feff83636afc950d522c73c",
+      "zip_crc32": "46ad9157",
+      "archive_header_offset": 4946469801,
+      "compressed_bytes": 2729334
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_025_4_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_025_4_r5000.png",
+      "bytes": 2728496,
+      "sha256": "07f65983fbc5d8d3df3e55a5c646bd01305100228ffde6820ad0711673de47d3",
+      "zip_crc32": "1166a401",
+      "archive_header_offset": 4949199268,
+      "compressed_bytes": 2729078
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_025_5_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_025_5_r5000.png",
+      "bytes": 2729454,
+      "sha256": "cfd65e9d85f734fa7e379f9f65264f6015e6e384c617a5637fcbb4fcfc633095",
+      "zip_crc32": "bfacabb2",
+      "archive_header_offset": 4951928479,
+      "compressed_bytes": 2729898
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_025_6_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_025_6_r5000.png",
+      "bytes": 2707361,
+      "sha256": "d972e920b81be103e2e805c2aeffb077dd9b0f630d4524eb9f46a99013fb08e8",
+      "zip_crc32": "d5a247d5",
+      "archive_header_offset": 4954658510,
+      "compressed_bytes": 2707351
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_026_0_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_026_0_r5000.png",
+      "bytes": 2676490,
+      "sha256": "95fe2d661c4d22bd4ac2983c240e319932016510dedbb775c432ae5a3f9a827b",
+      "zip_crc32": "5b249fc0",
+      "archive_header_offset": 4960096930,
+      "compressed_bytes": 2677186
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_026_1_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_026_1_r5000.png",
+      "bytes": 2722060,
+      "sha256": "0b265762e61be29800156815f7439f69e85a6f1c5f7897ff6c4640698a26ee9e",
+      "zip_crc32": "7cd9ed45",
+      "archive_header_offset": 4962774249,
+      "compressed_bytes": 2722789
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_026_2_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_026_2_r5000.png",
+      "bytes": 2733443,
+      "sha256": "a0fd807da3d6917e7ae4a7d2b309c8ff6eaf1847df3b22aa602138e18ba9d1c5",
+      "zip_crc32": "735d0c3a",
+      "archive_header_offset": 4965497171,
+      "compressed_bytes": 2734162
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_026_3_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_026_3_r5000.png",
+      "bytes": 2734501,
+      "sha256": "2f80f1a1d94338461ecf6064e022001a4b8a4e578e5dcb776b3703bb57213587",
+      "zip_crc32": "c8a724f9",
+      "archive_header_offset": 4968231466,
+      "compressed_bytes": 2735218
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_026_4_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_026_4_r5000.png",
+      "bytes": 2734403,
+      "sha256": "ce9beb1392569a4bdb7df72365c8de82c1d9dc2a69becdf5a80f0758709cfefc",
+      "zip_crc32": "be22db3a",
+      "archive_header_offset": 4970966817,
+      "compressed_bytes": 2735162
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_026_5_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_026_5_r5000.png",
+      "bytes": 2740180,
+      "sha256": "e91ff6d73dde844c431aa1322f11b93b43cf27e363c7b9569b2cf5a33092160d",
+      "zip_crc32": "dc034abd",
+      "archive_header_offset": 4973702112,
+      "compressed_bytes": 2740931
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_026_6_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_026_6_r5000.png",
+      "bytes": 2680367,
+      "sha256": "b8927712fef89b877b77ba53e0735b2841cb4938c55629eeb26dd44ec3480f54",
+      "zip_crc32": "7afebccc",
+      "archive_header_offset": 4976443176,
+      "compressed_bytes": 2681094
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_035_0_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_035_0_r5000.png",
+      "bytes": 2643826,
+      "sha256": "88397c4bd4bd3d415c926ee868926f06d55239e0e58efa93cc84de8f89d0de5f",
+      "zip_crc32": "744b3487",
+      "archive_header_offset": 5149175377,
+      "compressed_bytes": 2644488
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_035_1_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_035_1_r5000.png",
+      "bytes": 2705496,
+      "sha256": "c6847ad8a649b906ae47136d72f0428e5f6e2f8fae0ca7f8e825dadb6db3c40d",
+      "zip_crc32": "6049f9fa",
+      "archive_header_offset": 5151819998,
+      "compressed_bytes": 2706094
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_035_2_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_035_2_r5000.png",
+      "bytes": 2756188,
+      "sha256": "a6b37ba9c3b47259cad18d6092bfbd20e6dba6a15054d71eb3a4aa89e9542d03",
+      "zip_crc32": "460d173d",
+      "archive_header_offset": 5154526225,
+      "compressed_bytes": 2756774
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_035_3_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_035_3_r5000.png",
+      "bytes": 2773969,
+      "sha256": "7a74a456d232b1bb61a19d11378b70fd92f86c0e8e892cee2f1273c8104c4178",
+      "zip_crc32": "023ec80c",
+      "archive_header_offset": 5157283132,
+      "compressed_bytes": 2774555
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_035_4_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_035_4_r5000.png",
+      "bytes": 2778817,
+      "sha256": "06fba4c24685b28d1e8200cf294f2a346a71150a9c37ef722969d9cc3f83e5d1",
+      "zip_crc32": "fa198473",
+      "archive_header_offset": 5160057820,
+      "compressed_bytes": 2779386
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_035_5_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_035_5_r5000.png",
+      "bytes": 2780495,
+      "sha256": "1c247a2a86f44a3b17b4d3b179e91d8f98221bc5373bd396c2a0dfda437370f3",
+      "zip_crc32": "207f2284",
+      "archive_header_offset": 5162837339,
+      "compressed_bytes": 2780731
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan1/rect_035_6_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan1/rect_035_6_r5000.png",
+      "bytes": 2726691,
+      "sha256": "546f3cb22bf87f7470e11216cdec722bb769482cba1eecac8ccb02039d740b2f",
+      "zip_crc32": "bac96c13",
+      "archive_header_offset": 5165618203,
+      "compressed_bytes": 2726745
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_025_0_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_025_0_r5000.png",
+      "bytes": 2806637,
+      "sha256": "eae84b6f4fd176e83e46bae332dd5bff304124fc0c3cf1b75e3b661d883a5402",
+      "zip_crc32": "cdd0ec55",
+      "archive_header_offset": 6020099182,
+      "compressed_bytes": 2806910
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_025_1_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_025_1_r5000.png",
+      "bytes": 2902941,
+      "sha256": "e5128c1fbb802a2565351d38ce7b8d8404e8a1f15575a2143a09d6f06fefd5ca",
+      "zip_crc32": "cbea8e36",
+      "archive_header_offset": 6022906225,
+      "compressed_bytes": 2903409
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_025_2_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_025_2_r5000.png",
+      "bytes": 2951930,
+      "sha256": "2b1f887a910dd16978ff71e32b78c57c518cc189058116a63b7b6f82417182b1",
+      "zip_crc32": "f273c026",
+      "archive_header_offset": 6025809767,
+      "compressed_bytes": 2952578
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_025_3_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_025_3_r5000.png",
+      "bytes": 2959275,
+      "sha256": "6a8b78457092c2f24a667e88006b256399cea0c151ae34b264e6b827cead38ff",
+      "zip_crc32": "05a6f741",
+      "archive_header_offset": 6028762478,
+      "compressed_bytes": 2959988
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_025_4_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_025_4_r5000.png",
+      "bytes": 2957493,
+      "sha256": "39b104ee228b6c70f196bea6a94fc6bfa269375fcfd0edbb4b3c005906d5a79f",
+      "zip_crc32": "d857cc19",
+      "archive_header_offset": 6031722599,
+      "compressed_bytes": 2958196
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_025_5_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_025_5_r5000.png",
+      "bytes": 2956672,
+      "sha256": "0e28083979edf2e38d0eecddfdf39b44d56aea1b7b3390a5c127a2fc5d2d8527",
+      "zip_crc32": "a4b87877",
+      "archive_header_offset": 6034680928,
+      "compressed_bytes": 2957497
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_025_6_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_025_6_r5000.png",
+      "bytes": 2923404,
+      "sha256": "35daad5b7c7bf9485998474a8303862707b80a544ebd846154b34d6c3ef605f9",
+      "zip_crc32": "e96d0de1",
+      "archive_header_offset": 6037638558,
+      "compressed_bytes": 2924226
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_026_0_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_026_0_r5000.png",
+      "bytes": 2762866,
+      "sha256": "bdf6a283813c0cfe620ebbe04b99b37138b51a41bd96a3024363650a991ef1cc",
+      "zip_crc32": "a2e3405c",
+      "archive_header_offset": 6043474054,
+      "compressed_bytes": 2763018
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_026_1_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_026_1_r5000.png",
+      "bytes": 2847723,
+      "sha256": "29d7dd564b64f91e1f6ed1cc1137302e901d797e906f20c7a9e800164cea0ad1",
+      "zip_crc32": "48435a90",
+      "archive_header_offset": 6046237205,
+      "compressed_bytes": 2848397
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_026_2_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_026_2_r5000.png",
+      "bytes": 2876938,
+      "sha256": "c55dcd06c6e8a2881f1af3a41bc6fdbed0130032a80d8abf50ec2e73fa19e36e",
+      "zip_crc32": "0a6d68ea",
+      "archive_header_offset": 6049085735,
+      "compressed_bytes": 2877645
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_026_3_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_026_3_r5000.png",
+      "bytes": 2876988,
+      "sha256": "be3acb51d3cf8975574245fc16f69903212de58a1d1445963f4547d9ce1115b9",
+      "zip_crc32": "2d852429",
+      "archive_header_offset": 6051963513,
+      "compressed_bytes": 2877641
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_026_4_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_026_4_r5000.png",
+      "bytes": 2874502,
+      "sha256": "9dd40d75d16ccc97446c05cc5c8e68d0337ad5f879486dd895900cc3f2a23ede",
+      "zip_crc32": "729e5e72",
+      "archive_header_offset": 6054841287,
+      "compressed_bytes": 2875246
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_026_5_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_026_5_r5000.png",
+      "bytes": 2881145,
+      "sha256": "22fa2710e49d794f31043a27383cc10f65b91d97270f97488bdca742f99575aa",
+      "zip_crc32": "a60ddaad",
+      "archive_header_offset": 6057716666,
+      "compressed_bytes": 2881928
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_026_6_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_026_6_r5000.png",
+      "bytes": 2859765,
+      "sha256": "4946d4a5754b2a9c373491042c80db6604a351f59a0bef19cb2917091fc8db55",
+      "zip_crc32": "08b08e09",
+      "archive_header_offset": 6060598727,
+      "compressed_bytes": 2860536
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_035_0_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_035_0_r5000.png",
+      "bytes": 2826098,
+      "sha256": "3bad7148577bd530e12d5e9766d79318380c18c6d5f673c33bf7e4f7b9118a1d",
+      "zip_crc32": "255ef77e",
+      "archive_header_offset": 6242095241,
+      "compressed_bytes": 2826674
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_035_1_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_035_1_r5000.png",
+      "bytes": 2930448,
+      "sha256": "a5870198e686e546f5be46d6d0e8db764cd40c3445cc6da3f38cfb477558227e",
+      "zip_crc32": "93729b5a",
+      "archive_header_offset": 6244922048,
+      "compressed_bytes": 2931055
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_035_2_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_035_2_r5000.png",
+      "bytes": 2999296,
+      "sha256": "fb31319d4eee9a9a78bd8fcdac9872f06849a7db63bd711688abeec9d3a44afd",
+      "zip_crc32": "a816e55d",
+      "archive_header_offset": 6247853236,
+      "compressed_bytes": 2999723
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_035_3_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_035_3_r5000.png",
+      "bytes": 3009554,
+      "sha256": "8d2598b03d8e95594141d5a85ce28624f1224106247c74d972a33ab38c04671a",
+      "zip_crc32": "5731760b",
+      "archive_header_offset": 6250853092,
+      "compressed_bytes": 3009991
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_035_4_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_035_4_r5000.png",
+      "bytes": 3009783,
+      "sha256": "151e1ce8869d5b08d82ac87d2b82f3a58a1b4a3aecf2809414a6691ff542ad23",
+      "zip_crc32": "37a42a4c",
+      "archive_header_offset": 6253863216,
+      "compressed_bytes": 3010285
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_035_5_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_035_5_r5000.png",
+      "bytes": 3003788,
+      "sha256": "1e32112694b4c49e6140d426389dfb88979ea0c5b32d4fa72bffe74f4a41e8e6",
+      "zip_crc32": "483991cd",
+      "archive_header_offset": 6256873634,
+      "compressed_bytes": 3004285
+    },
+    {
+      "archive_member": "SampleSet/MVS Data/Rectified/scan6/rect_035_6_r5000.png",
+      "path": "data/dtu/source/SampleSet/MVS Data/Rectified/scan6/rect_035_6_r5000.png",
+      "bytes": 2935341,
+      "sha256": "5d7e80f56c16ed29fe2c806f5c8afd63b21eb2204d8afc78d27f1616ff53a487",
+      "zip_crc32": "0442ee1f",
+      "archive_header_offset": 6259878052,
+      "compressed_bytes": 2935811
+    },
+    {
+      "archive_member": "SampleSet/ReadMe.txt",
+      "path": "data/dtu/source/SampleSet/ReadMe.txt",
+      "bytes": 3648,
+      "sha256": "2d437c34541be6110f2bbfafb399681e823d8ed775f461575e9ba941a3e08ea3",
+      "zip_crc32": "eab38388",
+      "archive_header_offset": 6923759885,
+      "compressed_bytes": 1741
+    }
+  ],
+  "limitations": [
+    "Only scenes1and6, selected fixed views: pilot, not full benchmark",
+    "Lighting variations include shading, shadow and specular changes; white balance alone cannot undo them",
+    "Reference is a point cloud. Depth rasterization requires visibility/z-buffer handling and valid-coverage masks",
+    "Projection matrices are supplied unchanged. Pixel-origin convention should be validated with projected reference geometry",
+    "Do not use the _max composite images as a real eighth illumination condition"
+  ]
+}

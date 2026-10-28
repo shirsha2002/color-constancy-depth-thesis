@@ -3,6 +3,13 @@
 Undergraduate thesis project by **Shirsha Mitra**, student ID **2023521460130**,
 Sichuan University.
 
+The follow-up study after supervisor feedback is documented in [phase2/README.md](phase2/README.md).
+It acquires paired-light Vari and calibrated DTU data, runs a task-integrated
+feature-conditioning prototype, and compares strong adaptation and radiometric
+controls. Lighting sensitivity is observed; the current chromatic module has
+not demonstrated an advantage over ordinary task adaptation. The original
+NYU preprocessing study below is preserved separately.
+
 The first experiment measures whether controlled color casts change a frozen
 monocular depth model's accuracy, and whether fixed color-constancy baselines
 help. It uses genuine Kinect-derived NYU reference depth and saves numerical

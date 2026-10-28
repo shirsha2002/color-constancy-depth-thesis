@@ -1,0 +1,207 @@
+{
+  "camera_roundtrips": [
+    {
+      "view": 25,
+      "depth_mm": 250,
+      "max_pixel_error": 3.979039320256561e-13,
+      "max_depth_error_mm": 1.1368683772161603e-13,
+      "identity_warp_error_pixels": 2.226535741802621e-13
+    },
+    {
+      "view": 25,
+      "depth_mm": 500,
+      "max_pixel_error": 2.8421709430404007e-13,
+      "max_depth_error_mm": 1.1368683772161603e-13,
+      "identity_warp_error_pixels": 1.5620570971690978e-13
+    },
+    {
+      "view": 25,
+      "depth_mm": 1200,
+      "max_pixel_error": 2.2737367544323206e-13,
+      "max_depth_error_mm": 2.2737367544323206e-13,
+      "identity_warp_error_pixels": 6.62062906667954e-14
+    },
+    {
+      "view": 26,
+      "depth_mm": 250,
+      "max_pixel_error": 5.684341886080801e-13,
+      "max_depth_error_mm": 8.526512829121202e-14,
+      "identity_warp_error_pixels": 3.2926450194842305e-13
+    },
+    {
+      "view": 26,
+      "depth_mm": 500,
+      "max_pixel_error": 3.410605131648481e-13,
+      "max_depth_error_mm": 1.1368683772161603e-13,
+      "identity_warp_error_pixels": 1.733135661895202e-13
+    },
+    {
+      "view": 26,
+      "depth_mm": 1200,
+      "max_pixel_error": 1.7053025658242404e-13,
+      "max_depth_error_mm": 4.547473508864641e-13,
+      "identity_warp_error_pixels": 1.3798570576081803e-13
+    },
+    {
+      "view": 35,
+      "depth_mm": 250,
+      "max_pixel_error": 6.821210263296962e-13,
+      "max_depth_error_mm": 1.7053025658242404e-13,
+      "identity_warp_error_pixels": 3.027480609957278e-13
+    },
+    {
+      "view": 35,
+      "depth_mm": 500,
+      "max_pixel_error": 3.410605131648481e-13,
+      "max_depth_error_mm": 1.1368683772161603e-13,
+      "identity_warp_error_pixels": 2.2998847292766966e-13
+    },
+    {
+      "view": 35,
+      "depth_mm": 1200,
+      "max_pixel_error": 1.7053025658242404e-13,
+      "max_depth_error_mm": 4.547473508864641e-13,
+      "identity_warp_error_pixels": 9.243276174845938e-14
+    }
+  ],
+  "development_cost_checks": [
+    {
+      "pixel_yx": [
+        66,
+        60
+      ],
+      "plane_mm": 607.6470336914062,
+      "maximum_absolute_cost_difference": 2.037613289207485e-08,
+      "per_method_absolute_difference": {
+        "rgb_ssd": 2.960538370011534e-09,
+        "scalar_gain": 7.194684625844161e-09,
+        "diagonal_gain": 3.3542489619176052e-09,
+        "gray_zncc": 2.037613289207485e-08,
+        "channel_zncc": 1.2285391037814009e-08
+      }
+    },
+    {
+      "pixel_yx": [
+        66,
+        60
+      ],
+      "plane_mm": 726.8627319335938,
+      "maximum_absolute_cost_difference": 4.8434459110069383e-08,
+      "per_method_absolute_difference": {
+        "rgb_ssd": 5.219288334856742e-09,
+        "scalar_gain": 5.364332034130115e-09,
+        "diagonal_gain": 6.372387034714322e-09,
+        "gray_zncc": 4.8434459110069383e-08,
+        "channel_zncc": 3.074298571270617e-08
+      }
+    },
+    {
+      "pixel_yx": [
+        66,
+        60
+      ],
+      "plane_mm": 846.0784301757812,
+      "maximum_absolute_cost_difference": 5.6994264419074625e-08,
+      "per_method_absolute_difference": {
+        "rgb_ssd": 1.4133310966002455e-08,
+        "scalar_gain": 3.6975245087944586e-10,
+        "diagonal_gain": 2.2492942786112025e-09,
+        "gray_zncc": 3.931681824553834e-08,
+        "channel_zncc": 5.6994264419074625e-08
+      }
+    },
+    {
+      "pixel_yx": [
+        46,
+        111
+      ],
+      "plane_mm": 607.6470336914062,
+      "maximum_absolute_cost_difference": 1.0341597356244847e-08,
+      "per_method_absolute_difference": {
+        "rgb_ssd": 1.412405747913681e-09,
+        "scalar_gain": 5.284035431429857e-10,
+        "diagonal_gain": 2.129564691255581e-09,
+        "gray_zncc": 9.927709765378268e-09,
+        "channel_zncc": 1.0341597356244847e-08
+      }
+    },
+    {
+      "pixel_yx": [
+        46,
+        111
+      ],
+      "plane_mm": 726.8627319335938,
+      "maximum_absolute_cost_difference": 2.4068972592772298e-08,
+      "per_method_absolute_difference": {
+        "rgb_ssd": 2.6467421310183425e-09,
+        "scalar_gain": 2.4494039851941096e-09,
+        "diagonal_gain": 4.948745080390893e-09,
+        "gray_zncc": 2.4068972592772298e-08,
+        "channel_zncc": 2.1451787901582975e-08
+      }
+    },
+    {
+      "pixel_yx": [
+        46,
+        111
+      ],
+      "plane_mm": 846.0784301757812,
+      "maximum_absolute_cost_difference": 3.6103414258192856e-08,
+      "per_method_absolute_difference": {
+        "rgb_ssd": 9.044826554394092e-10,
+        "scalar_gain": 2.5534560299522724e-09,
+        "diagonal_gain": 6.301077798420707e-09,
+        "gray_zncc": 3.197483966488335e-08,
+        "channel_zncc": 3.6103414258192856e-08
+      }
+    },
+    {
+      "pixel_yx": [
+        29,
+        207
+      ],
+      "plane_mm": 607.6470336914062,
+      "maximum_absolute_cost_difference": 2.6846066480956665e-08,
+      "per_method_absolute_difference": {
+        "rgb_ssd": 2.1942264338825623e-08,
+        "scalar_gain": 5.882490050623801e-10,
+        "diagonal_gain": 1.446091169032826e-08,
+        "gray_zncc": 2.6846066480956665e-08,
+        "channel_zncc": 2.246668384664474e-08
+      }
+    },
+    {
+      "pixel_yx": [
+        29,
+        207
+      ],
+      "plane_mm": 726.8627319335938,
+      "maximum_absolute_cost_difference": 2.7279756675824274e-08,
+      "per_method_absolute_difference": {
+        "rgb_ssd": 2.895370387889784e-09,
+        "scalar_gain": 4.695417832323301e-09,
+        "diagonal_gain": 7.6845361740574e-09,
+        "gray_zncc": 2.7279756675824274e-08,
+        "channel_zncc": 7.343584851327023e-09
+      }
+    },
+    {
+      "pixel_yx": [
+        29,
+        207
+      ],
+      "plane_mm": 846.0784301757812,
+      "maximum_absolute_cost_difference": 5.7208154879972994e-08,
+      "per_method_absolute_difference": {
+        "rgb_ssd": 6.4850047554187995e-09,
+        "scalar_gain": 7.4347838996402515e-09,
+        "diagonal_gain": 1.2080893396770875e-08,
+        "gray_zncc": 5.079825449172404e-09,
+        "channel_zncc": 5.7208154879972994e-08
+      }
+    }
+  ],
+  "status": "passed",
+  "scope": "Algebra and cost validation; external RGB/STL support overlay separately inspected. No calibration scale fitted.",
+  "pair_run": "calibration_pair_v2"
+}

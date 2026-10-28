@@ -1,0 +1,25 @@
+{
+  "seed": 20261028,
+  "input_size": 224,
+  "steps": 150,
+  "threads": 8,
+  "manifest_sha256": "8afcc4ecf1704620655f14b7c15b82f6529e02d1c28cb87c5bf7aba44e1ed33a",
+  "base_checkpoint_sha256": "b782898d8a3e8be1f639de33837ed85e9b4b73e40f8f5e5cd99067588d722545",
+  "encoder_frozen": true,
+  "decoder_frozen": true,
+  "variants": [
+    "task_adapter",
+    "achromatic_consistency",
+    "cc_supervised",
+    "cc_consistency"
+  ],
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "loss_weights": {
+    "depth": 1.0,
+    "depth_consistency": 0.1,
+    "feature_consistency": 0.05,
+    "modulation": 0.001
+  },
+  "configuration_sha256": "41cdc6d2029215aad9af9b9a16b5a8cf6573a70775d50a384a8fe5ed814cd58a"
+}

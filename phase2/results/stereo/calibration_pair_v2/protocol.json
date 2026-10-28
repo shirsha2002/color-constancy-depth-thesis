@@ -1,0 +1,83 @@
+{
+  "status": "fixed before any held-out scene evaluation",
+  "purpose": "A small calibrated real-lighting stereo pilot, complementary to monocular research; not a full DTU benchmark or a novelty claim",
+  "dataset": "Original DTU MVS SampleSet; original STL points and supplied right-image projection matrices",
+  "development_scene": 1,
+  "evaluation_scene": 6,
+  "views_1based": [
+    25,
+    26,
+    35
+  ],
+  "source_views": "the other two selected views, equally weighted",
+  "reference_light": 3,
+  "source_lights": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "matched_condition": "reference and all sources use most diffuse light3",
+  "mismatched_conditions": "reference stays at light3; all sources use one fixed alternative real lighting state",
+  "width": 320,
+  "height": 240,
+  "image_resize": "OpenCV INTER_AREA, explicit pixel-center camera resize transform",
+  "pixel_origin": 0,
+  "pixel_origin_note": "supplied projection convention, to be checked on development scene only before evaluation; no fitted scale",
+  "depth_min_mm": 250.0,
+  "depth_max_mm": 1200.0,
+  "depth_planes": 256,
+  "depth_sampling": "uniform camera-Z in mm; broad range fixed from acquisition geometry, verified on development scene only",
+  "patch_width": 5,
+  "color_space": "inverse-sRGB approximation to linear RGB; provided images are processed RGB, not calibrated RAW",
+  "numerical_precision": "float64 photometric moments and correlation; float32 stored winner costs and depth maps",
+  "methods": [
+    "rgb_ssd",
+    "scalar_gain",
+    "diagonal_gain",
+    "gray_zncc",
+    "channel_zncc"
+  ],
+  "gain_ridge": 0.002,
+  "gain_bounds": [
+    0.25,
+    4.0
+  ],
+  "gain_prior": "reference/source global mean channel ratio (diagonal) or pooled mean ratio (scalar), from input images only",
+  "gain_model": "positive regularized gain only; no offsets. Gains optimized within each depth-hypothesis matching cost",
+  "gain_novelty": "classical radiometric-nuisance optimization; no new color-constancy method claimed",
+  "postprocessing": "none; winner-takes-all on identical depth candidates and geometric patch support",
+  "reference_depth": "z-buffer of original structured-light point samples, no interpolation or fitted geometry",
+  "source_visibility_tolerance_mm": 5.0,
+  "evaluation_mask": "valid projected STL reference samples, shared source visibility, common geometric inference support; identical for every lighting and method",
+  "gt_usage": "only geometry checks, development calibration and evaluation; never photometric cost, gain prior or inference initialization",
+  "metrics": [
+    "mae_mm",
+    "rmse_mm",
+    "bad5_percent",
+    "bad10_percent",
+    "coverage_percent",
+    "quantization_floor_mae_mm"
+  ],
+  "statistics": "report each held-out view and descriptive mean; one held-out scene, no population confidence intervals",
+  "claim_boundary": "DTU lights vary direction; this demonstrates lighting/radiometric effects. Without ground-truth illuminant chromaticity it does not establish absolute color constancy",
+  "opencv_threads": 2,
+  "actual_scenes": [
+    1
+  ],
+  "actual_reference_views": [
+    25
+  ],
+  "actual_source_lights": [
+    3,
+    0
+  ],
+  "actual_source_override": [
+    26
+  ],
+  "ground_plane_mask": "Original supplied Plane{scene}.mat, homogeneous plane value>0, evaluation only",
+  "code_sha256": "52d13163be6fc2022580c16dce5f97483c30e6ba96ddd7dcd1b7b272d9bf0629"
+}
