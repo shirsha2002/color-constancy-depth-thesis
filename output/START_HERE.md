@@ -1,4 +1,23 @@
-# Your first thesis experiment
+# Thesis progress: start here
+
+## Latest follow-up after supervisor feedback
+
+The latest completed work is the integrated monocular prototype and real-light
+geometry diagnostic. Read these first:
+
+1. [Latest research report](pdf/Shirsha_Mitra_Phase2_Research_Update.pdf).
+2. [Latest short English QQ reply](QQ_Phase2_Reply_English.txt).
+3. [Current project status](../PROJECT_STATUS.md) and [full follow-up methods](../phase2/README.md).
+
+The current CC-inspired module runs inside the depth model, but it does not beat
+ordinary task adaptation. The stereo study demonstrates lighting sensitivity;
+it does not isolate a color-constancy benefit. These are completed exploratory
+experiments, not a finished thesis or a demonstrated novel algorithm.
+
+The PowerPoint and slide PDF below describe the earlier NYU preprocessing pilot.
+They are preserved as the first progress presentation.
+
+## Initial NYU experiment (historical)
 
 Shirsha Mitra · Student ID 2023521460130
 
@@ -91,7 +110,7 @@ enter a photograph path and correction method.
 Accuracy requires reference depth, so a personal photograph provides a visual
 demonstration rather than a numerical accuracy result.
 
-The GitHub repository is private:
+The GitHub repository is public; current work is available on `main`:
 https://github.com/shirsha2002/color-constancy-depth-thesis
 
 Code, configuration, sample IDs, metrics and final materials are versioned.

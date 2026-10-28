@@ -3,6 +3,35 @@
 Undergraduate thesis project by **Shirsha Mitra**, student ID **2023521460130**,
 Sichuan University.
 
+## Latest completed work
+
+The default `main` branch includes both completed research phases. Start with
+the [current project status](PROJECT_STATUS.md) and the
+[latest five-page research update](output/pdf/Shirsha_Mitra_Phase2_Research_Update.pdf).
+
+| Completed study | Evidence and outcome |
+|---|---|
+| Initial NYU preprocessing pilot | 40 images from separate development/evaluation scenes; 1,120 predictions; fixed color-cast and correction comparisons. [Results](results/summary.json). |
+| Integrated monocular depth prototype | Vari: 528 images, 48 camera groups, 2 rooms; six methods evaluated on 264 images. The CC-inspired module has AbsRel 0.4277 versus 0.3988 for ordinary task adaptation; a CC-specific advantage is unproven. [Methods and results](phase2/README.md). |
+| Calibrated real-light stereo diagnostic | DTU: 42 view/light cases and 210 method scores. Held-out raw matching MAE rises from 13.19 to 54.21 mm with changed lighting; internal scalar-gain compensation gives 29.90 mm. [Verified results](phase2/results/stereo/main_v2/RESULTS.md). |
+
+### Reports and presentations
+
+| Material | Scope |
+|---|---|
+| [Latest research report](output/pdf/Shirsha_Mitra_Phase2_Research_Update.pdf) | Integrated prototype, paired-light data, stereo diagnostic, limitations and next steps |
+| [Latest English QQ update](output/QQ_Phase2_Reply_English.txt) | Short message based on the completed follow-up experiments |
+| [Original PowerPoint](output/Shirsha_Mitra_Thesis_Progress.pptx) / [slide PDF](output/Shirsha_Mitra_Thesis_Progress_Slides.pdf) | Initial NYU preprocessing pilot; this earlier deck does not contain the follow-up experiments |
+| [Original progress report](output/pdf/Shirsha_Mitra_Thesis_Progress_Report.pdf) | Detailed initial NYU experiment |
+| [Presentation notes](output/Shirsha_Mitra_Presentation_Notes.txt) | Notes for the original PowerPoint |
+| [Small 3D point-cloud previews](phase2/results/stereo/main_v2/pointclouds_inference/) | Deterministic 30,000-point previews of actual stereo outputs, including outliers; not benchmark-quality meshes |
+
+Source code, protocols, selected data manifests, all measured metric tables,
+audit evidence, four trained adapters and final materials are versioned here.
+Raw datasets, pretrained base weights, installed environments and large inference
+caches are retained locally and reproduced through the documented setup and
+acquisition commands. See [what is included](PROJECT_STATUS.md#repository-scope).
+
 The follow-up study after supervisor feedback is documented in [phase2/README.md](phase2/README.md).
 It acquires paired-light Vari and calibrated DTU data, runs a task-integrated
 feature-conditioning prototype, and compares strong adaptation and radiometric
