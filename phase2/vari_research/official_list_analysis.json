@@ -1,0 +1,407 @@
+{
+  "train": {
+    "list_rows": 50598,
+    "distinct_scene_ids": 45,
+    "scene_ids": [
+      "136",
+      "137",
+      "139",
+      "140",
+      "143",
+      "147",
+      "149",
+      "151",
+      "152",
+      "153",
+      "154",
+      "155",
+      "156",
+      "162",
+      "167",
+      "168",
+      "169",
+      "170",
+      "175",
+      "177",
+      "183",
+      "185",
+      "188",
+      "189",
+      "190",
+      "191",
+      "192",
+      "195",
+      "203",
+      "438",
+      "440",
+      "443",
+      "445",
+      "446",
+      "447",
+      "448",
+      "450",
+      "453",
+      "454",
+      "462",
+      "466",
+      "478",
+      "483",
+      "488",
+      "496"
+    ],
+    "camera_view_groups": 4618,
+    "illumination_counts": {
+      "SunNight": 4601,
+      "SunMorning": 4598,
+      "SunNoon": 4598,
+      "SunNoon_Indoor": 4601,
+      "SunNoon_Indoor_Environment": 4604,
+      "SunMorning_Indoor_Environment": 4603,
+      "SunNight_Indoor_Environment": 4606,
+      "Environment": 4597,
+      "SunMorning_Indoor": 4599,
+      "Indoor": 4596,
+      "SunNight_Indoor": 4595
+    },
+    "images_per_camera_view_group": {
+      "11": 4421,
+      "10": 194,
+      "9": 3
+    },
+    "unparsed_rows": 0,
+    "sample_group": [
+      {
+        "rgb": "../train_dataset/446/c1/446_c1_SunNight0056.jpg",
+        "normal": "../train_dataset/446/c1/446_c1_CGeometry_NormalsGeometry0056.jpg",
+        "albedo": "../train_dataset/446/c1/446_c1_CShading_Albedo0056.jpg",
+        "depth": "../train_dataset/446/c1/446_c1_CGeometry_ZDepth0056.tif",
+        "scene": "446",
+        "camera": "c1",
+        "illumination": "SunNight",
+        "view": "0056"
+      },
+      {
+        "rgb": "../train_dataset/446/c1/446_c1_SunNoon0056.jpg",
+        "normal": "../train_dataset/446/c1/446_c1_CGeometry_NormalsGeometry0056.jpg",
+        "albedo": "../train_dataset/446/c1/446_c1_CShading_Albedo0056.jpg",
+        "depth": "../train_dataset/446/c1/446_c1_CGeometry_ZDepth0056.tif",
+        "scene": "446",
+        "camera": "c1",
+        "illumination": "SunNoon",
+        "view": "0056"
+      },
+      {
+        "rgb": "../train_dataset/446/c1/446_c1_Indoor0056.jpg",
+        "normal": "../train_dataset/446/c1/446_c1_CGeometry_NormalsGeometry0056.jpg",
+        "albedo": "../train_dataset/446/c1/446_c1_CShading_Albedo0056.jpg",
+        "depth": "../train_dataset/446/c1/446_c1_CGeometry_ZDepth0056.tif",
+        "scene": "446",
+        "camera": "c1",
+        "illumination": "Indoor",
+        "view": "0056"
+      },
+      {
+        "rgb": "../train_dataset/446/c1/446_c1_SunNight_Indoor0056.jpg",
+        "normal": "../train_dataset/446/c1/446_c1_CGeometry_NormalsGeometry0056.jpg",
+        "albedo": "../train_dataset/446/c1/446_c1_CShading_Albedo0056.jpg",
+        "depth": "../train_dataset/446/c1/446_c1_CGeometry_ZDepth0056.tif",
+        "scene": "446",
+        "camera": "c1",
+        "illumination": "SunNight_Indoor",
+        "view": "0056"
+      },
+      {
+        "rgb": "../train_dataset/446/c1/446_c1_SunNoon_Indoor_Environment0056.jpg",
+        "normal": "../train_dataset/446/c1/446_c1_CGeometry_NormalsGeometry0056.jpg",
+        "albedo": "../train_dataset/446/c1/446_c1_CShading_Albedo0056.jpg",
+        "depth": "../train_dataset/446/c1/446_c1_CGeometry_ZDepth0056.tif",
+        "scene": "446",
+        "camera": "c1",
+        "illumination": "SunNoon_Indoor_Environment",
+        "view": "0056"
+      },
+      {
+        "rgb": "../train_dataset/446/c1/446_c1_SunNoon_Indoor0056.jpg",
+        "normal": "../train_dataset/446/c1/446_c1_CGeometry_NormalsGeometry0056.jpg",
+        "albedo": "../train_dataset/446/c1/446_c1_CShading_Albedo0056.jpg",
+        "depth": "../train_dataset/446/c1/446_c1_CGeometry_ZDepth0056.tif",
+        "scene": "446",
+        "camera": "c1",
+        "illumination": "SunNoon_Indoor",
+        "view": "0056"
+      },
+      {
+        "rgb": "../train_dataset/446/c1/446_c1_SunNight_Indoor_Environment0056.jpg",
+        "normal": "../train_dataset/446/c1/446_c1_CGeometry_NormalsGeometry0056.jpg",
+        "albedo": "../train_dataset/446/c1/446_c1_CShading_Albedo0056.jpg",
+        "depth": "../train_dataset/446/c1/446_c1_CGeometry_ZDepth0056.tif",
+        "scene": "446",
+        "camera": "c1",
+        "illumination": "SunNight_Indoor_Environment",
+        "view": "0056"
+      },
+      {
+        "rgb": "../train_dataset/446/c1/446_c1_SunMorning_Indoor0056.jpg",
+        "normal": "../train_dataset/446/c1/446_c1_CGeometry_NormalsGeometry0056.jpg",
+        "albedo": "../train_dataset/446/c1/446_c1_CShading_Albedo0056.jpg",
+        "depth": "../train_dataset/446/c1/446_c1_CGeometry_ZDepth0056.tif",
+        "scene": "446",
+        "camera": "c1",
+        "illumination": "SunMorning_Indoor",
+        "view": "0056"
+      },
+      {
+        "rgb": "../train_dataset/446/c1/446_c1_SunMorning0056.jpg",
+        "normal": "../train_dataset/446/c1/446_c1_CGeometry_NormalsGeometry0056.jpg",
+        "albedo": "../train_dataset/446/c1/446_c1_CShading_Albedo0056.jpg",
+        "depth": "../train_dataset/446/c1/446_c1_CGeometry_ZDepth0056.tif",
+        "scene": "446",
+        "camera": "c1",
+        "illumination": "SunMorning",
+        "view": "0056"
+      },
+      {
+        "rgb": "../train_dataset/446/c1/446_c1_SunMorning_Indoor_Environment0056.jpg",
+        "normal": "../train_dataset/446/c1/446_c1_CGeometry_NormalsGeometry0056.jpg",
+        "albedo": "../train_dataset/446/c1/446_c1_CShading_Albedo0056.jpg",
+        "depth": "../train_dataset/446/c1/446_c1_CGeometry_ZDepth0056.tif",
+        "scene": "446",
+        "camera": "c1",
+        "illumination": "SunMorning_Indoor_Environment",
+        "view": "0056"
+      },
+      {
+        "rgb": "../train_dataset/446/c1/446_c1_Environment0056.jpg",
+        "normal": "../train_dataset/446/c1/446_c1_CGeometry_NormalsGeometry0056.jpg",
+        "albedo": "../train_dataset/446/c1/446_c1_CShading_Albedo0056.jpg",
+        "depth": "../train_dataset/446/c1/446_c1_CGeometry_ZDepth0056.tif",
+        "scene": "446",
+        "camera": "c1",
+        "illumination": "Environment",
+        "view": "0056"
+      }
+    ]
+  },
+  "val": {
+    "list_rows": 200,
+    "distinct_scene_ids": 42,
+    "scene_ids": [
+      "136",
+      "137",
+      "139",
+      "140",
+      "143",
+      "147",
+      "149",
+      "152",
+      "153",
+      "154",
+      "155",
+      "156",
+      "162",
+      "167",
+      "168",
+      "169",
+      "170",
+      "175",
+      "177",
+      "183",
+      "185",
+      "188",
+      "189",
+      "190",
+      "191",
+      "192",
+      "195",
+      "203",
+      "438",
+      "440",
+      "443",
+      "445",
+      "447",
+      "448",
+      "450",
+      "454",
+      "462",
+      "466",
+      "478",
+      "483",
+      "488",
+      "496"
+    ],
+    "camera_view_groups": 197,
+    "illumination_counts": {
+      "SunMorning_Indoor": 19,
+      "SunNoon": 20,
+      "SunNoon_Indoor": 17,
+      "SunNoon_Indoor_Environment": 14,
+      "SunNight": 17,
+      "SunNight_Indoor": 23,
+      "SunMorning_Indoor_Environment": 15,
+      "Indoor": 22,
+      "Environment": 21,
+      "SunMorning": 20,
+      "SunNight_Indoor_Environment": 12
+    },
+    "images_per_camera_view_group": {
+      "1": 194,
+      "2": 3
+    },
+    "unparsed_rows": 0,
+    "sample_group": [
+      {
+        "rgb": "../train_dataset/147/c1/147_c1_SunMorning_Indoor0066.jpg",
+        "normal": "../train_dataset/147/c1/147_c1_CGeometry_NormalsGeometry0066.jpg",
+        "albedo": "../train_dataset/147/c1/147_c1_CShading_Albedo0066.jpg",
+        "depth": "../train_dataset/147/c1/147_c1_CGeometry_ZDepth0066.tif",
+        "scene": "147",
+        "camera": "c1",
+        "illumination": "SunMorning_Indoor",
+        "view": "0066"
+      }
+    ]
+  },
+  "test": {
+    "list_rows": 2992,
+    "distinct_scene_ids": 2,
+    "scene_ids": [
+      "212",
+      "485"
+    ],
+    "camera_view_groups": 272,
+    "illumination_counts": {
+      "Environment": 272,
+      "Indoor": 272,
+      "SunNoon_Indoor": 272,
+      "SunNight_Indoor": 272,
+      "SunMorning_Indoor": 272,
+      "SunNoon_Indoor_Environment": 272,
+      "SunNight_Indoor_Environment": 272,
+      "SunMorning_Indoor_Environment": 272,
+      "SunNoon": 272,
+      "SunNight": 272,
+      "SunMorning": 272
+    },
+    "images_per_camera_view_group": {
+      "11": 272
+    },
+    "unparsed_rows": 0,
+    "sample_group": [
+      {
+        "rgb": "../test_dataset/485/c1/485_c1_Environment0000.jpg",
+        "normal": "../test_dataset/485/c1/485_c1_CGeometry_NormalsGeometry0000.jpg",
+        "albedo": "../test_dataset/485/c1/485_c1_CShading_Albedo0000.jpg",
+        "depth": "../test_dataset/485/c1/485_c1_CGeometry_ZDepth0000.tif",
+        "scene": "485",
+        "camera": "c1",
+        "illumination": "Environment",
+        "view": "0000"
+      },
+      {
+        "rgb": "../test_dataset/485/c1/485_c1_Indoor0000.jpg",
+        "normal": "../test_dataset/485/c1/485_c1_CGeometry_NormalsGeometry0000.jpg",
+        "albedo": "../test_dataset/485/c1/485_c1_CShading_Albedo0000.jpg",
+        "depth": "../test_dataset/485/c1/485_c1_CGeometry_ZDepth0000.tif",
+        "scene": "485",
+        "camera": "c1",
+        "illumination": "Indoor",
+        "view": "0000"
+      },
+      {
+        "rgb": "../test_dataset/485/c1/485_c1_SunNoon_Indoor0000.jpg",
+        "normal": "../test_dataset/485/c1/485_c1_CGeometry_NormalsGeometry0000.jpg",
+        "albedo": "../test_dataset/485/c1/485_c1_CShading_Albedo0000.jpg",
+        "depth": "../test_dataset/485/c1/485_c1_CGeometry_ZDepth0000.tif",
+        "scene": "485",
+        "camera": "c1",
+        "illumination": "SunNoon_Indoor",
+        "view": "0000"
+      },
+      {
+        "rgb": "../test_dataset/485/c1/485_c1_SunNight_Indoor0000.jpg",
+        "normal": "../test_dataset/485/c1/485_c1_CGeometry_NormalsGeometry0000.jpg",
+        "albedo": "../test_dataset/485/c1/485_c1_CShading_Albedo0000.jpg",
+        "depth": "../test_dataset/485/c1/485_c1_CGeometry_ZDepth0000.tif",
+        "scene": "485",
+        "camera": "c1",
+        "illumination": "SunNight_Indoor",
+        "view": "0000"
+      },
+      {
+        "rgb": "../test_dataset/485/c1/485_c1_SunMorning_Indoor0000.jpg",
+        "normal": "../test_dataset/485/c1/485_c1_CGeometry_NormalsGeometry0000.jpg",
+        "albedo": "../test_dataset/485/c1/485_c1_CShading_Albedo0000.jpg",
+        "depth": "../test_dataset/485/c1/485_c1_CGeometry_ZDepth0000.tif",
+        "scene": "485",
+        "camera": "c1",
+        "illumination": "SunMorning_Indoor",
+        "view": "0000"
+      },
+      {
+        "rgb": "../test_dataset/485/c1/485_c1_SunNoon_Indoor_Environment0000.jpg",
+        "normal": "../test_dataset/485/c1/485_c1_CGeometry_NormalsGeometry0000.jpg",
+        "albedo": "../test_dataset/485/c1/485_c1_CShading_Albedo0000.jpg",
+        "depth": "../test_dataset/485/c1/485_c1_CGeometry_ZDepth0000.tif",
+        "scene": "485",
+        "camera": "c1",
+        "illumination": "SunNoon_Indoor_Environment",
+        "view": "0000"
+      },
+      {
+        "rgb": "../test_dataset/485/c1/485_c1_SunNight_Indoor_Environment0000.jpg",
+        "normal": "../test_dataset/485/c1/485_c1_CGeometry_NormalsGeometry0000.jpg",
+        "albedo": "../test_dataset/485/c1/485_c1_CShading_Albedo0000.jpg",
+        "depth": "../test_dataset/485/c1/485_c1_CGeometry_ZDepth0000.tif",
+        "scene": "485",
+        "camera": "c1",
+        "illumination": "SunNight_Indoor_Environment",
+        "view": "0000"
+      },
+      {
+        "rgb": "../test_dataset/485/c1/485_c1_SunMorning_Indoor_Environment0000.jpg",
+        "normal": "../test_dataset/485/c1/485_c1_CGeometry_NormalsGeometry0000.jpg",
+        "albedo": "../test_dataset/485/c1/485_c1_CShading_Albedo0000.jpg",
+        "depth": "../test_dataset/485/c1/485_c1_CGeometry_ZDepth0000.tif",
+        "scene": "485",
+        "camera": "c1",
+        "illumination": "SunMorning_Indoor_Environment",
+        "view": "0000"
+      },
+      {
+        "rgb": "../test_dataset/485/c1/485_c1_SunNoon0000.jpg",
+        "normal": "../test_dataset/485/c1/485_c1_CGeometry_NormalsGeometry0000.jpg",
+        "albedo": "../test_dataset/485/c1/485_c1_CShading_Albedo0000.jpg",
+        "depth": "../test_dataset/485/c1/485_c1_CGeometry_ZDepth0000.tif",
+        "scene": "485",
+        "camera": "c1",
+        "illumination": "SunNoon",
+        "view": "0000"
+      },
+      {
+        "rgb": "../test_dataset/485/c1/485_c1_SunNight0000.jpg",
+        "normal": "../test_dataset/485/c1/485_c1_CGeometry_NormalsGeometry0000.jpg",
+        "albedo": "../test_dataset/485/c1/485_c1_CShading_Albedo0000.jpg",
+        "depth": "../test_dataset/485/c1/485_c1_CGeometry_ZDepth0000.tif",
+        "scene": "485",
+        "camera": "c1",
+        "illumination": "SunNight",
+        "view": "0000"
+      },
+      {
+        "rgb": "../test_dataset/485/c1/485_c1_SunMorning0000.jpg",
+        "normal": "../test_dataset/485/c1/485_c1_CGeometry_NormalsGeometry0000.jpg",
+        "albedo": "../test_dataset/485/c1/485_c1_CShading_Albedo0000.jpg",
+        "depth": "../test_dataset/485/c1/485_c1_CGeometry_ZDepth0000.tif",
+        "scene": "485",
+        "camera": "c1",
+        "illumination": "SunMorning",
+        "view": "0000"
+      }
+    ]
+  },
+  "overlap": {
+    "train_val_camera_view_groups": 197,
+    "train_test_scene_ids": 0,
+    "train_val_scene_ids": 42
+  }
+}

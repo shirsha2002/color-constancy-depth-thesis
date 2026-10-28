@@ -1,0 +1,104 @@
+{
+  "completed_at": "2026-10-28T19:53:52.125208+08:00",
+  "protocol_sha256": "ae5b9c9e715a32b6f09c35b65ca7184c1b988e916647658b7f3e7601bba6122d",
+  "rows": 10,
+  "wall_seconds": 43.02275150001515,
+  "summary": [
+    {
+      "split": "development",
+      "lighting": "matched_diffuse",
+      "method": "rgb_ssd",
+      "view_light_cases": 1,
+      "mae_mm": 29.73147201538086,
+      "rmse_mm": 74.9133529663086,
+      "bad5_percent": 32.51987263699316
+    },
+    {
+      "split": "development",
+      "lighting": "matched_diffuse",
+      "method": "scalar_gain",
+      "view_light_cases": 1,
+      "mae_mm": 20.903873443603516,
+      "rmse_mm": 62.46185302734375,
+      "bad5_percent": 23.058938790051435
+    },
+    {
+      "split": "development",
+      "lighting": "matched_diffuse",
+      "method": "diagonal_gain",
+      "view_light_cases": 1,
+      "mae_mm": 20.89951515197754,
+      "rmse_mm": 62.33536911010742,
+      "bad5_percent": 22.78729041882835
+    },
+    {
+      "split": "development",
+      "lighting": "matched_diffuse",
+      "method": "gray_zncc",
+      "view_light_cases": 1,
+      "mae_mm": 27.086793899536133,
+      "rmse_mm": 86.03227996826172,
+      "bad5_percent": 18.400837211373606
+    },
+    {
+      "split": "development",
+      "lighting": "matched_diffuse",
+      "method": "channel_zncc",
+      "view_light_cases": 1,
+      "mae_mm": 23.731931686401367,
+      "rmse_mm": 78.6651840209961,
+      "bad5_percent": 17.247444946672307
+    },
+    {
+      "split": "development",
+      "lighting": "mismatched",
+      "method": "rgb_ssd",
+      "view_light_cases": 1,
+      "mae_mm": 140.40313720703125,
+      "rmse_mm": 200.42507934570312,
+      "bad5_percent": 84.49822983233506
+    },
+    {
+      "split": "development",
+      "lighting": "mismatched",
+      "method": "scalar_gain",
+      "view_light_cases": 1,
+      "mae_mm": 93.29039764404297,
+      "rmse_mm": 164.7764892578125,
+      "bad5_percent": 61.717619291487615
+    },
+    {
+      "split": "development",
+      "lighting": "mismatched",
+      "method": "diagonal_gain",
+      "view_light_cases": 1,
+      "mae_mm": 100.78726959228516,
+      "rmse_mm": 173.13267517089844,
+      "bad5_percent": 61.72207254347487
+    },
+    {
+      "split": "development",
+      "lighting": "mismatched",
+      "method": "gray_zncc",
+      "view_light_cases": 1,
+      "mae_mm": 61.872013092041016,
+      "rmse_mm": 133.00582885742188,
+      "bad5_percent": 37.87936140366502
+    },
+    {
+      "split": "development",
+      "lighting": "mismatched",
+      "method": "channel_zncc",
+      "view_light_cases": 1,
+      "mae_mm": 56.718021392822266,
+      "rmse_mm": 128.27920532226562,
+      "bad5_percent": 34.913495580147405
+    }
+  ],
+  "limitations": [
+    "One held-out scene; descriptive results only, no population confidence intervals",
+    "320x240 plane sweep, finite depth planes and projected point samples, not full-resolution DTU benchmark",
+    "GT source visibility and foreground plane define evaluation mask only; no GT enters inference",
+    "DTU lights primarily change direction; gains model radiometric nuisance, no absolute illuminant recovery claim"
+  ]
+}

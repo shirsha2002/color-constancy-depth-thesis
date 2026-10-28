@@ -1,0 +1,8 @@
+# Preserve full local evidence without uploading bulky arrays and point clouds.
+**/arrays/
+**/pointclouds/
+**/pointclouds_inference/*.ply
+!**/pointclouds_inference/*_preview30k.ply
+# Initial float32 diagnostic attempts are not final scientific results.
+calibration_pair/
+main/

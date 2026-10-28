@@ -1,0 +1,8 @@
+Professor, following your advice:
+
+1. I found and acquired Vari multi-light RGB/depth data and calibrated DTU images with reference geometry.
+2. On one held-out DTU scene, changed lighting increased basic stereo depth MAE from 13.2 to 54.2 mm. Brightness compensation inside matching reduced it to 29.9 mm.
+3. I implemented a CC-inspired module inside the monocular depth network and compared six methods on 264 evaluation images. It currently does not outperform ordinary task adaptation, so a CC-specific benefit is not yet established.
+4. The main limitation is scene diversity. Next, I will expand the paired-light data and separate color effects from brightness/shading before improving the integrated method.
+
+I would appreciate your guidance on the proposed joint illumination-depth direction.
