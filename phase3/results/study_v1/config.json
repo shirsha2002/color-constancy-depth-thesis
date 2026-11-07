@@ -1,0 +1,62 @@
+{
+  "seed": 20261107,
+  "input_size": 224,
+  "threads": 8,
+  "training_steps": 600,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "paired_depth_consistency_weight": 0.1,
+  "regularization_weight": 0.001,
+  "variant_mode_equivariance_weight": {
+    "ordinary_aug": [
+      "ordinary",
+      0.0
+    ],
+    "achromatic": [
+      "achromatic",
+      0.0
+    ],
+    "content": [
+      "content",
+      0.0
+    ],
+    "chromatic_noeq": [
+      "chromatic",
+      0.0
+    ],
+    "chromatic_eq": [
+      "chromatic",
+      0.2
+    ],
+    "flat_geometry_eq": [
+      "flat_geometry_chromatic",
+      0.2
+    ],
+    "geometry_chromatic_eq": [
+      "geometry_chromatic",
+      0.2
+    ]
+  },
+  "checkpoint_sha256": "b782898d8a3e8be1f639de33837ed85e9b4b73e40f8f5e5cd99067588d722545",
+  "sources": {
+    "phase3/learning/study.py": "156a0f6909eac292975123b3fdc77b42e54049e4b2be986f0959ca32e7b6f54f",
+    "phase3/learning/model.py": "143c11304e4c2b11c0cba2f799f863cc9dc7103121cc4b726defbcf22259d676",
+    "scripts/science.py": "74b7a29da007beb2669359e21aa29e7063d7207eb8b48892c50e502dfcff2b44",
+    "external/Depth-Anything-V2/metric_depth/depth_anything_v2/dpt.py": "b8cb75891b8161a72d9e51cf95515c709c9d79018b9bdecc6000d01bb0e2b59f",
+    "external/Depth-Anything-V2/metric_depth/depth_anything_v2/util/transform.py": "ad93afd07aee97a1c73aaa9217c1a8e80c097a861800c56e5425446ff3ecabaa"
+  },
+  "upstream_revision": "a561b849ebae10a6f5ef49e26c83cbbcd36c71bf",
+  "manifests": {
+    "phase3/data/nyu_rgbd/manifest.json": "62e633bd12db990af286fad8bf4c5a536a8ac7a2f0f360611223a3a0fb2b1553",
+    "phase3/data/remid/manifest.json": "b030d1736ce884c2674ba205f4fb809f620b8e77c25625fc8bdbb0bea0990bc1",
+    "phase2/data/vari/manifest.json": "8afcc4ecf1704620655f14b7c15b82f6529e02d1c28cb87c5bf7aba44e1ed33a"
+  },
+  "evaluation_depth_m": "finite and strictly0.1<GT<10; predictionsclipped[0.1,10]",
+  "nyu_crop": "Eigen rows45:471 cols41:601 scaled from480x640",
+  "other_crop": "full native frame; zero/invalid measured depth excluded",
+  "test_scale_shift_fit": false,
+  "remid_role": "externalevaluationonly",
+  "test_selection": "NYU128newscenes; ReMIDall735images/50capturegroups; Variprior264images rendered diagnostic",
+  "caveat": "Prototype using established components, not certified novelty or physical illuminant recovery",
+  "configuration_sha256": "0142b065e3923e3f304fde8e991a39872233ccc8f9090593b44204078e176cdc"
+}

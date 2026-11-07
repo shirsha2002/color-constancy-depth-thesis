@@ -1,0 +1,14 @@
+{
+  "integration_check": "PASS",
+  "input_record_role": "training only",
+  "initial_pred_identical_to_frozen": true,
+  "frozen_backbone_no_gradients": true,
+  "adapter_gradient_path": true,
+  "input_prediction_shape": [
+    2,
+    224,
+    294
+  ],
+  "test_data_used": false,
+  "configuration_sha256": "0142b065e3923e3f304fde8e991a39872233ccc8f9090593b44204078e176cdc"
+}

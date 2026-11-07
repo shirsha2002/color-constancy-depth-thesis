@@ -1,0 +1,96 @@
+{
+  "checked_date": "2026-11-07",
+  "scope": "Targeted primary-source literature/code review; no new accuracy results or exhaustive novelty claim",
+  "sources": [
+    {
+      "id": "pccc_cvpr2022",
+      "title": "Point Cloud Color Constancy",
+      "authors": "Xiaoyan Xing, Yanlin Qian, Sibo Feng, Yuhan Dong, Jiri Matas",
+      "publication": "CVPR 2022, pp. 19750-19759",
+      "url": "https://openaccess.thecvf.com/content/CVPR2022/html/Xing_Point_Cloud_Color_Constancy_CVPR_2022_paper.html",
+      "full_author_manuscript": "https://arxiv.org/html/2111.11280",
+      "author_manuscript_version": "arXiv:2111.11280v2, 2024-07-29",
+      "role": "Measured RGB-D to illuminant estimation; inverse direction to the monocular thesis's desired CC-to-depth benefit",
+      "access": "CVF search/publication record and author arXiv HTML main paper plus appendix inspected; direct CVF PDF requests returned 403"
+    },
+    {
+      "id": "pccc_code",
+      "title": "Official PCCC code and dataset release",
+      "url": "https://github.com/xyxingx/Point-Cloud-Color-Constancy",
+      "commit": "ddc8770e04ef5509a621c5a7ee04e330b9204a93",
+      "public_data_folder": "https://drive.google.com/drive/folders/1qBw_bvaxIvduIm2vzrYhEPX9khTm1Bo9?usp=sharing",
+      "paths_reviewed": ["README.md", "train_main.py", "pointnet/dataloader.py", "pointnet/model.py"],
+      "findings": [
+        "Parsed dataset argument is not passed to PcdColor",
+        "PCCC.forward unpacks two values where PointNetfeat returns three",
+        "CUDA and author-specific absolute paths require adaptation",
+        "Released output head has three channels and no explicit fourth attention channel described in the paper",
+        "Fold CSVs are not present in the inspected Git tree; inspect data release",
+        "Held-out fold repeatedly controls saved checkpoint in released train loop"
+      ]
+    },
+    {
+      "id": "lumidepth_eccv2026",
+      "title": "LumiDepth: Stable Monocular Depth in Multi-illumination Scenes",
+      "authors": "Anqi Cheng, Zhiyuan Yang, Tianjiao Li, Haiyue Zhu, Kezhi Mao",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-032-37314-4_9",
+      "doi": "10.1007/978-3-032-37314-4_9",
+      "publication": "ECCV 2026, LNCS 17047, pp. 150-169; first online 2026-09-16",
+      "role": "Very close prior art: multi-illumination depth, disagreement-calibrated pseudo-supervision and frequency-aware consistency/distillation",
+      "real_dataset": "ReMID",
+      "verified_primary_dataset_link": "https://drive.google.com/drive/folders/1-3txE3KiFiscACxs1Xch8UO1Ax82VBNg?usp=sharing",
+      "link_evidence": "Publisher Notes footnote 1 explicitly links ReMID to this Drive folder",
+      "access": "Publisher preview and Notes inspected; full subscription-only chapter not acquired in this review",
+      "caveat": "Publisher footnote 2 uses normalized depth notation; asset units and scoring alignment need independent verification"
+    },
+    {
+      "id": "iffcc_cvpr2025",
+      "title": "Integral Fast Fourier Color Constancy",
+      "authors": "Wenjun Wei, Yanlin Qian, Huaian Chen, Junkang Dai, Yi Jin",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/html/Wei_Integral_Fast_Fourier_Color_Constancy_CVPR_2025_paper.html",
+      "arxiv": "https://arxiv.org/abs/2502.03494",
+      "role": "Recent multi-illuminant CC prior art, not a depth method"
+    },
+    {
+      "id": "uncertainty_cc2025",
+      "title": "Uncertainty estimation in color constancy",
+      "authors": "Marco Buzzelli, Simone Bianco",
+      "url": "https://doi.org/10.1016/j.patcog.2024.111175",
+      "publication": "Pattern Recognition, 2025",
+      "role": "Prior uncertainty estimation and uncertainty-based cascading in CC"
+    },
+    {
+      "id": "structure_centric_accv2024",
+      "title": "Structure-Centric Robust Monocular Depth Estimation via Knowledge Distillation",
+      "url": "https://arxiv.org/abs/2410.06982",
+      "role": "Prior robust depth using illumination/semantic structure and auxiliary constraints"
+    },
+    {
+      "id": "depth_uncertainty_thesis2024",
+      "title": "Uncertainty and Self-Supervision in Single-View Depth",
+      "authors": "Javier Rodriguez-Puigvert",
+      "url": "https://arxiv.org/abs/2406.14226",
+      "role": "Dissertation covering uncertainty-aware depth and illumination-based endoscopic supervision; camera-light assumptions differ from room scenes"
+    },
+    {
+      "id": "film2018",
+      "title": "FiLM: Visual Reasoning with a General Conditioning Layer",
+      "url": "https://arxiv.org/abs/1709.07871",
+      "role": "Established feature-wise affine conditioning"
+    },
+    {
+      "id": "selfsupervisedcc2024",
+      "title": "Self-Supervised Learning of Color Constancy",
+      "url": "https://arxiv.org/abs/2404.08127",
+      "role": "Existing illumination-invariance learning objective"
+    },
+    {
+      "id": "mit_multilum2019",
+      "title": "A Multi-Illumination Dataset of Indoor Object Appearance",
+      "authors": "Lukas Murmann, Michael Gharbi, Miika Aittala, Fredo Durand",
+      "url": "https://projects.csail.mit.edu/illumination/",
+      "publication": "ICCV 2019",
+      "role": "Real multi-light RGB consistency data; no reference depth established by the inspected project release"
+    }
+  ]
+}

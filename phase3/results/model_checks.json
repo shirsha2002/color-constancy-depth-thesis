@@ -1,0 +1,48 @@
+{
+  "adapter_checks": "PASS",
+  "trainable_parameters": 59699,
+  "modes": {
+    "ordinary": {
+      "initial_identity": true,
+      "class_tokens_preserved": true,
+      "constant_adapter_gradients": true,
+      "residual_gradients": false
+    },
+    "achromatic": {
+      "initial_identity": true,
+      "class_tokens_preserved": true,
+      "constant_adapter_gradients": true,
+      "residual_gradients": true
+    },
+    "content": {
+      "initial_identity": true,
+      "class_tokens_preserved": true,
+      "constant_adapter_gradients": true,
+      "residual_gradients": true
+    },
+    "chromatic": {
+      "initial_identity": true,
+      "class_tokens_preserved": true,
+      "constant_adapter_gradients": true,
+      "residual_gradients": true
+    },
+    "flat_geometry_chromatic": {
+      "initial_identity": true,
+      "class_tokens_preserved": true,
+      "constant_adapter_gradients": true,
+      "residual_gradients": true
+    },
+    "geometry_chromatic": {
+      "initial_identity": true,
+      "class_tokens_preserved": true,
+      "constant_adapter_gradients": true,
+      "residual_gradients": true,
+      "geometry_branch_gradients": true
+    }
+  },
+  "pseudo_geometry_scale_invariance": true,
+  "reference_depth_or_intrinsics_argument": false,
+  "note": "Synthetic module selfcheck; not an experiment result or novelty proof",
+  "matched_chromatic_luminance_max_error": 1.2521514380914311e-10,
+  "unclipped_intervention_checks": "PASS"
+}
