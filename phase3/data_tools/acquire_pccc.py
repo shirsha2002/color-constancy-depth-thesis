@@ -23,7 +23,12 @@ ASSETS=[
 ]
 
 def main():
- parser=argparse.ArgumentParser();parser.add_argument('--labels-only',action='store_true');args=parser.parse_args()
+ parser=argparse.ArgumentParser();parser.add_argument('--labels-only',action='store_true');parser.add_argument('--audit-only',action='store_true');args=parser.parse_args()
+ frozen_path=OUT/'acquisition_manifest.json'
+ frozen=json.loads(frozen_path.read_text(encoding='utf-8')) if frozen_path.exists() else None
+ if frozen and common.verify_frozen(frozen,require_complete=args.audit_only):
+  print(json.dumps({'frozen_snapshot_audit':'PASS','assets':len(frozen['assets']),'manifest_unchanged':True}),flush=True);return
+ if args.audit_only:raise FileNotFoundError('No complete frozen acquisition snapshot')
  common.OUT=OUT;selected=[a for a in ASSETS if not args.labels_only or 'pointcloud' not in a[0].lower()]
  with ThreadPoolExecutor(max_workers=3) as pool:assets=[f.result() for f in as_completed([pool.submit(common.acquire,x) for x in selected])]
  extracted=[]
@@ -46,7 +51,8 @@ def main():
   for output in sorted(destination.rglob('*')):
    if output.is_file():extracted.append({'path':output.relative_to(common.ROOT).as_posix(),'bytes':output.stat().st_size,'sha256':common.sha(output),'source_archive':asset['filename']})
  manifest={'dataset':'PCCC official public labels, original cross-validation fold tables and sampled XYZRGB point clouds','source':'https://github.com/xyxingx/Point-Cloud-Color-Constancy','public_folder':'https://drive.google.com/drive/folders/1qBw_bvaxIvduIm2vzrYhEPX9khTm1Bo9','acquired_utc':datetime.now(timezone.utc).isoformat(),'assets':sorted(assets,key=lambda x:x['filename']),'extracted_files':extracted,'warning':'Original dense RGB and depth are NOT included in this acquisition. XYZRGB points must not be misrepresented as dense aligned metric depth.'}
- (OUT/'acquisition_manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8',newline='\n')
+ if frozen:common.verify_frozen(frozen)
+ else:frozen_path.write_text(json.dumps(manifest,indent=2),encoding='utf-8',newline='\n')
  print(json.dumps({'complete':True,'assets':len(assets),'extracted_files':len(extracted)},indent=2),flush=True)
 
 if __name__=='__main__':main()

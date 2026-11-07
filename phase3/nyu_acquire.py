@@ -31,7 +31,10 @@ def export(task):
             image=source['images'][number-1].transpose(2,1,0).astype(np.uint8)
             gt=source['depths'][number-1].T.astype(np.float32)
         assert image.shape==(480,640,3) and gt.shape==(480,640)
-        Image.fromarray(image).save(rgb);np.save(depth,gt)
+        rgb_tmp=rgb.with_suffix('.partial');depth_tmp=depth.with_suffix('.partial')
+        Image.fromarray(image).save(rgb_tmp,format='PNG');rgb_tmp.replace(rgb)
+        with depth_tmp.open('wb') as handle:np.save(handle,gt)
+        depth_tmp.replace(depth)
     gt=np.load(depth);valid=np.isfinite(gt)&(gt>.1)&(gt<10)
     return {'id':f'nyu_{number:05d}','split':split,'scene':scene,'original_matlab_id':number,
         'official_split':'test' if split=='evaluation' else 'train',
@@ -48,7 +51,13 @@ def main():
     (OUT/'.gitignore').write_text('rgb/\ndepth/\n',encoding='utf-8',newline='\n')
     previous=json.loads((ROOT/'data/nyu_pilot/manifest.json').read_text())
     excluded={r['scene'] for r in previous['images']}
-    scenes=json.loads((official.OUT/'official_scenes.json').read_text())
+    scene_path=official.OUT/'official_scenes.json';split_path=official.OUT/'splits.mat'
+    if not split_path.exists():split_path.write_bytes(official.get(official.SPLIT_URL).content)
+    if not scene_path.exists():
+        with h5py.File(official.RemoteHDF5(),'r') as dataset:
+            scenes=[''.join(chr(int(c)) for c in dataset[ref][:].ravel()) for ref in dataset['scenes'][:].ravel()]
+        scene_path.write_text(json.dumps(scenes,indent=2),encoding='utf-8',newline='\n')
+    scenes=json.loads(scene_path.read_text())
     splits=loadmat(official.OUT/'splits.mat')
     by_official={}
     for name,key in [('train','trainNdxs'),('test','testNdxs')]:
@@ -79,6 +88,13 @@ def main():
     else:frozen.write_text(json.dumps(plan,indent=2),encoding='utf-8',newline='\n')
     print(json.dumps({'frozen_selection':str(frozen),'counts':plan['counts'],'excluded_previous_scenes':len(excluded)},indent=2),flush=True)
     if args.plan_only:return
+    manifest_path=OUT/'manifest.json'
+    snapshot=json.loads(manifest_path.read_text()) if manifest_path.exists() else None
+    if snapshot and all((ROOT/r[field]).exists() for r in snapshot['images'] for field in ['rgb','depth']):
+        assert snapshot['selection_sha256']==digest(frozen)
+        for r in snapshot['images']:
+            for field in ['rgb','depth']:assert digest(ROOT/r[field])==r[field+'_sha256'],f'Changed frozen input: {r[field]}'
+        print('Frozen NYU snapshot audit: PASS; 368 RGB/depth pairs; manifest unchanged.',flush=True);return
     records=[]
     with ProcessPoolExecutor(max_workers=args.workers) as executor:
         for record in executor.map(export,tasks):
@@ -90,7 +106,8 @@ def main():
         'depth_reference':'Original Kinect-derived depths field; authors projected/inpainted missing values; metric meters.',
         'radiometry':'Original camera-processed sRGB; this real RGB-D dataset does not provide paired physical illuminant changes or calibrated illuminant labels.',
         'prior_scene_overlap':False,'images':records}
-    (OUT/'manifest.json').write_text(json.dumps(result,indent=2),encoding='utf-8',newline='\n')
+    if snapshot:assert snapshot==result,'Reacquired content differs from frozen NYU snapshot'
+    else:manifest_path.write_text(json.dumps(result,indent=2),encoding='utf-8',newline='\n')
     print(f'Complete: {len(records)} new real RGB-D scenes.',flush=True)
 
 if __name__=='__main__':main()

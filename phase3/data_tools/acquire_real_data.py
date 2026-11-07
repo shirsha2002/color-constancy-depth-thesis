@@ -35,6 +35,17 @@ def sha(path):
   for chunk in iter(lambda:f.read(1024*1024),b''):d.update(chunk)
  return d.hexdigest()
 
+def verify_frozen(snapshot,require_complete=True):
+ """Keep checked-in snapshot identities stable when verifying or reacquiring."""
+ missing=[]
+ for item in snapshot.get('assets',[])+snapshot.get('extracted_files',[]):
+  path=ROOT/item['path']
+  if not path.exists():missing.append(item['path']);continue
+  if path.stat().st_size!=item['bytes'] or sha(path)!=item['sha256']:
+   raise ValueError(f'Content differs from frozen source snapshot: {item["path"]}')
+ if require_complete and missing:raise FileNotFoundError(f'{len(missing)} frozen assets missing; run acquisition without --audit-only')
+ return not missing
+
 def acquire(asset):
  name,public_id,expected=asset
  target=OUT/'archives'/name;target.parent.mkdir(parents=True,exist_ok=True)
@@ -92,15 +103,21 @@ def extract(assets):
  return records
 
 def main():
- parser=argparse.ArgumentParser();parser.add_argument('--workers',type=int,default=3);parser.add_argument('--no-extract',action='store_true');args=parser.parse_args()
+ parser=argparse.ArgumentParser();parser.add_argument('--workers',type=int,default=3);parser.add_argument('--no-extract',action='store_true');parser.add_argument('--audit-only',action='store_true');args=parser.parse_args()
  OUT.mkdir(parents=True,exist_ok=True)
+ path=OUT/'acquisition_manifest.json'
+ frozen=json.loads(path.read_text(encoding='utf-8')) if path.exists() else None
+ if frozen and verify_frozen(frozen,require_complete=args.audit_only):
+  print(json.dumps({'frozen_snapshot_audit':'PASS','assets':len(frozen['assets']),'native_files':len(frozen.get('extracted_files',[])),'manifest_unchanged':True}),flush=True);return
+ if args.audit_only:raise FileNotFoundError('No complete frozen acquisition snapshot')
  results=[]
  with ThreadPoolExecutor(max_workers=args.workers) as pool:
   for future in as_completed([pool.submit(acquire,x) for x in ASSETS]):results.append(future.result())
  results.sort(key=lambda x:x['filename'])
  manifest={'dataset':'ReMID, author-published release linked by LumiDepth ECCV2026','source_paper':SOURCE,'public_folder':FOLDER,'acquired_utc':datetime.now(timezone.utc).isoformat(),'notice':'split_1..split_5 are transport shards, NOT experiment splits. Dense depth units and sensor alignment must be established separately before use.','assets':results}
  if not args.no_extract:manifest['extracted_files']=extract(results)
- (OUT/'acquisition_manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf-8',newline='\n')
+ if frozen:verify_frozen(frozen)
+ else:path.write_text(json.dumps(manifest,indent=2),encoding='utf-8',newline='\n')
  print(json.dumps({'complete':True,'archives':len(results),'extracted_files':len(manifest.get('extracted_files',[])),'manifest':str(OUT/'acquisition_manifest.json')},indent=2),flush=True)
 
 if __name__=='__main__':main()

@@ -1,0 +1,22 @@
+{
+  "checks": "PASS",
+  "modes": {
+    "spatial_content": {
+      "identity": true,
+      "gradient_path": true,
+      "local_chromatic_field": true
+    },
+    "spatial_flat": {
+      "identity": true,
+      "gradient_path": true,
+      "local_chromatic_field": true
+    },
+    "spatial_geometry": {
+      "identity": true,
+      "gradient_path": true,
+      "local_chromatic_field": true
+    }
+  },
+  "pseudo_geometry_scale_invariance": true,
+  "parameters": 42036
+}
