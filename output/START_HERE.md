@@ -2,17 +2,25 @@
 
 ## Latest follow-up after supervisor feedback
 
-The latest completed work is the integrated monocular prototype and real-light
-geometry diagnostic. Read these first:
+The latest work is the 7 November real-light and explicit chromatic-control
+study. Read these first:
 
-1. [Latest research report](pdf/Shirsha_Mitra_Phase2_Research_Update.pdf).
-2. [Latest short English QQ reply](QQ_Phase2_Reply_English.txt).
-3. [Current project status](../PROJECT_STATUS.md) and [full follow-up methods](../phase2/README.md).
+1. [Weekly research report](pdf/Shirsha_Mitra_Weekly_Update_2026_11_07.pdf).
+2. [Latest short English QQ reply](QQ_Weekly_Update_2026_11_07_English.txt).
+3. [Measured results and claim limits](../phase3/RESULTS.md).
+4. [Plain-English student guide](../phase3/STUDENT_GUIDE.md), [full methods](../phase3/README.md)
+   and [current project status](../PROJECT_STATUS.md).
 
-The current CC-inspired module runs inside the depth model, but it does not beat
-ordinary task adaptation. The stereo study demonstrates lighting sensitivity;
-it does not isolate a color-constancy benefit. These are completed exploratory
-experiments, not a finished thesis or a demonstrated novel algorithm.
+This study uses 735 captured real-light ReMID images, 368 new NYU RGB-D scenes,
+15 trained variants and a frozen baseline. It tests internal chromatic/geometry
+coupling and matched loss controls. Read the actual comparisons before claiming
+CC-specific improvement or novelty. The [previous phase-two report](pdf/Shirsha_Mitra_Phase2_Research_Update.pdf)
+preserves the earlier Vari prototype and real-light stereo diagnostic.
+
+These are research experiments and measured progress, not a finished thesis or
+a publication-ready algorithm. Raw datasets and large arrays stay local; the
+GitHub project includes reproducible acquisition, code, small trained adapters,
+frozen manifests, tables, figures and audit records.
 
 The PowerPoint and slide PDF below describe the earlier NYU preprocessing pilot.
 They are preserved as the first progress presentation.

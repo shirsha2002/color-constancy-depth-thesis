@@ -47,8 +47,9 @@ verified before combining them with dense depth.
 
 ## Before calling the project publication-ready
 
-1. Finish and independently audit the locked run. Report every control and harm,
-   including any result that contradicts the proposed coupling.
+1. The locked run and independent audit are complete: see [measured results](RESULTS.md).
+   Retain every control and harm, including the full primary's loss to content
+   and the validation-selected recipe's real-data transfer failure.
 2. Explain any observed benefit over the strongest conditional control, not only
    the weaker frozen/ordinary baselines. Distinguish accuracy, stability and
    chromatic-specific effects.

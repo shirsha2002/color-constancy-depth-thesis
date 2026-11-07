@@ -1,0 +1,103 @@
+{
+  "audit": "PASS",
+  "prediction_rows_independently_recomputed": 26224,
+  "maximum_absolute_metric_difference": {
+    "abs_rel": 0.0,
+    "rmse_m": 0.0,
+    "delta1": 0.0
+  },
+  "frozen_source_and_manifests_match": true,
+  "checkpoint_selection_checks": [
+    {
+      "method": "ordinary_aug",
+      "selected_step": 600,
+      "validation_selection_checked": true
+    },
+    {
+      "method": "achromatic",
+      "selected_step": 600,
+      "validation_selection_checked": true
+    },
+    {
+      "method": "content",
+      "selected_step": 600,
+      "validation_selection_checked": true
+    },
+    {
+      "method": "chromatic_noeq",
+      "selected_step": 600,
+      "validation_selection_checked": true
+    },
+    {
+      "method": "chromatic_eq",
+      "selected_step": 600,
+      "validation_selection_checked": true
+    },
+    {
+      "method": "flat_geometry_eq",
+      "selected_step": 600,
+      "validation_selection_checked": true
+    },
+    {
+      "method": "geometry_chromatic_eq",
+      "selected_step": 600,
+      "validation_selection_checked": true
+    },
+    {
+      "method": "spatial_content",
+      "selected_step": 600,
+      "validation_selection_checked": true
+    },
+    {
+      "method": "spatial_flat",
+      "selected_step": 600,
+      "validation_selection_checked": true
+    },
+    {
+      "method": "spatial_no_graph_loss",
+      "selected_step": 600,
+      "validation_selection_checked": true
+    },
+    {
+      "method": "spatial_no_equivariance",
+      "selected_step": 600,
+      "validation_selection_checked": true
+    },
+    {
+      "method": "spatial_geometry_eq",
+      "selected_step": 600,
+      "validation_selection_checked": true
+    },
+    {
+      "method": "spatial_content_noeq",
+      "selected_step": 600,
+      "validation_selection_checked": true
+    },
+    {
+      "method": "spatial_flat_noeq",
+      "selected_step": 600,
+      "validation_selection_checked": true
+    },
+    {
+      "method": "spatial_noeq_no_graph",
+      "selected_step": 600,
+      "validation_selection_checked": true
+    }
+  ],
+  "nyu_scene_splits": [
+    200,
+    40,
+    128
+  ],
+  "base_checkpoint_sha256": "b782898d8a3e8be1f639de33837ed85e9b4b73e40f8f5e5cd99067588d722545",
+  "recorded_frozen_loader_matches": true,
+  "previous_40_nyu_scenes_excluded": true,
+  "remid_external_only": true,
+  "reference_depth_not_model_input": true,
+  "array_dtype": "float32; scoring float64",
+  "auditor_function_sha256": "acb5bd5ba934caedcd2b066bce123bb8676ddbeb4ec3a31d7e798827e8746e39",
+  "metrics_csv_sha256": "80f30f330f9026bdfa050d932b8f30228afae373e630fbf39e58ad76408a3172",
+  "float_probe_prediction_rows_independently_recomputed": 640,
+  "float_probe_max_metric_difference": 0.0,
+  "float_probe_csv_sha256": "be6b42cbcd427ec27b99b3a7d2fb438d54422707d5ad27d80b91cdba2a1df7e6"
+}

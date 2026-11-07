@@ -26,3 +26,13 @@ baseline must document its fixes, validation split and source differences.
 The authors retain source/data rights. Their upstream code is not copied into
 this project's MIT-licensed source. The small downloader and attribution are
 provided; bulky original archives and clouds remain local.
+
+For a fresh acquisition, install the optional archive dependency, then run:
+
+```powershell
+& .\.venv\Scripts\python.exe -m pip install -r phase3/data_tools/requirements-pccc.txt
+& .\.venv\Scripts\python.exe phase3/data_tools/acquire_pccc.py
+```
+
+An existing complete acquisition can be verified without rewriting its frozen
+manifest using `phase3/data_tools/acquire_pccc.py --audit-only`.

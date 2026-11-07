@@ -1,0 +1,511 @@
+{
+  "configuration_sha256": "0142b065e3923e3f304fde8e991a39872233ccc8f9090593b44204078e176cdc",
+  "rows": 13112,
+  "summary": [
+    {
+      "family": "nyu",
+      "condition": "original",
+      "method": "frozen",
+      "n_images": 128,
+      "abs_rel": 0.7000996842546229,
+      "rmse_m": 1.6820070688031663,
+      "delta1": 0.06341997296277667
+    },
+    {
+      "family": "nyu",
+      "condition": "original",
+      "method": "ordinary_aug",
+      "n_images": 128,
+      "abs_rel": 0.18705443964806698,
+      "rmse_m": 0.5629230228722435,
+      "delta1": 0.7381864756245807
+    },
+    {
+      "family": "nyu",
+      "condition": "original",
+      "method": "achromatic",
+      "n_images": 128,
+      "abs_rel": 0.1539899709261887,
+      "rmse_m": 0.5093605014952023,
+      "delta1": 0.7718828269093729
+    },
+    {
+      "family": "nyu",
+      "condition": "original",
+      "method": "content",
+      "n_images": 128,
+      "abs_rel": 0.15389868918196298,
+      "rmse_m": 0.5091485808242483,
+      "delta1": 0.77199895335555
+    },
+    {
+      "family": "nyu",
+      "condition": "original",
+      "method": "chromatic_noeq",
+      "n_images": 128,
+      "abs_rel": 0.15380705941784995,
+      "rmse_m": 0.5088032085191798,
+      "delta1": 0.7724481328072603
+    },
+    {
+      "family": "nyu",
+      "condition": "original",
+      "method": "chromatic_eq",
+      "n_images": 128,
+      "abs_rel": 0.15379671749766005,
+      "rmse_m": 0.5088644762525424,
+      "delta1": 0.77224535363221
+    },
+    {
+      "family": "nyu",
+      "condition": "original",
+      "method": "flat_geometry_eq",
+      "n_images": 128,
+      "abs_rel": 0.15392343626996044,
+      "rmse_m": 0.5091941102269855,
+      "delta1": 0.7720090726651576
+    },
+    {
+      "family": "nyu",
+      "condition": "original",
+      "method": "geometry_chromatic_eq",
+      "n_images": 128,
+      "abs_rel": 0.15393273101257993,
+      "rmse_m": 0.5092235788809455,
+      "delta1": 0.7719925018863179
+    },
+    {
+      "family": "nyu",
+      "condition": "control",
+      "method": "frozen",
+      "n_images": 128,
+      "abs_rel": 0.6934100857160885,
+      "rmse_m": 1.6680601335034158,
+      "delta1": 0.06703531737298793
+    },
+    {
+      "family": "nyu",
+      "condition": "control",
+      "method": "ordinary_aug",
+      "n_images": 128,
+      "abs_rel": 0.18549960892493744,
+      "rmse_m": 0.5620106236522684,
+      "delta1": 0.7412018988933601
+    },
+    {
+      "family": "nyu",
+      "condition": "control",
+      "method": "achromatic",
+      "n_images": 128,
+      "abs_rel": 0.15491982985409253,
+      "rmse_m": 0.5135635598039324,
+      "delta1": 0.7661869000461099
+    },
+    {
+      "family": "nyu",
+      "condition": "control",
+      "method": "content",
+      "n_images": 128,
+      "abs_rel": 0.15488864676192687,
+      "rmse_m": 0.5134613377633037,
+      "delta1": 0.7663100674358652
+    },
+    {
+      "family": "nyu",
+      "condition": "control",
+      "method": "chromatic_noeq",
+      "n_images": 128,
+      "abs_rel": 0.154794559778702,
+      "rmse_m": 0.513103016799094,
+      "delta1": 0.7667770293636821
+    },
+    {
+      "family": "nyu",
+      "condition": "control",
+      "method": "chromatic_eq",
+      "n_images": 128,
+      "abs_rel": 0.15477538722783052,
+      "rmse_m": 0.5131564644822451,
+      "delta1": 0.7665775577946847
+    },
+    {
+      "family": "nyu",
+      "condition": "control",
+      "method": "flat_geometry_eq",
+      "n_images": 128,
+      "abs_rel": 0.15491137857897047,
+      "rmse_m": 0.5134994858955081,
+      "delta1": 0.7663420627934272
+    },
+    {
+      "family": "nyu",
+      "condition": "control",
+      "method": "geometry_chromatic_eq",
+      "n_images": 128,
+      "abs_rel": 0.154920916725325,
+      "rmse_m": 0.5135295430294304,
+      "delta1": 0.7663234943515258
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_rb",
+      "method": "frozen",
+      "n_images": 128,
+      "abs_rel": 0.6922723893654872,
+      "rmse_m": 1.664034923375239,
+      "delta1": 0.0721892880721831
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_rb",
+      "method": "ordinary_aug",
+      "n_images": 128,
+      "abs_rel": 0.19173550391067612,
+      "rmse_m": 0.5805592034753575,
+      "delta1": 0.7228337472753186
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_rb",
+      "method": "achromatic",
+      "n_images": 128,
+      "abs_rel": 0.16095004918709765,
+      "rmse_m": 0.5325844010437064,
+      "delta1": 0.7500991954330147
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_rb",
+      "method": "content",
+      "n_images": 128,
+      "abs_rel": 0.16091456180539643,
+      "rmse_m": 0.5324940185100477,
+      "delta1": 0.7502589429808015
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_rb",
+      "method": "chromatic_noeq",
+      "n_images": 128,
+      "abs_rel": 0.16081461587058266,
+      "rmse_m": 0.5321467621216692,
+      "delta1": 0.7505062602175553
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_rb",
+      "method": "chromatic_eq",
+      "n_images": 128,
+      "abs_rel": 0.16077207709172564,
+      "rmse_m": 0.5321500665433943,
+      "delta1": 0.7505158228013917
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_rb",
+      "method": "flat_geometry_eq",
+      "n_images": 128,
+      "abs_rel": 0.16093510630945507,
+      "rmse_m": 0.5325548402718008,
+      "delta1": 0.7502778716570255
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_rb",
+      "method": "geometry_chromatic_eq",
+      "n_images": 128,
+      "abs_rel": 0.16094490592398286,
+      "rmse_m": 0.5325844358445189,
+      "delta1": 0.7502564540891181
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_green",
+      "method": "frozen",
+      "n_images": 128,
+      "abs_rel": 0.7012376436031049,
+      "rmse_m": 1.6946600254342399,
+      "delta1": 0.07178196129904427
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_green",
+      "method": "ordinary_aug",
+      "n_images": 128,
+      "abs_rel": 0.19702005066325784,
+      "rmse_m": 0.5914721942655079,
+      "delta1": 0.7039360184544767
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_green",
+      "method": "achromatic",
+      "n_images": 128,
+      "abs_rel": 0.1640654957307395,
+      "rmse_m": 0.5343488804418195,
+      "delta1": 0.7368866519429074
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_green",
+      "method": "content",
+      "n_images": 128,
+      "abs_rel": 0.16404214442720386,
+      "rmse_m": 0.5342716825203986,
+      "delta1": 0.7370387035756204
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_green",
+      "method": "chromatic_noeq",
+      "n_images": 128,
+      "abs_rel": 0.1639402953701854,
+      "rmse_m": 0.5339145055614247,
+      "delta1": 0.7373720840669014
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_green",
+      "method": "chromatic_eq",
+      "n_images": 128,
+      "abs_rel": 0.16392378522026144,
+      "rmse_m": 0.5339731789568667,
+      "delta1": 0.7373192278672033
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_green",
+      "method": "flat_geometry_eq",
+      "n_images": 128,
+      "abs_rel": 0.1640644385274796,
+      "rmse_m": 0.5343220485974711,
+      "delta1": 0.7370733515677398
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_green",
+      "method": "geometry_chromatic_eq",
+      "n_images": 128,
+      "abs_rel": 0.16407729121971742,
+      "rmse_m": 0.5343569695305048,
+      "delta1": 0.7370531456970993
+    },
+    {
+      "family": "nyu",
+      "condition": "exposure",
+      "method": "frozen",
+      "n_images": 128,
+      "abs_rel": 0.6999687890875057,
+      "rmse_m": 1.6818848163145783,
+      "delta1": 0.06346408529300807
+    },
+    {
+      "family": "nyu",
+      "condition": "exposure",
+      "method": "ordinary_aug",
+      "n_images": 128,
+      "abs_rel": 0.1870416492874271,
+      "rmse_m": 0.5632074040702628,
+      "delta1": 0.7381898159792086
+    },
+    {
+      "family": "nyu",
+      "condition": "exposure",
+      "method": "achromatic",
+      "n_images": 128,
+      "abs_rel": 0.1540856321190534,
+      "rmse_m": 0.5098600911638858,
+      "delta1": 0.7716956033073441
+    },
+    {
+      "family": "nyu",
+      "condition": "exposure",
+      "method": "content",
+      "n_images": 128,
+      "abs_rel": 0.15400084159876526,
+      "rmse_m": 0.5096642194626458,
+      "delta1": 0.7718043285756203
+    },
+    {
+      "family": "nyu",
+      "condition": "exposure",
+      "method": "chromatic_noeq",
+      "n_images": 128,
+      "abs_rel": 0.15390898098140537,
+      "rmse_m": 0.5093195255327396,
+      "delta1": 0.772236937248491
+    },
+    {
+      "family": "nyu",
+      "condition": "exposure",
+      "method": "chromatic_eq",
+      "n_images": 128,
+      "abs_rel": 0.15389795969763206,
+      "rmse_m": 0.5093779349064218,
+      "delta1": 0.772051220080902
+    },
+    {
+      "family": "nyu",
+      "condition": "exposure",
+      "method": "flat_geometry_eq",
+      "n_images": 128,
+      "abs_rel": 0.15402587504095544,
+      "rmse_m": 0.5097101674375493,
+      "delta1": 0.7718134654279846
+    },
+    {
+      "family": "nyu",
+      "condition": "exposure",
+      "method": "geometry_chromatic_eq",
+      "n_images": 128,
+      "abs_rel": 0.15403520709801063,
+      "rmse_m": 0.5097398093811678,
+      "delta1": 0.771794634997485
+    },
+    {
+      "family": "remid",
+      "condition": "original",
+      "method": "frozen",
+      "n_images": 735,
+      "abs_rel": 1.7831174085460892,
+      "rmse_m": 1.4323756237806686,
+      "delta1": 0.025057577002282883
+    },
+    {
+      "family": "remid",
+      "condition": "original",
+      "method": "ordinary_aug",
+      "n_images": 735,
+      "abs_rel": 0.6936650063747256,
+      "rmse_m": 0.5936897409530983,
+      "delta1": 0.22937109994360144
+    },
+    {
+      "family": "remid",
+      "condition": "original",
+      "method": "achromatic",
+      "n_images": 735,
+      "abs_rel": 0.5426593444704118,
+      "rmse_m": 0.5006158466665909,
+      "delta1": 0.2943186536755581
+    },
+    {
+      "family": "remid",
+      "condition": "original",
+      "method": "content",
+      "n_images": 735,
+      "abs_rel": 0.5431720999134086,
+      "rmse_m": 0.5008700115803993,
+      "delta1": 0.2940458547129037
+    },
+    {
+      "family": "remid",
+      "condition": "original",
+      "method": "chromatic_noeq",
+      "n_images": 735,
+      "abs_rel": 0.5439984017147053,
+      "rmse_m": 0.5014151462163579,
+      "delta1": 0.2937197554566392
+    },
+    {
+      "family": "remid",
+      "condition": "original",
+      "method": "chromatic_eq",
+      "n_images": 735,
+      "abs_rel": 0.544076075841906,
+      "rmse_m": 0.5014250970255375,
+      "delta1": 0.2938168397997487
+    },
+    {
+      "family": "remid",
+      "condition": "original",
+      "method": "flat_geometry_eq",
+      "n_images": 735,
+      "abs_rel": 0.5431966555246553,
+      "rmse_m": 0.5009194257390331,
+      "delta1": 0.29402870590834235
+    },
+    {
+      "family": "remid",
+      "condition": "original",
+      "method": "geometry_chromatic_eq",
+      "n_images": 735,
+      "abs_rel": 0.5432537686924698,
+      "rmse_m": 0.50095307431417,
+      "delta1": 0.29401536356532004
+    },
+    {
+      "family": "vari",
+      "condition": "original",
+      "method": "frozen",
+      "n_images": 264,
+      "abs_rel": 1.7497175340544804,
+      "rmse_m": 2.9819406074835126,
+      "delta1": 0.002283738261521465
+    },
+    {
+      "family": "vari",
+      "condition": "original",
+      "method": "ordinary_aug",
+      "n_images": 264,
+      "abs_rel": 0.9281431605043036,
+      "rmse_m": 1.613881953902655,
+      "delta1": 0.009663949060921717
+    },
+    {
+      "family": "vari",
+      "condition": "original",
+      "method": "achromatic",
+      "n_images": 264,
+      "abs_rel": 0.7690286822140135,
+      "rmse_m": 1.3307635103934445,
+      "delta1": 0.023063496291035355
+    },
+    {
+      "family": "vari",
+      "condition": "original",
+      "method": "content",
+      "n_images": 264,
+      "abs_rel": 0.7698084014341894,
+      "rmse_m": 1.3320845440910203,
+      "delta1": 0.022982806581439395
+    },
+    {
+      "family": "vari",
+      "condition": "original",
+      "method": "chromatic_noeq",
+      "n_images": 264,
+      "abs_rel": 0.7713125732022664,
+      "rmse_m": 1.3350452836879603,
+      "delta1": 0.022799207899305556
+    },
+    {
+      "family": "vari",
+      "condition": "original",
+      "method": "chromatic_eq",
+      "n_images": 264,
+      "abs_rel": 0.7702226137436894,
+      "rmse_m": 1.3324843256263077,
+      "delta1": 0.023104026100852274
+    },
+    {
+      "family": "vari",
+      "condition": "original",
+      "method": "flat_geometry_eq",
+      "n_images": 264,
+      "abs_rel": 0.7700403221880363,
+      "rmse_m": 1.33240057978466,
+      "delta1": 0.023011030717329545
+    },
+    {
+      "family": "vari",
+      "condition": "original",
+      "method": "geometry_chromatic_eq",
+      "n_images": 264,
+      "abs_rel": 0.7700434449695253,
+      "rmse_m": 1.3324266074584599,
+      "delta1": 0.02300514914772727
+    }
+  ],
+  "warning": "Per-image descriptive scores. ReMID has50captures but unknown physicalroomidentities; separate scenecluster analysis required. No novelmethodclaim."
+}

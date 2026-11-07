@@ -1,0 +1,2042 @@
+{
+  "nyu_original__primary_vs_ordinary_aug": {
+    "groups": 128,
+    "candidate_mean": 0.15376277918367826,
+    "control_mean": 0.18705443964806698,
+    "candidate_minus_control": -0.03329166046438874,
+    "bootstrap_95_interval": [
+      -0.046081357705287616,
+      -0.021433543077355833
+    ],
+    "relative_error_reduction_percent": 17.79784565767336,
+    "candidate_lower_error_groups": 76,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_original__primary_vs_achromatic": {
+    "groups": 128,
+    "candidate_mean": 0.15376277918367826,
+    "control_mean": 0.1539899709261887,
+    "candidate_minus_control": -0.00022719174251048172,
+    "bootstrap_95_interval": [
+      -0.000434068644128907,
+      -2.1472971106415768e-05
+    ],
+    "relative_error_reduction_percent": 0.14753671368595572,
+    "candidate_lower_error_groups": 67,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_original__primary_vs_content": {
+    "groups": 128,
+    "candidate_mean": 0.15376277918367826,
+    "control_mean": 0.15389868918196298,
+    "candidate_minus_control": -0.00013590999828471209,
+    "bootstrap_95_interval": [
+      -0.0003158030955587711,
+      4.322960354446251e-05
+    ],
+    "relative_error_reduction_percent": 0.08831134235589773,
+    "candidate_lower_error_groups": 68,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_original__primary_vs_chromatic_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.15376277918367826,
+    "control_mean": 0.15380705941784995,
+    "candidate_minus_control": -4.4280234171709695e-05,
+    "bootstrap_95_interval": [
+      -0.00022584333644149536,
+      0.00013868818608529806
+    ],
+    "relative_error_reduction_percent": 0.02878946801225353,
+    "candidate_lower_error_groups": 56,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_original__primary_vs_chromatic_eq": {
+    "groups": 128,
+    "candidate_mean": 0.15376277918367826,
+    "control_mean": 0.15379671749766005,
+    "candidate_minus_control": -3.3938313981816634e-05,
+    "bootstrap_95_interval": [
+      -0.00020507796899854155,
+      0.0001429467198361213
+    ],
+    "relative_error_reduction_percent": 0.02206699501392967,
+    "candidate_lower_error_groups": 60,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_original__primary_vs_flat_geometry_eq": {
+    "groups": 128,
+    "candidate_mean": 0.15376277918367826,
+    "control_mean": 0.15392343626996044,
+    "candidate_minus_control": -0.0001606570862821754,
+    "bootstrap_95_interval": [
+      -0.00032316448887368375,
+      2.859323866207412e-07
+    ],
+    "relative_error_reduction_percent": 0.10437467495230161,
+    "candidate_lower_error_groups": 67,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_original__primary_vs_geometry_chromatic_eq": {
+    "groups": 128,
+    "candidate_mean": 0.15376277918367826,
+    "control_mean": 0.15393273101257993,
+    "candidate_minus_control": -0.00016995182890165765,
+    "bootstrap_95_interval": [
+      -0.0003328903452425647,
+      -1.017879113090718e-05
+    ],
+    "relative_error_reduction_percent": 0.11040655732131588,
+    "candidate_lower_error_groups": 67,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_original__primary_vs_spatial_content": {
+    "groups": 128,
+    "candidate_mean": 0.15376277918367826,
+    "control_mean": 0.15314602915095274,
+    "candidate_minus_control": 0.000616750032725509,
+    "bootstrap_95_interval": [
+      0.00021431384625692,
+      0.0011066356221411898
+    ],
+    "relative_error_reduction_percent": -0.4027202247063153,
+    "candidate_lower_error_groups": 49,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_original__primary_vs_spatial_flat": {
+    "groups": 128,
+    "candidate_mean": 0.15376277918367826,
+    "control_mean": 0.15371618543840668,
+    "candidate_minus_control": 4.6593745271572746e-05,
+    "bootstrap_95_interval": [
+      2.22001109214179e-05,
+      7.168089415848168e-05
+    ],
+    "relative_error_reduction_percent": -0.030311541454590675,
+    "candidate_lower_error_groups": 48,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_original__primary_vs_spatial_no_graph_loss": {
+    "groups": 128,
+    "candidate_mean": 0.15376277918367826,
+    "control_mean": 0.15405159543117417,
+    "candidate_minus_control": -0.0002888162474959142,
+    "bootstrap_95_interval": [
+      -0.0004547246004373508,
+      -0.00012774960163855297
+    ],
+    "relative_error_reduction_percent": 0.18748020537375398,
+    "candidate_lower_error_groups": 77,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_original__primary_vs_spatial_no_equivariance": {
+    "groups": 128,
+    "candidate_mean": 0.15376277918367826,
+    "control_mean": 0.15097721467405995,
+    "candidate_minus_control": 0.0027855645096183036,
+    "bootstrap_95_interval": [
+      -0.004908538361872565,
+      0.010057861639523498
+    ],
+    "relative_error_reduction_percent": -1.845023115330336,
+    "candidate_lower_error_groups": 65,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_original__primary_vs_spatial_content_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.15376277918367826,
+    "control_mean": 0.15398929143979678,
+    "candidate_minus_control": -0.00022651225611854472,
+    "bootstrap_95_interval": [
+      -0.0003772921866931494,
+      -7.896591653412901e-05
+    ],
+    "relative_error_reduction_percent": 0.1470961090869646,
+    "candidate_lower_error_groups": 67,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_original__primary_vs_spatial_flat_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.15376277918367826,
+    "control_mean": 0.15182549937944761,
+    "candidate_minus_control": 0.001937279804230598,
+    "bootstrap_95_interval": [
+      -0.006281551298690098,
+      0.009801872672557351
+    ],
+    "relative_error_reduction_percent": -1.2759910635228162,
+    "candidate_lower_error_groups": 65,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_original__primary_vs_spatial_noeq_no_graph": {
+    "groups": 128,
+    "candidate_mean": 0.15376277918367826,
+    "control_mean": 0.15403478097606654,
+    "candidate_minus_control": -0.00027200179238830483,
+    "bootstrap_95_interval": [
+      -0.0004340535620389716,
+      -0.00011480322393423539
+    ],
+    "relative_error_reduction_percent": 0.17658465877946788,
+    "candidate_lower_error_groups": 73,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__primary_vs_ordinary_aug": {
+    "groups": 128,
+    "candidate_mean": 0.16229607707542204,
+    "control_mean": 0.19437777728696698,
+    "candidate_minus_control": -0.032081700211544946,
+    "bootstrap_95_interval": [
+      -0.04484452215509486,
+      -0.019823376616898987
+    ],
+    "relative_error_reduction_percent": 16.504818945522544,
+    "candidate_lower_error_groups": 82,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__primary_vs_achromatic": {
+    "groups": 128,
+    "candidate_mean": 0.16229607707542204,
+    "control_mean": 0.16250777245891856,
+    "candidate_minus_control": -0.00021169538349655604,
+    "bootstrap_95_interval": [
+      -0.00045414018750154994,
+      2.9619250489387427e-05
+    ],
+    "relative_error_reduction_percent": 0.13026785137310276,
+    "candidate_lower_error_groups": 68,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__primary_vs_content": {
+    "groups": 128,
+    "candidate_mean": 0.16229607707542204,
+    "control_mean": 0.16247835311630016,
+    "candidate_minus_control": -0.00018227604087811783,
+    "bootstrap_95_interval": [
+      -0.00039134548298993144,
+      2.4521587076421983e-05
+    ],
+    "relative_error_reduction_percent": 0.11218481562749737,
+    "candidate_lower_error_groups": 69,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__primary_vs_chromatic_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.16229607707542204,
+    "control_mean": 0.16237745562038403,
+    "candidate_minus_control": -8.137854496200131e-05,
+    "bootstrap_95_interval": [
+      -0.00029806306814464964,
+      0.00013885291949164511
+    ],
+    "relative_error_reduction_percent": 0.05011689871051867,
+    "candidate_lower_error_groups": 62,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__primary_vs_chromatic_eq": {
+    "groups": 128,
+    "candidate_mean": 0.16229607707542204,
+    "control_mean": 0.16234793115599355,
+    "candidate_minus_control": -5.185408057150411e-05,
+    "bootstrap_95_interval": [
+      -0.00025674995997152807,
+      0.00015600039223643037
+    ],
+    "relative_error_reduction_percent": 0.031940093232039564,
+    "candidate_lower_error_groups": 61,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__primary_vs_flat_geometry_eq": {
+    "groups": 128,
+    "candidate_mean": 0.16229607707542204,
+    "control_mean": 0.16249977241846736,
+    "candidate_minus_control": -0.00020369534304531464,
+    "bootstrap_95_interval": [
+      -0.00039514751395752486,
+      -1.3470829101384373e-05
+    ],
+    "relative_error_reduction_percent": 0.12535115589009221,
+    "candidate_lower_error_groups": 69,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__primary_vs_geometry_chromatic_eq": {
+    "groups": 128,
+    "candidate_mean": 0.16229607707542204,
+    "control_mean": 0.16251109857185017,
+    "candidate_minus_control": -0.0002150214964281194,
+    "bootstrap_95_interval": [
+      -0.00040527848442396255,
+      -2.807214680818372e-05
+    ],
+    "relative_error_reduction_percent": 0.1323118841222184,
+    "candidate_lower_error_groups": 69,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__primary_vs_spatial_content": {
+    "groups": 128,
+    "candidate_mean": 0.16229607707542204,
+    "control_mean": 0.16183252761751488,
+    "candidate_minus_control": 0.0004635494579071453,
+    "bootstrap_95_interval": [
+      0.00018863585214447322,
+      0.0007954613392332197
+    ],
+    "relative_error_reduction_percent": -0.28643775434487806,
+    "candidate_lower_error_groups": 41,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__primary_vs_spatial_flat": {
+    "groups": 128,
+    "candidate_mean": 0.16229607707542204,
+    "control_mean": 0.1622445659049255,
+    "candidate_minus_control": 5.151117049653997e-05,
+    "bootstrap_95_interval": [
+      2.4158016043583987e-05,
+      7.977070207161642e-05
+    ],
+    "relative_error_reduction_percent": -0.03174908830334751,
+    "candidate_lower_error_groups": 48,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__primary_vs_spatial_no_graph_loss": {
+    "groups": 128,
+    "candidate_mean": 0.16229607707542204,
+    "control_mean": 0.16263479533782393,
+    "candidate_minus_control": -0.00033871826240192143,
+    "bootstrap_95_interval": [
+      -0.0005319232427191243,
+      -0.00015050449268767438
+    ],
+    "relative_error_reduction_percent": 0.20826924625711876,
+    "candidate_lower_error_groups": 73,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__primary_vs_spatial_no_equivariance": {
+    "groups": 128,
+    "candidate_mean": 0.16229607707542204,
+    "control_mean": 0.15847850251945572,
+    "candidate_minus_control": 0.003817574555966322,
+    "bootstrap_95_interval": [
+      -0.00435247553760186,
+      0.011603088785458557
+    ],
+    "relative_error_reduction_percent": -2.408891108431348,
+    "candidate_lower_error_groups": 61,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__primary_vs_spatial_content_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.16229607707542204,
+    "control_mean": 0.16255621618676097,
+    "candidate_minus_control": -0.00026013911133893286,
+    "bootstrap_95_interval": [
+      -0.0004458476776911597,
+      -7.586543122966429e-05
+    ],
+    "relative_error_reduction_percent": 0.16003024519225803,
+    "candidate_lower_error_groups": 69,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__primary_vs_spatial_flat_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.16229607707542204,
+    "control_mean": 0.15943819879909832,
+    "candidate_minus_control": 0.0028578782763237064,
+    "bootstrap_95_interval": [
+      -0.005797626513405581,
+      0.011209110114301812
+    ],
+    "relative_error_reduction_percent": -1.7924677385027536,
+    "candidate_lower_error_groups": 63,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__primary_vs_spatial_noeq_no_graph": {
+    "groups": 128,
+    "candidate_mean": 0.16229607707542204,
+    "control_mean": 0.16261610487139966,
+    "candidate_minus_control": -0.00032002779597760557,
+    "bootstrap_95_interval": [
+      -0.0005097154562798606,
+      -0.00013548535490621338
+    ],
+    "relative_error_reduction_percent": 0.19679957051652577,
+    "candidate_lower_error_groups": 72,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__primary_vs_ordinary_aug": {
+    "groups": 128,
+    "candidate_mean": 0.15386470737892094,
+    "control_mean": 0.1870416492874271,
+    "candidate_minus_control": -0.03317694190850615,
+    "bootstrap_95_interval": [
+      -0.045984958472307345,
+      -0.021246521111100317
+    ],
+    "relative_error_reduction_percent": 17.73772955643858,
+    "candidate_lower_error_groups": 76,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__primary_vs_achromatic": {
+    "groups": 128,
+    "candidate_mean": 0.15386470737892094,
+    "control_mean": 0.1540856321190534,
+    "candidate_minus_control": -0.00022092474013246053,
+    "bootstrap_95_interval": [
+      -0.00042785258741389665,
+      -1.5564537804520263e-05
+    ],
+    "relative_error_reduction_percent": 0.1433778977924238,
+    "candidate_lower_error_groups": 67,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__primary_vs_content": {
+    "groups": 128,
+    "candidate_mean": 0.15386470737892094,
+    "control_mean": 0.15400084159876526,
+    "candidate_minus_control": -0.00013613421984433175,
+    "bootstrap_95_interval": [
+      -0.0003160945795280734,
+      4.233704992838173e-05
+    ],
+    "relative_error_reduction_percent": 0.0883983609641591,
+    "candidate_lower_error_groups": 68,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__primary_vs_chromatic_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.15386470737892094,
+    "control_mean": 0.15390898098140537,
+    "candidate_minus_control": -4.4273602484435606e-05,
+    "bootstrap_95_interval": [
+      -0.00022679374703789306,
+      0.0001388397788958191
+    ],
+    "relative_error_reduction_percent": 0.02876609422148259,
+    "candidate_lower_error_groups": 57,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__primary_vs_chromatic_eq": {
+    "groups": 128,
+    "candidate_mean": 0.15386470737892094,
+    "control_mean": 0.15389795969763206,
+    "candidate_minus_control": -3.325231871111674e-05,
+    "bootstrap_95_interval": [
+      -0.00020367444456997807,
+      0.00014400062587277752
+    ],
+    "relative_error_reduction_percent": 0.021606731353980436,
+    "candidate_lower_error_groups": 60,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__primary_vs_flat_geometry_eq": {
+    "groups": 128,
+    "candidate_mean": 0.15386470737892094,
+    "control_mean": 0.15402587504095544,
+    "candidate_minus_control": -0.00016116766203448814,
+    "bootstrap_95_interval": [
+      -0.0003239194319211529,
+      -7.039258356235298e-08
+    ],
+    "relative_error_reduction_percent": 0.10463674495707033,
+    "candidate_lower_error_groups": 68,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__primary_vs_geometry_chromatic_eq": {
+    "groups": 128,
+    "candidate_mean": 0.15386470737892094,
+    "control_mean": 0.15403520709801063,
+    "candidate_minus_control": -0.0001704997190896875,
+    "bootstrap_95_interval": [
+      -0.0003337856435476806,
+      -1.0408453850050909e-05
+    ],
+    "relative_error_reduction_percent": 0.11068879790657749,
+    "candidate_lower_error_groups": 68,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__primary_vs_spatial_content": {
+    "groups": 128,
+    "candidate_mean": 0.15386470737892094,
+    "control_mean": 0.15324844308280905,
+    "candidate_minus_control": 0.0006162642961118971,
+    "bootstrap_95_interval": [
+      0.0002153013089622406,
+      0.0011043484593485093
+    ],
+    "relative_error_reduction_percent": -0.4021341318155427,
+    "candidate_lower_error_groups": 49,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__primary_vs_spatial_flat": {
+    "groups": 128,
+    "candidate_mean": 0.15386470737892094,
+    "control_mean": 0.15381803784372408,
+    "candidate_minus_control": 4.666953519686566e-05,
+    "bootstrap_95_interval": [
+      2.217921666555847e-05,
+      7.181724810881688e-05
+    ],
+    "relative_error_reduction_percent": -0.030340742770541326,
+    "candidate_lower_error_groups": 50,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__primary_vs_spatial_no_graph_loss": {
+    "groups": 128,
+    "candidate_mean": 0.15386470737892094,
+    "control_mean": 0.15415402774451853,
+    "candidate_minus_control": -0.0002893203655975845,
+    "bootstrap_95_interval": [
+      -0.00045538245067051924,
+      -0.00012717567980676068
+    ],
+    "relative_error_reduction_percent": 0.18768265080759614,
+    "candidate_lower_error_groups": 77,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__primary_vs_spatial_no_equivariance": {
+    "groups": 128,
+    "candidate_mean": 0.15386470737892094,
+    "control_mean": 0.15109141697289935,
+    "candidate_minus_control": 0.0027732904060215877,
+    "bootstrap_95_interval": [
+      -0.004955112834703524,
+      0.010104005031228042
+    ],
+    "relative_error_reduction_percent": -1.8355049291244803,
+    "candidate_lower_error_groups": 65,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__primary_vs_spatial_content_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.15386470737892094,
+    "control_mean": 0.15409105906287535,
+    "candidate_minus_control": -0.00022635168395442843,
+    "bootstrap_95_interval": [
+      -0.00037757437915595635,
+      -7.861508996751115e-05
+    ],
+    "relative_error_reduction_percent": 0.14689475517333297,
+    "candidate_lower_error_groups": 67,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__primary_vs_spatial_flat_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.15386470737892094,
+    "control_mean": 0.1519445980841201,
+    "candidate_minus_control": 0.0019201092948008282,
+    "bootstrap_95_interval": [
+      -0.0063175077750528205,
+      0.00981890474107493
+    ],
+    "relative_error_reduction_percent": -1.2636903970339295,
+    "candidate_lower_error_groups": 65,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__primary_vs_spatial_noeq_no_graph": {
+    "groups": 128,
+    "candidate_mean": 0.15386470737892094,
+    "control_mean": 0.15413719370084789,
+    "candidate_minus_control": -0.00027248632192694626,
+    "bootstrap_95_interval": [
+      -0.0004357878582607895,
+      -0.00011516426460928724
+    ],
+    "relative_error_reduction_percent": 0.1767816809068108,
+    "candidate_lower_error_groups": 73,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic_vs_matched_neutral__frozen": {
+    "groups": 128,
+    "candidate_mean": 0.6967550164842959,
+    "control_mean": 0.6934100857160885,
+    "candidate_minus_control": 0.0033449307682075578,
+    "bootstrap_95_interval": [
+      -0.005315169619422197,
+      0.011519946536630694
+    ],
+    "relative_error_reduction_percent": -0.48238853704486884,
+    "candidate_lower_error_groups": 59,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure_vs_matched_neutral__frozen": {
+    "groups": 128,
+    "candidate_mean": 0.6999687890875057,
+    "control_mean": 0.6934100857160885,
+    "candidate_minus_control": 0.0065587033714172415,
+    "bootstrap_95_interval": [
+      0.003886631580163612,
+      0.009287988284268833
+    ],
+    "relative_error_reduction_percent": -0.945862124956542,
+    "candidate_lower_error_groups": 44,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic_vs_matched_neutral__ordinary_aug": {
+    "groups": 128,
+    "candidate_mean": 0.19437777728696698,
+    "control_mean": 0.18549960892493744,
+    "candidate_minus_control": 0.008878168362029547,
+    "bootstrap_95_interval": [
+      0.0043494666580603525,
+      0.013017539951053527
+    ],
+    "relative_error_reduction_percent": -4.786084678821126,
+    "candidate_lower_error_groups": 42,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure_vs_matched_neutral__ordinary_aug": {
+    "groups": 128,
+    "candidate_mean": 0.1870416492874271,
+    "control_mean": 0.18549960892493744,
+    "candidate_minus_control": 0.00154204036248966,
+    "bootstrap_95_interval": [
+      -0.00018914309992733468,
+      0.003271546761540232
+    ],
+    "relative_error_reduction_percent": -0.8312903576598006,
+    "candidate_lower_error_groups": 51,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic_vs_matched_neutral__achromatic": {
+    "groups": 128,
+    "candidate_mean": 0.16250777245891856,
+    "control_mean": 0.15491982985409253,
+    "candidate_minus_control": 0.007587942604826056,
+    "bootstrap_95_interval": [
+      0.004303483470342129,
+      0.01091070640784218
+    ],
+    "relative_error_reduction_percent": -4.897980208197076,
+    "candidate_lower_error_groups": 40,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure_vs_matched_neutral__achromatic": {
+    "groups": 128,
+    "candidate_mean": 0.1540856321190534,
+    "control_mean": 0.15491982985409253,
+    "candidate_minus_control": -0.0008341977350391273,
+    "bootstrap_95_interval": [
+      -0.002341699493907902,
+      0.0005970994955990789
+    ],
+    "relative_error_reduction_percent": 0.5384705985184662,
+    "candidate_lower_error_groups": 67,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic_vs_matched_neutral__content": {
+    "groups": 128,
+    "candidate_mean": 0.16247835311630016,
+    "control_mean": 0.15488864676192687,
+    "candidate_minus_control": 0.00758970635437327,
+    "bootstrap_95_interval": [
+      0.004308706902624449,
+      0.010915786921218801
+    ],
+    "relative_error_reduction_percent": -4.900105019342777,
+    "candidate_lower_error_groups": 40,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure_vs_matched_neutral__content": {
+    "groups": 128,
+    "candidate_mean": 0.15400084159876526,
+    "control_mean": 0.15488864676192687,
+    "candidate_minus_control": -0.0008878051631616038,
+    "bootstrap_95_interval": [
+      -0.002392145565498647,
+      0.0005390835472064261
+    ],
+    "relative_error_reduction_percent": 0.5731893083979385,
+    "candidate_lower_error_groups": 70,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic_vs_matched_neutral__chromatic_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.16237745562038403,
+    "control_mean": 0.154794559778702,
+    "candidate_minus_control": 0.007582895841682005,
+    "bootstrap_95_interval": [
+      0.004300506187159087,
+      0.010911210828168351
+    ],
+    "relative_error_reduction_percent": -4.898683682761671,
+    "candidate_lower_error_groups": 40,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure_vs_matched_neutral__chromatic_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.15390898098140537,
+    "control_mean": 0.154794559778702,
+    "candidate_minus_control": -0.0008855787972966483,
+    "bootstrap_95_interval": [
+      -0.002390967879587647,
+      0.0005413036929414254
+    ],
+    "relative_error_reduction_percent": 0.5720994320231023,
+    "candidate_lower_error_groups": 70,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic_vs_matched_neutral__chromatic_eq": {
+    "groups": 128,
+    "candidate_mean": 0.16234793115599355,
+    "control_mean": 0.15477538722783052,
+    "candidate_minus_control": 0.007572543928163027,
+    "bootstrap_95_interval": [
+      0.004294587484614404,
+      0.010889130171422248
+    ],
+    "relative_error_reduction_percent": -4.892602153219745,
+    "candidate_lower_error_groups": 40,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure_vs_matched_neutral__chromatic_eq": {
+    "groups": 128,
+    "candidate_mean": 0.15389795969763206,
+    "control_mean": 0.15477538722783052,
+    "candidate_minus_control": -0.0008774275301984481,
+    "bootstrap_95_interval": [
+      -0.002384706656385913,
+      0.0005481369419999837
+    ],
+    "relative_error_reduction_percent": 0.5669037861342093,
+    "candidate_lower_error_groups": 70,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic_vs_matched_neutral__flat_geometry_eq": {
+    "groups": 128,
+    "candidate_mean": 0.16249977241846736,
+    "control_mean": 0.15491137857897047,
+    "candidate_minus_control": 0.007588393839496874,
+    "bootstrap_95_interval": [
+      0.00431273404196595,
+      0.01091559249279595
+    ],
+    "relative_error_reduction_percent": -4.8985387058759455,
+    "candidate_lower_error_groups": 40,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure_vs_matched_neutral__flat_geometry_eq": {
+    "groups": 128,
+    "candidate_mean": 0.15402587504095544,
+    "control_mean": 0.15491137857897047,
+    "candidate_minus_control": -0.0008855035380150412,
+    "bootstrap_95_interval": [
+      -0.002391226235603012,
+      0.0005413959570607907
+    ],
+    "relative_error_reduction_percent": 0.571619429210373,
+    "candidate_lower_error_groups": 70,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic_vs_matched_neutral__geometry_chromatic_eq": {
+    "groups": 128,
+    "candidate_mean": 0.16251109857185017,
+    "control_mean": 0.154920916725325,
+    "candidate_minus_control": 0.007590181846525169,
+    "bootstrap_95_interval": [
+      0.00431480656231009,
+      0.010917558536402203
+    ],
+    "relative_error_reduction_percent": -4.89939125520577,
+    "candidate_lower_error_groups": 40,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure_vs_matched_neutral__geometry_chromatic_eq": {
+    "groups": 128,
+    "candidate_mean": 0.15403520709801063,
+    "control_mean": 0.154920916725325,
+    "candidate_minus_control": -0.0008857096273143512,
+    "bootstrap_95_interval": [
+      -0.0023913778510278585,
+      0.0005413013449309502
+    ],
+    "relative_error_reduction_percent": 0.5717172645477667,
+    "candidate_lower_error_groups": 70,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic_vs_matched_neutral__spatial_content": {
+    "groups": 128,
+    "candidate_mean": 0.16183252761751488,
+    "control_mean": 0.1540098207294369,
+    "candidate_minus_control": 0.007822706888077983,
+    "bootstrap_95_interval": [
+      0.004522590966050896,
+      0.011135257665307381
+    ],
+    "relative_error_reduction_percent": -5.07935588199979,
+    "candidate_lower_error_groups": 40,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure_vs_matched_neutral__spatial_content": {
+    "groups": 128,
+    "candidate_mean": 0.15324844308280905,
+    "control_mean": 0.1540098207294369,
+    "candidate_minus_control": -0.0007613776466278564,
+    "bootstrap_95_interval": [
+      -0.002258621280633432,
+      0.0006509536572517397
+    ],
+    "relative_error_reduction_percent": 0.49436954281339224,
+    "candidate_lower_error_groups": 70,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic_vs_matched_neutral__spatial_flat": {
+    "groups": 128,
+    "candidate_mean": 0.1622445659049255,
+    "control_mean": 0.15466565509614494,
+    "candidate_minus_control": 0.007578910808780567,
+    "bootstrap_95_interval": [
+      0.004318602540868418,
+      0.010914450511413534
+    ],
+    "relative_error_reduction_percent": -4.90018989934726,
+    "candidate_lower_error_groups": 41,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure_vs_matched_neutral__spatial_flat": {
+    "groups": 128,
+    "candidate_mean": 0.15381803784372408,
+    "control_mean": 0.15466565509614494,
+    "candidate_minus_control": -0.0008476172524208472,
+    "bootstrap_95_interval": [
+      -0.0023478214795726073,
+      0.0005751276463073557
+    ],
+    "relative_error_reduction_percent": 0.5480319802699261,
+    "candidate_lower_error_groups": 70,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic_vs_matched_neutral__spatial_no_graph_loss": {
+    "groups": 128,
+    "candidate_mean": 0.16263479533782393,
+    "control_mean": 0.15503727395388733,
+    "candidate_minus_control": 0.007597521383936613,
+    "bootstrap_95_interval": [
+      0.004327115722014326,
+      0.01092794108644166
+    ],
+    "relative_error_reduction_percent": -4.900448253622112,
+    "candidate_lower_error_groups": 41,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure_vs_matched_neutral__spatial_no_graph_loss": {
+    "groups": 128,
+    "candidate_mean": 0.15415402774451853,
+    "control_mean": 0.15503727395388733,
+    "candidate_minus_control": -0.0008832462093688138,
+    "bootstrap_95_interval": [
+      -0.0023890762778433824,
+      0.0005458349783636623
+    ],
+    "relative_error_reduction_percent": 0.5696992644694642,
+    "candidate_lower_error_groups": 70,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic_vs_matched_neutral__spatial_no_equivariance": {
+    "groups": 128,
+    "candidate_mean": 0.15847850251945572,
+    "control_mean": 0.15163707211351118,
+    "candidate_minus_control": 0.006841430405944543,
+    "bootstrap_95_interval": [
+      0.003404859087935575,
+      0.010125524488979257
+    ],
+    "relative_error_reduction_percent": -4.511713600499513,
+    "candidate_lower_error_groups": 47,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure_vs_matched_neutral__spatial_no_equivariance": {
+    "groups": 128,
+    "candidate_mean": 0.15109141697289935,
+    "control_mean": 0.15163707211351118,
+    "candidate_minus_control": -0.0005456551406118114,
+    "bootstrap_95_interval": [
+      -0.0019641994446017324,
+      0.0008494211310004483
+    ],
+    "relative_error_reduction_percent": 0.3598428359282563,
+    "candidate_lower_error_groups": 66,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic_vs_matched_neutral__spatial_geometry_eq": {
+    "groups": 128,
+    "candidate_mean": 0.16229607707542204,
+    "control_mean": 0.1547182239919994,
+    "candidate_minus_control": 0.007577853083422658,
+    "bootstrap_95_interval": [
+      0.004318126289834905,
+      0.010910182107155558
+    ],
+    "relative_error_reduction_percent": -4.897841306538337,
+    "candidate_lower_error_groups": 41,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure_vs_matched_neutral__spatial_geometry_eq": {
+    "groups": 128,
+    "candidate_mean": 0.15386470737892094,
+    "control_mean": 0.1547182239919994,
+    "candidate_minus_control": -0.0008535166130784293,
+    "bootstrap_95_interval": [
+      -0.002355739513473793,
+      0.0005705552358720122
+    ],
+    "relative_error_reduction_percent": 0.5516587452054671,
+    "candidate_lower_error_groups": 70,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic_vs_matched_neutral__spatial_content_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.16255621618676097,
+    "control_mean": 0.15496639224509276,
+    "candidate_minus_control": 0.007589823941668204,
+    "bootstrap_95_interval": [
+      0.004316783239278173,
+      0.010909882585664742
+    ],
+    "relative_error_reduction_percent": -4.897722552425591,
+    "candidate_lower_error_groups": 40,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure_vs_matched_neutral__spatial_content_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.15409105906287535,
+    "control_mean": 0.15496639224509276,
+    "candidate_minus_control": -0.0008753331822173879,
+    "bootstrap_95_interval": [
+      -0.002381012296580938,
+      0.0005556861349226488
+    ],
+    "relative_error_reduction_percent": 0.5648535592368947,
+    "candidate_lower_error_groups": 70,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic_vs_matched_neutral__spatial_flat_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.15943819879909832,
+    "control_mean": 0.15249674115238948,
+    "candidate_minus_control": 0.006941457646708846,
+    "bootstrap_95_interval": [
+      0.00350386523214572,
+      0.010259267129280712
+    ],
+    "relative_error_reduction_percent": -4.5518727772498835,
+    "candidate_lower_error_groups": 46,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure_vs_matched_neutral__spatial_flat_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.1519445980841201,
+    "control_mean": 0.15249674115238948,
+    "candidate_minus_control": -0.0005521430682693646,
+    "bootstrap_95_interval": [
+      -0.0019629103173281633,
+      0.0008440406102923474
+    ],
+    "relative_error_reduction_percent": 0.3620687655991367,
+    "candidate_lower_error_groups": 63,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic_vs_matched_neutral__spatial_noeq_no_graph": {
+    "groups": 128,
+    "candidate_mean": 0.16261610487139966,
+    "control_mean": 0.15501982677068266,
+    "candidate_minus_control": 0.007596278100716964,
+    "bootstrap_95_interval": [
+      0.004325611911074103,
+      0.010926450370144346
+    ],
+    "relative_error_reduction_percent": -4.900197774026677,
+    "candidate_lower_error_groups": 41,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure_vs_matched_neutral__spatial_noeq_no_graph": {
+    "groups": 128,
+    "candidate_mean": 0.15413719370084789,
+    "control_mean": 0.15501982677068266,
+    "candidate_minus_control": -0.0008826330698347831,
+    "bootstrap_95_interval": [
+      -0.00238840377635518,
+      0.0005466248209160961
+    ],
+    "relative_error_reduction_percent": 0.5693678597257303,
+    "candidate_lower_error_groups": 70,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic_difference_in_differences__primary_vs_ordinary_aug": {
+    "groups": 128,
+    "candidate_mean": 0.007577853083422658,
+    "control_mean": 0.008878168362029547,
+    "candidate_minus_control": -0.0013003152786068874,
+    "bootstrap_95_interval": [
+      -0.004521327011556389,
+      0.0023241015281840337
+    ],
+    "candidate_lower_error_groups": 73,
+    "note": "Difference in chromatic-minus-neutral error; paired128scene bootstrap. Relative error reduction of signed differences is not an accuracy percentage."
+  },
+  "nyu_chromatic_difference_in_differences__primary_vs_achromatic": {
+    "groups": 128,
+    "candidate_mean": 0.007577853083422658,
+    "control_mean": 0.007587942604826056,
+    "candidate_minus_control": -1.008952140339758e-05,
+    "bootstrap_95_interval": [
+      -6.544673088326108e-05,
+      4.1940015461714396e-05
+    ],
+    "candidate_lower_error_groups": 57,
+    "note": "Difference in chromatic-minus-neutral error; paired128scene bootstrap. Relative error reduction of signed differences is not an accuracy percentage."
+  },
+  "nyu_chromatic_difference_in_differences__primary_vs_content": {
+    "groups": 128,
+    "candidate_mean": 0.007577853083422658,
+    "control_mean": 0.00758970635437327,
+    "candidate_minus_control": -1.1853270950611648e-05,
+    "bootstrap_95_interval": [
+      -5.904332660949276e-05,
+      3.3233791032918135e-05
+    ],
+    "candidate_lower_error_groups": 57,
+    "note": "Difference in chromatic-minus-neutral error; paired128scene bootstrap. Relative error reduction of signed differences is not an accuracy percentage."
+  },
+  "nyu_chromatic_difference_in_differences__primary_vs_chromatic_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.007577853083422658,
+    "control_mean": 0.007582895841682005,
+    "candidate_minus_control": -5.04275825934672e-06,
+    "bootstrap_95_interval": [
+      -6.053751576305234e-05,
+      4.807321884366627e-05
+    ],
+    "candidate_lower_error_groups": 56,
+    "note": "Difference in chromatic-minus-neutral error; paired128scene bootstrap. Relative error reduction of signed differences is not an accuracy percentage."
+  },
+  "nyu_chromatic_difference_in_differences__primary_vs_chromatic_eq": {
+    "groups": 128,
+    "candidate_mean": 0.007577853083422658,
+    "control_mean": 0.007572543928163027,
+    "candidate_minus_control": 5.3091552596314854e-06,
+    "bootstrap_95_interval": [
+      -4.415564924476045e-05,
+      5.220629071362788e-05
+    ],
+    "candidate_lower_error_groups": 60,
+    "note": "Difference in chromatic-minus-neutral error; paired128scene bootstrap. Relative error reduction of signed differences is not an accuracy percentage."
+  },
+  "nyu_chromatic_difference_in_differences__primary_vs_flat_geometry_eq": {
+    "groups": 128,
+    "candidate_mean": 0.007577853083422658,
+    "control_mean": 0.007588393839496874,
+    "candidate_minus_control": -1.0540756074214701e-05,
+    "bootstrap_95_interval": [
+      -5.210981314241238e-05,
+      2.9449316201702556e-05
+    ],
+    "candidate_lower_error_groups": 60,
+    "note": "Difference in chromatic-minus-neutral error; paired128scene bootstrap. Relative error reduction of signed differences is not an accuracy percentage."
+  },
+  "nyu_chromatic_difference_in_differences__primary_vs_geometry_chromatic_eq": {
+    "groups": 128,
+    "candidate_mean": 0.007577853083422658,
+    "control_mean": 0.007590181846525169,
+    "candidate_minus_control": -1.2328763102509982e-05,
+    "bootstrap_95_interval": [
+      -5.324351071906272e-05,
+      2.7319866562887027e-05
+    ],
+    "candidate_lower_error_groups": 60,
+    "note": "Difference in chromatic-minus-neutral error; paired128scene bootstrap. Relative error reduction of signed differences is not an accuracy percentage."
+  },
+  "nyu_chromatic_difference_in_differences__primary_vs_spatial_content": {
+    "groups": 128,
+    "candidate_mean": 0.007577853083422658,
+    "control_mean": 0.007822706888077983,
+    "candidate_minus_control": -0.00024485380465532475,
+    "bootstrap_95_interval": [
+      -0.0004628787467609906,
+      -4.30593054528787e-05
+    ],
+    "candidate_lower_error_groups": 67,
+    "note": "Difference in chromatic-minus-neutral error; paired128scene bootstrap. Relative error reduction of signed differences is not an accuracy percentage."
+  },
+  "nyu_chromatic_difference_in_differences__primary_vs_spatial_flat": {
+    "groups": 128,
+    "candidate_mean": 0.007577853083422658,
+    "control_mean": 0.007578910808780567,
+    "candidate_minus_control": -1.0577253579077987e-06,
+    "bootstrap_95_interval": [
+      -6.701694503829909e-06,
+      4.985696078308834e-06
+    ],
+    "candidate_lower_error_groups": 81,
+    "note": "Difference in chromatic-minus-neutral error; paired128scene bootstrap. Relative error reduction of signed differences is not an accuracy percentage."
+  },
+  "nyu_chromatic_difference_in_differences__primary_vs_spatial_no_graph_loss": {
+    "groups": 128,
+    "candidate_mean": 0.007577853083422658,
+    "control_mean": 0.007597521383936613,
+    "candidate_minus_control": -1.966830051395251e-05,
+    "bootstrap_95_interval": [
+      -6.283240908135948e-05,
+      2.2017129773655695e-05
+    ],
+    "candidate_lower_error_groups": 59,
+    "note": "Difference in chromatic-minus-neutral error; paired128scene bootstrap. Relative error reduction of signed differences is not an accuracy percentage."
+  },
+  "nyu_chromatic_difference_in_differences__primary_vs_spatial_no_equivariance": {
+    "groups": 128,
+    "candidate_mean": 0.007577853083422658,
+    "control_mean": 0.006841430405944543,
+    "candidate_minus_control": 0.000736422677478116,
+    "bootstrap_95_interval": [
+      -0.0012848750999299374,
+      0.003068160894180981
+    ],
+    "candidate_lower_error_groups": 72,
+    "note": "Difference in chromatic-minus-neutral error; paired128scene bootstrap. Relative error reduction of signed differences is not an accuracy percentage."
+  },
+  "nyu_chromatic_difference_in_differences__primary_vs_spatial_content_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.007577853083422658,
+    "control_mean": 0.007589823941668204,
+    "candidate_minus_control": -1.1970858245545903e-05,
+    "bootstrap_95_interval": [
+      -5.678824818439952e-05,
+      3.0614024309300966e-05
+    ],
+    "candidate_lower_error_groups": 64,
+    "note": "Difference in chromatic-minus-neutral error; paired128scene bootstrap. Relative error reduction of signed differences is not an accuracy percentage."
+  },
+  "nyu_chromatic_difference_in_differences__primary_vs_spatial_flat_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.007577853083422658,
+    "control_mean": 0.006941457646708846,
+    "candidate_minus_control": 0.0006363954367138132,
+    "bootstrap_95_interval": [
+      -0.0015234704736404486,
+      0.0030791888002853745
+    ],
+    "candidate_lower_error_groups": 75,
+    "note": "Difference in chromatic-minus-neutral error; paired128scene bootstrap. Relative error reduction of signed differences is not an accuracy percentage."
+  },
+  "nyu_chromatic_difference_in_differences__primary_vs_spatial_noeq_no_graph": {
+    "groups": 128,
+    "candidate_mean": 0.007577853083422658,
+    "control_mean": 0.007596278100716964,
+    "candidate_minus_control": -1.8425017294305555e-05,
+    "bootstrap_95_interval": [
+      -6.040599872271769e-05,
+      2.1560314642986585e-05
+    ],
+    "candidate_lower_error_groups": 58,
+    "note": "Difference in chromatic-minus-neutral error; paired128scene bootstrap. Relative error reduction of signed differences is not an accuracy percentage."
+  },
+  "remid_cluster__primary_vs_ordinary_aug": {
+    "groups": 25,
+    "candidate_mean": 0.42756859147787857,
+    "control_mean": 0.5480108940508702,
+    "candidate_minus_control": -0.12044230257299177,
+    "bootstrap_95_interval": [
+      -0.14300130248714932,
+      -0.09929699466370116
+    ],
+    "relative_error_reduction_percent": 21.978085450580725,
+    "candidate_lower_error_groups": 25,
+    "note": "Conditional resampling of25conservative labels; not a population CI because physical room identities are unknown."
+  },
+  "remid_cluster__primary_vs_achromatic": {
+    "groups": 25,
+    "candidate_mean": 0.42756859147787857,
+    "control_mean": 0.4239436661518932,
+    "candidate_minus_control": 0.00362492532598539,
+    "bootstrap_95_interval": [
+      0.0016448028888490069,
+      0.0060274629657706275
+    ],
+    "relative_error_reduction_percent": -0.855048822615642,
+    "candidate_lower_error_groups": 0,
+    "note": "Conditional resampling of25conservative labels; not a population CI because physical room identities are unknown."
+  },
+  "remid_cluster__primary_vs_content": {
+    "groups": 25,
+    "candidate_mean": 0.42756859147787857,
+    "control_mean": 0.4242706859767144,
+    "candidate_minus_control": 0.00329790550116408,
+    "bootstrap_95_interval": [
+      0.0012982429461973995,
+      0.005635831266537507
+    ],
+    "relative_error_reduction_percent": -0.7773116574321038,
+    "candidate_lower_error_groups": 0,
+    "note": "Conditional resampling of25conservative labels; not a population CI because physical room identities are unknown."
+  },
+  "remid_cluster__primary_vs_chromatic_noeq": {
+    "groups": 25,
+    "candidate_mean": 0.42756859147787857,
+    "control_mean": 0.4249198573599052,
+    "candidate_minus_control": 0.002648734117973348,
+    "bootstrap_95_interval": [
+      0.0007533192882858445,
+      0.004887391368235728
+    ],
+    "relative_error_reduction_percent": -0.623349102682657,
+    "candidate_lower_error_groups": 9,
+    "note": "Conditional resampling of25conservative labels; not a population CI because physical room identities are unknown."
+  },
+  "remid_cluster__primary_vs_chromatic_eq": {
+    "groups": 25,
+    "candidate_mean": 0.42756859147787857,
+    "control_mean": 0.42483404589973367,
+    "candidate_minus_control": 0.0027345455781448446,
+    "bootstrap_95_interval": [
+      0.0009126591089939475,
+      0.004953933335022216
+    ],
+    "relative_error_reduction_percent": -0.6436738308846099,
+    "candidate_lower_error_groups": 5,
+    "note": "Conditional resampling of25conservative labels; not a population CI because physical room identities are unknown."
+  },
+  "remid_cluster__primary_vs_flat_geometry_eq": {
+    "groups": 25,
+    "candidate_mean": 0.42756859147787857,
+    "control_mean": 0.4243200251726201,
+    "candidate_minus_control": 0.0032485663052584024,
+    "bootstrap_95_interval": [
+      0.0012378343409694059,
+      0.005595284552960031
+    ],
+    "relative_error_reduction_percent": -0.7655934465824292,
+    "candidate_lower_error_groups": 0,
+    "note": "Conditional resampling of25conservative labels; not a population CI because physical room identities are unknown."
+  },
+  "remid_cluster__primary_vs_geometry_chromatic_eq": {
+    "groups": 25,
+    "candidate_mean": 0.42756859147787857,
+    "control_mean": 0.4243410579276931,
+    "candidate_minus_control": 0.003227533550185461,
+    "bootstrap_95_interval": [
+      0.0012315144051448965,
+      0.00556615108801077
+    ],
+    "relative_error_reduction_percent": -0.7605989309512969,
+    "candidate_lower_error_groups": 0,
+    "note": "Conditional resampling of25conservative labels; not a population CI because physical room identities are unknown."
+  },
+  "remid_cluster__primary_vs_spatial_content": {
+    "groups": 25,
+    "candidate_mean": 0.42756859147787857,
+    "control_mean": 0.42520987367765106,
+    "candidate_minus_control": 0.0023587178002274166,
+    "bootstrap_95_interval": [
+      0.0005420306770973366,
+      0.004484794850709105
+    ],
+    "relative_error_reduction_percent": -0.5547184922652184,
+    "candidate_lower_error_groups": 12,
+    "note": "Conditional resampling of25conservative labels; not a population CI because physical room identities are unknown."
+  },
+  "remid_cluster__primary_vs_spatial_flat": {
+    "groups": 25,
+    "candidate_mean": 0.42756859147787857,
+    "control_mean": 0.427120430293921,
+    "candidate_minus_control": 0.00044816118395758943,
+    "bootstrap_95_interval": [
+      8.1313712370719e-05,
+      0.0008832863334935355
+    ],
+    "relative_error_reduction_percent": -0.1049261875975293,
+    "candidate_lower_error_groups": 17,
+    "note": "Conditional resampling of25conservative labels; not a population CI because physical room identities are unknown."
+  },
+  "remid_cluster__primary_vs_spatial_no_graph_loss": {
+    "groups": 25,
+    "candidate_mean": 0.42756859147787857,
+    "control_mean": 0.42557957216829356,
+    "candidate_minus_control": 0.0019890193095849495,
+    "bootstrap_95_interval": [
+      0.0009296866628250667,
+      0.003207797326781044
+    ],
+    "relative_error_reduction_percent": -0.46736719515250985,
+    "candidate_lower_error_groups": 0,
+    "note": "Conditional resampling of25conservative labels; not a population CI because physical room identities are unknown."
+  },
+  "remid_cluster__primary_vs_spatial_no_equivariance": {
+    "groups": 25,
+    "candidate_mean": 0.42756859147787857,
+    "control_mean": 0.4848448382371884,
+    "candidate_minus_control": -0.057276246759309896,
+    "bootstrap_95_interval": [
+      -0.08008542482196103,
+      -0.036368152253913544
+    ],
+    "relative_error_reduction_percent": 11.813314743652072,
+    "candidate_lower_error_groups": 25,
+    "note": "Conditional resampling of25conservative labels; not a population CI because physical room identities are unknown."
+  },
+  "remid_cluster__primary_vs_spatial_content_noeq": {
+    "groups": 25,
+    "candidate_mean": 0.42756859147787857,
+    "control_mean": 0.42461215155911847,
+    "candidate_minus_control": 0.0029564399187599986,
+    "bootstrap_95_interval": [
+      0.0009026808823169538,
+      0.005353602559230662
+    ],
+    "relative_error_reduction_percent": -0.6962683257896537,
+    "candidate_lower_error_groups": 9,
+    "note": "Conditional resampling of25conservative labels; not a population CI because physical room identities are unknown."
+  },
+  "remid_cluster__primary_vs_spatial_flat_noeq": {
+    "groups": 25,
+    "candidate_mean": 0.42756859147787857,
+    "control_mean": 0.49297047756638074,
+    "candidate_minus_control": -0.06540188608850223,
+    "bootstrap_95_interval": [
+      -0.09051785629599464,
+      -0.04239289141603981
+    ],
+    "relative_error_reduction_percent": 13.26689711955327,
+    "candidate_lower_error_groups": 25,
+    "note": "Conditional resampling of25conservative labels; not a population CI because physical room identities are unknown."
+  },
+  "remid_cluster__primary_vs_spatial_noeq_no_graph": {
+    "groups": 25,
+    "candidate_mean": 0.42756859147787857,
+    "control_mean": 0.4259238556432288,
+    "candidate_minus_control": 0.0016447358346497454,
+    "bootstrap_95_interval": [
+      0.000818702692346676,
+      0.0025816804735114907
+    ],
+    "relative_error_reduction_percent": -0.38615724685480973,
+    "candidate_lower_error_groups": 0,
+    "note": "Conditional resampling of25conservative labels; not a population CI because physical room identities are unknown."
+  },
+  "nyu_original__selected_vs_ordinary_aug": {
+    "groups": 128,
+    "candidate_mean": 0.15097721467405995,
+    "control_mean": 0.18705443964806698,
+    "candidate_minus_control": -0.03607722497400705,
+    "bootstrap_95_interval": [
+      -0.046412722104561176,
+      -0.025920405114714367
+    ],
+    "relative_error_reduction_percent": 19.28701881756157,
+    "candidate_lower_error_groups": 91,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__selected_vs_ordinary_aug": {
+    "groups": 128,
+    "candidate_mean": 0.15847850251945572,
+    "control_mean": 0.19437777728696698,
+    "candidate_minus_control": -0.03589927476751127,
+    "bootstrap_95_interval": [
+      -0.04587325817343173,
+      -0.026036525083112255
+    ],
+    "relative_error_reduction_percent": 18.468816378382524,
+    "candidate_lower_error_groups": 94,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__selected_vs_ordinary_aug": {
+    "groups": 128,
+    "candidate_mean": 0.15109141697289935,
+    "control_mean": 0.1870416492874271,
+    "candidate_minus_control": -0.035950232314527736,
+    "bootstrap_95_interval": [
+      -0.04629373088170343,
+      -0.025804689885932357
+    ],
+    "relative_error_reduction_percent": 19.22044231939111,
+    "candidate_lower_error_groups": 92,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "remid_cluster__selected_vs_ordinary_aug": {
+    "groups": 25,
+    "candidate_mean": 0.4848448382371884,
+    "control_mean": 0.5480108940508702,
+    "candidate_minus_control": -0.06316605581368187,
+    "bootstrap_95_interval": [
+      -0.07447714477842231,
+      -0.051603023742003026
+    ],
+    "relative_error_reduction_percent": 11.526423379426163,
+    "candidate_lower_error_groups": 25,
+    "note": "Validation-selected recipe; conditional25label resampling, not physical-room population inference."
+  },
+  "nyu_original__selected_vs_achromatic": {
+    "groups": 128,
+    "candidate_mean": 0.15097721467405995,
+    "control_mean": 0.1539899709261887,
+    "candidate_minus_control": -0.0030127562521287867,
+    "bootstrap_95_interval": [
+      -0.010445993721661804,
+      0.004747540246865918
+    ],
+    "relative_error_reduction_percent": 1.9564626410461874,
+    "candidate_lower_error_groups": 62,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__selected_vs_achromatic": {
+    "groups": 128,
+    "candidate_mean": 0.15847850251945572,
+    "control_mean": 0.16250777245891856,
+    "candidate_minus_control": -0.004029269939462876,
+    "bootstrap_95_interval": [
+      -0.012021106734746113,
+      0.004337646851895158
+    ],
+    "relative_error_reduction_percent": 2.4794321394574705,
+    "candidate_lower_error_groups": 65,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__selected_vs_achromatic": {
+    "groups": 128,
+    "candidate_mean": 0.15109141697289935,
+    "control_mean": 0.1540856321190534,
+    "candidate_minus_control": -0.0029942151461540474,
+    "bootstrap_95_interval": [
+      -0.010460280947272398,
+      0.004785332742897349
+    ],
+    "relative_error_reduction_percent": 1.9432150194513866,
+    "candidate_lower_error_groups": 62,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "remid_cluster__selected_vs_achromatic": {
+    "groups": 25,
+    "candidate_mean": 0.4848448382371884,
+    "control_mean": 0.4239436661518932,
+    "candidate_minus_control": 0.06090117208529528,
+    "bootstrap_95_interval": [
+      0.03850652512282406,
+      0.08548745574015572
+    ],
+    "relative_error_reduction_percent": -14.365392609374451,
+    "candidate_lower_error_groups": 0,
+    "note": "Validation-selected recipe; conditional25label resampling, not physical-room population inference."
+  },
+  "nyu_original__selected_vs_content": {
+    "groups": 128,
+    "candidate_mean": 0.15097721467405995,
+    "control_mean": 0.15389868918196298,
+    "candidate_minus_control": -0.002921474507903014,
+    "bootstrap_95_interval": [
+      -0.010324904370844502,
+      0.004835682883149326
+    ],
+    "relative_error_reduction_percent": 1.8983101957735395,
+    "candidate_lower_error_groups": 62,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__selected_vs_content": {
+    "groups": 128,
+    "candidate_mean": 0.15847850251945572,
+    "control_mean": 0.16247835311630016,
+    "candidate_minus_control": -0.0039998505968444386,
+    "bootstrap_95_interval": [
+      -0.011955049063093246,
+      0.004342239093077986
+    ],
+    "relative_error_reduction_percent": 2.4617744580297334,
+    "candidate_lower_error_groups": 65,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__selected_vs_content": {
+    "groups": 128,
+    "candidate_mean": 0.15109141697289935,
+    "control_mean": 0.15400084159876526,
+    "candidate_minus_control": -0.0029094246258659193,
+    "bootstrap_95_interval": [
+      -0.010326969668614407,
+      0.004888549274584369
+    ],
+    "relative_error_reduction_percent": 1.8892264455580972,
+    "candidate_lower_error_groups": 62,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "remid_cluster__selected_vs_content": {
+    "groups": 25,
+    "candidate_mean": 0.4848448382371884,
+    "control_mean": 0.4242706859767144,
+    "candidate_minus_control": 0.060574152260473975,
+    "bootstrap_95_interval": [
+      0.03822398203063495,
+      0.08506821164370185
+    ],
+    "relative_error_reduction_percent": -14.277241926584225,
+    "candidate_lower_error_groups": 0,
+    "note": "Validation-selected recipe; conditional25label resampling, not physical-room population inference."
+  },
+  "nyu_original__selected_vs_chromatic_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.15097721467405995,
+    "control_mean": 0.15380705941784995,
+    "candidate_minus_control": -0.0028298447437900133,
+    "bootstrap_95_interval": [
+      -0.010220951964275,
+      0.004913442866740111
+    ],
+    "relative_error_reduction_percent": 1.8398666189320467,
+    "candidate_lower_error_groups": 62,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__selected_vs_chromatic_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.15847850251945572,
+    "control_mean": 0.16237745562038403,
+    "candidate_minus_control": -0.0038989531009283223,
+    "bootstrap_95_interval": [
+      -0.011862889756144562,
+      0.004437253105189641
+    ],
+    "relative_error_reduction_percent": 2.4011665203348893,
+    "candidate_lower_error_groups": 65,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__selected_vs_chromatic_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.15109141697289935,
+    "control_mean": 0.15390898098140537,
+    "candidate_minus_control": -0.002817564008506023,
+    "bootstrap_95_interval": [
+      -0.010228862345568945,
+      0.004957941198555696
+    ],
+    "relative_error_reduction_percent": 1.8306690035498512,
+    "candidate_lower_error_groups": 62,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "remid_cluster__selected_vs_chromatic_noeq": {
+    "groups": 25,
+    "candidate_mean": 0.4848448382371884,
+    "control_mean": 0.4249198573599052,
+    "candidate_minus_control": 0.059924980877283235,
+    "bootstrap_95_interval": [
+      0.03768547307535889,
+      0.08430488757325895
+    ],
+    "relative_error_reduction_percent": -14.102654851106905,
+    "candidate_lower_error_groups": 0,
+    "note": "Validation-selected recipe; conditional25label resampling, not physical-room population inference."
+  },
+  "nyu_original__selected_vs_chromatic_eq": {
+    "groups": 128,
+    "candidate_mean": 0.15097721467405995,
+    "control_mean": 0.15379671749766005,
+    "candidate_minus_control": -0.00281950282360012,
+    "bootstrap_95_interval": [
+      -0.010184008366718823,
+      0.004927310038040746
+    ],
+    "relative_error_reduction_percent": 1.8332659301672052,
+    "candidate_lower_error_groups": 62,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__selected_vs_chromatic_eq": {
+    "groups": 128,
+    "candidate_mean": 0.15847850251945572,
+    "control_mean": 0.16234793115599355,
+    "candidate_minus_control": -0.0038694286365378253,
+    "bootstrap_95_interval": [
+      -0.011770178743612017,
+      0.00445252615398398
+    ],
+    "relative_error_reduction_percent": 2.3834172748526457,
+    "candidate_lower_error_groups": 63,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__selected_vs_chromatic_eq": {
+    "groups": 128,
+    "candidate_mean": 0.15109141697289935,
+    "control_mean": 0.15389795969763206,
+    "candidate_minus_control": -0.002806542724732704,
+    "bootstrap_95_interval": [
+      -0.010199773440783202,
+      0.004981730715822867
+    ],
+    "relative_error_reduction_percent": 1.8236386825704591,
+    "candidate_lower_error_groups": 62,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "remid_cluster__selected_vs_chromatic_eq": {
+    "groups": 25,
+    "candidate_mean": 0.4848448382371884,
+    "control_mean": 0.42483404589973367,
+    "candidate_minus_control": 0.060010792337454745,
+    "bootstrap_95_interval": [
+      0.03778915319214289,
+      0.08439790640883325
+    ],
+    "relative_error_reduction_percent": -14.125702239885461,
+    "candidate_lower_error_groups": 0,
+    "note": "Validation-selected recipe; conditional25label resampling, not physical-room population inference."
+  },
+  "nyu_original__selected_vs_flat_geometry_eq": {
+    "groups": 128,
+    "candidate_mean": 0.15097721467405995,
+    "control_mean": 0.15392343626996044,
+    "candidate_minus_control": -0.0029462215959004793,
+    "bootstrap_95_interval": [
+      -0.010331166090343407,
+      0.004790550669781784
+    ],
+    "relative_error_reduction_percent": 1.9140825252453622,
+    "candidate_lower_error_groups": 63,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__selected_vs_flat_geometry_eq": {
+    "groups": 128,
+    "candidate_mean": 0.15847850251945572,
+    "control_mean": 0.16249977241846736,
+    "candidate_minus_control": -0.004021269899011635,
+    "bootstrap_95_interval": [
+      -0.011958665496992874,
+      0.0042978872933752766
+    ],
+    "relative_error_reduction_percent": 2.4746310958861613,
+    "candidate_lower_error_groups": 65,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__selected_vs_flat_geometry_eq": {
+    "groups": 128,
+    "candidate_mean": 0.15109141697289935,
+    "control_mean": 0.15402587504095544,
+    "candidate_minus_control": -0.0029344580680560747,
+    "bootstrap_95_interval": [
+      -0.010345207717451812,
+      0.004862442965248912
+    ],
+    "relative_error_reduction_percent": 1.9051721454436261,
+    "candidate_lower_error_groups": 63,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "remid_cluster__selected_vs_flat_geometry_eq": {
+    "groups": 25,
+    "candidate_mean": 0.4848448382371884,
+    "control_mean": 0.4243200251726201,
+    "candidate_minus_control": 0.06052481306456829,
+    "bootstrap_95_interval": [
+      0.03814595340992319,
+      0.0850729945334018
+    ],
+    "relative_error_reduction_percent": -14.263953967278791,
+    "candidate_lower_error_groups": 0,
+    "note": "Validation-selected recipe; conditional25label resampling, not physical-room population inference."
+  },
+  "nyu_original__selected_vs_geometry_chromatic_eq": {
+    "groups": 128,
+    "candidate_mean": 0.15097721467405995,
+    "control_mean": 0.15393273101257993,
+    "candidate_minus_control": -0.002955516338519962,
+    "bootstrap_95_interval": [
+      -0.010344162177694889,
+      0.004783564156061151
+    ],
+    "relative_error_reduction_percent": 1.9200051341117608,
+    "candidate_lower_error_groups": 63,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__selected_vs_geometry_chromatic_eq": {
+    "groups": 128,
+    "candidate_mean": 0.15847850251945572,
+    "control_mean": 0.16251109857185017,
+    "candidate_minus_control": -0.004032596052394441,
+    "bootstrap_95_interval": [
+      -0.011966607082186281,
+      0.004289142032864408
+    ],
+    "relative_error_reduction_percent": 2.4814280918860065,
+    "candidate_lower_error_groups": 65,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__selected_vs_geometry_chromatic_eq": {
+    "groups": 128,
+    "candidate_mean": 0.15109141697289935,
+    "control_mean": 0.15403520709801063,
+    "candidate_minus_control": -0.0029437901251112746,
+    "bootstrap_95_interval": [
+      -0.010351360303367854,
+      0.004852111812970819
+    ],
+    "relative_error_reduction_percent": 1.9111151148959005,
+    "candidate_lower_error_groups": 63,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "remid_cluster__selected_vs_geometry_chromatic_eq": {
+    "groups": 25,
+    "candidate_mean": 0.4848448382371884,
+    "control_mean": 0.4243410579276931,
+    "candidate_minus_control": 0.06050378030949537,
+    "bootstrap_95_interval": [
+      0.038137515785696886,
+      0.08502102534419688
+    ],
+    "relative_error_reduction_percent": -14.258290396166423,
+    "candidate_lower_error_groups": 0,
+    "note": "Validation-selected recipe; conditional25label resampling, not physical-room population inference."
+  },
+  "nyu_original__selected_vs_spatial_content": {
+    "groups": 128,
+    "candidate_mean": 0.15097721467405995,
+    "control_mean": 0.15314602915095274,
+    "candidate_minus_control": -0.0021688144768927955,
+    "bootstrap_95_interval": [
+      -0.009344155440127939,
+      0.005391519832343378
+    ],
+    "relative_error_reduction_percent": 1.4161741501995069,
+    "candidate_lower_error_groups": 64,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__selected_vs_spatial_content": {
+    "groups": 128,
+    "candidate_mean": 0.15847850251945572,
+    "control_mean": 0.16183252761751488,
+    "candidate_minus_control": -0.003354025098059175,
+    "bootstrap_95_interval": [
+      -0.011076764753641156,
+      0.004794636558331695
+    ],
+    "relative_error_reduction_percent": 2.072528401698247,
+    "candidate_lower_error_groups": 66,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__selected_vs_spatial_content": {
+    "groups": 128,
+    "candidate_mean": 0.15109141697289935,
+    "control_mean": 0.15324844308280905,
+    "candidate_minus_control": -0.0021570261099096905,
+    "bootstrap_95_interval": [
+      -0.009373820340020666,
+      0.005403583435608676
+    ],
+    "relative_error_reduction_percent": 1.4075354153804565,
+    "candidate_lower_error_groups": 64,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "remid_cluster__selected_vs_spatial_content": {
+    "groups": 25,
+    "candidate_mean": 0.4848448382371884,
+    "control_mean": 0.42520987367765106,
+    "candidate_minus_control": 0.05963496455953731,
+    "bootstrap_95_interval": [
+      0.03752126563260711,
+      0.08391768227334205
+    ],
+    "relative_error_reduction_percent": -14.024830619231155,
+    "candidate_lower_error_groups": 0,
+    "note": "Validation-selected recipe; conditional25label resampling, not physical-room population inference."
+  },
+  "nyu_original__selected_vs_spatial_flat": {
+    "groups": 128,
+    "candidate_mean": 0.15097721467405995,
+    "control_mean": 0.15371618543840668,
+    "candidate_minus_control": -0.0027389707643467316,
+    "bootstrap_95_interval": [
+      -0.009994138141508279,
+      0.004935620644405499
+    ],
+    "relative_error_reduction_percent": 1.7818362825847147,
+    "candidate_lower_error_groups": 63,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__selected_vs_spatial_flat": {
+    "groups": 128,
+    "candidate_mean": 0.15847850251945572,
+    "control_mean": 0.1622445659049255,
+    "candidate_minus_control": -0.0037660633854697807,
+    "bootstrap_95_interval": [
+      -0.011530393931866589,
+      0.004384544777142204
+    ],
+    "relative_error_reduction_percent": 2.321226208387574,
+    "candidate_lower_error_groups": 67,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__selected_vs_spatial_flat": {
+    "groups": 128,
+    "candidate_mean": 0.15109141697289935,
+    "control_mean": 0.15381803784372408,
+    "candidate_minus_control": -0.002726620870824722,
+    "bootstrap_95_interval": [
+      -0.01004806245998976,
+      0.00498872238857528
+    ],
+    "relative_error_reduction_percent": 1.7726275208340134,
+    "candidate_lower_error_groups": 63,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "remid_cluster__selected_vs_spatial_flat": {
+    "groups": 25,
+    "candidate_mean": 0.4848448382371884,
+    "control_mean": 0.427120430293921,
+    "candidate_minus_control": 0.057724407943267476,
+    "bootstrap_95_interval": [
+      0.036587631393145,
+      0.08083658318361744
+    ],
+    "relative_error_reduction_percent": -13.514785022937113,
+    "candidate_lower_error_groups": 0,
+    "note": "Validation-selected recipe; conditional25label resampling, not physical-room population inference."
+  },
+  "nyu_original__selected_vs_spatial_no_graph_loss": {
+    "groups": 128,
+    "candidate_mean": 0.15097721467405995,
+    "control_mean": 0.15405159543117417,
+    "candidate_minus_control": -0.0030743807571142166,
+    "bootstrap_95_interval": [
+      -0.01045162371532785,
+      0.004672506790384942
+    ],
+    "relative_error_reduction_percent": 1.9956825169576158,
+    "candidate_lower_error_groups": 63,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__selected_vs_spatial_no_graph_loss": {
+    "groups": 128,
+    "candidate_mean": 0.15847850251945572,
+    "control_mean": 0.16263479533782393,
+    "candidate_minus_control": -0.004156292818368244,
+    "bootstrap_95_interval": [
+      -0.012085730901196617,
+      0.004180025766607152
+    ],
+    "relative_error_reduction_percent": 2.555598763311866,
+    "candidate_lower_error_groups": 67,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__selected_vs_spatial_no_graph_loss": {
+    "groups": 128,
+    "candidate_mean": 0.15109141697289935,
+    "control_mean": 0.15415402774451853,
+    "candidate_minus_control": -0.0030626107716191717,
+    "bootstrap_95_interval": [
+      -0.010488181262338872,
+      0.004739962992512407
+    ],
+    "relative_error_reduction_percent": 1.986721214118961,
+    "candidate_lower_error_groups": 63,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "remid_cluster__selected_vs_spatial_no_graph_loss": {
+    "groups": 25,
+    "candidate_mean": 0.4848448382371884,
+    "control_mean": 0.42557957216829356,
+    "candidate_minus_control": 0.05926526606889485,
+    "bootstrap_95_interval": [
+      0.03753190789225206,
+      0.08308650106541894
+    ],
+    "relative_error_reduction_percent": -13.925777914325886,
+    "candidate_lower_error_groups": 0,
+    "note": "Validation-selected recipe; conditional25label resampling, not physical-room population inference."
+  },
+  "nyu_original__selected_vs_spatial_geometry_eq": {
+    "groups": 128,
+    "candidate_mean": 0.15097721467405995,
+    "control_mean": 0.15376277918367826,
+    "candidate_minus_control": -0.0027855645096183036,
+    "bootstrap_95_interval": [
+      -0.010057861639523501,
+      0.0049085383618725645
+    ],
+    "relative_error_reduction_percent": 1.811598700548198,
+    "candidate_lower_error_groups": 63,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__selected_vs_spatial_geometry_eq": {
+    "groups": 128,
+    "candidate_mean": 0.15847850251945572,
+    "control_mean": 0.16229607707542204,
+    "candidate_minus_control": -0.003817574555966322,
+    "bootstrap_95_interval": [
+      -0.011603088785458562,
+      0.0043524755376018595
+    ],
+    "relative_error_reduction_percent": 2.3522284855919344,
+    "candidate_lower_error_groups": 67,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__selected_vs_spatial_geometry_eq": {
+    "groups": 128,
+    "candidate_mean": 0.15109141697289935,
+    "control_mean": 0.15386470737892094,
+    "candidate_minus_control": -0.0027732904060215877,
+    "bootstrap_95_interval": [
+      -0.010104005031228042,
+      0.004955112834703524
+    ],
+    "relative_error_reduction_percent": 1.802421395565285,
+    "candidate_lower_error_groups": 63,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "remid_cluster__selected_vs_spatial_geometry_eq": {
+    "groups": 25,
+    "candidate_mean": 0.4848448382371884,
+    "control_mean": 0.42756859147787857,
+    "candidate_minus_control": 0.057276246759309896,
+    "bootstrap_95_interval": [
+      0.03636815225391353,
+      0.080085424821961
+    ],
+    "relative_error_reduction_percent": -13.395803129817395,
+    "candidate_lower_error_groups": 0,
+    "note": "Validation-selected recipe; conditional25label resampling, not physical-room population inference."
+  },
+  "nyu_original__selected_vs_spatial_content_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.15097721467405995,
+    "control_mean": 0.15398929143979678,
+    "candidate_minus_control": -0.0030120767657368487,
+    "bootstrap_95_interval": [
+      -0.010381771109404164,
+      0.004730835380489311
+    ],
+    "relative_error_reduction_percent": 1.956030018434386,
+    "candidate_lower_error_groups": 62,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__selected_vs_spatial_content_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.15847850251945572,
+    "control_mean": 0.16255621618676097,
+    "candidate_minus_control": -0.004077713667305253,
+    "bootstrap_95_interval": [
+      -0.011999617885159635,
+      0.004254597854980987
+    ],
+    "relative_error_reduction_percent": 2.5084944537712177,
+    "candidate_lower_error_groups": 66,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__selected_vs_spatial_content_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.15109141697289935,
+    "control_mean": 0.15409105906287535,
+    "candidate_minus_control": -0.0029996420899760156,
+    "bootstrap_95_interval": [
+      -0.010407420216247328,
+      0.0047928855078040195
+    ],
+    "relative_error_reduction_percent": 1.9466684882424108,
+    "candidate_lower_error_groups": 62,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "remid_cluster__selected_vs_spatial_content_noeq": {
+    "groups": 25,
+    "candidate_mean": 0.4848448382371884,
+    "control_mean": 0.42461215155911847,
+    "candidate_minus_control": 0.0602326866780699,
+    "bootstrap_95_interval": [
+      0.03783216646400771,
+      0.08477898212721885
+    ],
+    "relative_error_reduction_percent": -14.185342189785109,
+    "candidate_lower_error_groups": 0,
+    "note": "Validation-selected recipe; conditional25label resampling, not physical-room population inference."
+  },
+  "nyu_original__selected_vs_spatial_flat_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.15097721467405995,
+    "control_mean": 0.15182549937944761,
+    "candidate_minus_control": -0.0008482847053877048,
+    "bootstrap_95_interval": [
+      -0.0014887898354414226,
+      -0.00022063330442235711
+    ],
+    "relative_error_reduction_percent": 0.558723474551272,
+    "candidate_lower_error_groups": 69,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__selected_vs_spatial_flat_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.15847850251945572,
+    "control_mean": 0.15943819879909832,
+    "candidate_minus_control": -0.0009596962796426152,
+    "bootstrap_95_interval": [
+      -0.0016051545302519028,
+      -0.0003206852433187847
+    ],
+    "relative_error_reduction_percent": 0.6019236838292883,
+    "candidate_lower_error_groups": 72,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__selected_vs_spatial_flat_noeq": {
+    "groups": 128,
+    "candidate_mean": 0.15109141697289935,
+    "control_mean": 0.1519445980841201,
+    "candidate_minus_control": -0.0008531811112207593,
+    "bootstrap_95_interval": [
+      -0.0015033138640237363,
+      -0.0002224971031755956
+    ],
+    "relative_error_reduction_percent": 0.5615080246211991,
+    "candidate_lower_error_groups": 69,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "remid_cluster__selected_vs_spatial_flat_noeq": {
+    "groups": 25,
+    "candidate_mean": 0.4848448382371884,
+    "control_mean": 0.49297047756638074,
+    "candidate_minus_control": -0.008125639329192332,
+    "bootstrap_95_interval": [
+      -0.010430891517007112,
+      -0.005929749270712071
+    ],
+    "relative_error_reduction_percent": 1.6483014093066461,
+    "candidate_lower_error_groups": 25,
+    "note": "Validation-selected recipe; conditional25label resampling, not physical-room population inference."
+  },
+  "nyu_original__selected_vs_spatial_noeq_no_graph": {
+    "groups": 128,
+    "candidate_mean": 0.15097721467405995,
+    "control_mean": 0.15403478097606654,
+    "candidate_minus_control": -0.003057566302006608,
+    "bootstrap_95_interval": [
+      -0.010430425751303518,
+      0.00468860851876241
+    ],
+    "relative_error_reduction_percent": 1.9849843539438494,
+    "candidate_lower_error_groups": 63,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_chromatic__selected_vs_spatial_noeq_no_graph": {
+    "groups": 128,
+    "candidate_mean": 0.15847850251945572,
+    "control_mean": 0.16261610487139966,
+    "candidate_minus_control": -0.004137602351943926,
+    "bootstrap_95_interval": [
+      -0.012061352106745617,
+      0.004198950921721365
+    ],
+    "relative_error_reduction_percent": 2.544398880551248,
+    "candidate_lower_error_groups": 67,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "nyu_exposure__selected_vs_spatial_noeq_no_graph": {
+    "groups": 128,
+    "candidate_mean": 0.15109141697289935,
+    "control_mean": 0.15413719370084789,
+    "candidate_minus_control": -0.0030457767279485335,
+    "bootstrap_95_interval": [
+      -0.010467021658354654,
+      0.004754123947072716
+    ],
+    "relative_error_reduction_percent": 1.9760167256319916,
+    "candidate_lower_error_groups": 63,
+    "note": "Paired group resampling; lower difference is better."
+  },
+  "remid_cluster__selected_vs_spatial_noeq_no_graph": {
+    "groups": 25,
+    "candidate_mean": 0.4848448382371884,
+    "control_mean": 0.4259238556432288,
+    "candidate_minus_control": 0.05892098259395965,
+    "bootstrap_95_interval": [
+      0.03733052521133287,
+      0.08252403312255431
+    ],
+    "relative_error_reduction_percent": -13.833689241232399,
+    "candidate_lower_error_groups": 0,
+    "note": "Validation-selected recipe; conditional25label resampling, not physical-room population inference."
+  }
+}

@@ -5,12 +5,25 @@ Sichuan University.
 
 ## Latest completed work
 
-The default `main` branch includes both completed research phases. Start with
-the [current project status](PROJECT_STATUS.md) and the
-[latest five-page research update](output/pdf/Shirsha_Mitra_Phase2_Research_Update.pdf).
+The default `main` branch includes three research phases. Start with
+the [7 November weekly report](output/pdf/Shirsha_Mitra_Weekly_Update_2026_11_07.pdf),
+the [latest measured results](phase3/RESULTS.md) and the
+[current project status](PROJECT_STATUS.md).
+
+The latest study acquires **735 captured real-light ReMID images** and
+**368 new NYU RGB-D scenes** (200 training / 40 validation / 128 test).
+It compares **15 trained variants plus the frozen model**, with 26,224 unique
+evaluated predictions and a separate 640-prediction floating-point color/exposure
+probe. Read [phase three](phase3/README.md) for the internal architecture, losses,
+matched controls, immutable inputs and independently recomputed metrics.
+
+This is a controlled CPU research study at a 224-pixel model transform, not a
+full benchmark or a demonstrated novel CC algorithm. Improvements over the
+frozen model must be distinguished from a color-specific contribution.
 
 | Completed study | Evidence and outcome |
 |---|---|
+| Real-light and explicit chromatic controls, 7 November | ReMID external evaluation, new scene-separated NYU data, global/local internal adapters and matched loss ablations. [All methods and claim limits](phase3/RESULTS.md). |
 | Initial NYU preprocessing pilot | 40 images from separate development/evaluation scenes; 1,120 predictions; fixed color-cast and correction comparisons. [Results](results/summary.json). |
 | Integrated monocular depth prototype | Vari: 528 images, 48 camera groups, 2 rooms; six methods evaluated on 264 images. The CC-inspired module has AbsRel 0.4277 versus 0.3988 for ordinary task adaptation; a CC-specific advantage is unproven. [Methods and results](phase2/README.md). |
 | Calibrated real-light stereo diagnostic | DTU: 42 view/light cases and 210 method scores. Held-out raw matching MAE rises from 13.19 to 54.21 mm with changed lighting; internal scalar-gain compensation gives 29.90 mm. [Verified results](phase2/results/stereo/main_v2/RESULTS.md). |
@@ -19,20 +32,21 @@ the [current project status](PROJECT_STATUS.md) and the
 
 | Material | Scope |
 |---|---|
-| [Latest research report](output/pdf/Shirsha_Mitra_Phase2_Research_Update.pdf) | Integrated prototype, paired-light data, stereo diagnostic, limitations and next steps |
-| [Latest English QQ update](output/QQ_Phase2_Reply_English.txt) | Short message based on the completed follow-up experiments |
+| [Latest weekly research report](output/pdf/Shirsha_Mitra_Weekly_Update_2026_11_07.pdf) | Real ReMID, expanded NYU, simulated controls, internal methods and loss ablations, measured limits and next steps |
+| [Latest English QQ update](output/QQ_Weekly_Update_2026_11_07_English.txt) | Short message based on the audited weekly results |
+| [Previous phase-two report](output/pdf/Shirsha_Mitra_Phase2_Research_Update.pdf) | Earlier Vari prototype and real-light stereo diagnostic |
 | [Original PowerPoint](output/Shirsha_Mitra_Thesis_Progress.pptx) / [slide PDF](output/Shirsha_Mitra_Thesis_Progress_Slides.pdf) | Initial NYU preprocessing pilot; this earlier deck does not contain the follow-up experiments |
 | [Original progress report](output/pdf/Shirsha_Mitra_Thesis_Progress_Report.pdf) | Detailed initial NYU experiment |
 | [Presentation notes](output/Shirsha_Mitra_Presentation_Notes.txt) | Notes for the original PowerPoint |
 | [Small 3D point-cloud previews](phase2/results/stereo/main_v2/pointclouds_inference/) | Deterministic 30,000-point previews of actual stereo outputs, including outliers; not benchmark-quality meshes |
 
 Source code, protocols, selected data manifests, all measured metric tables,
-audit evidence, four trained adapters and final materials are versioned here.
+audit evidence, nineteen trained adapters across phases two and three, and final materials are versioned here.
 Raw datasets, pretrained base weights, installed environments and large inference
 caches are retained locally and reproduced through the documented setup and
 acquisition commands. See [what is included](PROJECT_STATUS.md#repository-scope).
 
-The follow-up study after supervisor feedback is documented in [phase2/README.md](phase2/README.md).
+The previous follow-up study is documented in [phase2/README.md](phase2/README.md).
 It acquires paired-light Vari and calibrated DTU data, runs a task-integrated
 feature-conditioning prototype, and compares strong adaptation and radiometric
 controls. Lighting sensitivity is observed; the current chromatic module has

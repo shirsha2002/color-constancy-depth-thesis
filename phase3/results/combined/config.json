@@ -1,0 +1,109 @@
+{
+  "runs": [
+    {
+      "directory": "phase3/results/study_v1",
+      "config_sha256": "d6ab1043802d7c7d05e05569468f164a7c2f1f598163d9166f5bbc812c03d784",
+      "evaluation_sources_sha256": "27a81ff3af301f882de0f37b2b33e91f1cf183f0a73e9c615055bd1211ddc828"
+    },
+    {
+      "directory": "phase3/results/spatial_v1",
+      "config_sha256": "ce2b65e13b3aa726f2e218ef55394671d838f7e9439b460f15d770e86d752c87",
+      "evaluation_sources_sha256": "42d84e8f1259e3e52efaefa610be919c154e70f7914a6cc7d19a8a1bdef69711"
+    },
+    {
+      "directory": "phase3/results/spatial_controls",
+      "config_sha256": "3a42acf8acbf64e0f696d8438ab05840a0dc1c59e4637e013f90c70cd09f6fe3",
+      "evaluation_sources_sha256": "46dbf1e6b46c0bd5128edf87d9e0cf218a49bb0672f15fe2c25ea66a563e5018"
+    }
+  ],
+  "sources": {
+    "phase3/learning/study.py": "156a0f6909eac292975123b3fdc77b42e54049e4b2be986f0959ca32e7b6f54f",
+    "phase3/learning/model.py": "143c11304e4c2b11c0cba2f799f863cc9dc7103121cc4b726defbcf22259d676",
+    "scripts/science.py": "74b7a29da007beb2669359e21aa29e7063d7207eb8b48892c50e502dfcff2b44",
+    "external/Depth-Anything-V2/metric_depth/depth_anything_v2/dpt.py": "b8cb75891b8161a72d9e51cf95515c709c9d79018b9bdecc6000d01bb0e2b59f",
+    "external/Depth-Anything-V2/metric_depth/depth_anything_v2/util/transform.py": "ad93afd07aee97a1c73aaa9217c1a8e80c097a861800c56e5425446ff3ecabaa",
+    "phase3/learning/spatial_study.py": "6654a72c4ae4f72cc10c0983a989a0b4613e91213988af34b9dab2642506b895",
+    "phase3/learning/spatial_model.py": "f39c490370871aa10afde683d9345b42ead7776f010a70fb34693686facc3218",
+    "phase3/learning/spatial_controls.py": "d7c284c18f2b63f8b0e668d243d2aff10c22822c346b0beb3dc114abc911a40c"
+  },
+  "manifests": {
+    "phase3/data/nyu_rgbd/manifest.json": "62e633bd12db990af286fad8bf4c5a536a8ac7a2f0f360611223a3a0fb2b1553",
+    "phase3/data/remid/manifest.json": "b030d1736ce884c2674ba205f4fb809f620b8e77c25625fc8bdbb0bea0990bc1",
+    "phase2/data/vari/manifest.json": "8afcc4ecf1704620655f14b7c15b82f6529e02d1c28cb87c5bf7aba44e1ed33a"
+  },
+  "method_roots": {
+    "ordinary_aug": "phase3/results/study_v1",
+    "achromatic": "phase3/results/study_v1",
+    "content": "phase3/results/study_v1",
+    "chromatic_noeq": "phase3/results/study_v1",
+    "chromatic_eq": "phase3/results/study_v1",
+    "flat_geometry_eq": "phase3/results/study_v1",
+    "geometry_chromatic_eq": "phase3/results/study_v1",
+    "frozen": "phase3/results/study_v1",
+    "spatial_content": "phase3/results/spatial_v1",
+    "spatial_flat": "phase3/results/spatial_v1",
+    "spatial_no_graph_loss": "phase3/results/spatial_v1",
+    "spatial_no_equivariance": "phase3/results/spatial_v1",
+    "spatial_geometry_eq": "phase3/results/spatial_v1",
+    "spatial_content_noeq": "phase3/results/spatial_controls",
+    "spatial_flat_noeq": "phase3/results/spatial_controls",
+    "spatial_noeq_no_graph": "phase3/results/spatial_controls"
+  },
+  "methods": [
+    "frozen",
+    "ordinary_aug",
+    "achromatic",
+    "content",
+    "chromatic_noeq",
+    "chromatic_eq",
+    "flat_geometry_eq",
+    "geometry_chromatic_eq",
+    "spatial_content",
+    "spatial_flat",
+    "spatial_no_graph_loss",
+    "spatial_no_equivariance",
+    "spatial_geometry_eq",
+    "spatial_content_noeq",
+    "spatial_flat_noeq",
+    "spatial_noeq_no_graph"
+  ],
+  "method_parameter_counts": {
+    "ordinary_aug": 59699,
+    "achromatic": 59699,
+    "content": 59699,
+    "chromatic_noeq": 59699,
+    "chromatic_eq": 59699,
+    "flat_geometry_eq": 59699,
+    "geometry_chromatic_eq": 59699,
+    "spatial_content": 42036,
+    "spatial_flat": 42036,
+    "spatial_no_graph_loss": 42036,
+    "spatial_no_equivariance": 42036,
+    "spatial_geometry_eq": 42036,
+    "spatial_content_noeq": 42036,
+    "spatial_flat_noeq": 42036,
+    "spatial_noeq_no_graph": 42036
+  },
+  "checkpoint_sha256": {
+    "ordinary_aug": "788d8cf4112fc256c83f685bd7414f178f816bf609081b74a82a86e344b572e4",
+    "achromatic": "b4f35ba5cd3ec2ae52fc93f1692c4028a597aedcf80d74cba096f2fdd3abe619",
+    "content": "c9c7ba8f40646c4a7e3524ae612f5afa3a840477287d93b63322ef4d1f22d26d",
+    "chromatic_noeq": "41d55ab9b019c0f38fd4a29811db222c6b4ed4ac223328a4e46ee2f2054fee40",
+    "chromatic_eq": "f8298ccc263faff37b4509df4c8ef030a2ac459e9eeae4166c0f92ffc86fd721",
+    "flat_geometry_eq": "6240ec2b83049b1d14d1edc78fddd1e5e52d18a651023e51c6b57c17a6afa5e0",
+    "geometry_chromatic_eq": "a503bf242679509999a7659fef097b17c5df8cd6ac5ecfffe00c272c0c80ddc7",
+    "spatial_content": "f56eba389a2ec2c8eabdc7ffc64aeceac9be0076581a611d2c51e1bf65133522",
+    "spatial_flat": "9abfc1b7cedb5872c9948f5fb02d5e2391b3be68b8f6552e07775dc02d925537",
+    "spatial_no_graph_loss": "27ee43086ebe914c631a4bc9ca7871efaccdbb67492e02dcf675d1935912ce54",
+    "spatial_no_equivariance": "543ed7212cdc4f11869be7a1fa14c80889b44d1c03e4f0a4e407a3660d33379a",
+    "spatial_geometry_eq": "a949b454cfc347cfd3c3bf5e5bd96f8857ab958e518cdb05b770ae187de56ba7",
+    "spatial_content_noeq": "e486464cf9786de50f6d75f4e61bae58362f470a604422b5e1634c8db332ba91",
+    "spatial_flat_noeq": "26b898d2f55dc17aea270b162d49c2eca4458569dbed2585ebf65a5cf6052a1b",
+    "spatial_noeq_no_graph": "b02e2e5c0a03b77904ee48cb980a8d2ee0a54856fc2fe420d11eb5212c472a7c"
+  },
+  "primary_method": "spatial_geometry_eq",
+  "expected_rows": 26224,
+  "validation_selected_method": "spatial_no_equivariance",
+  "development_selection_sha256": "6ef65ea1f66aec295327560bd3328bdff9dcb2676022ff9a7d07e3f7204f6d62",
+  "selection_note": "All variants retained. No ranking or model choice based on test scores."
+}

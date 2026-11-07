@@ -32,7 +32,7 @@ NAMES.update({'spatial_content_noeq':'Local content, no equivariance','spatial_f
     'spatial_noeq_no_graph':'Local, neither added loss'})
 COLORS+=['#BA9A75','#7E90A5','#96B1A4','#A292B1','#006E69']
 COLORS+=['#AD8B63','#7A8CAE','#7D9C89']
-PRED_ROOTS={};PRIMARY='geometry_chromatic_eq'
+PRED_ROOTS={};PRIMARY='geometry_chromatic_eq';SELECTED=None
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def dump(path,value):path.write_text(json.dumps(value,indent=2),encoding='utf-8',newline='\n')
@@ -62,6 +62,9 @@ def path_for(out,row):
 
 def audit(out,rows,data):
     cfg=json.loads((out/'config.json').read_text())
+    runtime=json.loads((ROOT/'phase3/results/runtime.json').read_text())
+    assert sha(ROOT/'phase2/mono/cc_model.py')==runtime['frozen_loader_sha256']
+    base_checkpoint_sha=sha(ROOT/'checkpoints/depth_anything_v2_metric_hypersim_vits.pth')
     for relative,expected in {**cfg['sources'],**cfg['manifests']}.items():
         assert sha(ROOT/relative)==expected,f'Frozen source/input changed: {relative}'
     expected=cfg.get('expected_rows',1639*len(METHODS))
@@ -83,6 +86,7 @@ def audit(out,rows,data):
     for method in METHODS[1:]:
         base=ROOT/PRED_ROOTS[method] if PRED_ROOTS else out
         run_config=json.loads((base/'config.json').read_text())
+        assert base_checkpoint_sha==run_config['checkpoint_sha256']
         checkpoint_path=base/'models'/f'{method}.pt'
         checkpoint=torch.load(checkpoint_path,map_location='cpu',weights_only=True)
         assert checkpoint['configuration_sha256']==run_config['configuration_sha256']
@@ -105,10 +109,30 @@ def audit(out,rows,data):
     result={'audit':'PASS','prediction_rows_independently_recomputed':len(rows),
         'maximum_absolute_metric_difference':maxima,'frozen_source_and_manifests_match':True,
         'checkpoint_selection_checks':checkpoint_checks,'nyu_scene_splits':[200,40,128],
+        'base_checkpoint_sha256':base_checkpoint_sha,'recorded_frozen_loader_matches':True,
         'previous_40_nyu_scenes_excluded':True,'remid_external_only':True,
         'reference_depth_not_model_input':True,'array_dtype':'float32; scoring float64',
         'auditor_function_sha256':hashlib.sha256(''.join(inspect.getsource(f) for f in [audit,reference,gt,mask_for,path_for]).encode()).hexdigest(),
         'metrics_csv_sha256':sha(out/'metrics.csv')}
+    float_out=ROOT/'phase3/results/float_probe'
+    if (float_out/'summary.json').exists():
+        probe_config=json.loads((float_out/'config.json').read_text())
+        assert sha(ROOT/'phase3/float_probe.py')==probe_config['source_sha256']
+        probe=list(csv.DictReader((float_out/'metrics.csv').open(newline='',encoding='utf-8')))
+        assert len(probe)==640
+        float_max=0.
+        for row in probe:
+            r=data['nyu'][row['id']];g=gt(r);v=mask_for(g,'nyu')
+            p=np.load(float_out/'predictions'/f'{row["id"]}__{row["condition"]}.npy')
+            a=np.clip(p[v].astype(np.float64),.1,10);b=g[v].astype(np.float64)
+            values={'abs_rel':np.abs((a-b)/b).mean(),'rmse_m':np.sqrt(np.square(a-b).mean()),
+                'delta1':(np.maximum(a/b,b/a)<1.25).mean()}
+            for field,value in values.items():
+                difference=abs(float(row[field])-float(value));float_max=max(float_max,difference)
+                assert difference<2e-12
+        result['float_probe_prediction_rows_independently_recomputed']=640
+        result['float_probe_max_metric_difference']=float_max
+        result['float_probe_csv_sha256']=sha(float_out/'metrics.csv')
     dump(out/'independent_audit.json',result);return result
 
 def grouped(rows,fields):
@@ -170,6 +194,14 @@ def summarize(out,rows):
         b={r['scene']:r['abs_rel'] for r in clusters if r['method']==control}
         effect=paired(a,b);effect['note']='Conditional resampling of25conservative labels; not a population CI because physical room identities are unknown.'
         comparisons[f'remid_cluster__primary_vs_{control}']=effect
+    if SELECTED:
+        for control in [m for m in METHODS if m not in ['frozen',SELECTED]]:
+            for condition in ['original','chromatic','exposure']:
+                comparisons[f'nyu_{condition}__selected_vs_{control}']=paired(points[(SELECTED,condition)],points[(control,condition)])
+            a={r['scene']:r['abs_rel'] for r in clusters if r['method']==SELECTED}
+            b={r['scene']:r['abs_rel'] for r in clusters if r['method']==control}
+            effect=paired(a,b);effect['note']='Validation-selected recipe; conditional25label resampling, not physical-room population inference.'
+            comparisons[f'remid_cluster__selected_vs_{control}']=effect
     dump(out/'paired_comparisons.json',comparisons)
     return tables,comparisons
 
@@ -240,13 +272,14 @@ def figures(out,tables,data):
         dump(folder/f'{family}_selection.json',{'image_id':r['id'],'selection':'First sorted native evaluation image, without model-error ranking.'})
 
 def main():
-    global METHODS,PRED_ROOTS,PRIMARY
+    global METHODS,PRED_ROOTS,PRIMARY,SELECTED
     parser=argparse.ArgumentParser();parser.add_argument('--out',type=Path,default=ROOT/'phase3/results/combined')
     parser.add_argument('--skip-prediction-audit',action='store_true');args=parser.parse_args();out=args.out
     assert (out/'summary.json').exists(),'Refusing to analyze a partial run'
     cfg=json.loads((out/'config.json').read_text())
     if 'method_roots' in cfg:
-        METHODS=cfg['methods'];PRED_ROOTS=cfg['method_roots'];PRIMARY=cfg['primary_method']
+        METHODS=cfg['methods'];PRED_ROOTS=cfg['method_roots'];PRIMARY=cfg['primary_method'];SELECTED=cfg.get('validation_selected_method')
+        assert sha(ROOT/'phase3/results/development_selection.json')==cfg['development_selection_sha256']
         for run in cfg['runs']:
             base=ROOT/run['directory'];assert sha(base/'config.json')==run['config_sha256']
             assert sha(base/'evaluation_sources.json')==run['evaluation_sources_sha256']
@@ -256,6 +289,7 @@ def main():
     tables,comparisons=summarize(out,rows);lights=stability(out,rows,data);figures(out,tables,data)
     dump(out/'analysis_summary.json',{'comparison_table':tables,'lighting_stability':lights,
         'fixed_primary_method':PRIMARY,'all_methods_reported':True,
+        'validation_selected_method':SELECTED,
         'literature_novelty_established':False,'physical_illuminant_recovery_established':False,
         'remid_physical_room_independence_known':False,'paired_comparisons':'paired_comparisons.json'})
     print(json.dumps({'analysis':'COMPLETE','rows':len(rows),'results':str(out),'primary_method':PRIMARY},indent=2))

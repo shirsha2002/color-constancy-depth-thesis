@@ -1,7 +1,7 @@
 # Thesis project status and repository scope
 
 Shirsha Mitra, student ID 2023521460130, Sichuan University.
-Status checked on 29 October 2026.
+Status checked on 7 November 2026.
 
 Thesis: **Design and Implementation of a Color-Constancy-Assisted Monocular
 Depth Estimation System**.
@@ -43,7 +43,35 @@ Depth Estimation System**.
 - Wrote the follow-up research report, next-dataset plan and short English
   professor reply. Added a guard for fresh reproductions without stale caches.
 
-## What the results establish
+### 3. Real-light data and explicit chromatic controls
+
+- Reviewed the supervisor-mentioned **Point Cloud Color Constancy (CVPR 2022)**
+  and close prior work **LumiDepth (ECCV 2026)**. PCCC estimates illumination from
+  measured RGB-D; our model remains RGB-only at inference.
+- Acquired the complete public ReMID release: 735 captured real-light RGBs,
+  50 fixed-capture groups and aligned measured depth in millimeters. All ReMID
+  images are external to training and checkpoint selection. Twenty-five
+  conservative labels do not prove independent physical rooms.
+- Acquired 368 new NYU RGB-D scenes, frozen as 200 training / 40 validation /
+  128 evaluation, excluding all forty original pilot scenes. Digital color and
+  exposure changes are simulated illumination on real photographs.
+- Acquired PCCC labels, original folds and sampled XYZRGB clouds for future
+  auxiliary baselines. They are not used as dense-depth training or evaluation.
+- Trained seven global and eight local variants with common source data,
+  schedules and validation rules. The local adapter has 42,036 trainable
+  parameters; predicted first-pass depth guides internal relative-chroma fields.
+- Evaluated sixteen unique methods across 640 NYU input conditions, 735 ReMID
+  images and 264 previously inspected rendered Vari images: 26,224 unique rows,
+  plus a separate 640-prediction floating-point intervention probe. All saved
+  metrics are independently checked against native prediction arrays.
+- Recorded the validation-selected recipe before reading final-test scores.
+  Both the fixed full-loss hypothesis and the validation-selected no-equivariance
+  recipe remain visible, alongside all matched controls and failure cases.
+- Prepared the weekly PDF, measured results, source manifests, small trained
+  adapters, analysis figures and a short English professor reply. Read
+  [the results](phase3/RESULTS.md) before making any performance claim.
+
+## What the earlier results establish
 
 Lighting can change geometry estimates in the tested real DTU scene. Basic RGB
 matching changes from 13.19 mm to 54.21 mm mean absolute depth error under changed
@@ -67,10 +95,13 @@ physically accurate illuminant recovery.
 |---|---|
 | Original experiment code and checks | `scripts/`, `tests/`, `.vscode/` |
 | Follow-up code, frozen protocols and audit tools | `phase2/mono/`, `phase2/stereo/`, `phase2/audit/`, `phase2/PROTOCOL.md` |
+| Expanded real-data study, protocols, learning and independent analysis | `phase3/README.md`, `phase3/RESULTS.md`, `phase3/learning/`, `phase3/data_tools/`, `phase3/analyze.py` |
 | Setup, source revisions, package versions and data acquisition | `scripts/setup.ps1`, `requirements-lock.txt`, `phase2/scripts/`, `phase2/vari_research/` |
 | Selected data identities, splits, hashes and provenance | `data/nyu_pilot/manifest.json`, `phase2/data/vari/manifest.json`, `phase2/data/dtu/manifest.json` and linked documentation |
 | Numerical metric tables, training histories and independent audit records | `results/`, `phase2/results/mono/`, `phase2/results/stereo/main_v2/` |
 | Four small trained feature adapters | `phase2/results/mono/models/` |
+| Fifteen small phase-three adapters and complete metrics/audits | `phase3/results/study_v1/models/`, `phase3/results/spatial_v1/models/`, `phase3/results/spatial_controls/models/`, `phase3/results/combined/` |
+| Real-light / new NYU / auxiliary PCCC identities and provenance | `phase3/data/remid/`, `phase3/data/nyu_rgbd/`, `phase3/data/pccc/` (manifests and documentation only) |
 | Research figures and deterministic small 3D output previews | `report/`, `phase2/results/mono/figures/`, `phase2/results/stereo/main_v2/figures/`, `phase2/results/stereo/main_v2/pointclouds_inference/` |
 | Final PDF reports, original PPTX/slides, notes and QQ text | `output/` |
 | Authoring source for the reports and original slides | `report/`, `presentation/`, `phase2/build_update.py` |
@@ -93,9 +124,9 @@ not authored research outputs, and are not added to this public code repository.
 
 ## Read or reproduce
 
-Start with [the latest report](output/pdf/Shirsha_Mitra_Phase2_Research_Update.pdf)
+Start with [the latest report](output/pdf/Shirsha_Mitra_Weekly_Update_2026_11_07.pdf)
 and [the output guide](output/START_HERE.md). For exact commands and claim limits,
-read [the follow-up README](phase2/README.md),
+read [the new real-light study](phase3/README.md), [the prior follow-up README](phase2/README.md),
 [the reproduction guard notes](phase2/audit/reproducibility_review.md), and
 [the stereo instructions](phase2/stereo/README.md).
 

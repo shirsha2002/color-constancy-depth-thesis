@@ -35,9 +35,12 @@ def main():
     methods=['frozen']+[m for m in roots if m!='frozen']
     expected=1639*len(methods);assert len(merged)==expected
     out=ROOT/'phase3/results/combined';out.mkdir(parents=True,exist_ok=True)
+    selection=json.loads((ROOT/'phase3/results/development_selection.json').read_text())
     config={'runs':configs,'sources':sources,'manifests':manifests,'method_roots':roots,
         'methods':methods,'method_parameter_counts':counts,'checkpoint_sha256':model_hashes,
         'primary_method':'spatial_geometry_eq','expected_rows':expected,
+        'validation_selected_method':selection['validation_selected_recipe']['method'],
+        'development_selection_sha256':sha(ROOT/'phase3/results/development_selection.json'),
         'selection_note':'All variants retained. No ranking or model choice based on test scores.'}
     (out/'config.json').write_text(json.dumps(config,indent=2),encoding='utf-8',newline='\n')
     with (out/'metrics.csv').open('w',newline='',encoding='utf-8') as handle:

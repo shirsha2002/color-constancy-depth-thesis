@@ -1,0 +1,4214 @@
+{
+  "variant": "content",
+  "mode": "content",
+  "configuration_sha256": "0142b065e3923e3f304fde8e991a39872233ccc8f9090593b44204078e176cdc",
+  "selected_step": 600,
+  "validation_abs_rel": 0.16518539037757748,
+  "trainable_parameters": 59699,
+  "history": [
+    {
+      "step": 1,
+      "loss": 1.5557194948196411,
+      "depth_loss": 1.516406536102295,
+      "consistency": 0.3931300938129425,
+      "illumination_equivariance": 0.010112052783370018
+    },
+    {
+      "step": 2,
+      "loss": 0.49260419607162476,
+      "depth_loss": 0.4914313554763794,
+      "consistency": 0.011728495359420776,
+      "illumination_equivariance": 0.017784306779503822
+    },
+    {
+      "step": 3,
+      "loss": 0.9871571063995361,
+      "depth_loss": 0.9778433442115784,
+      "consistency": 0.09313756227493286,
+      "illumination_equivariance": 0.08915446698665619
+    },
+    {
+      "step": 4,
+      "loss": 0.2225673943758011,
+      "depth_loss": 0.21929492056369781,
+      "consistency": 0.03272469341754913,
+      "illumination_equivariance": 0.11943332850933075
+    },
+    {
+      "step": 5,
+      "loss": 1.062956690788269,
+      "depth_loss": 1.062828779220581,
+      "consistency": 0.0012789496686309576,
+      "illumination_equivariance": 8.805407791800945e-11
+    },
+    {
+      "step": 6,
+      "loss": 0.9737891554832458,
+      "depth_loss": 0.9699158668518066,
+      "consistency": 0.0387328565120697,
+      "illumination_equivariance": 0.05149051547050476
+    },
+    {
+      "step": 7,
+      "loss": 0.9238669276237488,
+      "depth_loss": 0.92021244764328,
+      "consistency": 0.03654494881629944,
+      "illumination_equivariance": 0.05764416977763176
+    },
+    {
+      "step": 8,
+      "loss": 0.43740713596343994,
+      "depth_loss": 0.43500036001205444,
+      "consistency": 0.024067632853984833,
+      "illumination_equivariance": 0.032099634408950806
+    },
+    {
+      "step": 9,
+      "loss": 0.6619929671287537,
+      "depth_loss": 0.660863995552063,
+      "consistency": 0.011289537884294987,
+      "illumination_equivariance": 2.137472392860218e-06
+    },
+    {
+      "step": 10,
+      "loss": 0.7341355681419373,
+      "depth_loss": 0.7322994470596313,
+      "consistency": 0.018361330032348633,
+      "illumination_equivariance": 0.014860577881336212
+    },
+    {
+      "step": 11,
+      "loss": 0.7452744245529175,
+      "depth_loss": 0.7445207834243774,
+      "consistency": 0.00753634050488472,
+      "illumination_equivariance": 0.008260858245193958
+    },
+    {
+      "step": 12,
+      "loss": 0.5981022715568542,
+      "depth_loss": 0.5977018475532532,
+      "consistency": 0.004003799986094236,
+      "illumination_equivariance": 0.03303121030330658
+    },
+    {
+      "step": 13,
+      "loss": 0.45785319805145264,
+      "depth_loss": 0.45643001794815063,
+      "consistency": 0.014231030829250813,
+      "illumination_equivariance": 3.049568476853892e-06
+    },
+    {
+      "step": 14,
+      "loss": 0.5955211520195007,
+      "depth_loss": 0.5928663611412048,
+      "consistency": 0.026546208187937737,
+      "illumination_equivariance": 0.0584590770304203
+    },
+    {
+      "step": 15,
+      "loss": 0.4952758550643921,
+      "depth_loss": 0.4938673973083496,
+      "consistency": 0.014082505367696285,
+      "illumination_equivariance": 0.09223903715610504
+    },
+    {
+      "step": 16,
+      "loss": 0.570072591304779,
+      "depth_loss": 0.5676345229148865,
+      "consistency": 0.02437657117843628,
+      "illumination_equivariance": 0.06272649765014648
+    },
+    {
+      "step": 17,
+      "loss": 0.4010546803474426,
+      "depth_loss": 0.3917229473590851,
+      "consistency": 0.09331212192773819,
+      "illumination_equivariance": 0.11025238037109375
+    },
+    {
+      "step": 18,
+      "loss": 0.296154260635376,
+      "depth_loss": 0.29564034938812256,
+      "consistency": 0.005126975942403078,
+      "illumination_equivariance": 0.000736054265871644
+    },
+    {
+      "step": 19,
+      "loss": 0.22044146060943604,
+      "depth_loss": 0.2173975110054016,
+      "consistency": 0.030420979484915733,
+      "illumination_equivariance": 0.08623760938644409
+    },
+    {
+      "step": 20,
+      "loss": 0.7544997930526733,
+      "depth_loss": 0.7530003786087036,
+      "consistency": 0.014971170574426651,
+      "illumination_equivariance": 0.06544861197471619
+    },
+    {
+      "step": 21,
+      "loss": 0.2362688034772873,
+      "depth_loss": 0.23616279661655426,
+      "consistency": 0.001025554840452969,
+      "illumination_equivariance": 7.082250874645979e-08
+    },
+    {
+      "step": 22,
+      "loss": 0.8018071055412292,
+      "depth_loss": 0.7970775365829468,
+      "consistency": 0.04726777225732803,
+      "illumination_equivariance": 0.13900943100452423
+    },
+    {
+      "step": 23,
+      "loss": 0.49969956278800964,
+      "depth_loss": 0.4949820637702942,
+      "consistency": 0.047129224985837936,
+      "illumination_equivariance": 0.14268355071544647
+    },
+    {
+      "step": 24,
+      "loss": 0.7418966293334961,
+      "depth_loss": 0.7418242692947388,
+      "consistency": 0.0006604062509723008,
+      "illumination_equivariance": 2.5451804219756013e-08
+    },
+    {
+      "step": 25,
+      "loss": 0.4994995594024658,
+      "depth_loss": 0.4989571273326874,
+      "consistency": 0.005302676931023598,
+      "illumination_equivariance": 0.003674529492855072
+    },
+    {
+      "step": 26,
+      "loss": 0.8215681314468384,
+      "depth_loss": 0.8201050162315369,
+      "consistency": 0.014533719047904015,
+      "illumination_equivariance": 0.08504544943571091
+    },
+    {
+      "step": 27,
+      "loss": 0.6025985479354858,
+      "depth_loss": 0.6007534265518188,
+      "consistency": 0.0183053407818079,
+      "illumination_equivariance": 0.10715557634830475
+    },
+    {
+      "step": 28,
+      "loss": 0.287521094083786,
+      "depth_loss": 0.2849276661872864,
+      "consistency": 0.025725334882736206,
+      "illumination_equivariance": 0.13334733247756958
+    },
+    {
+      "step": 29,
+      "loss": 0.6009154319763184,
+      "depth_loss": 0.600439190864563,
+      "consistency": 0.004461016971617937,
+      "illumination_equivariance": 0.009337302297353745
+    },
+    {
+      "step": 30,
+      "loss": 0.18055576086044312,
+      "depth_loss": 0.18015742301940918,
+      "consistency": 0.0036359920632094145,
+      "illumination_equivariance": 0.002264917828142643
+    },
+    {
+      "step": 31,
+      "loss": 0.2841561734676361,
+      "depth_loss": 0.2839922606945038,
+      "consistency": 0.00137060577981174,
+      "illumination_equivariance": 3.338821130682845e-08
+    },
+    {
+      "step": 32,
+      "loss": 1.102952003479004,
+      "depth_loss": 1.1005741357803345,
+      "consistency": 0.023434309288859367,
+      "illumination_equivariance": 0.016226641833782196
+    },
+    {
+      "step": 33,
+      "loss": 0.27688366174697876,
+      "depth_loss": 0.2758965492248535,
+      "consistency": 0.009443960152566433,
+      "illumination_equivariance": 0.06210640072822571
+    },
+    {
+      "step": 34,
+      "loss": 0.23310710489749908,
+      "depth_loss": 0.23303551971912384,
+      "consistency": 0.00014533229114022106,
+      "illumination_equivariance": 6.027462973179354e-09
+    },
+    {
+      "step": 35,
+      "loss": 0.9589341282844543,
+      "depth_loss": 0.9575290083885193,
+      "consistency": 0.013702135533094406,
+      "illumination_equivariance": 2.2937827452551574e-05
+    },
+    {
+      "step": 36,
+      "loss": 0.5526555776596069,
+      "depth_loss": 0.5509003400802612,
+      "consistency": 0.016784118488430977,
+      "illumination_equivariance": 0.049203723669052124
+    },
+    {
+      "step": 37,
+      "loss": 0.555505633354187,
+      "depth_loss": 0.5544676780700684,
+      "consistency": 0.009690199047327042,
+      "illumination_equivariance": 0.014094063080847263
+    },
+    {
+      "step": 38,
+      "loss": 0.5947712659835815,
+      "depth_loss": 0.587917685508728,
+      "consistency": 0.06759371608495712,
+      "illumination_equivariance": 0.23951813578605652
+    },
+    {
+      "step": 39,
+      "loss": 0.6373251676559448,
+      "depth_loss": 0.6355801820755005,
+      "consistency": 0.016486993059515953,
+      "illumination_equivariance": 0.034388937056064606
+    },
+    {
+      "step": 40,
+      "loss": 0.4845655560493469,
+      "depth_loss": 0.482381671667099,
+      "consistency": 0.02077840082347393,
+      "illumination_equivariance": 0.045688338577747345
+    },
+    {
+      "step": 41,
+      "loss": 0.18664483726024628,
+      "depth_loss": 0.18269549310207367,
+      "consistency": 0.03817538544535637,
+      "illumination_equivariance": 0.03668896481394768
+    },
+    {
+      "step": 42,
+      "loss": 0.7444751262664795,
+      "depth_loss": 0.7393795251846313,
+      "consistency": 0.04993094876408577,
+      "illumination_equivariance": 0.2910393476486206
+    },
+    {
+      "step": 43,
+      "loss": 0.34335869550704956,
+      "depth_loss": 0.3393561840057373,
+      "consistency": 0.03859410434961319,
+      "illumination_equivariance": 0.020166637375950813
+    },
+    {
+      "step": 44,
+      "loss": 0.5142611265182495,
+      "depth_loss": 0.5113427639007568,
+      "consistency": 0.027811875566840172,
+      "illumination_equivariance": 0.011436350643634796
+    },
+    {
+      "step": 45,
+      "loss": 0.49897417426109314,
+      "depth_loss": 0.4930751919746399,
+      "consistency": 0.057422880083322525,
+      "illumination_equivariance": 0.15424078702926636
+    },
+    {
+      "step": 46,
+      "loss": 0.9637261629104614,
+      "depth_loss": 0.9593316316604614,
+      "consistency": 0.042245496064424515,
+      "illumination_equivariance": 0.23561899363994598
+    },
+    {
+      "step": 47,
+      "loss": 0.16136248409748077,
+      "depth_loss": 0.15898850560188293,
+      "consistency": 0.02143571525812149,
+      "illumination_equivariance": 0.011380637995898724
+    },
+    {
+      "step": 48,
+      "loss": 0.3597698211669922,
+      "depth_loss": 0.3595196306705475,
+      "consistency": 0.00014035021013114601,
+      "illumination_equivariance": 1.0581771903162007e-07
+    },
+    {
+      "step": 49,
+      "loss": 0.14841556549072266,
+      "depth_loss": 0.14508146047592163,
+      "consistency": 0.030903475359082222,
+      "illumination_equivariance": 0.08128926157951355
+    },
+    {
+      "step": 50,
+      "loss": 0.47827422618865967,
+      "depth_loss": 0.4767974317073822,
+      "consistency": 0.011969161219894886,
+      "illumination_equivariance": 0.05131693556904793
+    },
+    {
+      "step": 51,
+      "loss": 0.3971593976020813,
+      "depth_loss": 0.3941807448863983,
+      "consistency": 0.02712961472570896,
+      "illumination_equivariance": 0.02612241916358471
+    },
+    {
+      "step": 52,
+      "loss": 0.25279921293258667,
+      "depth_loss": 0.25241848826408386,
+      "consistency": 0.0008073284407146275,
+      "illumination_equivariance": 2.486086714270641e-08
+    },
+    {
+      "step": 53,
+      "loss": 0.09111636877059937,
+      "depth_loss": 0.08946219086647034,
+      "consistency": 0.013325907289981842,
+      "illumination_equivariance": 0.038609579205513
+    },
+    {
+      "step": 54,
+      "loss": 0.553302526473999,
+      "depth_loss": 0.5503029823303223,
+      "consistency": 0.026596378535032272,
+      "illumination_equivariance": 0.08046752959489822
+    },
+    {
+      "step": 55,
+      "loss": 0.23856006562709808,
+      "depth_loss": 0.2382068932056427,
+      "consistency": 0.0002595321275293827,
+      "illumination_equivariance": 1.6112727507788804e-07
+    },
+    {
+      "step": 56,
+      "loss": 0.21131645143032074,
+      "depth_loss": 0.2089424878358841,
+      "consistency": 0.020367030054330826,
+      "illumination_equivariance": 0.01712338626384735
+    },
+    {
+      "step": 57,
+      "loss": 0.20254822075366974,
+      "depth_loss": 0.20046491920948029,
+      "consistency": 0.017151890322566032,
+      "illumination_equivariance": 0.0677243322134018
+    },
+    {
+      "step": 58,
+      "loss": 0.5739081501960754,
+      "depth_loss": 0.5722449421882629,
+      "consistency": 0.013063156045973301,
+      "illumination_equivariance": 0.010212375782430172
+    },
+    {
+      "step": 59,
+      "loss": 0.16297607123851776,
+      "depth_loss": 0.15936121344566345,
+      "consistency": 0.03207356482744217,
+      "illumination_equivariance": 0.051701951771974564
+    },
+    {
+      "step": 60,
+      "loss": 0.28013086318969727,
+      "depth_loss": 0.27959707379341125,
+      "consistency": 0.0012926282361149788,
+      "illumination_equivariance": 1.6786768810561625e-06
+    },
+    {
+      "step": 61,
+      "loss": 0.15541216731071472,
+      "depth_loss": 0.148033007979393,
+      "consistency": 0.06995069980621338,
+      "illumination_equivariance": 0.017034973949193954
+    },
+    {
+      "step": 62,
+      "loss": 0.35261645913124084,
+      "depth_loss": 0.3491409718990326,
+      "consistency": 0.03060370311141014,
+      "illumination_equivariance": 0.1387549787759781
+    },
+    {
+      "step": 63,
+      "loss": 0.22998543083667755,
+      "depth_loss": 0.22716766595840454,
+      "consistency": 0.023968415334820747,
+      "illumination_equivariance": 0.0744159072637558
+    },
+    {
+      "step": 64,
+      "loss": 0.2231360524892807,
+      "depth_loss": 0.22090375423431396,
+      "consistency": 0.01797478087246418,
+      "illumination_equivariance": 0.026512324810028076
+    },
+    {
+      "step": 65,
+      "loss": 0.12068776786327362,
+      "depth_loss": 0.11935803294181824,
+      "consistency": 0.008816210553050041,
+      "illumination_equivariance": 0.007462633773684502
+    },
+    {
+      "step": 66,
+      "loss": 0.3250451683998108,
+      "depth_loss": 0.3239978551864624,
+      "consistency": 0.006008933763951063,
+      "illumination_equivariance": 0.0020895926281809807
+    },
+    {
+      "step": 67,
+      "loss": 0.328134685754776,
+      "depth_loss": 0.32504674792289734,
+      "consistency": 0.026402547955513,
+      "illumination_equivariance": 0.028680332005023956
+    },
+    {
+      "step": 68,
+      "loss": 0.20005787909030914,
+      "depth_loss": 0.19764018058776855,
+      "consistency": 0.019472921267151833,
+      "illumination_equivariance": 0.07077232748270035
+    },
+    {
+      "step": 69,
+      "loss": 0.4515358805656433,
+      "depth_loss": 0.45104509592056274,
+      "consistency": 0.00018991122487932444,
+      "illumination_equivariance": 3.377252255631902e-07
+    },
+    {
+      "step": 70,
+      "loss": 0.1392236053943634,
+      "depth_loss": 0.12865161895751953,
+      "consistency": 0.10110480338335037,
+      "illumination_equivariance": 0.025109130889177322
+    },
+    {
+      "step": 71,
+      "loss": 0.2722170352935791,
+      "depth_loss": 0.2709876000881195,
+      "consistency": 0.007594445254653692,
+      "illumination_equivariance": 0.06745737791061401
+    },
+    {
+      "step": 72,
+      "loss": 0.17724591493606567,
+      "depth_loss": 0.1757621318101883,
+      "consistency": 0.009860876947641373,
+      "illumination_equivariance": 0.0371367484331131
+    },
+    {
+      "step": 73,
+      "loss": 0.20365594327449799,
+      "depth_loss": 0.19955231249332428,
+      "consistency": 0.03602058067917824,
+      "illumination_equivariance": 0.03454259783029556
+    },
+    {
+      "step": 74,
+      "loss": 0.22738607227802277,
+      "depth_loss": 0.22529275715351105,
+      "consistency": 0.015848003327846527,
+      "illumination_equivariance": 0.009705830365419388
+    },
+    {
+      "step": 75,
+      "loss": 0.34290811419487,
+      "depth_loss": 0.3389473557472229,
+      "consistency": 0.03458503261208534,
+      "illumination_equivariance": 0.04540466517210007
+    },
+    {
+      "step": 76,
+      "loss": 0.5215034484863281,
+      "depth_loss": 0.5172582268714905,
+      "consistency": 0.037327613681554794,
+      "illumination_equivariance": 0.09410214424133301
+    },
+    {
+      "step": 77,
+      "loss": 0.11100177466869354,
+      "depth_loss": 0.10825203359127045,
+      "consistency": 0.02233487367630005,
+      "illumination_equivariance": 0.0479469858109951
+    },
+    {
+      "step": 78,
+      "loss": 0.4975678324699402,
+      "depth_loss": 0.4962669610977173,
+      "consistency": 0.008186422288417816,
+      "illumination_equivariance": 0.00015977059956640005
+    },
+    {
+      "step": 79,
+      "loss": 0.06337336450815201,
+      "depth_loss": 0.06093115732073784,
+      "consistency": 0.01922469027340412,
+      "illumination_equivariance": 0.04469825327396393
+    },
+    {
+      "step": 80,
+      "loss": 0.39209839701652527,
+      "depth_loss": 0.39058372378349304,
+      "consistency": 0.009857757948338985,
+      "illumination_equivariance": 0.001975542400032282
+    },
+    {
+      "step": 81,
+      "loss": 0.5381253957748413,
+      "depth_loss": 0.5367850065231323,
+      "consistency": 0.008343389257788658,
+      "illumination_equivariance": 0.0043623666279017925
+    },
+    {
+      "step": 82,
+      "loss": 0.10991298407316208,
+      "depth_loss": 0.10741287469863892,
+      "consistency": 0.019680941477417946,
+      "illumination_equivariance": 0.044659171253442764
+    },
+    {
+      "step": 83,
+      "loss": 0.17253290116786957,
+      "depth_loss": 0.17138437926769257,
+      "consistency": 0.006030606105923653,
+      "illumination_equivariance": 0.010222259908914566
+    },
+    {
+      "step": 84,
+      "loss": 0.3409629464149475,
+      "depth_loss": 0.3403758108615875,
+      "consistency": 0.00040228679426945746,
+      "illumination_equivariance": 5.4609756716672564e-08
+    },
+    {
+      "step": 85,
+      "loss": 0.28133028745651245,
+      "depth_loss": 0.27969110012054443,
+      "consistency": 0.011051860637962818,
+      "illumination_equivariance": 0.021446967497467995
+    },
+    {
+      "step": 86,
+      "loss": 0.20199470221996307,
+      "depth_loss": 0.19501657783985138,
+      "consistency": 0.06444566696882248,
+      "illumination_equivariance": 0.0822918713092804
+    },
+    {
+      "step": 87,
+      "loss": 0.37480032444000244,
+      "depth_loss": 0.3569200932979584,
+      "consistency": 0.17343896627426147,
+      "illumination_equivariance": 0.015078176744282246
+    },
+    {
+      "step": 88,
+      "loss": 0.053410980850458145,
+      "depth_loss": 0.05050121620297432,
+      "consistency": 0.023500168696045876,
+      "illumination_equivariance": 0.010674817487597466
+    },
+    {
+      "step": 89,
+      "loss": 0.1228531152009964,
+      "depth_loss": 0.12148678302764893,
+      "consistency": 0.008107253350317478,
+      "illumination_equivariance": 0.00013842871703673154
+    },
+    {
+      "step": 90,
+      "loss": 0.36147236824035645,
+      "depth_loss": 0.359020859003067,
+      "consistency": 0.01906442455947399,
+      "illumination_equivariance": 0.06073099374771118
+    },
+    {
+      "step": 91,
+      "loss": 0.7031815052032471,
+      "depth_loss": 0.7003083229064941,
+      "consistency": 0.023172251880168915,
+      "illumination_equivariance": 0.05354119837284088
+    },
+    {
+      "step": 92,
+      "loss": 0.2738123834133148,
+      "depth_loss": 0.27067333459854126,
+      "consistency": 0.025869257748126984,
+      "illumination_equivariance": 0.041906289756298065
+    },
+    {
+      "step": 93,
+      "loss": 0.13959012925624847,
+      "depth_loss": 0.13779078423976898,
+      "consistency": 0.01228269375860691,
+      "illumination_equivariance": 0.0918712466955185
+    },
+    {
+      "step": 94,
+      "loss": 0.13822083175182343,
+      "depth_loss": 0.13628758490085602,
+      "consistency": 0.013677856884896755,
+      "illumination_equivariance": 0.025727715343236923
+    },
+    {
+      "step": 95,
+      "loss": 0.08527309447526932,
+      "depth_loss": 0.0839790478348732,
+      "consistency": 0.007177188526839018,
+      "illumination_equivariance": 0.015801072120666504
+    },
+    {
+      "step": 96,
+      "loss": 0.3033336102962494,
+      "depth_loss": 0.2982931435108185,
+      "consistency": 0.044741977006196976,
+      "illumination_equivariance": 0.2337370216846466
+    },
+    {
+      "step": 97,
+      "loss": 0.20083430409431458,
+      "depth_loss": 0.19942791759967804,
+      "consistency": 0.00828645657747984,
+      "illumination_equivariance": 0.012164460495114326
+    },
+    {
+      "step": 98,
+      "loss": 0.24473831057548523,
+      "depth_loss": 0.24125556647777557,
+      "consistency": 0.029017411172389984,
+      "illumination_equivariance": 0.014658833853900433
+    },
+    {
+      "step": 99,
+      "loss": 0.37790390849113464,
+      "depth_loss": 0.3753279447555542,
+      "consistency": 0.019943520426750183,
+      "illumination_equivariance": 0.04045664519071579
+    },
+    {
+      "step": 100,
+      "loss": 0.0909135639667511,
+      "depth_loss": 0.0891442596912384,
+      "consistency": 0.011935052461922169,
+      "illumination_equivariance": 0.0038902154192328453
+    },
+    {
+      "step": 101,
+      "loss": 0.3608284890651703,
+      "depth_loss": 0.35813647508621216,
+      "consistency": 0.021284062415361404,
+      "illumination_equivariance": 0.11914674937725067
+    },
+    {
+      "step": 102,
+      "loss": 0.14492203295230865,
+      "depth_loss": 0.14384381473064423,
+      "consistency": 0.0049256375059485435,
+      "illumination_equivariance": 0.005864015314728022
+    },
+    {
+      "step": 103,
+      "loss": 0.48479989171028137,
+      "depth_loss": 0.4649141728878021,
+      "consistency": 0.1930692344903946,
+      "illumination_equivariance": 0.38842612504959106
+    },
+    {
+      "step": 104,
+      "loss": 0.14552803337574005,
+      "depth_loss": 0.1407800167798996,
+      "consistency": 0.041794829070568085,
+      "illumination_equivariance": 0.3000495433807373
+    },
+    {
+      "step": 105,
+      "loss": 0.09170733392238617,
+      "depth_loss": 0.08842658251523972,
+      "consistency": 0.02692510560154915,
+      "illumination_equivariance": 0.08250071853399277
+    },
+    {
+      "step": 106,
+      "loss": 0.1238064169883728,
+      "depth_loss": 0.12307235598564148,
+      "consistency": 0.0014687766088172793,
+      "illumination_equivariance": 3.324572617202648e-08
+    },
+    {
+      "step": 107,
+      "loss": 0.06949623674154282,
+      "depth_loss": 0.06516387313604355,
+      "consistency": 0.03747611492872238,
+      "illumination_equivariance": 0.10337844491004944
+    },
+    {
+      "step": 108,
+      "loss": 0.07848042249679565,
+      "depth_loss": 0.07233240455389023,
+      "consistency": 0.05560866370797157,
+      "illumination_equivariance": 0.11016999185085297
+    },
+    {
+      "step": 109,
+      "loss": 0.14298048615455627,
+      "depth_loss": 0.1411009132862091,
+      "consistency": 0.012944577261805534,
+      "illumination_equivariance": 0.00513388542458415
+    },
+    {
+      "step": 110,
+      "loss": 0.12314098328351974,
+      "depth_loss": 0.12175142765045166,
+      "consistency": 0.007974152453243732,
+      "illumination_equivariance": 0.03282168135046959
+    },
+    {
+      "step": 111,
+      "loss": 0.3268182575702667,
+      "depth_loss": 0.32492440938949585,
+      "consistency": 0.013149235397577286,
+      "illumination_equivariance": 0.011739806272089481
+    },
+    {
+      "step": 112,
+      "loss": 0.24677661061286926,
+      "depth_loss": 0.2450370490550995,
+      "consistency": 0.011567594483494759,
+      "illumination_equivariance": 0.12701554596424103
+    },
+    {
+      "step": 113,
+      "loss": 0.1287355124950409,
+      "depth_loss": 0.12171287834644318,
+      "consistency": 0.06441091746091843,
+      "illumination_equivariance": 0.08019206672906876
+    },
+    {
+      "step": 114,
+      "loss": 0.1262831836938858,
+      "depth_loss": 0.125357985496521,
+      "consistency": 0.003310498548671603,
+      "illumination_equivariance": 2.0171148662484484e-07
+    },
+    {
+      "step": 115,
+      "loss": 0.11962676048278809,
+      "depth_loss": 0.11748526245355606,
+      "consistency": 0.015484154224395752,
+      "illumination_equivariance": 0.07315871119499207
+    },
+    {
+      "step": 116,
+      "loss": 0.227589949965477,
+      "depth_loss": 0.22571781277656555,
+      "consistency": 0.01283414475619793,
+      "illumination_equivariance": 0.06914955377578735
+    },
+    {
+      "step": 117,
+      "loss": 0.47370511293411255,
+      "depth_loss": 0.4661363661289215,
+      "consistency": 0.07009637355804443,
+      "illumination_equivariance": 0.03214087337255478
+    },
+    {
+      "step": 118,
+      "loss": 0.17763689160346985,
+      "depth_loss": 0.1719437837600708,
+      "consistency": 0.050955649465322495,
+      "illumination_equivariance": 0.028090987354516983
+    },
+    {
+      "step": 119,
+      "loss": 0.19047105312347412,
+      "depth_loss": 0.18611159920692444,
+      "consistency": 0.03757861256599426,
+      "illumination_equivariance": 0.022645965218544006
+    },
+    {
+      "step": 120,
+      "loss": 0.08275631815195084,
+      "depth_loss": 0.08102528750896454,
+      "consistency": 0.011319858022034168,
+      "illumination_equivariance": 1.2621889254660346e-05
+    },
+    {
+      "step": 121,
+      "loss": 0.31959113478660583,
+      "depth_loss": 0.31819429993629456,
+      "consistency": 0.008013430051505566,
+      "illumination_equivariance": 0.014283506199717522
+    },
+    {
+      "step": 122,
+      "loss": 0.19663313031196594,
+      "depth_loss": 0.19500420987606049,
+      "consistency": 0.010354999452829361,
+      "illumination_equivariance": 0.0346047580242157
+    },
+    {
+      "step": 123,
+      "loss": 0.1185469925403595,
+      "depth_loss": 0.11548693478107452,
+      "consistency": 0.024649618193507195,
+      "illumination_equivariance": 0.0742926374077797
+    },
+    {
+      "step": 124,
+      "loss": 0.14458522200584412,
+      "depth_loss": 0.14316481351852417,
+      "consistency": 0.00828731618821621,
+      "illumination_equivariance": 1.537319622002542e-05
+    },
+    {
+      "step": 125,
+      "loss": 0.115256667137146,
+      "depth_loss": 0.10940317809581757,
+      "consistency": 0.05266636982560158,
+      "illumination_equivariance": 0.5738170742988586
+    },
+    {
+      "step": 126,
+      "loss": 0.1884543001651764,
+      "depth_loss": 0.18580377101898193,
+      "consistency": 0.02047734521329403,
+      "illumination_equivariance": 0.08869975060224533
+    },
+    {
+      "step": 127,
+      "loss": 0.2434293031692505,
+      "depth_loss": 0.2397313266992569,
+      "consistency": 0.03097299113869667,
+      "illumination_equivariance": 0.11022453755140305
+    },
+    {
+      "step": 128,
+      "loss": 0.10801183432340622,
+      "depth_loss": 0.10253516584634781,
+      "consistency": 0.04875125735998154,
+      "illumination_equivariance": 0.06951706111431122
+    },
+    {
+      "step": 129,
+      "loss": 0.12301146239042282,
+      "depth_loss": 0.1211409792304039,
+      "consistency": 0.012688721530139446,
+      "illumination_equivariance": 0.010928654111921787
+    },
+    {
+      "step": 130,
+      "loss": 0.10780442506074905,
+      "depth_loss": 0.10379736870527267,
+      "consistency": 0.0340353399515152,
+      "illumination_equivariance": 0.04355935752391815
+    },
+    {
+      "step": 131,
+      "loss": 0.10544035583734512,
+      "depth_loss": 0.10404683649539948,
+      "consistency": 0.007957789115607738,
+      "illumination_equivariance": 0.0022769710049033165
+    },
+    {
+      "step": 132,
+      "loss": 0.1334298551082611,
+      "depth_loss": 0.12865479290485382,
+      "consistency": 0.04175650328397751,
+      "illumination_equivariance": 0.08081274479627609
+    },
+    {
+      "step": 133,
+      "loss": 0.12379232048988342,
+      "depth_loss": 0.12268433719873428,
+      "consistency": 0.005162478424608707,
+      "illumination_equivariance": 0.00015831904602237046
+    },
+    {
+      "step": 134,
+      "loss": 0.07752177864313126,
+      "depth_loss": 0.0722082182765007,
+      "consistency": 0.04707270488142967,
+      "illumination_equivariance": 0.005068554077297449
+    },
+    {
+      "step": 135,
+      "loss": 0.274300217628479,
+      "depth_loss": 0.27065229415893555,
+      "consistency": 0.030491357669234276,
+      "illumination_equivariance": 0.01146814227104187
+    },
+    {
+      "step": 136,
+      "loss": 0.597354531288147,
+      "depth_loss": 0.5870985388755798,
+      "consistency": 0.09676493704319,
+      "illumination_equivariance": 0.23882459104061127
+    },
+    {
+      "step": 137,
+      "loss": 0.11594957113265991,
+      "depth_loss": 0.11377416551113129,
+      "consistency": 0.015770282596349716,
+      "illumination_equivariance": 0.04945405200123787
+    },
+    {
+      "step": 138,
+      "loss": 0.24340611696243286,
+      "depth_loss": 0.2418857365846634,
+      "consistency": 0.009192096069455147,
+      "illumination_equivariance": 0.0050007314421236515
+    },
+    {
+      "step": 139,
+      "loss": 0.28538283705711365,
+      "depth_loss": 0.28128188848495483,
+      "consistency": 0.03506925702095032,
+      "illumination_equivariance": 0.2918936610221863
+    },
+    {
+      "step": 140,
+      "loss": 0.24399149417877197,
+      "depth_loss": 0.24001088738441467,
+      "consistency": 0.03376190364360809,
+      "illumination_equivariance": 0.02075534500181675
+    },
+    {
+      "step": 141,
+      "loss": 0.2933395504951477,
+      "depth_loss": 0.29149410128593445,
+      "consistency": 0.012444314546883106,
+      "illumination_equivariance": 0.04695891588926315
+    },
+    {
+      "step": 142,
+      "loss": 0.11181711405515671,
+      "depth_loss": 0.11059731990098953,
+      "consistency": 0.0061500705778598785,
+      "illumination_equivariance": 0.004491127096116543
+    },
+    {
+      "step": 143,
+      "loss": 0.14415740966796875,
+      "depth_loss": 0.141578808426857,
+      "consistency": 0.019795333966612816,
+      "illumination_equivariance": 0.0004473996814340353
+    },
+    {
+      "step": 144,
+      "loss": 0.07810059934854507,
+      "depth_loss": 0.0774821937084198,
+      "consistency": 0.00020160306303296238,
+      "illumination_equivariance": 4.428446231941052e-07
+    },
+    {
+      "step": 145,
+      "loss": 0.08112114667892456,
+      "depth_loss": 0.07923516631126404,
+      "consistency": 0.012910258956253529,
+      "illumination_equivariance": 0.007491023279726505
+    },
+    {
+      "step": 146,
+      "loss": 0.10995079576969147,
+      "depth_loss": 0.1057693138718605,
+      "consistency": 0.035843733698129654,
+      "illumination_equivariance": 0.12061668187379837
+    },
+    {
+      "step": 147,
+      "loss": 0.36148855090141296,
+      "depth_loss": 0.3530941903591156,
+      "consistency": 0.07794497907161713,
+      "illumination_equivariance": 0.10156659781932831
+    },
+    {
+      "step": 148,
+      "loss": 0.13210280239582062,
+      "depth_loss": 0.13050171732902527,
+      "consistency": 0.00994439609348774,
+      "illumination_equivariance": 0.00029928702861070633
+    },
+    {
+      "step": 149,
+      "loss": 0.4217801094055176,
+      "depth_loss": 0.41603267192840576,
+      "consistency": 0.051646921783685684,
+      "illumination_equivariance": 0.5553580522537231
+    },
+    {
+      "step": 150,
+      "loss": 0.16310818493366241,
+      "depth_loss": 0.16225005686283112,
+      "consistency": 0.00258665275759995,
+      "illumination_equivariance": 8.41085275169462e-05
+    },
+    {
+      "step": 151,
+      "loss": 0.1737670749425888,
+      "depth_loss": 0.17066287994384766,
+      "consistency": 0.025047771632671356,
+      "illumination_equivariance": 0.002135099843144417
+    },
+    {
+      "step": 152,
+      "loss": 0.27409258484840393,
+      "depth_loss": 0.27262082695961,
+      "consistency": 0.008719068020582199,
+      "illumination_equivariance": 0.0028640809468925
+    },
+    {
+      "step": 153,
+      "loss": 0.17861494421958923,
+      "depth_loss": 0.17556549608707428,
+      "consistency": 0.024395665153861046,
+      "illumination_equivariance": 0.09937342256307602
+    },
+    {
+      "step": 154,
+      "loss": 0.6080706119537354,
+      "depth_loss": 0.6061909794807434,
+      "consistency": 0.012874088250100613,
+      "illumination_equivariance": 0.0005063327262178063
+    },
+    {
+      "step": 155,
+      "loss": 0.2640257179737091,
+      "depth_loss": 0.25410422682762146,
+      "consistency": 0.09312371164560318,
+      "illumination_equivariance": 0.02562461420893669
+    },
+    {
+      "step": 156,
+      "loss": 0.09426170587539673,
+      "depth_loss": 0.09139638394117355,
+      "consistency": 0.02259337343275547,
+      "illumination_equivariance": 0.06668145209550858
+    },
+    {
+      "step": 157,
+      "loss": 0.34558719396591187,
+      "depth_loss": 0.332290381193161,
+      "consistency": 0.1269354522228241,
+      "illumination_equivariance": 0.07601262629032135
+    },
+    {
+      "step": 158,
+      "loss": 0.07927488535642624,
+      "depth_loss": 0.07779984921216965,
+      "consistency": 0.008624245412647724,
+      "illumination_equivariance": 0.007285519503057003
+    },
+    {
+      "step": 159,
+      "loss": 0.13786067068576813,
+      "depth_loss": 0.1327059119939804,
+      "consistency": 0.04549039900302887,
+      "illumination_equivariance": 0.1360630989074707
+    },
+    {
+      "step": 160,
+      "loss": 0.08547564595937729,
+      "depth_loss": 0.0839281678199768,
+      "consistency": 0.009370783343911171,
+      "illumination_equivariance": 0.0056974622420966625
+    },
+    {
+      "step": 161,
+      "loss": 0.1270771622657776,
+      "depth_loss": 0.12604479491710663,
+      "consistency": 0.004266915377229452,
+      "illumination_equivariance": 5.1164352043997496e-05
+    },
+    {
+      "step": 162,
+      "loss": 0.2632932662963867,
+      "depth_loss": 0.2592417299747467,
+      "consistency": 0.0347142331302166,
+      "illumination_equivariance": 0.12357793748378754
+    },
+    {
+      "step": 163,
+      "loss": 0.11795828491449356,
+      "depth_loss": 0.11661212891340256,
+      "consistency": 0.007325822487473488,
+      "illumination_equivariance": 0.02021908201277256
+    },
+    {
+      "step": 164,
+      "loss": 0.154254749417305,
+      "depth_loss": 0.15213759243488312,
+      "consistency": 0.015093634836375713,
+      "illumination_equivariance": 0.02903814986348152
+    },
+    {
+      "step": 165,
+      "loss": 0.21147294342517853,
+      "depth_loss": 0.20602653920650482,
+      "consistency": 0.04847700148820877,
+      "illumination_equivariance": 0.11870129406452179
+    },
+    {
+      "step": 166,
+      "loss": 0.11540351808071136,
+      "depth_loss": 0.11108311265707016,
+      "consistency": 0.037065353244543076,
+      "illumination_equivariance": 0.05369110405445099
+    },
+    {
+      "step": 167,
+      "loss": 0.23494574427604675,
+      "depth_loss": 0.23321564495563507,
+      "consistency": 0.011180327273905277,
+      "illumination_equivariance": 0.02089356631040573
+    },
+    {
+      "step": 168,
+      "loss": 0.5059511065483093,
+      "depth_loss": 0.5001583099365234,
+      "consistency": 0.051815539598464966,
+      "illumination_equivariance": 0.016891546547412872
+    },
+    {
+      "step": 169,
+      "loss": 0.07595425099134445,
+      "depth_loss": 0.07305696606636047,
+      "consistency": 0.022809073328971863,
+      "illumination_equivariance": 0.03562694415450096
+    },
+    {
+      "step": 170,
+      "loss": 0.2901463210582733,
+      "depth_loss": 0.2881886959075928,
+      "consistency": 0.013441723771393299,
+      "illumination_equivariance": 0.01259936299175024
+    },
+    {
+      "step": 171,
+      "loss": 0.046440962702035904,
+      "depth_loss": 0.0451265387237072,
+      "consistency": 0.0069849067367613316,
+      "illumination_equivariance": 2.017387669184245e-05
+    },
+    {
+      "step": 172,
+      "loss": 0.16431227326393127,
+      "depth_loss": 0.16236315667629242,
+      "consistency": 0.013367794454097748,
+      "illumination_equivariance": 0.0045389519073069096
+    },
+    {
+      "step": 173,
+      "loss": 0.2250591218471527,
+      "depth_loss": 0.22229713201522827,
+      "consistency": 0.0215340293943882,
+      "illumination_equivariance": 0.015331698581576347
+    },
+    {
+      "step": 174,
+      "loss": 0.08057492971420288,
+      "depth_loss": 0.07838346809148788,
+      "consistency": 0.0158050749450922,
+      "illumination_equivariance": 0.03994321450591087
+    },
+    {
+      "step": 175,
+      "loss": 0.18449942767620087,
+      "depth_loss": 0.18239787220954895,
+      "consistency": 0.014890659600496292,
+      "illumination_equivariance": 0.006349504925310612
+    },
+    {
+      "step": 176,
+      "loss": 0.1418229192495346,
+      "depth_loss": 0.13972187042236328,
+      "consistency": 0.014837993308901787,
+      "illumination_equivariance": 0.10441672801971436
+    },
+    {
+      "step": 177,
+      "loss": 0.09434563666582108,
+      "depth_loss": 0.0936470627784729,
+      "consistency": 0.0008399542421102524,
+      "illumination_equivariance": 1.482402012698003e-06
+    },
+    {
+      "step": 178,
+      "loss": 0.4078039228916168,
+      "depth_loss": 0.4060763418674469,
+      "consistency": 0.01117919571697712,
+      "illumination_equivariance": 0.0015653872396796942
+    },
+    {
+      "step": 179,
+      "loss": 0.09000915288925171,
+      "depth_loss": 0.08674722909927368,
+      "consistency": 0.026449989527463913,
+      "illumination_equivariance": 0.01387404277920723
+    },
+    {
+      "step": 180,
+      "loss": 0.07724522054195404,
+      "depth_loss": 0.07406771928071976,
+      "consistency": 0.02561667189002037,
+      "illumination_equivariance": 0.10283549129962921
+    },
+    {
+      "step": 181,
+      "loss": 0.14277854561805725,
+      "depth_loss": 0.13908159732818604,
+      "consistency": 0.030864182859659195,
+      "illumination_equivariance": 0.09805330634117126
+    },
+    {
+      "step": 182,
+      "loss": 0.17681820690631866,
+      "depth_loss": 0.17489811778068542,
+      "consistency": 0.013063197024166584,
+      "illumination_equivariance": 0.08844316005706787
+    },
+    {
+      "step": 183,
+      "loss": 0.2687753736972809,
+      "depth_loss": 0.26629504561424255,
+      "consistency": 0.018697179853916168,
+      "illumination_equivariance": 0.09938419610261917
+    },
+    {
+      "step": 184,
+      "loss": 0.12299048900604248,
+      "depth_loss": 0.11992831528186798,
+      "consistency": 0.024484895169734955,
+      "illumination_equivariance": 0.04472370818257332
+    },
+    {
+      "step": 185,
+      "loss": 0.31918826699256897,
+      "depth_loss": 0.31592702865600586,
+      "consistency": 0.026466138660907745,
+      "illumination_equivariance": 0.0015240538632497191
+    },
+    {
+      "step": 186,
+      "loss": 0.1787467896938324,
+      "depth_loss": 0.17730630934238434,
+      "consistency": 0.008315123617649078,
+      "illumination_equivariance": 0.0012779062381014228
+    },
+    {
+      "step": 187,
+      "loss": 0.083480603992939,
+      "depth_loss": 0.08239816874265671,
+      "consistency": 0.004704704042524099,
+      "illumination_equivariance": 0.016138926148414612
+    },
+    {
+      "step": 188,
+      "loss": 0.49682310223579407,
+      "depth_loss": 0.4929890036582947,
+      "consistency": 0.032248903065919876,
+      "illumination_equivariance": 0.026504699140787125
+    },
+    {
+      "step": 189,
+      "loss": 0.326699435710907,
+      "depth_loss": 0.3232567608356476,
+      "consistency": 0.028263648971915245,
+      "illumination_equivariance": 0.023073632270097733
+    },
+    {
+      "step": 190,
+      "loss": 0.6824029088020325,
+      "depth_loss": 0.6810319423675537,
+      "consistency": 0.007677040994167328,
+      "illumination_equivariance": 0.00024408119497820735
+    },
+    {
+      "step": 191,
+      "loss": 0.13106848299503326,
+      "depth_loss": 0.12966413795948029,
+      "consistency": 0.007861052639782429,
+      "illumination_equivariance": 0.0003066060016863048
+    },
+    {
+      "step": 192,
+      "loss": 0.14491835236549377,
+      "depth_loss": 0.14378979802131653,
+      "consistency": 0.00512179359793663,
+      "illumination_equivariance": 0.007643694523721933
+    },
+    {
+      "step": 193,
+      "loss": 0.400804728269577,
+      "depth_loss": 0.3983132243156433,
+      "consistency": 0.018808633089065552,
+      "illumination_equivariance": 0.019638998433947563
+    },
+    {
+      "step": 194,
+      "loss": 0.2114834487438202,
+      "depth_loss": 0.2106526792049408,
+      "consistency": 0.002163632307201624,
+      "illumination_equivariance": 8.676669494889211e-06
+    },
+    {
+      "step": 195,
+      "loss": 0.1574423909187317,
+      "depth_loss": 0.15416906774044037,
+      "consistency": 0.026621049270033836,
+      "illumination_equivariance": 0.04084377363324165
+    },
+    {
+      "step": 196,
+      "loss": 0.11961250752210617,
+      "depth_loss": 0.11500468850135803,
+      "consistency": 0.03988161310553551,
+      "illumination_equivariance": 0.05696751922369003
+    },
+    {
+      "step": 197,
+      "loss": 0.21059194207191467,
+      "depth_loss": 0.20649151504039764,
+      "consistency": 0.03483974561095238,
+      "illumination_equivariance": 0.06021052971482277
+    },
+    {
+      "step": 198,
+      "loss": 0.38682660460472107,
+      "depth_loss": 0.3842381536960602,
+      "consistency": 0.01970803178846836,
+      "illumination_equivariance": 0.05834696814417839
+    },
+    {
+      "step": 199,
+      "loss": 0.25291913747787476,
+      "depth_loss": 0.24965277314186096,
+      "consistency": 0.026492157950997353,
+      "illumination_equivariance": 0.010450177825987339
+    },
+    {
+      "step": 200,
+      "loss": 0.08917473256587982,
+      "depth_loss": 0.0883556455373764,
+      "consistency": 0.002049105940386653,
+      "illumination_equivariance": 7.493732846342027e-05,
+      "validation_abs_rel": 0.18833656207278285
+    },
+    {
+      "step": 201,
+      "loss": 0.15874247252941132,
+      "depth_loss": 0.15558315813541412,
+      "consistency": 0.025440797209739685,
+      "illumination_equivariance": 0.06900962442159653
+    },
+    {
+      "step": 202,
+      "loss": 0.08769948035478592,
+      "depth_loss": 0.08480966836214066,
+      "consistency": 0.02270542085170746,
+      "illumination_equivariance": 0.06682667136192322
+    },
+    {
+      "step": 203,
+      "loss": 0.07600292563438416,
+      "depth_loss": 0.07062550634145737,
+      "consistency": 0.04751967266201973,
+      "illumination_equivariance": 0.004947225097566843
+    },
+    {
+      "step": 204,
+      "loss": 0.4299149513244629,
+      "depth_loss": 0.4100734293460846,
+      "consistency": 0.1922273486852646,
+      "illumination_equivariance": 0.37884587049484253
+    },
+    {
+      "step": 205,
+      "loss": 0.14267629384994507,
+      "depth_loss": 0.1386883556842804,
+      "consistency": 0.0336432084441185,
+      "illumination_equivariance": 0.14805510640144348
+    },
+    {
+      "step": 206,
+      "loss": 0.5746505260467529,
+      "depth_loss": 0.5698198080062866,
+      "consistency": 0.04217953234910965,
+      "illumination_equivariance": 0.29381412267684937
+    },
+    {
+      "step": 207,
+      "loss": 0.08069931715726852,
+      "depth_loss": 0.07863752543926239,
+      "consistency": 0.014431706629693508,
+      "illumination_equivariance": 0.018375147134065628
+    },
+    {
+      "step": 208,
+      "loss": 0.48506587743759155,
+      "depth_loss": 0.4815642237663269,
+      "consistency": 0.02884075604379177,
+      "illumination_equivariance": 0.02002498134970665
+    },
+    {
+      "step": 209,
+      "loss": 0.18344956636428833,
+      "depth_loss": 0.18256975710391998,
+      "consistency": 0.00261934706941247,
+      "illumination_equivariance": 8.652504038764164e-05
+    },
+    {
+      "step": 210,
+      "loss": 0.15245230495929718,
+      "depth_loss": 0.14212776720523834,
+      "consistency": 0.09706638008356094,
+      "illumination_equivariance": 0.07713588327169418
+    },
+    {
+      "step": 211,
+      "loss": 0.1684824377298355,
+      "depth_loss": 0.16418474912643433,
+      "consistency": 0.03679022565484047,
+      "illumination_equivariance": 0.016782131046056747
+    },
+    {
+      "step": 212,
+      "loss": 0.19164876639842987,
+      "depth_loss": 0.18718332052230835,
+      "consistency": 0.038383036851882935,
+      "illumination_equivariance": 0.021756216883659363
+    },
+    {
+      "step": 213,
+      "loss": 0.1813758909702301,
+      "depth_loss": 0.17982570827007294,
+      "consistency": 0.00928503181785345,
+      "illumination_equivariance": 0.01661541499197483
+    },
+    {
+      "step": 214,
+      "loss": 0.3041972517967224,
+      "depth_loss": 0.30049657821655273,
+      "consistency": 0.030783483758568764,
+      "illumination_equivariance": 0.011556850746273994
+    },
+    {
+      "step": 215,
+      "loss": 0.06553781777620316,
+      "depth_loss": 0.05973246321082115,
+      "consistency": 0.051839545369148254,
+      "illumination_equivariance": 0.1690559983253479
+    },
+    {
+      "step": 216,
+      "loss": 0.1562088578939438,
+      "depth_loss": 0.15516093373298645,
+      "consistency": 0.0043018888682127,
+      "illumination_equivariance": 1.6218989458138822e-06
+    },
+    {
+      "step": 217,
+      "loss": 0.21613763272762299,
+      "depth_loss": 0.21138139069080353,
+      "consistency": 0.04138505086302757,
+      "illumination_equivariance": 0.03722871467471123
+    },
+    {
+      "step": 218,
+      "loss": 0.29502299427986145,
+      "depth_loss": 0.2922495901584625,
+      "consistency": 0.021584078669548035,
+      "illumination_equivariance": 0.11973464488983154
+    },
+    {
+      "step": 219,
+      "loss": 0.2580187916755676,
+      "depth_loss": 0.25337234139442444,
+      "consistency": 0.0402197502553463,
+      "illumination_equivariance": 0.10452397167682648
+    },
+    {
+      "step": 220,
+      "loss": 0.2531700134277344,
+      "depth_loss": 0.2514231204986572,
+      "consistency": 0.01122952252626419,
+      "illumination_equivariance": 0.02078006975352764
+    },
+    {
+      "step": 221,
+      "loss": 0.1641218513250351,
+      "depth_loss": 0.1614796370267868,
+      "consistency": 0.02018885128200054,
+      "illumination_equivariance": 0.07001113146543503
+    },
+    {
+      "step": 222,
+      "loss": 0.10489292442798615,
+      "depth_loss": 0.10289356857538223,
+      "consistency": 0.013765932992100716,
+      "illumination_equivariance": 0.025544272735714912
+    },
+    {
+      "step": 223,
+      "loss": 0.11509644985198975,
+      "depth_loss": 0.11075187474489212,
+      "consistency": 0.03718452900648117,
+      "illumination_equivariance": 0.05263277143239975
+    },
+    {
+      "step": 224,
+      "loss": 0.05736095458269119,
+      "depth_loss": 0.054407525807619095,
+      "consistency": 0.023260042071342468,
+      "illumination_equivariance": 0.04947599023580551
+    },
+    {
+      "step": 225,
+      "loss": 0.15214446187019348,
+      "depth_loss": 0.1472988873720169,
+      "consistency": 0.04231609031558037,
+      "illumination_equivariance": 0.3056730031967163
+    },
+    {
+      "step": 226,
+      "loss": 0.49165189266204834,
+      "depth_loss": 0.4909610450267792,
+      "consistency": 0.0007406337535940111,
+      "illumination_equivariance": 6.412051334336866e-09
+    },
+    {
+      "step": 227,
+      "loss": 0.07626467943191528,
+      "depth_loss": 0.07361241430044174,
+      "consistency": 0.020297696813941002,
+      "illumination_equivariance": 0.0439005121588707
+    },
+    {
+      "step": 228,
+      "loss": 0.2534996271133423,
+      "depth_loss": 0.25070977210998535,
+      "consistency": 0.021662525832653046,
+      "illumination_equivariance": 0.1357351392507553
+    },
+    {
+      "step": 229,
+      "loss": 0.08406160026788712,
+      "depth_loss": 0.07958763092756271,
+      "consistency": 0.03850945830345154,
+      "illumination_equivariance": 0.10056140273809433
+    },
+    {
+      "step": 230,
+      "loss": 0.201760396361351,
+      "depth_loss": 0.20007774233818054,
+      "consistency": 0.010624554008245468,
+      "illumination_equivariance": 0.021170172840356827
+    },
+    {
+      "step": 231,
+      "loss": 0.10570789128541946,
+      "depth_loss": 0.10324155539274216,
+      "consistency": 0.0184401273727417,
+      "illumination_equivariance": 0.13533079624176025
+    },
+    {
+      "step": 232,
+      "loss": 0.1180315688252449,
+      "depth_loss": 0.1165822222828865,
+      "consistency": 0.008249248377978802,
+      "illumination_equivariance": 0.002057577483355999
+    },
+    {
+      "step": 233,
+      "loss": 0.2963944673538208,
+      "depth_loss": 0.29309797286987305,
+      "consistency": 0.026718562468886375,
+      "illumination_equivariance": 0.001519964076578617
+    },
+    {
+      "step": 234,
+      "loss": 0.19354741275310516,
+      "depth_loss": 0.18699879944324493,
+      "consistency": 0.05927795544266701,
+      "illumination_equivariance": 0.3881121277809143
+    },
+    {
+      "step": 235,
+      "loss": 0.08728215843439102,
+      "depth_loss": 0.081674724817276,
+      "consistency": 0.04979439079761505,
+      "illumination_equivariance": 0.06657476723194122
+    },
+    {
+      "step": 236,
+      "loss": 0.17224843800067902,
+      "depth_loss": 0.16963952779769897,
+      "consistency": 0.019781123846769333,
+      "illumination_equivariance": 0.17600932717323303
+    },
+    {
+      "step": 237,
+      "loss": 0.11857117712497711,
+      "depth_loss": 0.11305306851863861,
+      "consistency": 0.04893698915839195,
+      "illumination_equivariance": 0.04169028252363205
+    },
+    {
+      "step": 238,
+      "loss": 0.10927630960941315,
+      "depth_loss": 0.10530555248260498,
+      "consistency": 0.033398814499378204,
+      "illumination_equivariance": 0.05376823619008064
+    },
+    {
+      "step": 239,
+      "loss": 0.08300837874412537,
+      "depth_loss": 0.08187814056873322,
+      "consistency": 0.005042950622737408,
+      "illumination_equivariance": 0.00943557545542717
+    },
+    {
+      "step": 240,
+      "loss": 0.14749513566493988,
+      "depth_loss": 0.1453518569469452,
+      "consistency": 0.015194304287433624,
+      "illumination_equivariance": 0.02790519781410694
+    },
+    {
+      "step": 241,
+      "loss": 0.22979719936847687,
+      "depth_loss": 0.22861503064632416,
+      "consistency": 0.005566814914345741,
+      "illumination_equivariance": 0.00013921066420152783
+    },
+    {
+      "step": 242,
+      "loss": 0.11884796619415283,
+      "depth_loss": 0.11791981011629105,
+      "consistency": 0.00304004130885005,
+      "illumination_equivariance": 0.00010422330524306744
+    },
+    {
+      "step": 243,
+      "loss": 0.20585644245147705,
+      "depth_loss": 0.20261113345623016,
+      "consistency": 0.026233842596411705,
+      "illumination_equivariance": 0.040718480944633484
+    },
+    {
+      "step": 244,
+      "loss": 0.125787153840065,
+      "depth_loss": 0.12385521084070206,
+      "consistency": 0.01302548497915268,
+      "illumination_equivariance": 0.010973092168569565
+    },
+    {
+      "step": 245,
+      "loss": 0.11082135140895844,
+      "depth_loss": 0.10893338918685913,
+      "consistency": 0.012599842622876167,
+      "illumination_equivariance": 0.034330613911151886
+    },
+    {
+      "step": 246,
+      "loss": 0.13473747670650482,
+      "depth_loss": 0.13257278501987457,
+      "consistency": 0.01535941381007433,
+      "illumination_equivariance": 0.059839051216840744
+    },
+    {
+      "step": 247,
+      "loss": 0.11333466321229935,
+      "depth_loss": 0.11001367121934891,
+      "consistency": 0.02696334943175316,
+      "illumination_equivariance": 0.028476258739829063
+    },
+    {
+      "step": 248,
+      "loss": 0.09544085711240768,
+      "depth_loss": 0.09387065470218658,
+      "consistency": 0.009400864131748676,
+      "illumination_equivariance": 0.034077294170856476
+    },
+    {
+      "step": 249,
+      "loss": 0.08240757137537003,
+      "depth_loss": 0.08166464418172836,
+      "consistency": 0.0011826329864561558,
+      "illumination_equivariance": 3.979993380198721e-06
+    },
+    {
+      "step": 250,
+      "loss": 0.1426958590745926,
+      "depth_loss": 0.14155223965644836,
+      "consistency": 0.005213890224695206,
+      "illumination_equivariance": 0.00014455296332016587
+    },
+    {
+      "step": 251,
+      "loss": 0.11094877123832703,
+      "depth_loss": 0.10721942782402039,
+      "consistency": 0.03105318360030651,
+      "illumination_equivariance": 0.09593617916107178
+    },
+    {
+      "step": 252,
+      "loss": 0.15467533469200134,
+      "depth_loss": 0.14967074990272522,
+      "consistency": 0.043832700699567795,
+      "illumination_equivariance": 0.018388763070106506
+    },
+    {
+      "step": 253,
+      "loss": 0.26489749550819397,
+      "depth_loss": 0.2622486352920532,
+      "consistency": 0.020257093012332916,
+      "illumination_equivariance": 0.0608011931180954
+    },
+    {
+      "step": 254,
+      "loss": 0.11394831538200378,
+      "depth_loss": 0.11151321232318878,
+      "consistency": 0.018090764060616493,
+      "illumination_equivariance": 0.026312947273254395
+    },
+    {
+      "step": 255,
+      "loss": 0.5102217793464661,
+      "depth_loss": 0.5058296918869019,
+      "consistency": 0.037750083953142166,
+      "illumination_equivariance": 0.07061855494976044
+    },
+    {
+      "step": 256,
+      "loss": 0.21899625658988953,
+      "depth_loss": 0.21483658254146576,
+      "consistency": 0.035319045186042786,
+      "illumination_equivariance": 0.04515446349978447
+    },
+    {
+      "step": 257,
+      "loss": 0.2903655767440796,
+      "depth_loss": 0.27672234177589417,
+      "consistency": 0.13017548620700836,
+      "illumination_equivariance": 0.07356229424476624
+    },
+    {
+      "step": 258,
+      "loss": 0.1169067993760109,
+      "depth_loss": 0.1057915911078453,
+      "consistency": 0.10491765290498734,
+      "illumination_equivariance": 0.3676062226295471
+    },
+    {
+      "step": 259,
+      "loss": 0.08460766077041626,
+      "depth_loss": 0.08115603029727936,
+      "consistency": 0.02822508104145527,
+      "illumination_equivariance": 0.05878206342458725
+    },
+    {
+      "step": 260,
+      "loss": 0.23039692640304565,
+      "depth_loss": 0.22901296615600586,
+      "consistency": 0.007544089574366808,
+      "illumination_equivariance": 0.0003670354199130088
+    },
+    {
+      "step": 261,
+      "loss": 0.0954013466835022,
+      "depth_loss": 0.09319409728050232,
+      "consistency": 0.0157961156219244,
+      "illumination_equivariance": 0.03904104605317116
+    },
+    {
+      "step": 262,
+      "loss": 0.6829813718795776,
+      "depth_loss": 0.639951229095459,
+      "consistency": 0.4241669178009033,
+      "illumination_equivariance": 0.10706641525030136
+    },
+    {
+      "step": 263,
+      "loss": 0.1914936751127243,
+      "depth_loss": 0.18878020346164703,
+      "consistency": 0.020805127918720245,
+      "illumination_equivariance": 0.08593954145908356
+    },
+    {
+      "step": 264,
+      "loss": 0.2821144163608551,
+      "depth_loss": 0.27324867248535156,
+      "consistency": 0.08239366859197617,
+      "illumination_equivariance": 0.03296779468655586
+    },
+    {
+      "step": 265,
+      "loss": 0.0910838395357132,
+      "depth_loss": 0.08982482552528381,
+      "consistency": 0.006259383633732796,
+      "illumination_equivariance": 0.00918337982147932
+    },
+    {
+      "step": 266,
+      "loss": 0.5587905049324036,
+      "depth_loss": 0.5558315515518188,
+      "consistency": 0.02331560291349888,
+      "illumination_equivariance": 0.05206827446818352
+    },
+    {
+      "step": 267,
+      "loss": 0.07478310167789459,
+      "depth_loss": 0.07367862015962601,
+      "consistency": 0.0047685676254332066,
+      "illumination_equivariance": 0.016196822747588158
+    },
+    {
+      "step": 268,
+      "loss": 0.16043785214424133,
+      "depth_loss": 0.15850862860679626,
+      "consistency": 0.013008318841457367,
+      "illumination_equivariance": 0.09232207387685776
+    },
+    {
+      "step": 269,
+      "loss": 0.1725061982870102,
+      "depth_loss": 0.16702900826931,
+      "consistency": 0.04854309558868408,
+      "illumination_equivariance": 0.11718358099460602
+    },
+    {
+      "step": 270,
+      "loss": 0.21969236433506012,
+      "depth_loss": 0.21264582872390747,
+      "consistency": 0.06418755650520325,
+      "illumination_equivariance": 0.17163008451461792
+    },
+    {
+      "step": 271,
+      "loss": 0.23839300870895386,
+      "depth_loss": 0.23641841113567352,
+      "consistency": 0.013472473248839378,
+      "illumination_equivariance": 0.011521650478243828
+    },
+    {
+      "step": 272,
+      "loss": 0.09776638448238373,
+      "depth_loss": 0.09550875425338745,
+      "consistency": 0.01626642607152462,
+      "illumination_equivariance": 0.04838933050632477
+    },
+    {
+      "step": 273,
+      "loss": 0.23770028352737427,
+      "depth_loss": 0.23188957571983337,
+      "consistency": 0.05177054554224014,
+      "illumination_equivariance": 0.02611597068607807
+    },
+    {
+      "step": 274,
+      "loss": 0.15415947139263153,
+      "depth_loss": 0.15268920361995697,
+      "consistency": 0.00843107420951128,
+      "illumination_equivariance": 0.0012713000178337097
+    },
+    {
+      "step": 275,
+      "loss": 0.11891312897205353,
+      "depth_loss": 0.11825098842382431,
+      "consistency": 0.0002761168288998306,
+      "illumination_equivariance": 2.5173562789859716e-08
+    },
+    {
+      "step": 276,
+      "loss": 0.24431638419628143,
+      "depth_loss": 0.23993049561977386,
+      "consistency": 0.03756151348352432,
+      "illumination_equivariance": 0.11882797628641129
+    },
+    {
+      "step": 277,
+      "loss": 0.21269375085830688,
+      "depth_loss": 0.20855501294136047,
+      "consistency": 0.03510168567299843,
+      "illumination_equivariance": 0.2909439206123352
+    },
+    {
+      "step": 278,
+      "loss": 0.13517874479293823,
+      "depth_loss": 0.12905578315258026,
+      "consistency": 0.054961808025836945,
+      "illumination_equivariance": 0.5809336304664612
+    },
+    {
+      "step": 279,
+      "loss": 0.1837739497423172,
+      "depth_loss": 0.18255527317523956,
+      "consistency": 0.005874286871403456,
+      "illumination_equivariance": 0.0019577480852603912
+    },
+    {
+      "step": 280,
+      "loss": 0.12532003223896027,
+      "depth_loss": 0.12223460525274277,
+      "consistency": 0.024503400549292564,
+      "illumination_equivariance": 0.10068472474813461
+    },
+    {
+      "step": 281,
+      "loss": 0.13121621310710907,
+      "depth_loss": 0.1292518526315689,
+      "consistency": 0.0133283082395792,
+      "illumination_equivariance": 0.0866037979722023
+    },
+    {
+      "step": 282,
+      "loss": 0.3347604274749756,
+      "depth_loss": 0.3312108516693115,
+      "consistency": 0.02916216105222702,
+      "illumination_equivariance": 0.07614025473594666
+    },
+    {
+      "step": 283,
+      "loss": 0.1809532791376114,
+      "depth_loss": 0.17980782687664032,
+      "consistency": 0.005138023756444454,
+      "illumination_equivariance": 0.007456076331436634
+    },
+    {
+      "step": 284,
+      "loss": 0.17760998010635376,
+      "depth_loss": 0.17692254483699799,
+      "consistency": 0.0005331854918040335,
+      "illumination_equivariance": 6.783841399737867e-07
+    },
+    {
+      "step": 285,
+      "loss": 0.14780931174755096,
+      "depth_loss": 0.14409764111042023,
+      "consistency": 0.030767101794481277,
+      "illumination_equivariance": 0.013757112435996532
+    },
+    {
+      "step": 286,
+      "loss": 0.3494807183742523,
+      "depth_loss": 0.34693247079849243,
+      "consistency": 0.019200634211301804,
+      "illumination_equivariance": 0.0197372417896986
+    },
+    {
+      "step": 287,
+      "loss": 0.1943620890378952,
+      "depth_loss": 0.1874287873506546,
+      "consistency": 0.06299521774053574,
+      "illumination_equivariance": 0.10064400732517242
+    },
+    {
+      "step": 288,
+      "loss": 0.1700640171766281,
+      "depth_loss": 0.16887836158275604,
+      "consistency": 0.005557948257774115,
+      "illumination_equivariance": 0.003673921339213848
+    },
+    {
+      "step": 289,
+      "loss": 0.15420107543468475,
+      "depth_loss": 0.14920513331890106,
+      "consistency": 0.04365639388561249,
+      "illumination_equivariance": 0.036668673157691956
+    },
+    {
+      "step": 290,
+      "loss": 0.19240184128284454,
+      "depth_loss": 0.1913568079471588,
+      "consistency": 0.004118951503187418,
+      "illumination_equivariance": 0.007273510098457336
+    },
+    {
+      "step": 291,
+      "loss": 0.14058563113212585,
+      "depth_loss": 0.13990360498428345,
+      "consistency": 0.0005059054237790406,
+      "illumination_equivariance": 3.1195583005683147e-07
+    },
+    {
+      "step": 292,
+      "loss": 0.4978637993335724,
+      "depth_loss": 0.4876282215118408,
+      "consistency": 0.0961187481880188,
+      "illumination_equivariance": 0.2419300675392151
+    },
+    {
+      "step": 293,
+      "loss": 0.14901643991470337,
+      "depth_loss": 0.1483551412820816,
+      "consistency": 0.0002926272863987833,
+      "illumination_equivariance": 3.1706167646916583e-07
+    },
+    {
+      "step": 294,
+      "loss": 0.16461476683616638,
+      "depth_loss": 0.1639382243156433,
+      "consistency": 0.0004165206628385931,
+      "illumination_equivariance": 9.978123216569657e-08
+    },
+    {
+      "step": 295,
+      "loss": 0.080931656062603,
+      "depth_loss": 0.07797244936227798,
+      "consistency": 0.023228637874126434,
+      "illumination_equivariance": 0.03375741466879845
+    },
+    {
+      "step": 296,
+      "loss": 0.12915772199630737,
+      "depth_loss": 0.12587586045265198,
+      "consistency": 0.026467103511095047,
+      "illumination_equivariance": 0.01343001239001751
+    },
+    {
+      "step": 297,
+      "loss": 0.23407334089279175,
+      "depth_loss": 0.23210516571998596,
+      "consistency": 0.013339238241314888,
+      "illumination_equivariance": 0.012332627549767494
+    },
+    {
+      "step": 298,
+      "loss": 0.20147961378097534,
+      "depth_loss": 0.19998566806316376,
+      "consistency": 0.008621130138635635,
+      "illumination_equivariance": 6.7846349338651635e-06
+    },
+    {
+      "step": 299,
+      "loss": 0.35985249280929565,
+      "depth_loss": 0.35586270689964294,
+      "consistency": 0.03368893265724182,
+      "illumination_equivariance": 0.3542569577693939
+    },
+    {
+      "step": 300,
+      "loss": 0.04455957189202309,
+      "depth_loss": 0.04233567416667938,
+      "consistency": 0.015901751816272736,
+      "illumination_equivariance": 0.053754132241010666
+    },
+    {
+      "step": 301,
+      "loss": 0.25817611813545227,
+      "depth_loss": 0.24808672070503235,
+      "consistency": 0.09455908834934235,
+      "illumination_equivariance": 0.27354660630226135
+    },
+    {
+      "step": 302,
+      "loss": 0.1040136069059372,
+      "depth_loss": 0.10250809043645859,
+      "consistency": 0.008690529502928257,
+      "illumination_equivariance": 0.007321043871343136
+    },
+    {
+      "step": 303,
+      "loss": 0.18335460126399994,
+      "depth_loss": 0.18119488656520844,
+      "consistency": 0.015235849656164646,
+      "illumination_equivariance": 0.10381235927343369
+    },
+    {
+      "step": 304,
+      "loss": 0.12548336386680603,
+      "depth_loss": 0.12364020943641663,
+      "consistency": 0.01207958534359932,
+      "illumination_equivariance": 0.038462698459625244
+    },
+    {
+      "step": 305,
+      "loss": 0.20518611371517181,
+      "depth_loss": 0.20143446326255798,
+      "consistency": 0.031165139749646187,
+      "illumination_equivariance": 0.13636453449726105
+    },
+    {
+      "step": 306,
+      "loss": 0.06378139555454254,
+      "depth_loss": 0.0618019737303257,
+      "consistency": 0.013446765020489693,
+      "illumination_equivariance": 0.08783110231161118
+    },
+    {
+      "step": 307,
+      "loss": 0.1973399966955185,
+      "depth_loss": 0.19414758682250977,
+      "consistency": 0.025631068274378777,
+      "illumination_equivariance": 0.03339920938014984
+    },
+    {
+      "step": 308,
+      "loss": 0.09752275794744492,
+      "depth_loss": 0.09315147250890732,
+      "consistency": 0.03740919753909111,
+      "illumination_equivariance": 0.11194309592247009
+    },
+    {
+      "step": 309,
+      "loss": 0.2892577052116394,
+      "depth_loss": 0.2831123173236847,
+      "consistency": 0.05513869971036911,
+      "illumination_equivariance": 0.31425124406814575
+    },
+    {
+      "step": 310,
+      "loss": 0.21255804598331451,
+      "depth_loss": 0.21003563702106476,
+      "consistency": 0.018915580585598946,
+      "illumination_equivariance": 0.09520035982131958
+    },
+    {
+      "step": 311,
+      "loss": 0.12398790568113327,
+      "depth_loss": 0.12231236696243286,
+      "consistency": 0.010425702668726444,
+      "illumination_equivariance": 0.031199319288134575
+    },
+    {
+      "step": 312,
+      "loss": 0.09035695344209671,
+      "depth_loss": 0.08517307788133621,
+      "consistency": 0.04551927000284195,
+      "illumination_equivariance": 0.12926813960075378
+    },
+    {
+      "step": 313,
+      "loss": 0.14476892352104187,
+      "depth_loss": 0.14350661635398865,
+      "consistency": 0.006269186269491911,
+      "illumination_equivariance": 0.0044692642986774445
+    },
+    {
+      "step": 314,
+      "loss": 0.11420928686857224,
+      "depth_loss": 0.112635038793087,
+      "consistency": 0.00939212180674076,
+      "illumination_equivariance": 0.00533952284604311
+    },
+    {
+      "step": 315,
+      "loss": 0.29078325629234314,
+      "depth_loss": 0.28628435730934143,
+      "consistency": 0.03871721029281616,
+      "illumination_equivariance": 0.06253761053085327
+    },
+    {
+      "step": 316,
+      "loss": 0.10354696214199066,
+      "depth_loss": 0.10130634903907776,
+      "consistency": 0.016050757840275764,
+      "illumination_equivariance": 0.008847319521009922
+    },
+    {
+      "step": 317,
+      "loss": 0.08911416679620743,
+      "depth_loss": 0.08659017086029053,
+      "consistency": 0.018917296081781387,
+      "illumination_equivariance": 0.04301721230149269
+    },
+    {
+      "step": 318,
+      "loss": 0.15665674209594727,
+      "depth_loss": 0.1559751033782959,
+      "consistency": 0.000513542618136853,
+      "illumination_equivariance": 3.991419816884445e-08
+    },
+    {
+      "step": 319,
+      "loss": 0.13651487231254578,
+      "depth_loss": 0.13511401414871216,
+      "consistency": 0.007658196613192558,
+      "illumination_equivariance": 0.0003174266603309661
+    },
+    {
+      "step": 320,
+      "loss": 0.08920729905366898,
+      "depth_loss": 0.08643053472042084,
+      "consistency": 0.021407978609204292,
+      "illumination_equivariance": 0.029281120747327805
+    },
+    {
+      "step": 321,
+      "loss": 0.16917161643505096,
+      "depth_loss": 0.16703014075756073,
+      "consistency": 0.0150811318308115,
+      "illumination_equivariance": 0.006280773784965277
+    },
+    {
+      "step": 322,
+      "loss": 0.09977911412715912,
+      "depth_loss": 0.09626193344593048,
+      "consistency": 0.02881723828613758,
+      "illumination_equivariance": 0.0799274817109108
+    },
+    {
+      "step": 323,
+      "loss": 0.21872662007808685,
+      "depth_loss": 0.21756188571453094,
+      "consistency": 0.005300212185829878,
+      "illumination_equivariance": 0.00023989556939341128
+    },
+    {
+      "step": 324,
+      "loss": 0.31876271963119507,
+      "depth_loss": 0.31687769293785095,
+      "consistency": 0.012493737041950226,
+      "illumination_equivariance": 0.0007449379190802574
+    },
+    {
+      "step": 325,
+      "loss": 0.1976361721754074,
+      "depth_loss": 0.19048750400543213,
+      "consistency": 0.06520118564367294,
+      "illumination_equivariance": 0.07470040023326874
+    },
+    {
+      "step": 326,
+      "loss": 0.25565075874328613,
+      "depth_loss": 0.25101953744888306,
+      "consistency": 0.039966028183698654,
+      "illumination_equivariance": 0.09071570634841919
+    },
+    {
+      "step": 327,
+      "loss": 0.36190348863601685,
+      "depth_loss": 0.3609103560447693,
+      "consistency": 0.003706967458128929,
+      "illumination_equivariance": 3.0749601137358695e-05
+    },
+    {
+      "step": 328,
+      "loss": 0.14501646161079407,
+      "depth_loss": 0.14429980516433716,
+      "consistency": 0.0008359435596503317,
+      "illumination_equivariance": 1.3449181324176607e-07
+    },
+    {
+      "step": 329,
+      "loss": 0.18725429475307465,
+      "depth_loss": 0.17720654606819153,
+      "consistency": 0.09411770850419998,
+      "illumination_equivariance": 0.023258903995156288
+    },
+    {
+      "step": 330,
+      "loss": 0.15874993801116943,
+      "depth_loss": 0.15597009658813477,
+      "consistency": 0.02148079127073288,
+      "illumination_equivariance": 0.014155658893287182
+    },
+    {
+      "step": 331,
+      "loss": 0.3648712933063507,
+      "depth_loss": 0.3633609712123871,
+      "consistency": 0.008822699077427387,
+      "illumination_equivariance": 0.004133263602852821
+    },
+    {
+      "step": 332,
+      "loss": 0.18847247958183289,
+      "depth_loss": 0.1869409680366516,
+      "consistency": 0.008995626121759415,
+      "illumination_equivariance": 0.0028814617544412613
+    },
+    {
+      "step": 333,
+      "loss": 0.1363672912120819,
+      "depth_loss": 0.1349611133337021,
+      "consistency": 0.007700350135564804,
+      "illumination_equivariance": 0.03002636693418026
+    },
+    {
+      "step": 334,
+      "loss": 0.17289383709430695,
+      "depth_loss": 0.16877397894859314,
+      "consistency": 0.03486745432019234,
+      "illumination_equivariance": 0.057921942323446274
+    },
+    {
+      "step": 335,
+      "loss": 0.10000509023666382,
+      "depth_loss": 0.0986388623714447,
+      "consistency": 0.007294627372175455,
+      "illumination_equivariance": 0.015896812081336975
+    },
+    {
+      "step": 336,
+      "loss": 0.13470451533794403,
+      "depth_loss": 0.13334421813488007,
+      "consistency": 0.007261738181114197,
+      "illumination_equivariance": 1.734699253574945e-06
+    },
+    {
+      "step": 337,
+      "loss": 0.05927204713225365,
+      "depth_loss": 0.05388506129384041,
+      "consistency": 0.04752439633011818,
+      "illumination_equivariance": 0.32501131296157837
+    },
+    {
+      "step": 338,
+      "loss": 0.07031635195016861,
+      "depth_loss": 0.0652676597237587,
+      "consistency": 0.044125691056251526,
+      "illumination_equivariance": 0.07777563482522964
+    },
+    {
+      "step": 339,
+      "loss": 0.1999758780002594,
+      "depth_loss": 0.19579072296619415,
+      "consistency": 0.03563959524035454,
+      "illumination_equivariance": 0.12577874958515167
+    },
+    {
+      "step": 340,
+      "loss": 0.366833359003067,
+      "depth_loss": 0.3636564016342163,
+      "consistency": 0.02552027255296707,
+      "illumination_equivariance": 0.028917763382196426
+    },
+    {
+      "step": 341,
+      "loss": 0.13955539464950562,
+      "depth_loss": 0.13777245581150055,
+      "consistency": 0.011492438614368439,
+      "illumination_equivariance": 0.05687163397669792
+    },
+    {
+      "step": 342,
+      "loss": 0.13510285317897797,
+      "depth_loss": 0.13441219925880432,
+      "consistency": 0.0005432292819023132,
+      "illumination_equivariance": 5.372035616346693e-07
+    },
+    {
+      "step": 343,
+      "loss": 0.1906047910451889,
+      "depth_loss": 0.1873062402009964,
+      "consistency": 0.026641737669706345,
+      "illumination_equivariance": 0.009931633248925209
+    },
+    {
+      "step": 344,
+      "loss": 0.1973656266927719,
+      "depth_loss": 0.1920795887708664,
+      "consistency": 0.046511176973581314,
+      "illumination_equivariance": 0.12529104948043823
+    },
+    {
+      "step": 345,
+      "loss": 0.10892576724290848,
+      "depth_loss": 0.10669392347335815,
+      "consistency": 0.015957839787006378,
+      "illumination_equivariance": 0.07431046664714813
+    },
+    {
+      "step": 346,
+      "loss": 0.1348692625761032,
+      "depth_loss": 0.1307888627052307,
+      "consistency": 0.03444479778409004,
+      "illumination_equivariance": 0.07148706912994385
+    },
+    {
+      "step": 347,
+      "loss": 0.1651327908039093,
+      "depth_loss": 0.16172197461128235,
+      "consistency": 0.027814583852887154,
+      "illumination_equivariance": 0.012579328380525112
+    },
+    {
+      "step": 348,
+      "loss": 0.1293177604675293,
+      "depth_loss": 0.12669947743415833,
+      "consistency": 0.019824005663394928,
+      "illumination_equivariance": 0.04346926882863045
+    },
+    {
+      "step": 349,
+      "loss": 0.10826731473207474,
+      "depth_loss": 0.10742142051458359,
+      "consistency": 0.0021433643996715546,
+      "illumination_equivariance": 7.91338097769767e-05
+    },
+    {
+      "step": 350,
+      "loss": 0.14972639083862305,
+      "depth_loss": 0.148225799202919,
+      "consistency": 0.008634650148451328,
+      "illumination_equivariance": 0.012163322418928146
+    },
+    {
+      "step": 351,
+      "loss": 0.18370212614536285,
+      "depth_loss": 0.17154750227928162,
+      "consistency": 0.11523595452308655,
+      "illumination_equivariance": 0.28787416219711304
+    },
+    {
+      "step": 352,
+      "loss": 0.09460818767547607,
+      "depth_loss": 0.08998285233974457,
+      "consistency": 0.039882026612758636,
+      "illumination_equivariance": 0.032917264848947525
+    },
+    {
+      "step": 353,
+      "loss": 0.5717964768409729,
+      "depth_loss": 0.5689918994903564,
+      "consistency": 0.0217587873339653,
+      "illumination_equivariance": 0.018919724971055984
+    },
+    {
+      "step": 354,
+      "loss": 0.256974458694458,
+      "depth_loss": 0.24600043892860413,
+      "consistency": 0.10344500094652176,
+      "illumination_equivariance": 0.024271773174405098
+    },
+    {
+      "step": 355,
+      "loss": 0.128075510263443,
+      "depth_loss": 0.12239717692136765,
+      "consistency": 0.05040544643998146,
+      "illumination_equivariance": 0.06558116525411606
+    },
+    {
+      "step": 356,
+      "loss": 0.3081146776676178,
+      "depth_loss": 0.3024103343486786,
+      "consistency": 0.05078233405947685,
+      "illumination_equivariance": 0.5583804845809937
+    },
+    {
+      "step": 357,
+      "loss": 0.11386631429195404,
+      "depth_loss": 0.1131460890173912,
+      "consistency": 0.0008449326269328594,
+      "illumination_equivariance": 1.5433608950843336e-06
+    },
+    {
+      "step": 358,
+      "loss": 0.12353374809026718,
+      "depth_loss": 0.11921186745166779,
+      "consistency": 0.03688284754753113,
+      "illumination_equivariance": 0.016228405758738518
+    },
+    {
+      "step": 359,
+      "loss": 0.3177088499069214,
+      "depth_loss": 0.31342726945877075,
+      "consistency": 0.03646107763051987,
+      "illumination_equivariance": 0.0838589072227478
+    },
+    {
+      "step": 360,
+      "loss": 0.27587616443634033,
+      "depth_loss": 0.27448922395706177,
+      "consistency": 0.0075493184849619865,
+      "illumination_equivariance": 0.0046920268796384335
+    },
+    {
+      "step": 361,
+      "loss": 0.0752907320857048,
+      "depth_loss": 0.07184836268424988,
+      "consistency": 0.028061198070645332,
+      "illumination_equivariance": 0.059912629425525665
+    },
+    {
+      "step": 362,
+      "loss": 0.26318973302841187,
+      "depth_loss": 0.26187995076179504,
+      "consistency": 0.006722751073539257,
+      "illumination_equivariance": 0.00044958494254387915
+    },
+    {
+      "step": 363,
+      "loss": 0.0825938954949379,
+      "depth_loss": 0.08108557760715485,
+      "consistency": 0.008731268346309662,
+      "illumination_equivariance": 0.00014163219020701945
+    },
+    {
+      "step": 364,
+      "loss": 0.32142695784568787,
+      "depth_loss": 0.3192250430583954,
+      "consistency": 0.015701645985245705,
+      "illumination_equivariance": 0.03564583137631416
+    },
+    {
+      "step": 365,
+      "loss": 0.22220124304294586,
+      "depth_loss": 0.22152942419052124,
+      "consistency": 0.0004034708545077592,
+      "illumination_equivariance": 7.156231731642038e-07
+    },
+    {
+      "step": 366,
+      "loss": 0.22737182676792145,
+      "depth_loss": 0.22604389488697052,
+      "consistency": 0.0068968432024121284,
+      "illumination_equivariance": 0.00034502800554037094
+    },
+    {
+      "step": 367,
+      "loss": 0.18682081997394562,
+      "depth_loss": 0.18237115442752838,
+      "consistency": 0.038146547973155975,
+      "illumination_equivariance": 0.14336653053760529
+    },
+    {
+      "step": 368,
+      "loss": 0.19921362400054932,
+      "depth_loss": 0.19596825540065765,
+      "consistency": 0.02610068954527378,
+      "illumination_equivariance": 0.07435224205255508
+    },
+    {
+      "step": 369,
+      "loss": 0.3291594982147217,
+      "depth_loss": 0.3224647045135498,
+      "consistency": 0.060630861669778824,
+      "illumination_equivariance": 0.12828312814235687
+    },
+    {
+      "step": 370,
+      "loss": 0.10021166503429413,
+      "depth_loss": 0.09836040437221527,
+      "consistency": 0.012120094150304794,
+      "illumination_equivariance": 0.007342052645981312
+    },
+    {
+      "step": 371,
+      "loss": 0.15192654728889465,
+      "depth_loss": 0.14789940416812897,
+      "consistency": 0.03389792516827583,
+      "illumination_equivariance": 0.01980738528072834
+    },
+    {
+      "step": 372,
+      "loss": 0.1686641424894333,
+      "depth_loss": 0.1662367433309555,
+      "consistency": 0.017930474132299423,
+      "illumination_equivariance": 0.00024942492018453777
+    },
+    {
+      "step": 373,
+      "loss": 0.10602197796106339,
+      "depth_loss": 0.10404697060585022,
+      "consistency": 0.013393059372901917,
+      "illumination_equivariance": 0.004338199272751808
+    },
+    {
+      "step": 374,
+      "loss": 0.22463177144527435,
+      "depth_loss": 0.22293612360954285,
+      "consistency": 0.010599884204566479,
+      "illumination_equivariance": 0.0020022180397063494
+    },
+    {
+      "step": 375,
+      "loss": 0.11594051122665405,
+      "depth_loss": 0.1142251193523407,
+      "consistency": 0.010826104320585728,
+      "illumination_equivariance": 0.06575916707515717
+    },
+    {
+      "step": 376,
+      "loss": 0.16203545033931732,
+      "depth_loss": 0.16135874390602112,
+      "consistency": 0.00040452423854731023,
+      "illumination_equivariance": 1.6213618891924853e-07
+    },
+    {
+      "step": 377,
+      "loss": 0.15392717719078064,
+      "depth_loss": 0.15110406279563904,
+      "consistency": 0.021851086989045143,
+      "illumination_equivariance": 0.014023303985595703
+    },
+    {
+      "step": 378,
+      "loss": 0.5483274459838867,
+      "depth_loss": 0.5423698425292969,
+      "consistency": 0.05322752520442009,
+      "illumination_equivariance": 0.015839824452996254
+    },
+    {
+      "step": 379,
+      "loss": 0.3184671998023987,
+      "depth_loss": 0.30025070905685425,
+      "consistency": 0.17585141956806183,
+      "illumination_equivariance": 0.01429702714085579
+    },
+    {
+      "step": 380,
+      "loss": 0.11989467591047287,
+      "depth_loss": 0.11677602678537369,
+      "consistency": 0.02482205256819725,
+      "illumination_equivariance": 0.008995126001536846
+    },
+    {
+      "step": 381,
+      "loss": 0.10735107213258743,
+      "depth_loss": 0.10318145155906677,
+      "consistency": 0.035317312926054,
+      "illumination_equivariance": 0.04208778589963913
+    },
+    {
+      "step": 382,
+      "loss": 0.1989077776670456,
+      "depth_loss": 0.19357290863990784,
+      "consistency": 0.04701453074812889,
+      "illumination_equivariance": 0.2370673269033432
+    },
+    {
+      "step": 383,
+      "loss": 0.20254333317279816,
+      "depth_loss": 0.1952955722808838,
+      "consistency": 0.06616686284542084,
+      "illumination_equivariance": 0.08098962157964706
+    },
+    {
+      "step": 384,
+      "loss": 0.11851634830236435,
+      "depth_loss": 0.11577171832323074,
+      "consistency": 0.021080609411001205,
+      "illumination_equivariance": 0.016694989055395126
+    },
+    {
+      "step": 385,
+      "loss": 0.3490038216114044,
+      "depth_loss": 0.347103089094162,
+      "consistency": 0.012672720476984978,
+      "illumination_equivariance": 0.010918280109763145
+    },
+    {
+      "step": 386,
+      "loss": 0.11978546530008316,
+      "depth_loss": 0.11212556809186935,
+      "consistency": 0.07028048485517502,
+      "illumination_equivariance": 0.016312390565872192
+    },
+    {
+      "step": 387,
+      "loss": 0.21691061556339264,
+      "depth_loss": 0.21386808156967163,
+      "consistency": 0.02404988743364811,
+      "illumination_equivariance": 1.8668679331312887e-05
+    },
+    {
+      "step": 388,
+      "loss": 0.1283169388771057,
+      "depth_loss": 0.12524625658988953,
+      "consistency": 0.024351555854082108,
+      "illumination_equivariance": 0.04256423935294151
+    },
+    {
+      "step": 389,
+      "loss": 0.1885412186384201,
+      "depth_loss": 0.1865948736667633,
+      "consistency": 0.013109627179801464,
+      "illumination_equivariance": 0.04276557266712189
+    },
+    {
+      "step": 390,
+      "loss": 0.06250563263893127,
+      "depth_loss": 0.0605589896440506,
+      "consistency": 0.013150040991604328,
+      "illumination_equivariance": 0.00698639452457428
+    },
+    {
+      "step": 391,
+      "loss": 0.06038912758231163,
+      "depth_loss": 0.05919479951262474,
+      "consistency": 0.005592037923634052,
+      "illumination_equivariance": 0.025386299937963486
+    },
+    {
+      "step": 392,
+      "loss": 0.2480359971523285,
+      "depth_loss": 0.24696730077266693,
+      "consistency": 0.0043123564682900906,
+      "illumination_equivariance": 0.0021832757629454136
+    },
+    {
+      "step": 393,
+      "loss": 0.1535044014453888,
+      "depth_loss": 0.15279503166675568,
+      "consistency": 0.0007216776139102876,
+      "illumination_equivariance": 1.7237805423064856e-06
+    },
+    {
+      "step": 394,
+      "loss": 0.12930314242839813,
+      "depth_loss": 0.12610983848571777,
+      "consistency": 0.025574127212166786,
+      "illumination_equivariance": 0.098366878926754
+    },
+    {
+      "step": 395,
+      "loss": 0.24169860780239105,
+      "depth_loss": 0.23811349272727966,
+      "consistency": 0.02949780970811844,
+      "illumination_equivariance": 0.021546045318245888
+    },
+    {
+      "step": 396,
+      "loss": 0.18975739181041718,
+      "depth_loss": 0.18762488663196564,
+      "consistency": 0.014997825026512146,
+      "illumination_equivariance": 0.06990435719490051
+    },
+    {
+      "step": 397,
+      "loss": 0.17198362946510315,
+      "depth_loss": 0.17085903882980347,
+      "consistency": 0.004883883520960808,
+      "illumination_equivariance": 1.4375132195709739e-05
+    },
+    {
+      "step": 398,
+      "loss": 0.23741936683654785,
+      "depth_loss": 0.23628497123718262,
+      "consistency": 0.0049843015149235725,
+      "illumination_equivariance": 0.005802089348435402
+    },
+    {
+      "step": 399,
+      "loss": 0.059219688177108765,
+      "depth_loss": 0.05736607685685158,
+      "consistency": 0.012196267023682594,
+      "illumination_equivariance": 0.0030944948084652424
+    },
+    {
+      "step": 400,
+      "loss": 0.148089200258255,
+      "depth_loss": 0.14338120818138123,
+      "consistency": 0.04072171822190285,
+      "illumination_equivariance": 0.05410270765423775,
+      "validation_abs_rel": 0.16837960093031945
+    },
+    {
+      "step": 401,
+      "loss": 0.26273539662361145,
+      "depth_loss": 0.2568817734718323,
+      "consistency": 0.05216871201992035,
+      "illumination_equivariance": 0.024926744401454926
+    },
+    {
+      "step": 402,
+      "loss": 0.2117084264755249,
+      "depth_loss": 0.210660919547081,
+      "consistency": 0.004127488937228918,
+      "illumination_equivariance": 0.007253207266330719
+    },
+    {
+      "step": 403,
+      "loss": 0.22419849038124084,
+      "depth_loss": 0.22250214219093323,
+      "consistency": 0.010613882914185524,
+      "illumination_equivariance": 0.002003819914534688
+    },
+    {
+      "step": 404,
+      "loss": 0.15238197147846222,
+      "depth_loss": 0.1507134586572647,
+      "consistency": 0.010362716391682625,
+      "illumination_equivariance": 0.02078050561249256
+    },
+    {
+      "step": 405,
+      "loss": 0.1547478884458542,
+      "depth_loss": 0.1540650874376297,
+      "consistency": 0.0005154511891305447,
+      "illumination_equivariance": 3.891392452715081e-08
+    },
+    {
+      "step": 406,
+      "loss": 0.20342731475830078,
+      "depth_loss": 0.20228047668933868,
+      "consistency": 0.005128421820700169,
+      "illumination_equivariance": 0.007294470444321632
+    },
+    {
+      "step": 407,
+      "loss": 0.5060103535652161,
+      "depth_loss": 0.5053383111953735,
+      "consistency": 0.0004017612955067307,
+      "illumination_equivariance": 3.1116223908611573e-07
+    },
+    {
+      "step": 408,
+      "loss": 0.14330436289310455,
+      "depth_loss": 0.13674739003181458,
+      "consistency": 0.059258200228214264,
+      "illumination_equivariance": 0.39110004901885986
+    },
+    {
+      "step": 409,
+      "loss": 0.15376107394695282,
+      "depth_loss": 0.15237896144390106,
+      "consistency": 0.007460454944521189,
+      "illumination_equivariance": 0.020261812955141068
+    },
+    {
+      "step": 410,
+      "loss": 0.11820340156555176,
+      "depth_loss": 0.115462526679039,
+      "consistency": 0.021048126742243767,
+      "illumination_equivariance": 0.016692638397216797
+    },
+    {
+      "step": 411,
+      "loss": 0.11576977372169495,
+      "depth_loss": 0.11508473753929138,
+      "consistency": 0.0005143948365002871,
+      "illumination_equivariance": 3.128982370981248e-07
+    },
+    {
+      "step": 412,
+      "loss": 0.12834788858890533,
+      "depth_loss": 0.12527680397033691,
+      "consistency": 0.02435995638370514,
+      "illumination_equivariance": 0.04251955449581146
+    },
+    {
+      "step": 413,
+      "loss": 0.32847094535827637,
+      "depth_loss": 0.321780800819397,
+      "consistency": 0.060595206916332245,
+      "illumination_equivariance": 0.12851494550704956
+    },
+    {
+      "step": 414,
+      "loss": 0.19461029767990112,
+      "depth_loss": 0.19340799748897552,
+      "consistency": 0.005670425482094288,
+      "illumination_equivariance": 0.0001392185513395816
+    },
+    {
+      "step": 415,
+      "loss": 0.12241730093955994,
+      "depth_loss": 0.1181054413318634,
+      "consistency": 0.03678577393293381,
+      "illumination_equivariance": 0.016251366585493088
+    },
+    {
+      "step": 416,
+      "loss": 0.19173231720924377,
+      "depth_loss": 0.18146802484989166,
+      "consistency": 0.09632432460784912,
+      "illumination_equivariance": 0.07471749931573868
+    },
+    {
+      "step": 417,
+      "loss": 0.14126606285572052,
+      "depth_loss": 0.139870285987854,
+      "consistency": 0.007598765194416046,
+      "illumination_equivariance": 0.029673438519239426
+    },
+    {
+      "step": 418,
+      "loss": 0.3135022521018982,
+      "depth_loss": 0.3092406690120697,
+      "consistency": 0.03626807779073715,
+      "illumination_equivariance": 0.08358791470527649
+    },
+    {
+      "step": 419,
+      "loss": 0.2968888282775879,
+      "depth_loss": 0.2949896454811096,
+      "consistency": 0.012633263133466244,
+      "illumination_equivariance": 0.0007555930642411113
+    },
+    {
+      "step": 420,
+      "loss": 0.12009498476982117,
+      "depth_loss": 0.1169826090335846,
+      "consistency": 0.02476765774190426,
+      "illumination_equivariance": 0.009026923216879368
+    },
+    {
+      "step": 421,
+      "loss": 0.31650885939598083,
+      "depth_loss": 0.31431031227111816,
+      "consistency": 0.015676524490118027,
+      "illumination_equivariance": 0.0356798879802227
+    },
+    {
+      "step": 422,
+      "loss": 0.11290507763624191,
+      "depth_loss": 0.11062147468328476,
+      "consistency": 0.016494145616889,
+      "illumination_equivariance": 0.04785170778632164
+    },
+    {
+      "step": 423,
+      "loss": 0.06141402944922447,
+      "depth_loss": 0.06027042865753174,
+      "consistency": 0.005092339590191841,
+      "illumination_equivariance": 0.009479732252657413
+    },
+    {
+      "step": 424,
+      "loss": 0.3489300310611725,
+      "depth_loss": 0.3457421064376831,
+      "consistency": 0.025610968470573425,
+      "illumination_equivariance": 0.028902888298034668
+    },
+    {
+      "step": 425,
+      "loss": 0.11884734779596329,
+      "depth_loss": 0.11665711551904678,
+      "consistency": 0.015569807030260563,
+      "illumination_equivariance": 0.037508103996515274
+    },
+    {
+      "step": 426,
+      "loss": 0.1112261414527893,
+      "depth_loss": 0.10898850858211517,
+      "consistency": 0.01602242700755596,
+      "illumination_equivariance": 0.07467915117740631
+    },
+    {
+      "step": 427,
+      "loss": 0.08527284115552902,
+      "depth_loss": 0.08341723680496216,
+      "consistency": 0.01220694836229086,
+      "illumination_equivariance": 0.05466121435165405
+    },
+    {
+      "step": 428,
+      "loss": 0.18682782351970673,
+      "depth_loss": 0.18365493416786194,
+      "consistency": 0.02542104944586754,
+      "illumination_equivariance": 0.0336097776889801
+    },
+    {
+      "step": 429,
+      "loss": 0.18362760543823242,
+      "depth_loss": 0.18206287920475006,
+      "consistency": 0.009277671575546265,
+      "illumination_equivariance": 0.00029002290102653205
+    },
+    {
+      "step": 430,
+      "loss": 0.20077508687973022,
+      "depth_loss": 0.19877779483795166,
+      "consistency": 0.013645119033753872,
+      "illumination_equivariance": 0.011423522606492043
+    },
+    {
+      "step": 431,
+      "loss": 0.10553867369890213,
+      "depth_loss": 0.10244875401258469,
+      "consistency": 0.024530302733182907,
+      "illumination_equivariance": 0.10182442516088486
+    },
+    {
+      "step": 432,
+      "loss": 0.1096273809671402,
+      "depth_loss": 0.10896246880292892,
+      "consistency": 0.00027794495690613985,
+      "illumination_equivariance": 2.9228260700620012e-08
+    },
+    {
+      "step": 433,
+      "loss": 0.12132374197244644,
+      "depth_loss": 0.11367404460906982,
+      "consistency": 0.0701821893453598,
+      "illumination_equivariance": 0.016310272738337517
+    },
+    {
+      "step": 434,
+      "loss": 0.06295397132635117,
+      "depth_loss": 0.05709495395421982,
+      "consistency": 0.052245695143938065,
+      "illumination_equivariance": 0.165522962808609
+    },
+    {
+      "step": 435,
+      "loss": 0.11450561881065369,
+      "depth_loss": 0.1117740347981453,
+      "consistency": 0.020980654284358025,
+      "illumination_equivariance": 0.04291671887040138
+    },
+    {
+      "step": 436,
+      "loss": 0.39547738432884216,
+      "depth_loss": 0.39190858602523804,
+      "consistency": 0.02936498261988163,
+      "illumination_equivariance": 0.020311566069722176
+    },
+    {
+      "step": 437,
+      "loss": 0.29588061571121216,
+      "depth_loss": 0.2922593951225281,
+      "consistency": 0.029857365414500237,
+      "illumination_equivariance": 0.07373649626970291
+    },
+    {
+      "step": 438,
+      "loss": 0.2513619065284729,
+      "depth_loss": 0.250032901763916,
+      "consistency": 0.006972841452807188,
+      "illumination_equivariance": 0.1763594150543213
+    },
+    {
+      "step": 439,
+      "loss": 0.0757388174533844,
+      "depth_loss": 0.07229744642972946,
+      "consistency": 0.028055287897586823,
+      "illumination_equivariance": 0.05974280461668968
+    },
+    {
+      "step": 440,
+      "loss": 0.1713109016418457,
+      "depth_loss": 0.1691693365573883,
+      "consistency": 0.015075395815074444,
+      "illumination_equivariance": 0.006216922774910927
+    },
+    {
+      "step": 441,
+      "loss": 0.18785277009010315,
+      "depth_loss": 0.18364569544792175,
+      "consistency": 0.03582822531461716,
+      "illumination_equivariance": 0.12639778852462769
+    },
+    {
+      "step": 442,
+      "loss": 0.1825817972421646,
+      "depth_loss": 0.17882093787193298,
+      "consistency": 0.031242571771144867,
+      "illumination_equivariance": 0.13609980046749115
+    },
+    {
+      "step": 443,
+      "loss": 0.36138278245925903,
+      "depth_loss": 0.34157854318618774,
+      "consistency": 0.19169652462005615,
+      "illumination_equivariance": 0.3591232895851135
+    },
+    {
+      "step": 444,
+      "loss": 0.172004833817482,
+      "depth_loss": 0.16958163678646088,
+      "consistency": 0.01789150945842266,
+      "illumination_equivariance": 0.0002512284554541111
+    },
+    {
+      "step": 445,
+      "loss": 0.13222040235996246,
+      "depth_loss": 0.12903515994548798,
+      "consistency": 0.025492418557405472,
+      "illumination_equivariance": 0.09788649529218674
+    },
+    {
+      "step": 446,
+      "loss": 0.059155989438295364,
+      "depth_loss": 0.0579601489007473,
+      "consistency": 0.005605570040643215,
+      "illumination_equivariance": 0.02531471662223339
+    },
+    {
+      "step": 447,
+      "loss": 0.2649509310722351,
+      "depth_loss": 0.2539881765842438,
+      "consistency": 0.1033313125371933,
+      "illumination_equivariance": 0.024413442239165306
+    },
+    {
+      "step": 448,
+      "loss": 0.062013331800699234,
+      "depth_loss": 0.060162290930747986,
+      "consistency": 0.012167748995125294,
+      "illumination_equivariance": 0.0030569727532565594
+    },
+    {
+      "step": 449,
+      "loss": 0.14975246787071228,
+      "depth_loss": 0.14639906585216522,
+      "consistency": 0.027194371446967125,
+      "illumination_equivariance": 0.027470387518405914
+    },
+    {
+      "step": 450,
+      "loss": 0.18604442477226257,
+      "depth_loss": 0.18351434171199799,
+      "consistency": 0.018969887867569923,
+      "illumination_equivariance": 0.09247677773237228
+    },
+    {
+      "step": 451,
+      "loss": 0.32029443979263306,
+      "depth_loss": 0.3162331283092499,
+      "consistency": 0.034356921911239624,
+      "illumination_equivariance": 0.3573903441429138
+    },
+    {
+      "step": 452,
+      "loss": 0.0716501921415329,
+      "depth_loss": 0.06816445291042328,
+      "consistency": 0.028501838445663452,
+      "illumination_equivariance": 0.057154521346092224
+    },
+    {
+      "step": 453,
+      "loss": 0.14018131792545319,
+      "depth_loss": 0.13555262982845306,
+      "consistency": 0.03993251919746399,
+      "illumination_equivariance": 0.029671287164092064
+    },
+    {
+      "step": 454,
+      "loss": 0.30635693669319153,
+      "depth_loss": 0.3037688434123993,
+      "consistency": 0.01955839991569519,
+      "illumination_equivariance": 0.019940456375479698
+    },
+    {
+      "step": 455,
+      "loss": 0.22271917760372162,
+      "depth_loss": 0.22139379382133484,
+      "consistency": 0.006872919853776693,
+      "illumination_equivariance": 0.0003460910520516336
+    },
+    {
+      "step": 456,
+      "loss": 0.1405465006828308,
+      "depth_loss": 0.13647504150867462,
+      "consistency": 0.0343562513589859,
+      "illumination_equivariance": 0.07030545175075531
+    },
+    {
+      "step": 457,
+      "loss": 0.0611121766269207,
+      "depth_loss": 0.060173116624355316,
+      "consistency": 0.003037289483472705,
+      "illumination_equivariance": 0.00011090558837167919
+    },
+    {
+      "step": 458,
+      "loss": 0.12047501653432846,
+      "depth_loss": 0.11896979808807373,
+      "consistency": 0.00867522694170475,
+      "illumination_equivariance": 0.007360965944826603
+    },
+    {
+      "step": 459,
+      "loss": 0.12697656452655792,
+      "depth_loss": 0.12258503586053848,
+      "consistency": 0.03754515200853348,
+      "illumination_equivariance": 0.05069855600595474
+    },
+    {
+      "step": 460,
+      "loss": 0.2478327751159668,
+      "depth_loss": 0.24163314700126648,
+      "consistency": 0.05567096173763275,
+      "illumination_equivariance": 0.2349044680595398
+    },
+    {
+      "step": 461,
+      "loss": 0.09090279042720795,
+      "depth_loss": 0.08864355832338333,
+      "consistency": 0.016224758699536324,
+      "illumination_equivariance": 0.008732223883271217
+    },
+    {
+      "step": 462,
+      "loss": 0.3814001679420471,
+      "depth_loss": 0.3775154650211334,
+      "consistency": 0.03253163769841194,
+      "illumination_equivariance": 0.026857320219278336
+    },
+    {
+      "step": 463,
+      "loss": 0.14337459206581116,
+      "depth_loss": 0.14262527227401733,
+      "consistency": 0.0011147098848596215,
+      "illumination_equivariance": 1.39637450047303e-06
+    },
+    {
+      "step": 464,
+      "loss": 0.09725676476955414,
+      "depth_loss": 0.0950741097331047,
+      "consistency": 0.015452235005795956,
+      "illumination_equivariance": 0.05885494500398636
+    },
+    {
+      "step": 465,
+      "loss": 0.1781546026468277,
+      "depth_loss": 0.1732567548751831,
+      "consistency": 0.04269946366548538,
+      "illumination_equivariance": 0.3108801245689392
+    },
+    {
+      "step": 466,
+      "loss": 0.6040984988212585,
+      "depth_loss": 0.5614304542541504,
+      "consistency": 0.42043209075927734,
+      "illumination_equivariance": 0.1144242137670517
+    },
+    {
+      "step": 467,
+      "loss": 0.23135735094547272,
+      "depth_loss": 0.22277890145778656,
+      "consistency": 0.07944227755069733,
+      "illumination_equivariance": 0.09563177824020386
+    },
+    {
+      "step": 468,
+      "loss": 0.1145537868142128,
+      "depth_loss": 0.11076770722866058,
+      "consistency": 0.03148045018315315,
+      "illumination_equivariance": 0.01328551396727562
+    },
+    {
+      "step": 469,
+      "loss": 0.35550180077552795,
+      "depth_loss": 0.3517528474330902,
+      "consistency": 0.031130027025938034,
+      "illumination_equivariance": 0.011723222211003304
+    },
+    {
+      "step": 470,
+      "loss": 0.11493165045976639,
+      "depth_loss": 0.11387012153863907,
+      "consistency": 0.004267537035048008,
+      "illumination_equivariance": 5.112768121762201e-05
+    },
+    {
+      "step": 471,
+      "loss": 0.06061062216758728,
+      "depth_loss": 0.05985603854060173,
+      "consistency": 0.0012018998386338353,
+      "illumination_equivariance": 4.275880201021209e-06
+    },
+    {
+      "step": 472,
+      "loss": 0.4332783818244934,
+      "depth_loss": 0.42889878153800964,
+      "consistency": 0.03750263527035713,
+      "illumination_equivariance": 0.07070893794298172
+    },
+    {
+      "step": 473,
+      "loss": 0.11638999730348587,
+      "depth_loss": 0.11502910405397415,
+      "consistency": 0.0072554051876068115,
+      "illumination_equivariance": 3.4904276162706083e-06
+    },
+    {
+      "step": 474,
+      "loss": 0.08894987404346466,
+      "depth_loss": 0.0864996463060379,
+      "consistency": 0.01814877614378929,
+      "illumination_equivariance": 0.024184593930840492
+    },
+    {
+      "step": 475,
+      "loss": 0.19657371938228607,
+      "depth_loss": 0.18439117074012756,
+      "consistency": 0.1154990866780281,
+      "illumination_equivariance": 0.2850547432899475
+    },
+    {
+      "step": 476,
+      "loss": 0.17034314572811127,
+      "depth_loss": 0.1676589548587799,
+      "consistency": 0.020483113825321198,
+      "illumination_equivariance": 0.06965572386980057
+    },
+    {
+      "step": 477,
+      "loss": 0.5537040829658508,
+      "depth_loss": 0.5477312207221985,
+      "consistency": 0.05336923152208328,
+      "illumination_equivariance": 0.01563219353556633
+    },
+    {
+      "step": 478,
+      "loss": 0.28201812505722046,
+      "depth_loss": 0.27632561326026917,
+      "consistency": 0.05063645541667938,
+      "illumination_equivariance": 0.5595077276229858
+    },
+    {
+      "step": 479,
+      "loss": 0.1750245988368988,
+      "depth_loss": 0.1722152978181839,
+      "consistency": 0.021728258579969406,
+      "illumination_equivariance": 0.1353157013654709
+    },
+    {
+      "step": 480,
+      "loss": 0.13650649785995483,
+      "depth_loss": 0.13035953044891357,
+      "consistency": 0.05511060729622841,
+      "illumination_equivariance": 0.10825032740831375
+    },
+    {
+      "step": 481,
+      "loss": 0.14085406064987183,
+      "depth_loss": 0.13879239559173584,
+      "consistency": 0.01425277628004551,
+      "illumination_equivariance": 0.001269954489544034
+    },
+    {
+      "step": 482,
+      "loss": 0.14024949073791504,
+      "depth_loss": 0.13828732073307037,
+      "consistency": 0.013233346864581108,
+      "illumination_equivariance": 0.01106489822268486
+    },
+    {
+      "step": 483,
+      "loss": 0.17334112524986267,
+      "depth_loss": 0.1713801920413971,
+      "consistency": 0.013237622566521168,
+      "illumination_equivariance": 0.04183746501803398
+    },
+    {
+      "step": 484,
+      "loss": 0.16914843022823334,
+      "depth_loss": 0.16585730016231537,
+      "consistency": 0.026547281071543694,
+      "illumination_equivariance": 0.00973247829824686
+    },
+    {
+      "step": 485,
+      "loss": 0.14247563481330872,
+      "depth_loss": 0.14178475737571716,
+      "consistency": 0.000546636467333883,
+      "illumination_equivariance": 9.81266566668637e-07
+    },
+    {
+      "step": 486,
+      "loss": 0.09896763414144516,
+      "depth_loss": 0.09599009156227112,
+      "consistency": 0.023381583392620087,
+      "illumination_equivariance": 0.03191688656806946
+    },
+    {
+      "step": 487,
+      "loss": 0.1416577398777008,
+      "depth_loss": 0.14098934829235077,
+      "consistency": 0.0003146083909086883,
+      "illumination_equivariance": 7.655057743249927e-07
+    },
+    {
+      "step": 488,
+      "loss": 0.16650964319705963,
+      "depth_loss": 0.16523870825767517,
+      "consistency": 0.006329071708023548,
+      "illumination_equivariance": 0.00450549041852355
+    },
+    {
+      "step": 489,
+      "loss": 0.3020663857460022,
+      "depth_loss": 0.2947859466075897,
+      "consistency": 0.06649070233106613,
+      "illumination_equivariance": 0.031964708119630814
+    },
+    {
+      "step": 490,
+      "loss": 0.06720259040594101,
+      "depth_loss": 0.06652886420488358,
+      "consistency": 0.0003973440907429904,
+      "illumination_equivariance": 4.861565798819356e-07
+    },
+    {
+      "step": 491,
+      "loss": 0.06372080743312836,
+      "depth_loss": 0.06244296580553055,
+      "consistency": 0.006380725651979446,
+      "illumination_equivariance": 0.0083659328520298
+    },
+    {
+      "step": 492,
+      "loss": 0.2144036442041397,
+      "depth_loss": 0.21354442834854126,
+      "consistency": 0.0022358770947903395,
+      "illumination_equivariance": 9.64986247709021e-06
+    },
+    {
+      "step": 493,
+      "loss": 0.1254805624485016,
+      "depth_loss": 0.1237456202507019,
+      "consistency": 0.010982628911733627,
+      "illumination_equivariance": 0.049851879477500916
+    },
+    {
+      "step": 494,
+      "loss": 0.18484918773174286,
+      "depth_loss": 0.18153703212738037,
+      "consistency": 0.026768751442432404,
+      "illumination_equivariance": 0.03965681418776512
+    },
+    {
+      "step": 495,
+      "loss": 0.16109275817871094,
+      "depth_loss": 0.15794740617275238,
+      "consistency": 0.025090301409363747,
+      "illumination_equivariance": 0.042678602039813995
+    },
+    {
+      "step": 496,
+      "loss": 0.1546749472618103,
+      "depth_loss": 0.15287171304225922,
+      "consistency": 0.011651243083178997,
+      "illumination_equivariance": 0.03851541131734848
+    },
+    {
+      "step": 497,
+      "loss": 0.09892728179693222,
+      "depth_loss": 0.09642788767814636,
+      "consistency": 0.0186373982578516,
+      "illumination_equivariance": 0.04161110892891884
+    },
+    {
+      "step": 498,
+      "loss": 0.1352318674325943,
+      "depth_loss": 0.12976960837841034,
+      "consistency": 0.04829845577478409,
+      "illumination_equivariance": 0.11310659348964691
+    },
+    {
+      "step": 499,
+      "loss": 0.19049647450447083,
+      "depth_loss": 0.18855921924114227,
+      "consistency": 0.013018076308071613,
+      "illumination_equivariance": 0.09194932878017426
+    },
+    {
+      "step": 500,
+      "loss": 0.11628100275993347,
+      "depth_loss": 0.11474154889583588,
+      "consistency": 0.0090200025588274,
+      "illumination_equivariance": 0.01612379029393196
+    },
+    {
+      "step": 501,
+      "loss": 0.15182648599147797,
+      "depth_loss": 0.1511751413345337,
+      "consistency": 0.00016731690266169608,
+      "illumination_equivariance": 6.479695002781227e-08
+    },
+    {
+      "step": 502,
+      "loss": 0.21643176674842834,
+      "depth_loss": 0.2137637585401535,
+      "consistency": 0.02029363252222538,
+      "illumination_equivariance": 0.03944549709558487
+    },
+    {
+      "step": 503,
+      "loss": 0.31487593054771423,
+      "depth_loss": 0.3060170114040375,
+      "consistency": 0.0822412371635437,
+      "illumination_equivariance": 0.029267920181155205
+    },
+    {
+      "step": 504,
+      "loss": 0.19128157198429108,
+      "depth_loss": 0.18957896530628204,
+      "consistency": 0.010643106885254383,
+      "illumination_equivariance": 1.6371555830119178e-05
+    },
+    {
+      "step": 505,
+      "loss": 0.10854283720254898,
+      "depth_loss": 0.10563164204359055,
+      "consistency": 0.022745143622159958,
+      "illumination_equivariance": 0.06737929582595825
+    },
+    {
+      "step": 506,
+      "loss": 0.12859751284122467,
+      "depth_loss": 0.12753479182720184,
+      "consistency": 0.0042280093766748905,
+      "illumination_equivariance": 8.910637006920297e-06
+    },
+    {
+      "step": 507,
+      "loss": 0.2207213044166565,
+      "depth_loss": 0.206659734249115,
+      "consistency": 0.1342596858739853,
+      "illumination_equivariance": 0.06947194039821625
+    },
+    {
+      "step": 508,
+      "loss": 0.23833699524402618,
+      "depth_loss": 0.237124964594841,
+      "consistency": 0.005776735953986645,
+      "illumination_equivariance": 0.00014685730275232345
+    },
+    {
+      "step": 509,
+      "loss": 0.23571547865867615,
+      "depth_loss": 0.2336897999048233,
+      "consistency": 0.0139026939868927,
+      "illumination_equivariance": 0.005124016664922237
+    },
+    {
+      "step": 510,
+      "loss": 0.25964638590812683,
+      "depth_loss": 0.25857114791870117,
+      "consistency": 0.004360984545201063,
+      "illumination_equivariance": 0.0021818079985678196
+    },
+    {
+      "step": 511,
+      "loss": 0.15743252635002136,
+      "depth_loss": 0.15270665287971497,
+      "consistency": 0.040882132947444916,
+      "illumination_equivariance": 0.05290450528264046
+    },
+    {
+      "step": 512,
+      "loss": 0.13096565008163452,
+      "depth_loss": 0.12820501625537872,
+      "consistency": 0.021259725093841553,
+      "illumination_equivariance": 0.01317059900611639
+    },
+    {
+      "step": 513,
+      "loss": 0.1791047751903534,
+      "depth_loss": 0.1779743731021881,
+      "consistency": 0.004925323650240898,
+      "illumination_equivariance": 1.6419220628449693e-05
+    },
+    {
+      "step": 514,
+      "loss": 0.12587402760982513,
+      "depth_loss": 0.12126269936561584,
+      "consistency": 0.039757221937179565,
+      "illumination_equivariance": 0.0973292887210846
+    },
+    {
+      "step": 515,
+      "loss": 0.26626649498939514,
+      "depth_loss": 0.2617907226085663,
+      "consistency": 0.0384427085518837,
+      "illumination_equivariance": 0.06025075912475586
+    },
+    {
+      "step": 516,
+      "loss": 0.11968913674354553,
+      "depth_loss": 0.11770299077033997,
+      "consistency": 0.01351720280945301,
+      "illumination_equivariance": 0.12814432382583618
+    },
+    {
+      "step": 517,
+      "loss": 0.06283558905124664,
+      "depth_loss": 0.06214233487844467,
+      "consistency": 0.0006082308827899396,
+      "illumination_equivariance": 4.4079229155613575e-09
+    },
+    {
+      "step": 518,
+      "loss": 0.1938609927892685,
+      "depth_loss": 0.1911192089319229,
+      "consistency": 0.021078631281852722,
+      "illumination_equivariance": 0.0610741525888443
+    },
+    {
+      "step": 519,
+      "loss": 0.1729799062013626,
+      "depth_loss": 0.17084525525569916,
+      "consistency": 0.015001787804067135,
+      "illumination_equivariance": 0.06942883133888245
+    },
+    {
+      "step": 520,
+      "loss": 0.12760138511657715,
+      "depth_loss": 0.11621487140655518,
+      "consistency": 0.10754159837961197,
+      "illumination_equivariance": 0.3711623549461365
+    },
+    {
+      "step": 521,
+      "loss": 0.4294211268424988,
+      "depth_loss": 0.42803946137428284,
+      "consistency": 0.0074633825570344925,
+      "illumination_equivariance": 0.0014499567914754152
+    },
+    {
+      "step": 522,
+      "loss": 0.10314777493476868,
+      "depth_loss": 0.10248719900846481,
+      "consistency": 0.0002873308549169451,
+      "illumination_equivariance": 2.0679342469520634e-06
+    },
+    {
+      "step": 523,
+      "loss": 0.5306900143623352,
+      "depth_loss": 0.5278973579406738,
+      "consistency": 0.021611908450722694,
+      "illumination_equivariance": 0.018833281472325325
+    },
+    {
+      "step": 524,
+      "loss": 0.06586741656064987,
+      "depth_loss": 0.06417708843946457,
+      "consistency": 0.010533701628446579,
+      "illumination_equivariance": 7.649442704860121e-05
+    },
+    {
+      "step": 525,
+      "loss": 0.31537801027297974,
+      "depth_loss": 0.3138478398323059,
+      "consistency": 0.008983145467936993,
+      "illumination_equivariance": 0.0039892904460430145
+    },
+    {
+      "step": 526,
+      "loss": 0.15073449909687042,
+      "depth_loss": 0.14923644065856934,
+      "consistency": 0.008624713867902756,
+      "illumination_equivariance": 0.0017656920244917274
+    },
+    {
+      "step": 527,
+      "loss": 0.11407121270895004,
+      "depth_loss": 0.11147190630435944,
+      "consistency": 0.019621986895799637,
+      "illumination_equivariance": 0.043538883328437805
+    },
+    {
+      "step": 528,
+      "loss": 0.09627316147089005,
+      "depth_loss": 0.09435881674289703,
+      "consistency": 0.012767935171723366,
+      "illumination_equivariance": 0.03417946770787239
+    },
+    {
+      "step": 529,
+      "loss": 0.11343061178922653,
+      "depth_loss": 0.10985572636127472,
+      "consistency": 0.029377834871411324,
+      "illumination_equivariance": 0.07830696552991867
+    },
+    {
+      "step": 530,
+      "loss": 0.14937399327754974,
+      "depth_loss": 0.14599281549453735,
+      "consistency": 0.027495797723531723,
+      "illumination_equivariance": 0.012337188236415386
+    },
+    {
+      "step": 531,
+      "loss": 0.06288735568523407,
+      "depth_loss": 0.05745849758386612,
+      "consistency": 0.047931473702192307,
+      "illumination_equivariance": 0.32419919967651367
+    },
+    {
+      "step": 532,
+      "loss": 0.06458841264247894,
+      "depth_loss": 0.059485308825969696,
+      "consistency": 0.04465600475668907,
+      "illumination_equivariance": 0.07675342261791229
+    },
+    {
+      "step": 533,
+      "loss": 0.10250717401504517,
+      "depth_loss": 0.09754060208797455,
+      "consistency": 0.04333972930908203,
+      "illumination_equivariance": 0.015119210816919804
+    },
+    {
+      "step": 534,
+      "loss": 0.1865013986825943,
+      "depth_loss": 0.17929600179195404,
+      "consistency": 0.06570861488580704,
+      "illumination_equivariance": 0.17243051528930664
+    },
+    {
+      "step": 535,
+      "loss": 0.16538222134113312,
+      "depth_loss": 0.15908566117286682,
+      "consistency": 0.05664234608411789,
+      "illumination_equivariance": 0.5856421589851379
+    },
+    {
+      "step": 536,
+      "loss": 0.27684327960014343,
+      "depth_loss": 0.2724778354167938,
+      "consistency": 0.03730827569961548,
+      "illumination_equivariance": 0.12156116962432861
+    },
+    {
+      "step": 537,
+      "loss": 0.21851854026317596,
+      "depth_loss": 0.21126705408096313,
+      "consistency": 0.06618791073560715,
+      "illumination_equivariance": 0.08118296414613724
+    },
+    {
+      "step": 538,
+      "loss": 0.20044662058353424,
+      "depth_loss": 0.19601604342460632,
+      "consistency": 0.0379476323723793,
+      "illumination_equivariance": 0.14155128598213196
+    },
+    {
+      "step": 539,
+      "loss": 0.20560340583324432,
+      "depth_loss": 0.19846801459789276,
+      "consistency": 0.06503487378358841,
+      "illumination_equivariance": 0.07164318859577179
+    },
+    {
+      "step": 540,
+      "loss": 0.14539282023906708,
+      "depth_loss": 0.14474362134933472,
+      "consistency": 0.00012257725757081062,
+      "illumination_equivariance": 8.303227900796628e-07
+    },
+    {
+      "step": 541,
+      "loss": 0.1755993515253067,
+      "depth_loss": 0.17035482823848724,
+      "consistency": 0.046081170439720154,
+      "illumination_equivariance": 0.12110064923763275
+    },
+    {
+      "step": 542,
+      "loss": 0.1121620312333107,
+      "depth_loss": 0.1103198379278183,
+      "consistency": 0.012026767246425152,
+      "illumination_equivariance": 0.006964554078876972
+    },
+    {
+      "step": 543,
+      "loss": 0.0938110202550888,
+      "depth_loss": 0.0918135941028595,
+      "consistency": 0.013616334646940231,
+      "illumination_equivariance": 0.02475070208311081
+    },
+    {
+      "step": 544,
+      "loss": 0.15465863049030304,
+      "depth_loss": 0.15312080085277557,
+      "consistency": 0.009038235992193222,
+      "illumination_equivariance": 0.002921907464042306
+    },
+    {
+      "step": 545,
+      "loss": 0.11892163008451462,
+      "depth_loss": 0.11737146973609924,
+      "consistency": 0.009130009450018406,
+      "illumination_equivariance": 0.004787898622453213
+    },
+    {
+      "step": 546,
+      "loss": 0.4366595149040222,
+      "depth_loss": 0.42649316787719727,
+      "consistency": 0.0953652560710907,
+      "illumination_equivariance": 0.24259589612483978
+    },
+    {
+      "step": 547,
+      "loss": 0.09959340840578079,
+      "depth_loss": 0.09625232964754105,
+      "consistency": 0.027083637192845345,
+      "illumination_equivariance": 0.07079833000898361
+    },
+    {
+      "step": 548,
+      "loss": 0.06712167710065842,
+      "depth_loss": 0.06556711345911026,
+      "consistency": 0.009160634130239487,
+      "illumination_equivariance": 0.031194258481264114
+    },
+    {
+      "step": 549,
+      "loss": 0.30798104405403137,
+      "depth_loss": 0.30621063709259033,
+      "consistency": 0.011337695643305779,
+      "illumination_equivariance": 0.020609714090824127
+    },
+    {
+      "step": 550,
+      "loss": 0.17603985965251923,
+      "depth_loss": 0.1746133714914322,
+      "consistency": 0.007893675938248634,
+      "illumination_equivariance": 0.013471263460814953
+    },
+    {
+      "step": 551,
+      "loss": 0.16414430737495422,
+      "depth_loss": 0.16133350133895874,
+      "consistency": 0.02172151580452919,
+      "illumination_equivariance": 0.01388908363878727
+    },
+    {
+      "step": 552,
+      "loss": 0.13157711923122406,
+      "depth_loss": 0.12895627319812775,
+      "consistency": 0.019809041172266006,
+      "illumination_equivariance": 0.16672691702842712
+    },
+    {
+      "step": 553,
+      "loss": 0.126037135720253,
+      "depth_loss": 0.12432052195072174,
+      "consistency": 0.010827897116541862,
+      "illumination_equivariance": 0.06455577909946442
+    },
+    {
+      "step": 554,
+      "loss": 0.19065944850444794,
+      "depth_loss": 0.1894703507423401,
+      "consistency": 0.005557816009968519,
+      "illumination_equivariance": 0.00369872129522264
+    },
+    {
+      "step": 555,
+      "loss": 0.1595938503742218,
+      "depth_loss": 0.15885624289512634,
+      "consistency": 0.0010189423337578773,
+      "illumination_equivariance": 4.816475211555371e-06
+    },
+    {
+      "step": 556,
+      "loss": 0.184625506401062,
+      "depth_loss": 0.1799519807100296,
+      "consistency": 0.040368568152189255,
+      "illumination_equivariance": 0.10366019606590271
+    },
+    {
+      "step": 557,
+      "loss": 0.27523794770240784,
+      "depth_loss": 0.27057817578315735,
+      "consistency": 0.04023750498890877,
+      "illumination_equivariance": 0.08897517621517181
+    },
+    {
+      "step": 558,
+      "loss": 0.10182960331439972,
+      "depth_loss": 0.10016312450170517,
+      "consistency": 0.010307260788977146,
+      "illumination_equivariance": 0.02944108657538891
+    },
+    {
+      "step": 559,
+      "loss": 0.051946043968200684,
+      "depth_loss": 0.049712929874658585,
+      "consistency": 0.01596374437212944,
+      "illumination_equivariance": 0.04993607476353645
+    },
+    {
+      "step": 560,
+      "loss": 0.08526316285133362,
+      "depth_loss": 0.08459790796041489,
+      "consistency": 0.0003173396398779005,
+      "illumination_equivariance": 3.614707111410098e-07
+    },
+    {
+      "step": 561,
+      "loss": 0.18705734610557556,
+      "depth_loss": 0.18618275225162506,
+      "consistency": 0.0023732848931103945,
+      "illumination_equivariance": 1.2433982192305848e-05
+    },
+    {
+      "step": 562,
+      "loss": 0.14701589941978455,
+      "depth_loss": 0.1432577669620514,
+      "consistency": 0.031201759353280067,
+      "illumination_equivariance": 0.09883926063776016
+    },
+    {
+      "step": 563,
+      "loss": 0.1122172400355339,
+      "depth_loss": 0.10647251456975937,
+      "consistency": 0.05105862766504288,
+      "illumination_equivariance": 0.0660679042339325
+    },
+    {
+      "step": 564,
+      "loss": 0.2383696734905243,
+      "depth_loss": 0.23224548995494843,
+      "consistency": 0.054900892078876495,
+      "illumination_equivariance": 0.32304659485816956
+    },
+    {
+      "step": 565,
+      "loss": 0.12438663840293884,
+      "depth_loss": 0.12158423662185669,
+      "consistency": 0.02169205993413925,
+      "illumination_equivariance": 0.02920425683259964
+    },
+    {
+      "step": 566,
+      "loss": 0.14350411295890808,
+      "depth_loss": 0.14282645285129547,
+      "consistency": 0.0004041583160869777,
+      "illumination_equivariance": 1.6241313005593838e-07
+    },
+    {
+      "step": 567,
+      "loss": 0.31264767050743103,
+      "depth_loss": 0.294525682926178,
+      "consistency": 0.17488993704319,
+      "illumination_equivariance": 0.014245297759771347
+    },
+    {
+      "step": 568,
+      "loss": 0.08790110051631927,
+      "depth_loss": 0.08509355038404465,
+      "consistency": 0.021699316799640656,
+      "illumination_equivariance": 0.02949788048863411
+    },
+    {
+      "step": 569,
+      "loss": 0.32073575258255005,
+      "depth_loss": 0.31884580850601196,
+      "consistency": 0.012548147700726986,
+      "illumination_equivariance": 0.011049550026655197
+    },
+    {
+      "step": 570,
+      "loss": 0.12095314264297485,
+      "depth_loss": 0.11691258102655411,
+      "consistency": 0.03401454538106918,
+      "illumination_equivariance": 0.0538477748632431
+    },
+    {
+      "step": 571,
+      "loss": 0.1391570270061493,
+      "depth_loss": 0.13821756839752197,
+      "consistency": 0.003020798321813345,
+      "illumination_equivariance": 8.444918785244226e-05
+    },
+    {
+      "step": 572,
+      "loss": 0.19965311884880066,
+      "depth_loss": 0.19261187314987183,
+      "consistency": 0.06404758989810944,
+      "illumination_equivariance": 0.09672988951206207
+    },
+    {
+      "step": 573,
+      "loss": 0.1422729343175888,
+      "depth_loss": 0.14070604741573334,
+      "consistency": 0.009299536235630512,
+      "illumination_equivariance": 0.005065973848104477
+    },
+    {
+      "step": 574,
+      "loss": 0.19845961034297943,
+      "depth_loss": 0.19729815423488617,
+      "consistency": 0.005252141039818525,
+      "illumination_equivariance": 1.163001979875844e-05
+    },
+    {
+      "step": 575,
+      "loss": 0.15446209907531738,
+      "depth_loss": 0.1503545194864273,
+      "consistency": 0.03472836688160896,
+      "illumination_equivariance": 0.05559640750288963
+    },
+    {
+      "step": 576,
+      "loss": 0.27756550908088684,
+      "depth_loss": 0.2762482464313507,
+      "consistency": 0.006795250810682774,
+      "illumination_equivariance": 0.0004227450699545443
+    },
+    {
+      "step": 577,
+      "loss": 0.09139631688594818,
+      "depth_loss": 0.09072922170162201,
+      "consistency": 0.0003069895028602332,
+      "illumination_equivariance": 3.210042450518813e-06
+    },
+    {
+      "step": 578,
+      "loss": 0.0775105282664299,
+      "depth_loss": 0.07234475761651993,
+      "consistency": 0.04531640186905861,
+      "illumination_equivariance": 0.12275601923465729
+    },
+    {
+      "step": 579,
+      "loss": 0.14806991815567017,
+      "depth_loss": 0.14384326338768005,
+      "consistency": 0.035911768674850464,
+      "illumination_equivariance": 0.044636309146881104
+    },
+    {
+      "step": 580,
+      "loss": 0.20554082095623016,
+      "depth_loss": 0.20091605186462402,
+      "consistency": 0.039857346564531326,
+      "illumination_equivariance": 0.01974748633801937
+    },
+    {
+      "step": 581,
+      "loss": 0.12866608798503876,
+      "depth_loss": 0.12794770300388336,
+      "consistency": 0.0008065173169597983,
+      "illumination_equivariance": 1.0301746442564763e-06
+    },
+    {
+      "step": 582,
+      "loss": 0.1991938352584839,
+      "depth_loss": 0.19724486768245697,
+      "consistency": 0.013124060817062855,
+      "illumination_equivariance": 0.011805303394794464
+    },
+    {
+      "step": 583,
+      "loss": 0.1782342940568924,
+      "depth_loss": 0.17707520723342896,
+      "consistency": 0.005267881788313389,
+      "illumination_equivariance": 0.0001288853381993249
+    },
+    {
+      "step": 584,
+      "loss": 0.21360427141189575,
+      "depth_loss": 0.20360344648361206,
+      "consistency": 0.0936502069234848,
+      "illumination_equivariance": 0.2678709626197815
+    },
+    {
+      "step": 585,
+      "loss": 0.1682250052690506,
+      "depth_loss": 0.16478000581264496,
+      "consistency": 0.028097303584218025,
+      "illumination_equivariance": 0.13869419693946838
+    },
+    {
+      "step": 586,
+      "loss": 0.11335720121860504,
+      "depth_loss": 0.10916556417942047,
+      "consistency": 0.035531964153051376,
+      "illumination_equivariance": 0.041622698307037354
+    },
+    {
+      "step": 587,
+      "loss": 0.2146732211112976,
+      "depth_loss": 0.21139338612556458,
+      "consistency": 0.02644175849854946,
+      "illumination_equivariance": 0.07485289871692657
+    },
+    {
+      "step": 588,
+      "loss": 0.2141231894493103,
+      "depth_loss": 0.21193966269493103,
+      "consistency": 0.015461600385606289,
+      "illumination_equivariance": 0.10346120595932007
+    },
+    {
+      "step": 589,
+      "loss": 0.26764044165611267,
+      "depth_loss": 0.26626861095428467,
+      "consistency": 0.0073874332010746,
+      "illumination_equivariance": 0.004512258805334568
+    },
+    {
+      "step": 590,
+      "loss": 0.11739121377468109,
+      "depth_loss": 0.11528091132640839,
+      "consistency": 0.01475877221673727,
+      "illumination_equivariance": 0.01836668699979782
+    },
+    {
+      "step": 591,
+      "loss": 0.1449732780456543,
+      "depth_loss": 0.14317680895328522,
+      "consistency": 0.011623486876487732,
+      "illumination_equivariance": 0.05707606300711632
+    },
+    {
+      "step": 592,
+      "loss": 0.25294050574302673,
+      "depth_loss": 0.25180599093437195,
+      "consistency": 0.00498269684612751,
+      "illumination_equivariance": 0.005803882610052824
+    },
+    {
+      "step": 593,
+      "loss": 0.11216690391302109,
+      "depth_loss": 0.11111299693584442,
+      "consistency": 0.004211012274026871,
+      "illumination_equivariance": 1.1448955774540082e-06
+    },
+    {
+      "step": 594,
+      "loss": 0.10868164151906967,
+      "depth_loss": 0.10561440885066986,
+      "consistency": 0.024293314665555954,
+      "illumination_equivariance": 0.04875928908586502
+    },
+    {
+      "step": 595,
+      "loss": 0.1287601888179779,
+      "depth_loss": 0.1280725598335266,
+      "consistency": 0.0005526748136617243,
+      "illumination_equivariance": 8.109886039164849e-06
+    },
+    {
+      "step": 596,
+      "loss": 0.19916321337223053,
+      "depth_loss": 0.19632554054260254,
+      "consistency": 0.022064004093408585,
+      "illumination_equivariance": 0.12015344202518463
+    },
+    {
+      "step": 597,
+      "loss": 0.074897900223732,
+      "depth_loss": 0.07424288988113403,
+      "consistency": 0.00017802388174459338,
+      "illumination_equivariance": 2.9891253916503047e-07
+    },
+    {
+      "step": 598,
+      "loss": 0.11364801228046417,
+      "depth_loss": 0.1122804582118988,
+      "consistency": 0.0073113273829221725,
+      "illumination_equivariance": 0.01590604893863201
+    },
+    {
+      "step": 599,
+      "loss": 0.09538095444440842,
+      "depth_loss": 0.08959724009037018,
+      "consistency": 0.05146191641688347,
+      "illumination_equivariance": 0.06181713193655014
+    },
+    {
+      "step": 600,
+      "loss": 0.0845991000533104,
+      "depth_loss": 0.0826040580868721,
+      "consistency": 0.013601887039840221,
+      "illumination_equivariance": 0.08332761377096176,
+      "validation_abs_rel": 0.16518539037757748
+    }
+  ],
+  "seconds": 178.0919167000102
+}

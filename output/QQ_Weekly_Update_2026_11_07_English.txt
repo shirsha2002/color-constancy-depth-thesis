@@ -1,0 +1,8 @@
+Professor, this week I reviewed Point Cloud Color Constancy (CVPR 2022) and LumiDepth, and acquired 735 real multi-light ReMID images plus 368 new NYU RGB-D scenes.
+
+I trained 15 internal adapter variants and compared them with the frozen model, including color, geometry and loss ablations. All 26,224 main prediction scores passed independent recomputation.
+
+The full prototype reduced digital-color AbsRel from 0.1944 to 0.1623 versus ordinary adaptation, but the content control was slightly better at 0.1618. The validation-selected variant also generalized worse to real ReMID. Therefore, a reliable CC-specific benefit is still unproven.
+
+Next I plan stronger illumination supervision, competitive baselines and repeated-seed experiments. Could you advise on revising the geometry/color coupling and possible GPU access for full-resolution experiments? I have uploaded the code, complete results and weekly report here:
+https://github.com/shirsha2002/color-constancy-depth-thesis

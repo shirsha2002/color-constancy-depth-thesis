@@ -1,0 +1,18 @@
+{
+  "intervention_audit": "PASS",
+  "scenes": 128,
+  "chromatic_pairs": 256,
+  "pre_quantization_max_absolute_luminance_difference": 2.220446049250313e-16,
+  "actual_cached_input_max_relative_luminance_drift": 0.006283355280564784,
+  "actual_cached_input_p95_relative_luminance_drift": 0.0029983946937513772,
+  "exposure_ratio_min_max": [
+    1.293250630623079,
+    1.3061494420940731
+  ],
+  "shared_headroom_min_max": [
+    0.7452284064872232,
+    0.7653846153846153
+  ],
+  "float_transform_clipping_fraction": 0.0,
+  "note": "Actual-input estimates use area-pooled linearized8bitRGB. Prequantized chromatic arms match luminance; residual quantization drift is measured rather than claimed absent."
+}

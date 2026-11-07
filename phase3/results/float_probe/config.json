@@ -1,0 +1,15 @@
+{
+  "protocol": "Float linear-luminance interventions after fixed224pixel resampling; before ImageNet normalization",
+  "source_sha256": "330efda6be74c926bc6f7eca39a05593f0c591e50dcdc8bfb58f93eeaf1944b9",
+  "nyu_manifest_sha256": "62e633bd12db990af286fad8bf4c5a536a8ac7a2f0f360611223a3a0fb2b1553",
+  "base_checkpoint_sha256": "b782898d8a3e8be1f639de33837ed85e9b4b73e40f8f5e5cd99067588d722545",
+  "frozen_conditions": [
+    "original",
+    "control",
+    "chroma_rb",
+    "chroma_green",
+    "exposure"
+  ],
+  "training_or_checkpoint_selection": false,
+  "note": "No uint8 rounding after interventions. Native resized RGB is clipped tovalid[0,1] before constructing the controlled field; all arms sharegeometry."
+}

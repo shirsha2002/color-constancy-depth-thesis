@@ -17,6 +17,9 @@ def main():
     parser=argparse.ArgumentParser();parser.add_argument('run',choices=['global','spatial','controls']);args=parser.parse_args()
     folder=ROOT/'phase3/results'/({'global':'study_v1','spatial':'spatial_v1','controls':'spatial_controls'}[args.run])
     cfg=json.loads((folder/'config.json').read_text())
+    runtime=json.loads((ROOT/'phase3/results/runtime.json').read_text())
+    assert sha(ROOT/'phase2/mono/cc_model.py')==runtime['frozen_loader_sha256'],'Frozen loader changed'
+    assert sha(ROOT/'checkpoints/depth_anything_v2_metric_hypersim_vits.pth')==cfg['checkpoint_sha256'],'Base checkpoint changed'
     for relative,expected in {**cfg['sources'],**cfg['manifests']}.items():
         assert sha(ROOT/relative)==expected,f'Frozen source/manifest changed: {relative}'
     methods=list(cfg['variant_mode_equivariance_weight'])

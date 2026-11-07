@@ -1,0 +1,259 @@
+{
+  "configuration_sha256": "2723f76af5c4f71150b113649c979938b59cbdd80acc352f460a4bbf61dda722",
+  "rows": 6556,
+  "summary": [
+    {
+      "family": "nyu",
+      "condition": "original",
+      "method": "frozen",
+      "n_images": 128,
+      "abs_rel": 0.7000996842546229,
+      "rmse_m": 1.6820070688031663,
+      "delta1": 0.06341997296277667
+    },
+    {
+      "family": "nyu",
+      "condition": "original",
+      "method": "spatial_content_noeq",
+      "n_images": 128,
+      "abs_rel": 0.15398929143979678,
+      "rmse_m": 0.5090543333632813,
+      "delta1": 0.7719494047619049
+    },
+    {
+      "family": "nyu",
+      "condition": "original",
+      "method": "spatial_flat_noeq",
+      "n_images": 128,
+      "abs_rel": 0.15182549937944761,
+      "rmse_m": 0.4919076617231468,
+      "delta1": 0.8055465933622569
+    },
+    {
+      "family": "nyu",
+      "condition": "original",
+      "method": "spatial_noeq_no_graph",
+      "n_images": 128,
+      "abs_rel": 0.15403478097606654,
+      "rmse_m": 0.509326880214072,
+      "delta1": 0.7718078326731221
+    },
+    {
+      "family": "nyu",
+      "condition": "control",
+      "method": "frozen",
+      "n_images": 128,
+      "abs_rel": 0.6934100857160885,
+      "rmse_m": 1.6680601335034158,
+      "delta1": 0.06703531737298793
+    },
+    {
+      "family": "nyu",
+      "condition": "control",
+      "method": "spatial_content_noeq",
+      "n_images": 128,
+      "abs_rel": 0.15496639224509276,
+      "rmse_m": 0.5133320749916541,
+      "delta1": 0.7663027645036888
+    },
+    {
+      "family": "nyu",
+      "condition": "control",
+      "method": "spatial_flat_noeq",
+      "n_images": 128,
+      "abs_rel": 0.15249674115238948,
+      "rmse_m": 0.4950700725695641,
+      "delta1": 0.8041975813212608
+    },
+    {
+      "family": "nyu",
+      "condition": "control",
+      "method": "spatial_noeq_no_graph",
+      "n_images": 128,
+      "abs_rel": 0.15501982677068266,
+      "rmse_m": 0.5136241318031439,
+      "delta1": 0.7661414777728873
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_rb",
+      "method": "frozen",
+      "n_images": 128,
+      "abs_rel": 0.6922723893654872,
+      "rmse_m": 1.664034923375239,
+      "delta1": 0.0721892880721831
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_rb",
+      "method": "spatial_content_noeq",
+      "n_images": 128,
+      "abs_rel": 0.16099262718684634,
+      "rmse_m": 0.5323642594360068,
+      "delta1": 0.7502352002640845
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_rb",
+      "method": "spatial_flat_noeq",
+      "n_images": 128,
+      "abs_rel": 0.15886817290373387,
+      "rmse_m": 0.5106622145165121,
+      "delta1": 0.7913152417106808
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_rb",
+      "method": "spatial_noeq_no_graph",
+      "n_images": 128,
+      "abs_rel": 0.16105825321627804,
+      "rmse_m": 0.5326841140577954,
+      "delta1": 0.750062353286385
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_green",
+      "method": "frozen",
+      "n_images": 128,
+      "abs_rel": 0.7012376436031049,
+      "rmse_m": 1.6946600254342399,
+      "delta1": 0.07178196129904427
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_green",
+      "method": "spatial_content_noeq",
+      "n_images": 128,
+      "abs_rel": 0.16411980518667557,
+      "rmse_m": 0.53417564332031,
+      "delta1": 0.7370911995409959
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_green",
+      "method": "spatial_flat_noeq",
+      "n_images": 128,
+      "abs_rel": 0.16000822469446277,
+      "rmse_m": 0.5131645145785231,
+      "delta1": 0.7768542898013079
+    },
+    {
+      "family": "nyu",
+      "condition": "chroma_green",
+      "method": "spatial_noeq_no_graph",
+      "n_images": 128,
+      "abs_rel": 0.16417395652652123,
+      "rmse_m": 0.5344562817857159,
+      "delta1": 0.7368768928676224
+    },
+    {
+      "family": "nyu",
+      "condition": "exposure",
+      "method": "frozen",
+      "n_images": 128,
+      "abs_rel": 0.6999687890875057,
+      "rmse_m": 1.6818848163145783,
+      "delta1": 0.06346408529300807
+    },
+    {
+      "family": "nyu",
+      "condition": "exposure",
+      "method": "spatial_content_noeq",
+      "n_images": 128,
+      "abs_rel": 0.15409105906287535,
+      "rmse_m": 0.509568383426748,
+      "delta1": 0.7717880525339538
+    },
+    {
+      "family": "nyu",
+      "condition": "exposure",
+      "method": "spatial_flat_noeq",
+      "n_images": 128,
+      "abs_rel": 0.1519445980841201,
+      "rmse_m": 0.492432512135211,
+      "delta1": 0.8054016809188465
+    },
+    {
+      "family": "nyu",
+      "condition": "exposure",
+      "method": "spatial_noeq_no_graph",
+      "n_images": 128,
+      "abs_rel": 0.15413719370084789,
+      "rmse_m": 0.5098425803944651,
+      "delta1": 0.7716262418259558
+    },
+    {
+      "family": "remid",
+      "condition": "original",
+      "method": "frozen",
+      "n_images": 735,
+      "abs_rel": 1.7831174085460892,
+      "rmse_m": 1.4323756237806686,
+      "delta1": 0.025057577002282883
+    },
+    {
+      "family": "remid",
+      "condition": "original",
+      "method": "spatial_content_noeq",
+      "n_images": 735,
+      "abs_rel": 0.5433556767880589,
+      "rmse_m": 0.5009758765602209,
+      "delta1": 0.29384746717066657
+    },
+    {
+      "family": "remid",
+      "condition": "original",
+      "method": "spatial_flat_noeq",
+      "n_images": 735,
+      "abs_rel": 0.6644189349041701,
+      "rmse_m": 0.5646531785535277,
+      "delta1": 0.25246867563867925
+    },
+    {
+      "family": "remid",
+      "condition": "original",
+      "method": "spatial_noeq_no_graph",
+      "n_images": 735,
+      "abs_rel": 0.5477559589077188,
+      "rmse_m": 0.5027046441640547,
+      "delta1": 0.2936138275651753
+    },
+    {
+      "family": "vari",
+      "condition": "original",
+      "method": "frozen",
+      "n_images": 264,
+      "abs_rel": 1.7497175340544804,
+      "rmse_m": 2.9819406074835126,
+      "delta1": 0.002283738261521465
+    },
+    {
+      "family": "vari",
+      "condition": "original",
+      "method": "spatial_content_noeq",
+      "n_images": 264,
+      "abs_rel": 0.7703345408971454,
+      "rmse_m": 1.3326544421101008,
+      "delta1": 0.022894237788036616
+    },
+    {
+      "family": "vari",
+      "condition": "original",
+      "method": "spatial_flat_noeq",
+      "n_images": 264,
+      "abs_rel": 0.8484705742729858,
+      "rmse_m": 1.4842773787442183,
+      "delta1": 0.015260897549715907
+    },
+    {
+      "family": "vari",
+      "condition": "original",
+      "method": "spatial_noeq_no_graph",
+      "n_images": 264,
+      "abs_rel": 0.7699438404631367,
+      "rmse_m": 1.3322367020392176,
+      "delta1": 0.022947196575126262
+    }
+  ],
+  "warning": "Per-image descriptive scores. ReMID has50captures but unknown physicalroomidentities; separate scenecluster analysis required. No novelmethodclaim."
+}

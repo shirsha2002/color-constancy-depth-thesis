@@ -1,0 +1,429 @@
+{
+  "comparison_table": [
+    {
+      "method": "frozen",
+      "nyu_original_absrel": 0.7000996842546229,
+      "nyu_control_absrel": 0.6934100857160885,
+      "nyu_chromatic_absrel": 0.696755016484296,
+      "nyu_exposure_absrel": 0.6999687890875057,
+      "remid_per_image_absrel": 1.7831174085460892,
+      "remid_cluster_macro_absrel": 1.445622123268282,
+      "vari_rendered_absrel": 1.7497175340544804
+    },
+    {
+      "method": "ordinary_aug",
+      "nyu_original_absrel": 0.18705443964806698,
+      "nyu_control_absrel": 0.18549960892493744,
+      "nyu_chromatic_absrel": 0.19437777728696698,
+      "nyu_exposure_absrel": 0.1870416492874271,
+      "remid_per_image_absrel": 0.6936650063747256,
+      "remid_cluster_macro_absrel": 0.5480108940508702,
+      "vari_rendered_absrel": 0.9281431605043036
+    },
+    {
+      "method": "achromatic",
+      "nyu_original_absrel": 0.1539899709261887,
+      "nyu_control_absrel": 0.15491982985409253,
+      "nyu_chromatic_absrel": 0.16250777245891856,
+      "nyu_exposure_absrel": 0.1540856321190534,
+      "remid_per_image_absrel": 0.5426593444704118,
+      "remid_cluster_macro_absrel": 0.4239436661518932,
+      "vari_rendered_absrel": 0.7690286822140135
+    },
+    {
+      "method": "content",
+      "nyu_original_absrel": 0.15389868918196298,
+      "nyu_control_absrel": 0.15488864676192687,
+      "nyu_chromatic_absrel": 0.16247835311630016,
+      "nyu_exposure_absrel": 0.15400084159876526,
+      "remid_per_image_absrel": 0.5431720999134086,
+      "remid_cluster_macro_absrel": 0.4242706859767144,
+      "vari_rendered_absrel": 0.7698084014341894
+    },
+    {
+      "method": "chromatic_noeq",
+      "nyu_original_absrel": 0.15380705941784995,
+      "nyu_control_absrel": 0.154794559778702,
+      "nyu_chromatic_absrel": 0.16237745562038403,
+      "nyu_exposure_absrel": 0.15390898098140537,
+      "remid_per_image_absrel": 0.5439984017147053,
+      "remid_cluster_macro_absrel": 0.4249198573599052,
+      "vari_rendered_absrel": 0.7713125732022664
+    },
+    {
+      "method": "chromatic_eq",
+      "nyu_original_absrel": 0.15379671749766005,
+      "nyu_control_absrel": 0.15477538722783052,
+      "nyu_chromatic_absrel": 0.16234793115599355,
+      "nyu_exposure_absrel": 0.15389795969763206,
+      "remid_per_image_absrel": 0.544076075841906,
+      "remid_cluster_macro_absrel": 0.42483404589973367,
+      "vari_rendered_absrel": 0.7702226137436894
+    },
+    {
+      "method": "flat_geometry_eq",
+      "nyu_original_absrel": 0.15392343626996044,
+      "nyu_control_absrel": 0.15491137857897047,
+      "nyu_chromatic_absrel": 0.16249977241846733,
+      "nyu_exposure_absrel": 0.15402587504095544,
+      "remid_per_image_absrel": 0.5431966555246553,
+      "remid_cluster_macro_absrel": 0.4243200251726201,
+      "vari_rendered_absrel": 0.7700403221880363
+    },
+    {
+      "method": "geometry_chromatic_eq",
+      "nyu_original_absrel": 0.15393273101257993,
+      "nyu_control_absrel": 0.154920916725325,
+      "nyu_chromatic_absrel": 0.16251109857185014,
+      "nyu_exposure_absrel": 0.15403520709801063,
+      "remid_per_image_absrel": 0.5432537686924698,
+      "remid_cluster_macro_absrel": 0.4243410579276931,
+      "vari_rendered_absrel": 0.7700434449695253
+    },
+    {
+      "method": "spatial_content",
+      "nyu_original_absrel": 0.15314602915095274,
+      "nyu_control_absrel": 0.1540098207294369,
+      "nyu_chromatic_absrel": 0.16183252761751488,
+      "nyu_exposure_absrel": 0.15324844308280905,
+      "remid_per_image_absrel": 0.5445520389629936,
+      "remid_cluster_macro_absrel": 0.42520987367765106,
+      "vari_rendered_absrel": 0.7732299728099724
+    },
+    {
+      "method": "spatial_flat",
+      "nyu_original_absrel": 0.15371618543840668,
+      "nyu_control_absrel": 0.15466565509614494,
+      "nyu_chromatic_absrel": 0.16224456590492548,
+      "nyu_exposure_absrel": 0.15381803784372408,
+      "remid_per_image_absrel": 0.5501720023858424,
+      "remid_cluster_macro_absrel": 0.427120430293921,
+      "vari_rendered_absrel": 0.7716535287987055
+    },
+    {
+      "method": "spatial_no_graph_loss",
+      "nyu_original_absrel": 0.15405159543117417,
+      "nyu_control_absrel": 0.15503727395388733,
+      "nyu_chromatic_absrel": 0.16263479533782393,
+      "nyu_exposure_absrel": 0.15415402774451853,
+      "remid_per_image_absrel": 0.546786080265581,
+      "remid_cluster_macro_absrel": 0.42557957216829356,
+      "vari_rendered_absrel": 0.7698870945435136
+    },
+    {
+      "method": "spatial_no_equivariance",
+      "nyu_original_absrel": 0.15097721467405995,
+      "nyu_control_absrel": 0.15163707211351118,
+      "nyu_chromatic_absrel": 0.15847850251945572,
+      "nyu_exposure_absrel": 0.15109141697289935,
+      "remid_per_image_absrel": 0.652238290033676,
+      "remid_cluster_macro_absrel": 0.4848448382371884,
+      "vari_rendered_absrel": 0.8395788346469174
+    },
+    {
+      "method": "spatial_geometry_eq",
+      "nyu_original_absrel": 0.15376277918367826,
+      "nyu_control_absrel": 0.1547182239919994,
+      "nyu_chromatic_absrel": 0.16229607707542204,
+      "nyu_exposure_absrel": 0.15386470737892094,
+      "remid_per_image_absrel": 0.5515374038685672,
+      "remid_cluster_macro_absrel": 0.42756859147787857,
+      "vari_rendered_absrel": 0.7714287103746035
+    },
+    {
+      "method": "spatial_content_noeq",
+      "nyu_original_absrel": 0.15398929143979678,
+      "nyu_control_absrel": 0.15496639224509276,
+      "nyu_chromatic_absrel": 0.16255621618676097,
+      "nyu_exposure_absrel": 0.15409105906287535,
+      "remid_per_image_absrel": 0.5433556767880589,
+      "remid_cluster_macro_absrel": 0.42461215155911847,
+      "vari_rendered_absrel": 0.7703345408971454
+    },
+    {
+      "method": "spatial_flat_noeq",
+      "nyu_original_absrel": 0.15182549937944761,
+      "nyu_control_absrel": 0.15249674115238948,
+      "nyu_chromatic_absrel": 0.15943819879909832,
+      "nyu_exposure_absrel": 0.1519445980841201,
+      "remid_per_image_absrel": 0.6644189349041701,
+      "remid_cluster_macro_absrel": 0.49297047756638074,
+      "vari_rendered_absrel": 0.8484705742729858
+    },
+    {
+      "method": "spatial_noeq_no_graph",
+      "nyu_original_absrel": 0.15403478097606654,
+      "nyu_control_absrel": 0.15501982677068266,
+      "nyu_chromatic_absrel": 0.16261610487139963,
+      "nyu_exposure_absrel": 0.15413719370084789,
+      "remid_per_image_absrel": 0.5477559589077188,
+      "remid_cluster_macro_absrel": 0.4259238556432288,
+      "vari_rendered_absrel": 0.7699438404631367
+    }
+  ],
+  "lighting_stability": [
+    {
+      "family": "remid",
+      "method": "frozen",
+      "capture_macro_mad": 0.22697474776858886,
+      "conservative_cluster_macro_mad": 0.19412780394620166,
+      "capture_groups": 50,
+      "scene_labels": 25
+    },
+    {
+      "family": "remid",
+      "method": "ordinary_aug",
+      "capture_macro_mad": 0.15171340449048104,
+      "conservative_cluster_macro_mad": 0.13158828226029037,
+      "capture_groups": 50,
+      "scene_labels": 25
+    },
+    {
+      "family": "remid",
+      "method": "achromatic",
+      "capture_macro_mad": 0.13506804647227785,
+      "conservative_cluster_macro_mad": 0.11746637780005782,
+      "capture_groups": 50,
+      "scene_labels": 25
+    },
+    {
+      "family": "remid",
+      "method": "content",
+      "capture_macro_mad": 0.1351979447604883,
+      "conservative_cluster_macro_mad": 0.11755549980752131,
+      "capture_groups": 50,
+      "scene_labels": 25
+    },
+    {
+      "family": "remid",
+      "method": "chromatic_noeq",
+      "capture_macro_mad": 0.13536064002428425,
+      "conservative_cluster_macro_mad": 0.11769687922661283,
+      "capture_groups": 50,
+      "scene_labels": 25
+    },
+    {
+      "family": "remid",
+      "method": "chromatic_eq",
+      "capture_macro_mad": 0.13542762643708237,
+      "conservative_cluster_macro_mad": 0.11771363604355631,
+      "capture_groups": 50,
+      "scene_labels": 25
+    },
+    {
+      "family": "remid",
+      "method": "flat_geometry_eq",
+      "capture_macro_mad": 0.13520818465536363,
+      "conservative_cluster_macro_mad": 0.11756412662893771,
+      "capture_groups": 50,
+      "scene_labels": 25
+    },
+    {
+      "family": "remid",
+      "method": "geometry_chromatic_eq",
+      "capture_macro_mad": 0.13523354968978463,
+      "conservative_cluster_macro_mad": 0.1175819473349401,
+      "capture_groups": 50,
+      "scene_labels": 25
+    },
+    {
+      "family": "remid",
+      "method": "spatial_content",
+      "capture_macro_mad": 0.13542678183688012,
+      "conservative_cluster_macro_mad": 0.11771655818110364,
+      "capture_groups": 50,
+      "scene_labels": 25
+    },
+    {
+      "family": "remid",
+      "method": "spatial_flat",
+      "capture_macro_mad": 0.13808042774241314,
+      "conservative_cluster_macro_mad": 0.11963451552310071,
+      "capture_groups": 50,
+      "scene_labels": 25
+    },
+    {
+      "family": "remid",
+      "method": "spatial_no_graph_loss",
+      "capture_macro_mad": 0.137079564603195,
+      "conservative_cluster_macro_mad": 0.11892012086834054,
+      "capture_groups": 50,
+      "scene_labels": 25
+    },
+    {
+      "family": "remid",
+      "method": "spatial_no_equivariance",
+      "capture_macro_mad": 0.15255895961660013,
+      "conservative_cluster_macro_mad": 0.13060004450567328,
+      "capture_groups": 50,
+      "scene_labels": 25
+    },
+    {
+      "family": "remid",
+      "method": "spatial_geometry_eq",
+      "capture_macro_mad": 0.13871563960890543,
+      "conservative_cluster_macro_mad": 0.1200849413158649,
+      "capture_groups": 50,
+      "scene_labels": 25
+    },
+    {
+      "family": "remid",
+      "method": "spatial_content_noeq",
+      "capture_macro_mad": 0.13519341242092103,
+      "conservative_cluster_macro_mad": 0.11755539970278148,
+      "capture_groups": 50,
+      "scene_labels": 25
+    },
+    {
+      "family": "remid",
+      "method": "spatial_flat_noeq",
+      "capture_macro_mad": 0.15417764922235816,
+      "conservative_cluster_macro_mad": 0.1319520475383874,
+      "capture_groups": 50,
+      "scene_labels": 25
+    },
+    {
+      "family": "remid",
+      "method": "spatial_noeq_no_graph",
+      "capture_macro_mad": 0.13755900033300497,
+      "conservative_cluster_macro_mad": 0.11925448625921879,
+      "capture_groups": 50,
+      "scene_labels": 25
+    },
+    {
+      "family": "vari",
+      "method": "frozen",
+      "capture_macro_mad": 0.1024751366448926,
+      "conservative_cluster_macro_mad": 0.1024751366448926,
+      "capture_groups": 24,
+      "scene_labels": 1
+    },
+    {
+      "family": "vari",
+      "method": "ordinary_aug",
+      "capture_macro_mad": 0.08125620202862699,
+      "conservative_cluster_macro_mad": 0.08125620202862699,
+      "capture_groups": 24,
+      "scene_labels": 1
+    },
+    {
+      "family": "vari",
+      "method": "achromatic",
+      "capture_macro_mad": 0.0742657962170632,
+      "conservative_cluster_macro_mad": 0.0742657962170632,
+      "capture_groups": 24,
+      "scene_labels": 1
+    },
+    {
+      "family": "vari",
+      "method": "content",
+      "capture_macro_mad": 0.07421668819121267,
+      "conservative_cluster_macro_mad": 0.07421668819121267,
+      "capture_groups": 24,
+      "scene_labels": 1
+    },
+    {
+      "family": "vari",
+      "method": "chromatic_noeq",
+      "capture_macro_mad": 0.07430466153742818,
+      "conservative_cluster_macro_mad": 0.07430466153742818,
+      "capture_groups": 24,
+      "scene_labels": 1
+    },
+    {
+      "family": "vari",
+      "method": "chromatic_eq",
+      "capture_macro_mad": 0.07421575696560646,
+      "conservative_cluster_macro_mad": 0.07421575696560646,
+      "capture_groups": 24,
+      "scene_labels": 1
+    },
+    {
+      "family": "vari",
+      "method": "flat_geometry_eq",
+      "capture_macro_mad": 0.07423587641320085,
+      "conservative_cluster_macro_mad": 0.07423587641320085,
+      "capture_groups": 24,
+      "scene_labels": 1
+    },
+    {
+      "family": "vari",
+      "method": "geometry_chromatic_eq",
+      "capture_macro_mad": 0.07424079804845629,
+      "conservative_cluster_macro_mad": 0.07424079804845629,
+      "capture_groups": 24,
+      "scene_labels": 1
+    },
+    {
+      "family": "vari",
+      "method": "spatial_content",
+      "capture_macro_mad": 0.07398848287473626,
+      "conservative_cluster_macro_mad": 0.07398848287473626,
+      "capture_groups": 24,
+      "scene_labels": 1
+    },
+    {
+      "family": "vari",
+      "method": "spatial_flat",
+      "capture_macro_mad": 0.07414285918941312,
+      "conservative_cluster_macro_mad": 0.07414285918941312,
+      "capture_groups": 24,
+      "scene_labels": 1
+    },
+    {
+      "family": "vari",
+      "method": "spatial_no_graph_loss",
+      "capture_macro_mad": 0.07420979956329521,
+      "conservative_cluster_macro_mad": 0.07420979956329521,
+      "capture_groups": 24,
+      "scene_labels": 1
+    },
+    {
+      "family": "vari",
+      "method": "spatial_no_equivariance",
+      "capture_macro_mad": 0.0728216909022286,
+      "conservative_cluster_macro_mad": 0.0728216909022286,
+      "capture_groups": 24,
+      "scene_labels": 1
+    },
+    {
+      "family": "vari",
+      "method": "spatial_geometry_eq",
+      "capture_macro_mad": 0.07415362128049303,
+      "conservative_cluster_macro_mad": 0.07415362128049303,
+      "capture_groups": 24,
+      "scene_labels": 1
+    },
+    {
+      "family": "vari",
+      "method": "spatial_content_noeq",
+      "capture_macro_mad": 0.07415847606874827,
+      "conservative_cluster_macro_mad": 0.07415847606874827,
+      "capture_groups": 24,
+      "scene_labels": 1
+    },
+    {
+      "family": "vari",
+      "method": "spatial_flat_noeq",
+      "capture_macro_mad": 0.07309656607206104,
+      "conservative_cluster_macro_mad": 0.07309656607206104,
+      "capture_groups": 24,
+      "scene_labels": 1
+    },
+    {
+      "family": "vari",
+      "method": "spatial_noeq_no_graph",
+      "capture_macro_mad": 0.07421436230774839,
+      "conservative_cluster_macro_mad": 0.07421436230774839,
+      "capture_groups": 24,
+      "scene_labels": 1
+    }
+  ],
+  "fixed_primary_method": "spatial_geometry_eq",
+  "all_methods_reported": true,
+  "validation_selected_method": "spatial_no_equivariance",
+  "literature_novelty_established": false,
+  "physical_illuminant_recovery_established": false,
+  "remid_physical_room_independence_known": false,
+  "paired_comparisons": "paired_comparisons.json"
+}

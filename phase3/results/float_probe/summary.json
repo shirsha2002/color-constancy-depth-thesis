@@ -1,0 +1,28 @@
+{
+  "scenes": 128,
+  "predictions": 640,
+  "comparisons": {
+    "chromatic": {
+      "changed_mean_absrel": 0.6966482986300404,
+      "neutral_mean_absrel": 0.6935429917383469,
+      "paired_change": 0.0031053068916935597,
+      "bootstrap_95_interval": [
+        -0.005743305419422817,
+        0.011387474655824924
+      ]
+    },
+    "exposure": {
+      "changed_mean_absrel": 0.6998933129366589,
+      "neutral_mean_absrel": 0.6935429917383469,
+      "paired_change": 0.00635032119831206,
+      "bootstrap_95_interval": [
+        0.0038756913261777668,
+        0.00887772660313565
+      ]
+    }
+  },
+  "actual_encoder_input_max_relative_luminance_drift": 1.2982668351479987e-07,
+  "pre_quantization_max_error": 1.6653345369377348e-16,
+  "new_trained_models": false,
+  "metrics_csv_sha256": "be6b42cbcd427ec27b99b3a7d2fb438d54422707d5ad27d80b91cdba2a1df7e6"
+}

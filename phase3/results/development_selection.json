@@ -1,0 +1,120 @@
+{
+  "recorded_utc": "2026-11-07T04:55:06.103881+00:00",
+  "selection_inputs": "Training histories and NYU validation scores only; no final test CSV or summary opened",
+  "fixed_hypothesis_primary": "spatial_geometry_eq",
+  "validation_selected_recipe": {
+    "method": "spatial_no_equivariance",
+    "run": "spatial_v1",
+    "validation_absrel": 0.15974995575250345,
+    "selected_step": 600,
+    "checkpoint_sha256": "543ed7212cdc4f11869be7a1fa14c80889b44d1c03e4f0a4e407a3660d33379a"
+  },
+  "all_validation_recipes": [
+    {
+      "method": "ordinary_aug",
+      "run": "study_v1",
+      "validation_absrel": 0.19760383786500346,
+      "selected_step": 600,
+      "checkpoint_sha256": "788d8cf4112fc256c83f685bd7414f178f816bf609081b74a82a86e344b572e4"
+    },
+    {
+      "method": "achromatic",
+      "run": "study_v1",
+      "validation_absrel": 0.16524408462221285,
+      "selected_step": 600,
+      "checkpoint_sha256": "b4f35ba5cd3ec2ae52fc93f1692c4028a597aedcf80d74cba096f2fdd3abe619"
+    },
+    {
+      "method": "content",
+      "run": "study_v1",
+      "validation_absrel": 0.16518539037757748,
+      "selected_step": 600,
+      "checkpoint_sha256": "c9c7ba8f40646c4a7e3524ae612f5afa3a840477287d93b63322ef4d1f22d26d"
+    },
+    {
+      "method": "chromatic_noeq",
+      "run": "study_v1",
+      "validation_absrel": 0.16518597300794424,
+      "selected_step": 600,
+      "checkpoint_sha256": "41d55ab9b019c0f38fd4a29811db222c6b4ed4ac223328a4e46ee2f2054fee40"
+    },
+    {
+      "method": "chromatic_eq",
+      "run": "study_v1",
+      "validation_absrel": 0.16509617127623766,
+      "selected_step": 600,
+      "checkpoint_sha256": "f8298ccc263faff37b4509df4c8ef030a2ac459e9eeae4166c0f92ffc86fd721"
+    },
+    {
+      "method": "flat_geometry_eq",
+      "run": "study_v1",
+      "validation_absrel": 0.16523725298325445,
+      "selected_step": 600,
+      "checkpoint_sha256": "6240ec2b83049b1d14d1edc78fddd1e5e52d18a651023e51c6b57c17a6afa5e0"
+    },
+    {
+      "method": "geometry_chromatic_eq",
+      "run": "study_v1",
+      "validation_absrel": 0.16524363337402173,
+      "selected_step": 600,
+      "checkpoint_sha256": "a503bf242679509999a7659fef097b17c5df8cd6ac5ecfffe00c272c0c80ddc7"
+    },
+    {
+      "method": "spatial_content",
+      "run": "spatial_v1",
+      "validation_absrel": 0.1649227483523827,
+      "selected_step": 600,
+      "checkpoint_sha256": "f56eba389a2ec2c8eabdc7ffc64aeceac9be0076581a611d2c51e1bf65133522"
+    },
+    {
+      "method": "spatial_flat",
+      "run": "spatial_v1",
+      "validation_absrel": 0.16504421947069048,
+      "selected_step": 600,
+      "checkpoint_sha256": "9abfc1b7cedb5872c9948f5fb02d5e2391b3be68b8f6552e07775dc02d925537"
+    },
+    {
+      "method": "spatial_no_graph_loss",
+      "run": "spatial_v1",
+      "validation_absrel": 0.16529729922431813,
+      "selected_step": 600,
+      "checkpoint_sha256": "27ee43086ebe914c631a4bc9ca7871efaccdbb67492e02dcf675d1935912ce54"
+    },
+    {
+      "method": "spatial_no_equivariance",
+      "run": "spatial_v1",
+      "validation_absrel": 0.15974995575250345,
+      "selected_step": 600,
+      "checkpoint_sha256": "543ed7212cdc4f11869be7a1fa14c80889b44d1c03e4f0a4e407a3660d33379a"
+    },
+    {
+      "method": "spatial_geometry_eq",
+      "run": "spatial_v1",
+      "validation_absrel": 0.16507362745418275,
+      "selected_step": 600,
+      "checkpoint_sha256": "a949b454cfc347cfd3c3bf5e5bd96f8857ab958e518cdb05b770ae187de56ba7"
+    },
+    {
+      "method": "spatial_content_noeq",
+      "run": "spatial_controls",
+      "validation_absrel": 0.16523565062093323,
+      "selected_step": 600,
+      "checkpoint_sha256": "e486464cf9786de50f6d75f4e61bae58362f470a604422b5e1634c8db332ba91"
+    },
+    {
+      "method": "spatial_flat_noeq",
+      "run": "spatial_controls",
+      "validation_absrel": 0.16026503057940408,
+      "selected_step": 600,
+      "checkpoint_sha256": "26b898d2f55dc17aea270b162d49c2eca4458569dbed2585ebf65a5cf6052a1b"
+    },
+    {
+      "method": "spatial_noeq_no_graph",
+      "run": "spatial_controls",
+      "validation_absrel": 0.16528896142969454,
+      "selected_step": 600,
+      "checkpoint_sha256": "b02e2e5c0a03b77904ee48cb980a8d2ee0a54856fc2fe420d11eb5212c472a7c"
+    }
+  ],
+  "note": "A validation-selected control is not automatically a successful CC method. Both the fixed hypothesis and selection are reported."
+}

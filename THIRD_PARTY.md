@@ -81,3 +81,34 @@ diagonal gain and normalized-correlation stereo costs are known controls rather
 than claimed novel algorithms. Equations and implementation references appear
 in [the stereo design audit](phase2/research/stereo_design_audit.md) and the
 [frozen research protocol](phase2/PROTOCOL.md).
+
+## Phase-three real lighting and point-cloud color constancy
+
+- Cheng et al., **LumiDepth: Stable Monocular Depth in Multi-illumination Scenes**,
+  ECCV 2026: https://link.springer.com/chapter/10.1007/978-3-032-37314-4_9
+- Its publisher-linked ReMID release supplies the captured real-light images,
+  aligned measured depths and camera metadata. Exact public assets, transport
+  shards, hashes, units and grouping caveats are recorded in
+  [ReMID provenance](phase3/data/remid/PROVENANCE.md) and its manifests.
+- Xing, Qian et al., **Point Cloud Color Constancy**, CVPR 2022:
+  https://openaccess.thecvf.com/content/CVPR2022/html/Xing_Point_Cloud_Color_Constancy_CVPR_2022_paper.html
+- Official PCCC code/data index:
+  https://github.com/xyxingx/Point-Cloud-Color-Constancy
+  at revision `ddc8770e04ef5509a621c5a7ee04e330b9204a93`.
+  Original labels, folds and sampled clouds are acquired locally; see
+  [PCCC provenance](phase3/data/pccc/PROVENANCE.md). Upstream source is reviewed,
+  not copied into this repository. No PCCC benchmark reproduction is claimed.
+- The additional 368 NYU scenes use the same original authors' data and official
+  split. They exclude the forty pilot scenes; see
+  [new NYU provenance](phase3/data/nyu_rgbd/PROVENANCE.md).
+
+The weekly report contains attributed research examples from ReMID and NYU.
+Raw source images, depth arrays, archive files and pretrained base weights are
+not redistributed here. Fifteen small trained project adapters are included.
+Project licensing does not replace any original model, dataset or paper rights.
+
+The local relative-chromatic field, low-rank feature residuals and predicted-depth
+affinities are independently implemented research prototypes. Their ingredients
+have established prior art; implementation is not a claim of architectural or
+loss-function novelty. The [literature review](phase3/research/LITERATURE_REVIEW.md)
+records primary sources, the close LumiDepth relationship and reproduction limits.
