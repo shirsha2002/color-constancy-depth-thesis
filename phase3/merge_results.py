@@ -7,7 +7,7 @@ from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def main():
-    runs=['phase3/results/study_v1','phase3/results/spatial_v1']
+    runs=['phase3/results/study_v1','phase3/results/spatial_v1','phase3/results/spatial_controls']
     merged={};roots={};configs=[];sources={};manifests={};counts={};model_hashes={}
     for relative in runs:
         folder=ROOT/relative;cfg=json.loads((folder/'config.json').read_text())

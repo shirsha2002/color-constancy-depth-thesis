@@ -14,8 +14,8 @@ ROOT=Path(__file__).resolve().parents[1]
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('run',choices=['global','spatial']);args=parser.parse_args()
-    folder=ROOT/'phase3/results'/('study_v1' if args.run=='global' else 'spatial_v1')
+    parser=argparse.ArgumentParser();parser.add_argument('run',choices=['global','spatial','controls']);args=parser.parse_args()
+    folder=ROOT/'phase3/results'/({'global':'study_v1','spatial':'spatial_v1','controls':'spatial_controls'}[args.run])
     cfg=json.loads((folder/'config.json').read_text())
     for relative,expected in {**cfg['sources'],**cfg['manifests']}.items():
         assert sha(ROOT/relative)==expected,f'Frozen source/manifest changed: {relative}'
@@ -33,7 +33,7 @@ def main():
     if path.exists():assert json.loads(path.read_text())==identity,'Checkpoint changed; refusing stale prediction reuse'
     else:path.write_text(json.dumps(identity,indent=2),encoding='utf-8',newline='\n')
     print(f'Verified {len(methods)} frozen trained checkpoints; starting final evaluation.',flush=True)
-    script='study.py' if args.run=='global' else 'spatial_study.py'
+    script={'global':'study.py','spatial':'spatial_study.py','controls':'spatial_controls.py'}[args.run]
     subprocess.run([sys.executable,str(ROOT/'phase3/learning'/script),'evaluate',
         '--input-size',str(cfg['input_size']),'--threads',str(cfg['threads']),
         '--steps',str(cfg['training_steps']),'--out',str(folder)],check=True,cwd=ROOT)

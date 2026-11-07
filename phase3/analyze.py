@@ -28,7 +28,10 @@ COLORS=['#87949C','#1C4656','#8F83A5','#C19268','#8CB8AE','#4C9690','#57769B','#
 NAMES.update({'spatial_content':'Local content control','spatial_flat':'Local flat-geometry control',
     'spatial_no_graph_loss':'Local, no graph loss','spatial_no_equivariance':'Local, no equivariance',
     'spatial_geometry_eq':'Local geometry + chromatic'})
+NAMES.update({'spatial_content_noeq':'Local content, no equivariance','spatial_flat_noeq':'Local flat, no equivariance',
+    'spatial_noeq_no_graph':'Local, neither added loss'})
 COLORS+=['#BA9A75','#7E90A5','#96B1A4','#A292B1','#006E69']
+COLORS+=['#AD8B63','#7A8CAE','#7D9C89']
 PRED_ROOTS={};PRIMARY='geometry_chromatic_eq'
 
 def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()

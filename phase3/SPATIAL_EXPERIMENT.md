@@ -48,3 +48,14 @@ NYU validation scenes. Development must not consult partial final-test CSVs.
 No claim of innovation, state-of-the-art performance or CC-specific gain is
 made before evaluation against the matched generic, brightness and flat-geometry
 controls. A learned smoothing field is not calibrated illumination by definition.
+
+## Validation-motivated matched-control extension
+
+The no-equivariance ablation reached validation AbsRel0.15975, lower than the
+generic local control (0.16492). Before inspecting any final test score, three
+additional recipes are therefore locked in `learning/spatial_controls.py`:
+content without equivariance, flat geometry without equivariance, and full
+geometry with neither added loss. All use the same600updates and pair schedule.
+These prevent a benefit from simply removing a regularizer being attributed to
+explicit color handling or geometry. They are controls, not new test-selected
+candidates. All recipes will be retained in the final tables.
