@@ -1,0 +1,62 @@
+{
+  "role": "Small CPU adapted PCCC reproduction; not full paper benchmark",
+  "manifest_sha256": "806f453342b782fd44a096800559d949ecc6594ecf4c7a09e43706a4ff59f503",
+  "upstream": {
+    "repository": "https://github.com/xyxingx/Point-Cloud-Color-Constancy",
+    "revision": "ddc8770e04ef5509a621c5a7ee04e330b9204a93",
+    "files": {
+      "pointnet/model.py": "c2d0eb43366a45a759b6d2ec66500e364cc9ee2384762ee0e51cac3ad8583e6c",
+      "pointnet/dataloader.py": "1cd6a191fc4fb571712d61e1f931e3d75ed04f49943164dd580090a3b96352d7",
+      "utils_p.py": "81986c71764aa79b5dc1754ac3d517e4e1922ed90b845abbaeb86a35091ad8a0",
+      "train_main.py": "c1e48f6383c7daaae0c89e263fcc2ab288806fdd1879782e45c8226e0ed8573d"
+    }
+  },
+  "sources": {
+    "pilot.py": "51d5fc62d1c3a3074e36954c0ba69a59235654efc4a1a7123697e886f142ee3e",
+    "upstream.py": "38d4d527aeeac8deec41c41ff7fd1868869638b03131a4c623b2b0cfc1b06722"
+  },
+  "device": "cpu",
+  "threads": 8,
+  "epochs": 100,
+  "batch_size": 16,
+  "learning_rate": 0.0003,
+  "optimizer": "Adam, author defaults",
+  "seeds": [
+    20261109,
+    20261110,
+    20261111
+  ],
+  "variants": {
+    "released_real": [
+      "released_sum",
+      "real",
+      0.2
+    ],
+    "released_flat": [
+      "released_sum",
+      "flat",
+      0.2
+    ],
+    "weighted_real": [
+      "paper_weighted",
+      "real",
+      0.15
+    ],
+    "weighted_flat": [
+      "paper_weighted",
+      "flat",
+      0.15
+    ]
+  },
+  "points_per_sample": 256,
+  "checkpoint_rule": "Lowest mean inner-validation recovery angular loss, evaluated every epoch; earliest tie",
+  "test_fold": 0,
+  "selection_test_access": false,
+  "test_metric": "Recovery angular degrees, double precision, cosine clamped+/-0.999999 as author loss",
+  "released_augmentation": "Author RotateZ Gaussian30degrees and RGB scalar sigma0.2",
+  "weighted_augmentation": "Same RotateZ; RGB scalar sigma0.15 as paper Eq.6",
+  "head_comparison_note": "Families also differ in intensity augmentation; not an isolated head ablation.",
+  "flat_geometry": "Divide valid native XYZ by abs(Z), yielding Z=-1 and preserved rays; keep missing XYZ0. Not RGB-only.",
+  "paper_budget": "Original paper10000epochs/fullcrossvalidation; this pilot uses a reduced budget and one outerfold.",
+  "sha256": "9df18319ee775a077b68745f936e0cad12a43b418e86b5bff5c6f9728cf94c73"
+}
