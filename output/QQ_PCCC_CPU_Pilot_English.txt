@@ -1,0 +1,7 @@
+Professor, I have now completed a small CPU PCCC reproduction pilot using the authors' source and all 185 released DepthAWB samples (256 XYZRGB points each). I used 98 training, 25 inner-validation and 62 held-out samples from official fold 0.
+
+I trained real-geometry and flat-geometry variants with three seeds each, and separately tested a restored paper-weighted head. The released-code real-geometry model achieved mean angular error 3.74 +/- 0.33 degrees, versus 3.42 +/- 0.06 with flat geometry. The restored weighted real-geometry model achieved 3.68 +/- 0.05 degrees.
+
+A geometry benefit is not established in this reduced run; both paired comparison intervals include zero. All 868 test prediction scores passed independent recomputation, and all 12 checkpoints were checked. This 100-epoch, single-fold pilot does not reproduce the paper's full 10000-epoch benchmark. The source/paper differences and all seeds are documented. Next I plan to discuss the geometry comparison and define a longer all-fold study.
+
+Code and complete results: https://github.com/shirsha2002/color-constancy-depth-thesis/tree/main/phase4_pccc

@@ -1,0 +1,124 @@
+{
+  "audit": "PASS",
+  "test_samples": 62,
+  "prediction_rows": 868,
+  "trained_models_checked": 12,
+  "independent_atan2_max_error_deg": 4.589661983800397e-12,
+  "max_reinference_prediction_component_difference": 0.0,
+  "all_frozen_inputs_sources_and_checkpoints_match": true,
+  "validation_selection_verified": true,
+  "test_used_for_checkpoint_selection": false,
+  "baselines_recomputed": true,
+  "auditor_source_sha256": "6662c8cae8a11612e559819b1623d735f0e537d1a5c4a00dd4d03f8ae55ae439",
+  "predictions_csv_sha256": "90507df5175f4f76870ce947fa3a4dc881f36037672222feb9f240117f3d1c1d",
+  "checkpoints": [
+    {
+      "method": "released_real",
+      "seed": 20261109,
+      "selected_epoch": 52,
+      "validation_mean_deg": 3.4209734733761907,
+      "checkpoint_sha256": "a88039fae03374ae609b4995c941efc2ae064340e014afc270087a2fd9e0f636",
+      "trainable_parameters": 1677479,
+      "training_seconds": 53.32780709999497
+    },
+    {
+      "method": "released_real",
+      "seed": 20261110,
+      "selected_epoch": 64,
+      "validation_mean_deg": 3.3485467915186895,
+      "checkpoint_sha256": "b84b67688f2ff56a919360d07e3566d00ea28f5c180d6dd0544207c57060c596",
+      "trainable_parameters": 1677479,
+      "training_seconds": 79.44175399999949
+    },
+    {
+      "method": "released_real",
+      "seed": 20261111,
+      "selected_epoch": 96,
+      "validation_mean_deg": 3.3199149974873112,
+      "checkpoint_sha256": "98b92f96a8db298a03c13a1bde3c449b89d6507437a7034a6693fb90e3c3052b",
+      "trainable_parameters": 1677479,
+      "training_seconds": 92.95611099999223
+    },
+    {
+      "method": "released_flat",
+      "seed": 20261109,
+      "selected_epoch": 95,
+      "validation_mean_deg": 2.9487237106987347,
+      "checkpoint_sha256": "71a8a9b9cdc8761307f6361047c26f05928677aa3c3e69bf4524f20aaadf933f",
+      "trainable_parameters": 1677479,
+      "training_seconds": 124.01659210000071
+    },
+    {
+      "method": "released_flat",
+      "seed": 20261110,
+      "selected_epoch": 60,
+      "validation_mean_deg": 3.1507401974199793,
+      "checkpoint_sha256": "207d5e41757235b7fa370781cb47b094f27abb2e7936986b3959d0a8bb472d08",
+      "trainable_parameters": 1677479,
+      "training_seconds": 136.61296389999916
+    },
+    {
+      "method": "released_flat",
+      "seed": 20261111,
+      "selected_epoch": 89,
+      "validation_mean_deg": 2.9577877283382095,
+      "checkpoint_sha256": "5192b1538546923e41bb5e230221c972be810705c60fefdc5bd98b8d5f8e6f2a",
+      "trainable_parameters": 1677479,
+      "training_seconds": 62.36966830000165
+    },
+    {
+      "method": "weighted_real",
+      "seed": 20261109,
+      "selected_epoch": 58,
+      "validation_mean_deg": 3.690677428686338,
+      "checkpoint_sha256": "3503ae34289ab89ef74a4af1bb0395b4f5dc6e26a35a4b4c77a18743b06fd36c",
+      "trainable_parameters": 1677608,
+      "training_seconds": 55.57945550000295
+    },
+    {
+      "method": "weighted_real",
+      "seed": 20261110,
+      "selected_epoch": 98,
+      "validation_mean_deg": 3.5295153767860317,
+      "checkpoint_sha256": "3fe90c1c4b8b1bb0a58ed41293591102280c8b4a1e8b2b0d449ae6fa4be6330c",
+      "trainable_parameters": 1677608,
+      "training_seconds": 57.168355999994674
+    },
+    {
+      "method": "weighted_real",
+      "seed": 20261111,
+      "selected_epoch": 47,
+      "validation_mean_deg": 3.2070608597193195,
+      "checkpoint_sha256": "35163b0ad75c805db67c716969c8fd1d99373c7f7adbe9e597da4f0eb0b92c70",
+      "trainable_parameters": 1677608,
+      "training_seconds": 53.364062199994805
+    },
+    {
+      "method": "weighted_flat",
+      "seed": 20261109,
+      "selected_epoch": 43,
+      "validation_mean_deg": 2.9626842385633854,
+      "checkpoint_sha256": "eed5f6e625d26ab614109c76d8086d0ffe96aba78e43072bb12ca1f0a9cc542c",
+      "trainable_parameters": 1677608,
+      "training_seconds": 58.37120470000082
+    },
+    {
+      "method": "weighted_flat",
+      "seed": 20261110,
+      "selected_epoch": 95,
+      "validation_mean_deg": 3.1668246100295345,
+      "checkpoint_sha256": "881704d51f75193856f738f8240de465e11d351288a9c95a90ad9bc4487ff0d2",
+      "trainable_parameters": 1677608,
+      "training_seconds": 53.395670999991125
+    },
+    {
+      "method": "weighted_flat",
+      "seed": 20261111,
+      "selected_epoch": 82,
+      "validation_mean_deg": 3.1157112292963247,
+      "checkpoint_sha256": "69a27413733e6115a86f3eb0464eb4aca48c956ce8f5ae0e009f264b1c484770",
+      "trainable_parameters": 1677608,
+      "training_seconds": 60.70708849999937
+    }
+  ]
+}

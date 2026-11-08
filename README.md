@@ -19,6 +19,13 @@ predeclared model variants are trained with three seeds each. Read
 The 100-epoch, single-outer-fold CPU study is an adapted reproduction pilot;
 it does not reproduce the complete paper's published benchmark.
 
+The released-head real-geometry model has mean angular error **3.74 +/- 0.33
+degrees** versus **3.42 +/- 0.06** for flat geometry (three seeds). The restored
+weighted family also does not establish a geometry benefit in this 100-epoch
+pilot. All **868** held-out scores and twelve checkpoint predictions passed
+independent verification. See the full tables and uncertainty before making
+a claim about depth helping CC.
+
 ## Earlier completed depth studies, through 7 November
 
 The default `main` branch also preserves the three earlier research phases. Read

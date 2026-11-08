@@ -34,7 +34,11 @@ def main():
     for r in table:
         spread=f" +/- {r['mean_deg_seed_std']:.3f}" if r['training_seeds']>1 else ''
         lines.append(f"| {NAMES[r['method']]} | {r['mean_deg']:.3f}{spread} | {r['median_deg']:.3f} | {r['trimean_deg']:.3f} | {r['worst25_deg']:.3f} |")
-    lines+=['','See [every individual seed](results/cpu_v1/per_seed_metrics.csv) and '
+    lines+=['','**Main finding:** under this 100-epoch pilot, native geometry does not beat flat geometry '
+        'on average in either family. Both paired capture-bootstrap intervals include zero. The full-geometry '
+        'models also do not improve on the strong training-mean baseline on average. A useful geometry benefit '
+        'has not been established; this does not invalidate the original paper or identify the reason for the gap.','',
+        'See [every individual seed](results/cpu_v1/per_seed_metrics.csv) and '
         '[every prediction](results/cpu_v1/predictions.csv). The author cosine clamp is retained; '
         'its minimum angular error is approximately 0.081 degrees. Best/worst quartiles use the original integer-slice convention.','',
         '![All methods](results/cpu_v1/figures/angular_error_comparison.png)','',
@@ -85,12 +89,13 @@ def main():
         '[paper manuscript](https://arxiv.org/abs/2111.11280).','']
     (HOME/'RESULTS.md').write_text('\n'.join(lines),encoding='utf-8',newline='\n')
     released=lookup['released_real'];flat=lookup['released_flat'];weighted=lookup['weighted_real']
-    text=("Professor, I have now completed a small CPU PCCC reproduction pilot using the authors' source and all185released DepthAWB samples "
+    text=("Professor, I have now completed a small CPU PCCC reproduction pilot using the authors' source and all 185 released DepthAWB samples "
         "(256XYZRGBpoints each). I used98training,25inner-validation and62held-out samples from official fold0.\n\n"
         "I trained real-geometry and flat-geometry variants with three seeds each, and separately tested a restored paper-weighted head. "
         f"The released-code real-geometry model achieved mean angular error {released['mean_deg']:.2f} +/- {released['mean_deg_seed_std']:.2f} degrees, "
         f"versus {flat['mean_deg']:.2f} +/- {flat['mean_deg_seed_std']:.2f} with flat geometry. "
         f"The restored weighted real-geometry model achieved {weighted['mean_deg']:.2f} +/- {weighted['mean_deg_seed_std']:.2f} degrees.\n\n"
+        "A geometry benefit is not established in this reduced run; both paired comparison intervals include zero. "
         "All868test prediction scores passed independent recomputation, and all12checkpoints were checked. "
         "This100-epoch, single-fold pilot does not reproduce the paper's full10000-epoch benchmark. "
         "The source/paper differences and all seeds are documented. Next I plan to discuss the geometry comparison and define a longer all-fold study.\n\n"

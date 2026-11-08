@@ -22,6 +22,7 @@ Read [the measured results](RESULTS.md),
 [every seed](results/cpu_v1/per_seed_metrics.csv),
 [the independent audit](results/cpu_v1/independent_audit.json), and
 [the short English professor update](../output/QQ_PCCC_CPU_Pilot_English.txt).
+For a plain-language explanation, read [the Bengali student guide](STUDENT_GUIDE_BN.md).
 This is an **adapted reproduction pilot**, not a full published-score replication
 or a new algorithm claim.
 
@@ -53,7 +54,7 @@ python -m venv .venv
 git clone https://github.com/xyxingx/Point-Cloud-Color-Constancy.git external/Point-Cloud-Color-Constancy
 git -C external/Point-Cloud-Color-Constancy checkout ddc8770e04ef5509a621c5a7ee04e330b9204a93
 & .\.venv\Scripts\python.exe phase4_pccc/acquire_inputs.py
-& .\phase4_pccc\run.ps1
+& .\phase4_pccc\run.ps1 -ResultDirectory phase4_pccc/results/reproduction_01
 ```
 
 The minimal acquisition fetches only three original DepthAWB assets, about 23 MB,
@@ -61,6 +62,15 @@ and verifies their frozen SHA/ZIP identities. It does not download full-resoluti
 image archives or the other PCCC datasets. A verified full acquisition from the
 previous phase also works. Camera registration and radiometry are inherited
 from the original release, not independently reconstructed from the sparse data.
+
+Use a new result directory for a fresh checkout. The published reference folder
+contains predictions and fingerprints for all twelve original weights, but only
+four weight files. Regenerating the other weights can change serialized timing
+metadata and platform numerics, so it must not silently replace a frozen
+reference run. A new directory gets its own checkpoints, evaluation identity,
+audit and tables; the reference results remain intact. `finish.py` supports the
+same `--out` option and only rewrites the professor-facing root summary for the
+original reference directory.
 
 ## Individual stages
 

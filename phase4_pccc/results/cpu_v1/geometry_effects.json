@@ -1,0 +1,50 @@
+{
+  "released": {
+    "mean_real_minus_flat_deg": 0.31946700701521175,
+    "conditional_capture_bootstrap_95_interval": [
+      -0.033151629416943024,
+      0.6527441948959165
+    ],
+    "per_seed": [
+      {
+        "seed": 20261109,
+        "real_minus_flat_mean_deg": 0.5581637986454211
+      },
+      {
+        "seed": 20261110,
+        "real_minus_flat_mean_deg": 0.430694853137609
+      },
+      {
+        "seed": 20261111,
+        "real_minus_flat_mean_deg": -0.030457630737394794
+      }
+    ],
+    "test_captures": 62,
+    "real_better_captures_after_seed_average": 26,
+    "note": "Negative favors geometry. Resamples62captures, conditional on3trainedseeds; not proven room-independent population inference."
+  },
+  "weighted": {
+    "mean_real_minus_flat_deg": 0.245434209240381,
+    "conditional_capture_bootstrap_95_interval": [
+      -0.04641525204752489,
+      0.5472552451029239
+    ],
+    "per_seed": [
+      {
+        "seed": 20261109,
+        "real_minus_flat_mean_deg": 0.1507760703434982
+      },
+      {
+        "seed": 20261110,
+        "real_minus_flat_mean_deg": 0.1377596423043771
+      },
+      {
+        "seed": 20261111,
+        "real_minus_flat_mean_deg": 0.4477669150732679
+      }
+    ],
+    "test_captures": 62,
+    "real_better_captures_after_seed_average": 29,
+    "note": "Negative favors geometry. Resamples62captures, conditional on3trainedseeds; not proven room-independent population inference."
+  }
+}

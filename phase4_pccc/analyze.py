@@ -101,6 +101,7 @@ def audit(out,cfg,manifest,rows):
         'independent_atan2_max_error_deg':maximum,'max_reinference_prediction_component_difference':prediction_difference,
         'all_frozen_inputs_sources_and_checkpoints_match':True,'validation_selection_verified':True,
         'test_used_for_checkpoint_selection':False,'baselines_recomputed':True,
+        'auditor_source_sha256':sha(Path(__file__)),
         'predictions_csv_sha256':sha(out/'predictions.csv'),'checkpoints':checkpoints}
     dump(out/'independent_audit.json',result);print(json.dumps({k:v for k,v in result.items() if k!='checkpoints'},indent=2))
     return result
@@ -113,7 +114,7 @@ def summarize(out,cfg,rows):
     table=[]
     for method in NAMES:
         items=[r for r in per_run if r['method']==method]
-        row={'method':method,'training_seeds':len(items),'test_captures':62}
+        row={'method':method,'training_seeds':len(items) if method in cfg['variants'] else 0,'test_captures':62}
         for metric in ['mean_deg','median_deg','trimean_deg','best25_deg','worst25_deg','percentile95_deg']:
             values=[r[metric] for r in items];row[metric]=float(np.mean(values));row[metric+'_seed_std']=float(np.std(values,ddof=1)) if len(values)>1 else 0.
         table.append(row)
@@ -154,7 +155,7 @@ def figures(out,cfg,manifest,rows,table):
             h=json.loads((out/'histories'/f'{method}_{seed}.json').read_text())
             ax.plot([r['epoch'] for r in h['history']],[r['validation_mean_deg'] for r in h['history']],label=str(seed),alpha=.8)
             ax.scatter([h['selected_epoch']],[h['validation_mean_deg']],s=22)
-        ax.set_title(NAMES[method]);ax.set_xlabel('Epoch');ax.set_ylabel('Inner-validation error (deg)');ax.grid(alpha=.15);ax.legend(fontsize=8)
+        ax.set_title(NAMES[method]);ax.set_xlabel('Epoch');ax.set_yscale('log');ax.set_ylabel('Validation error (deg, log scale)');ax.grid(alpha=.15);ax.legend(fontsize=8)
     fig.suptitle('Checkpoint selection uses inner validation only',fontweight='bold');fig.tight_layout()
     fig.savefig(folder/'validation_curves.png',dpi=160);plt.close(fig)
     # No ranking on prediction errors: deterministic first numeric test ID.
