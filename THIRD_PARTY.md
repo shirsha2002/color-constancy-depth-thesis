@@ -112,3 +112,23 @@ affinities are independently implemented research prototypes. Their ingredients
 have established prior art; implementation is not a claim of architectural or
 loss-function novelty. The [literature review](phase3/research/LITERATURE_REVIEW.md)
 records primary sources, the close LumiDepth relationship and reproduction limits.
+
+## Executed PCCC CPU pilot
+
+The `phase4_pccc/` wrapper executes the original author's PointNet/PCCC source,
+angular loss and rotation routine from the pinned external clone. That clone
+stays outside project Git history. One return-unpacking correction is applied
+in memory. The four-channel paper-weighted head is an explicit restoration
+variant and is not represented as unmodified released code.
+
+The upstream repository has no explicit license file at the inspected revision.
+This project's MIT license does not grant rights to the upstream source or
+original dataset. The repository publishes attribution, wrappers, provenance,
+small derived figures and experiment evidence rather than a copied upstream
+source tree or original raw dataset archives. The source reference remains
+https://github.com/xyxingx/Point-Cloud-Color-Constancy.
+
+Derived illustrative RGB grids and clouds are attributed DepthAWB samples from
+that authors' release. They are not newly captured full-resolution photographs.
+The first seed's four trained pilot checkpoints are included; other seed weights
+remain local with their SHA identities and measured outputs recorded.

@@ -1,5 +1,19 @@
 # Thesis progress: start here
 
+## PCCC reproduction pilot, 9 November
+
+The latest study follows the supervisor's request to run **PCCC on its own real
+RGB-D / point-cloud color-constancy data**. Start with:
+
+1. [PCCC measured results](../phase4_pccc/RESULTS.md).
+2. [The runnable CPU guide](../phase4_pccc/README.md) and [frozen protocol](../phase4_pccc/PROTOCOL.md).
+3. [Independent audit](../phase4_pccc/results/cpu_v1/independent_audit.json).
+4. [Short English professor update](QQ_PCCC_CPU_Pilot_English.txt).
+
+This 100-epoch, one-outer-fold study is an adapted reproduction pilot, not a
+full replication of the paper's published numerical results. The earlier
+reports below remain historical records of the separate depth experiments.
+
 ## Latest follow-up after supervisor feedback
 
 The latest work is the 7 November real-light and explicit chromatic-control

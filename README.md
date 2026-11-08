@@ -3,9 +3,25 @@
 Undergraduate thesis project by **Shirsha Mitra**, student ID **2023521460130**,
 Sichuan University.
 
-## Latest completed work
+## Latest: small PCCC reproduction, 9 November
 
-The default `main` branch includes three research phases. Start with
+The current follow-up directly follows **Point Cloud Color Constancy (CVPR 2022)**:
+RGB plus depth-derived colored points are used to estimate illumination. This
+answers the supervisor's request for PCCC data and CC results; the earlier
+monocular-depth experiments remain separately preserved.
+
+The laptop pilot uses all **185 real DepthAWB samples**, 256 XYZRGB points each,
+with **98 training / 25 inner validation / 62 held-out test** samples. Four
+predeclared model variants are trained with three seeds each. Read
+[the PCCC reproduction guide](phase4_pccc/README.md),
+[measured results](phase4_pccc/RESULTS.md) and
+[the independent audit](phase4_pccc/results/cpu_v1/independent_audit.json).
+The 100-epoch, single-outer-fold CPU study is an adapted reproduction pilot;
+it does not reproduce the complete paper's published benchmark.
+
+## Earlier completed depth studies, through 7 November
+
+The default `main` branch also preserves the three earlier research phases. Read
 the [7 November weekly report](output/pdf/Shirsha_Mitra_Weekly_Update_2026_11_07.pdf),
 the [latest measured results](phase3/RESULTS.md) and the
 [current project status](PROJECT_STATUS.md).
@@ -32,8 +48,9 @@ frozen model must be distinguished from a color-specific contribution.
 
 | Material | Scope |
 |---|---|
-| [Latest weekly research report](output/pdf/Shirsha_Mitra_Weekly_Update_2026_11_07.pdf) | Real ReMID, expanded NYU, simulated controls, internal methods and loss ablations, measured limits and next steps |
-| [Latest English QQ update](output/QQ_Weekly_Update_2026_11_07_English.txt) | Short message based on the audited weekly results |
+| [Current PCCC results](phase4_pccc/RESULTS.md) | Small CPU reproduction on genuine DepthAWB, source/paper distinctions and geometry controls |
+| [Latest English QQ update](output/QQ_PCCC_CPU_Pilot_English.txt) | Short message based on the audited PCCC pilot |
+| [7 November research report](output/pdf/Shirsha_Mitra_Weekly_Update_2026_11_07.pdf) | Earlier ReMID/NYU depth study, simulated controls, internal methods and loss ablations |
 | [Previous phase-two report](output/pdf/Shirsha_Mitra_Phase2_Research_Update.pdf) | Earlier Vari prototype and real-light stereo diagnostic |
 | [Original PowerPoint](output/Shirsha_Mitra_Thesis_Progress.pptx) / [slide PDF](output/Shirsha_Mitra_Thesis_Progress_Slides.pdf) | Initial NYU preprocessing pilot; this earlier deck does not contain the follow-up experiments |
 | [Original progress report](output/pdf/Shirsha_Mitra_Thesis_Progress_Report.pdf) | Detailed initial NYU experiment |
@@ -41,7 +58,7 @@ frozen model must be distinguished from a color-specific contribution.
 | [Small 3D point-cloud previews](phase2/results/stereo/main_v2/pointclouds_inference/) | Deterministic 30,000-point previews of actual stereo outputs, including outliers; not benchmark-quality meshes |
 
 Source code, protocols, selected data manifests, all measured metric tables,
-audit evidence, nineteen trained adapters across phases two and three, and final materials are versioned here.
+audit evidence, nineteen trained adapters across phases two and three, four first-seed PCCC checkpoints, and final materials are versioned here.
 Raw datasets, pretrained base weights, installed environments and large inference
 caches are retained locally and reproduced through the documented setup and
 acquisition commands. See [what is included](PROJECT_STATUS.md#repository-scope).
