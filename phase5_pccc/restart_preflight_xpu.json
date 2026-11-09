@@ -1,0 +1,13 @@
+{
+  "restart_preflight": "PASS",
+  "data_used": "24originalfold0trainingcaptures, no finaltestcaptures",
+  "uninterrupted_epochs": 4,
+  "interrupted_after_epoch": 2,
+  "resumed_epochs": 2,
+  "device": "xpu",
+  "all_final_model_tensors_bitwise_identical": true,
+  "all_training_and_monitor_histories_identical": true,
+  "weights_within_rtol1e-5_atol1e-6": true,
+  "histories_within1e-4deg": true,
+  "trainer_sha256": "d7c20b8d47f88617e89bb41e9a53fefaa6913dd08ba8a43f6ac5316129b6f245"
+}

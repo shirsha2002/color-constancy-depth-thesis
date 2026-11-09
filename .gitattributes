@@ -6,9 +6,11 @@
 /phase2/**/*.json -text whitespace=trailing-space,space-before-tab,cr-at-eol
 /phase3/**/*.json -text whitespace=trailing-space,space-before-tab,cr-at-eol
 /phase4_pccc/**/*.json -text whitespace=trailing-space,space-before-tab,cr-at-eol
+/phase5_pccc/**/*.json -text whitespace=trailing-space,space-before-tab,cr-at-eol
 *.csv text eol=lf
 /phase3/**/*.csv -text -eol whitespace=trailing-space,space-before-tab,cr-at-eol
 /phase4_pccc/**/*.csv -text -eol whitespace=trailing-space,space-before-tab,cr-at-eol
+/phase5_pccc/**/*.csv -text -eol whitespace=trailing-space,space-before-tab,cr-at-eol
 *.txt text eol=lf
 *.pt binary
 *.png binary

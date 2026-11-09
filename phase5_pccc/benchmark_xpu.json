@@ -1,0 +1,35 @@
+{
+  "device_requested": "xpu",
+  "torch": "2.14.1+xpu",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "xpu_available": true,
+  "cuda_available": false,
+  "deterministic_algorithms": true,
+  "test_data_used": false,
+  "timing": "Warm8trainingsteps, measure20batch16forward+backward steps, synchronized; no optimizer step in timed kernel",
+  "gpu_name": "Intel(R) Arc(TM) 140T GPU (16GB)",
+  "gpu_properties": "_XpuDeviceProperties(name='Intel(R) Arc(TM) 140T GPU (16GB)', platform_name='Intel(R) oneAPI Unified Runtime over Level-Zero', type='gpu', device_id=0x7D51, uuid=omitted, driver_version='1.6.31896', total_memory=16797MB, local_mem_size=64KB, last_level_cache_size=8192KB, max_compute_units=128, memory_clock_rate=0MHz, memory_bus_width=64-bit, gpu_eu_count=128, gpu_subslice_count=16, max_work_group_size=1024, max_num_sub_groups=128, sub_group_sizes=[8 16 32], has_fp16=1, has_fp64=1, has_atomic64=1, is_integrated_gpu=1)",
+  "status": "PASS",
+  "measurements": [
+    {
+      "head": "released",
+      "batch16_forward_backward_seconds": 0.035075959999812764,
+      "cpu_reference_max_component_difference": 1.9073486328125e-06,
+      "reference_max_abs": 16.10173988342285,
+      "finite_angular_backward_and_adam": true,
+      "portable_fix_cpu_bitwise_matches_previous": true,
+      "pool_bypass_cpu_gradient_max_difference": 0.0,
+      "pool_bypass_cpu_gradients_bitwise_identical": true
+    },
+    {
+      "head": "weighted",
+      "batch16_forward_backward_seconds": 0.03608890499890549,
+      "cpu_reference_max_component_difference": 1.1175870895385742e-08,
+      "reference_max_abs": 0.050846729427576065,
+      "finite_angular_backward_and_adam": true,
+      "portable_fix_cpu_bitwise_matches_previous": true,
+      "pool_bypass_cpu_gradient_max_difference": 0.0,
+      "pool_bypass_cpu_gradients_bitwise_identical": true
+    }
+  ]
+}

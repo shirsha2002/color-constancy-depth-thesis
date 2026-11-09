@@ -1,0 +1,11 @@
+{
+  "selected_main_backend": "xpu",
+  "deterministic_algorithms": true,
+  "reason": "BothfunctionalchecksandrestartchecksPASS; selected by matchedtraining-onlytiming, nottestaccuracy",
+  "measured_cpu_over_xpu_forward_backward_speed_ratio": {
+    "released": 5.181742424197707,
+    "weighted": 5.099828742531003
+  },
+  "full_training_speedup_not_yet_measured": true,
+  "cpu_reference": "Separate10000epochweighted_real_fold0; not mixed into GPUoutoffoldseries"
+}

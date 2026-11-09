@@ -1,0 +1,33 @@
+{
+  "device_requested": "cpu",
+  "torch": "2.14.1+cpu",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "xpu_available": false,
+  "cuda_available": false,
+  "deterministic_algorithms": true,
+  "test_data_used": false,
+  "timing": "Warm8trainingsteps, measure20batch16forward+backward steps, synchronized; no optimizer step in timed kernel",
+  "status": "PASS",
+  "measurements": [
+    {
+      "head": "released",
+      "batch16_forward_backward_seconds": 0.1817545900004916,
+      "cpu_reference_max_component_difference": 0.0,
+      "reference_max_abs": 16.10173988342285,
+      "finite_angular_backward_and_adam": true,
+      "portable_fix_cpu_bitwise_matches_previous": true,
+      "pool_bypass_cpu_gradient_max_difference": 0.0,
+      "pool_bypass_cpu_gradients_bitwise_identical": true
+    },
+    {
+      "head": "weighted",
+      "batch16_forward_backward_seconds": 0.18404723499988904,
+      "cpu_reference_max_component_difference": 0.0,
+      "reference_max_abs": 0.050846729427576065,
+      "finite_angular_backward_and_adam": true,
+      "portable_fix_cpu_bitwise_matches_previous": true,
+      "pool_bypass_cpu_gradient_max_difference": 0.0,
+      "pool_bypass_cpu_gradients_bitwise_identical": true
+    }
+  ]
+}

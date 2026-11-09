@@ -1,6 +1,7 @@
 {
   "version": "2.0.0",
   "tasks": [
+    {"label": "PCCC: paper-budget status", "type": "process", "command": "${workspaceFolder}/.venv/Scripts/python.exe", "args": ["phase5_pccc/status.py"], "options": {"cwd": "${workspaceFolder}"}, "problemMatcher": []},
     {"label": "PCCC: run CPU pilot", "type": "process", "command": "powershell.exe", "args": ["-NoProfile", "-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}/phase4_pccc/run.ps1"], "options": {"cwd": "${workspaceFolder}"}, "problemMatcher": []},
     {"label": "PCCC: verify inputs and model", "type": "process", "command": "${workspaceFolder}/.venv/Scripts/python.exe", "args": ["phase4_pccc/checks.py"], "options": {"cwd": "${workspaceFolder}"}, "problemMatcher": []},
     {"label": "Thesis: check environment", "type": "process", "command": "${workspaceFolder}/.venv/Scripts/python.exe", "args": ["scripts/check_environment.py"], "options": {"cwd": "${workspaceFolder}"}, "problemMatcher": []},
