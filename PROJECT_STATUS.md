@@ -8,7 +8,12 @@ Depth Estimation System**.
 
 ## Completed work
 
-### Active follow-up: paper-budget PCCC reproduction
+### Cancelled follow-up: paper-budget PCCC reproduction
+
+Cancelled on9November at the user's explicit request because it takes too much
+time. Both workers are stopped; nothing is scheduled to restart. Partial GPU
+epoch6200 and CPU epoch1550 checkpoints are preserved. No completed10000epoch
+benchmark is claimed. The launch details below are historical.
 
 The DepthAWB256point, three-fold,10000epoch study was launched on9November.
 Actual PCCC training, CPU source equivalence and exact restart checks passed on

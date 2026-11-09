@@ -1,0 +1,24 @@
+{
+  "status": "cancelled_by_user",
+  "cancelled_utc": "2026-11-09T02:55:10.134653+00:00",
+  "terminated_process_count": 10,
+  "checkpoints": [
+    {
+      "run": "xpu_full_v1",
+      "job": "weighted_real_fold0",
+      "last_progress_epoch": 6200,
+      "checkpoint_preserved": true,
+      "checkpoint_bytes": 27246372,
+      "saved_checkpoint_epoch": 6200
+    },
+    {
+      "run": "cpu_reference_v1",
+      "job": "weighted_real_fold0",
+      "last_progress_epoch": 1580,
+      "checkpoint_preserved": true,
+      "checkpoint_bytes": 27054121,
+      "saved_checkpoint_epoch": 1550
+    }
+  ],
+  "reason": "User cancelled because the run takes too much time."
+}

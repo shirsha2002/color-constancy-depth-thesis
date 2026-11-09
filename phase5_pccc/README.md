@@ -2,6 +2,11 @@
 
 Shirsha Mitra / 2023521460130 / 9 November 2026.
 
+**Cancelled at the user's request.** CPU and XPU workers are stopped. Saved
+checkpoints at CPU epoch1550 and GPU epoch6200 remain local. No automatic
+restart or completion publication is pending. The launch commands below are
+manual resumption instructions, not an active schedule.
+
 This extends the completed100epoch pilot into **10000epochs/model, all three
 official DepthAWB folds,256points/sample**. Read [STATUS.md](STATUS.md) for actual
 completion status. Starting these jobs is not completing or reproducing the

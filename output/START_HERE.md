@@ -1,6 +1,11 @@
 # Thesis progress: start here
 
-## Paper-budget follow-up launched
+## Paper-budget follow-up cancelled
+
+The user cancelled this long run on9November. Both CPU and XPU workers are
+stopped; partial checkpoints are preserved. No new10000epoch result is complete.
+See [cancellation status](../phase5_pccc/STATUS.md). The launch description below
+is historical; the earlier completed pilot remains available.
 
 The10000epoch, all-three-fold DepthAWB study was launched on both Intel XPU
 (main suite) and CPU (separate reference). See [the status](../phase5_pccc/STATUS.md)

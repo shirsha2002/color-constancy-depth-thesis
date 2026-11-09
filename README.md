@@ -3,7 +3,12 @@
 Undergraduate thesis project by **Shirsha Mitra**, student ID **2023521460130**,
 Sichuan University.
 
-## Paper-budget reproduction launched, 9 November
+## Paper-budget reproduction cancelled, 9 November
+
+**Cancelled at the user's request because of runtime. Both CPU and GPU workers
+are stopped; queued jobs and automatic completion publication will not run.**
+Partial checkpoints are preserved locally (GPU epoch6200, CPU epoch1550).
+The earlier completed pilot remains available below. See [cancellation status](phase5_pccc/STATUS.md).
 
 The next experiment runs PCCC at **10000 epochs**, all three official DepthAWB
 folds and 256-point input. The **Intel Arc 140T GPU** passed actual training and

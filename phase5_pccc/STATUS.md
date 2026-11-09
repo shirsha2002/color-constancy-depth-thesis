@@ -1,19 +1,12 @@
-# Paper-budget reproduction running
+# Paper-budget reproduction cancelled
 
-The CPU and Intel XPU workers have been launched and actual training progress
-has been observed. Source-equivalence checks and exact restart tests passed.
-The experiment is DepthAWB at256points,
-10000epochs per model and all three official folds. The main GPU suite contains
-12jobs; a separate CPU reference covers one fold/model.
+Cancelled at the user's explicit request on 9 November 2026 because the run takes too much time.
 
-Final results are **not complete**. Actual live progress is saved in the local
-`results/xpu_full_v1/` and `results/cpu_reference_v1/` directories; run
-`python phase5_pccc/status.py` with the project interpreter to inspect it.
+Both the CPU reference and Intel XPU suite workers were stopped. The remaining queued jobs will not run, and the completion publisher will not run. No10000epoch result is claimed.
 
-After all scheduled jobs and independent checks succeed, this status is replaced
-by links to the measured results. The earlier100epoch pilot is preserved in
-`phase4_pccc/` and must not be presented as the new10000epoch result.
+Latest complete checkpoints are preserved locally:
 
-This local checked-in file is a launch snapshot. `status.py` reads live progress.
-The completion publisher updates GitHub in a separate worktree; a local tracked
-copy can remain at its launch text until the new remote commit is pulled.
+- xpu_full_v1: epoch 6200 /10000.
+- cpu_reference_v1: epoch 1550 /10000.
+
+Earlier completed pilot results and source remain intact. Resumption requires an explicit new instruction; nothing is scheduled to restart automatically.
