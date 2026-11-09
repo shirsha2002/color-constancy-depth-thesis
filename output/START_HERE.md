@@ -1,5 +1,13 @@
 # Thesis progress: start here
 
+## Paper-budget follow-up launched
+
+The10000epoch, all-three-fold DepthAWB study was launched on both Intel XPU
+(main suite) and CPU (separate reference). See [the status](../phase5_pccc/STATUS.md)
+and [monitoring instructions](../phase5_pccc/README.md). Starting the jobs does
+not mean the new numerical results are complete. The completed100epoch pilot
+below remains separate.
+
 ## PCCC reproduction pilot, 9 November
 
 The latest study follows the supervisor's request to run **PCCC on its own real

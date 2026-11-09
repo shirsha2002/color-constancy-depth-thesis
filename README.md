@@ -3,6 +3,19 @@
 Undergraduate thesis project by **Shirsha Mitra**, student ID **2023521460130**,
 Sichuan University.
 
+## Paper-budget reproduction launched, 9 November
+
+The next experiment runs PCCC at **10000 epochs**, all three official DepthAWB
+folds and 256-point input. The **Intel Arc 140T GPU** passed actual training and
+exact restart checks and is the main backend. A separate full-budget CPU
+reference was launched as well. This is the DepthAWB scope, not all experiments
+and datasets in the original paper.
+
+**At launch these new results were not complete.** Read [the current status](phase5_pccc/STATUS.md)
+and [the runnable guide](phase5_pccc/README.md). The completed 100-epoch pilot
+below remains a separate earlier experiment. Completed numeric outputs will
+be independently audited before the authorised publication step uploads them.
+
 ## Latest: small PCCC reproduction, 9 November
 
 The current follow-up directly follows **Point Cloud Color Constancy (CVPR 2022)**:

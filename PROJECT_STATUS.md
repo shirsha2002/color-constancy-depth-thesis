@@ -8,6 +8,16 @@ Depth Estimation System**.
 
 ## Completed work
 
+### Active follow-up: paper-budget PCCC reproduction
+
+The DepthAWB256point, three-fold,10000epoch study was launched on9November.
+Actual PCCC training, CPU source equivalence and exact restart checks passed on
+both CPU and Intel Arc140T XPU. The GPU is the main suite backend; a separate
+CPU fold0 reference was launched too. Check [live-run instructions](phase5_pccc/README.md)
+and [current completion status](phase5_pccc/STATUS.md). Launching is not completing
+the experiment. The worker audits completed numeric results
+and publishes only after verification. Earlier completed studies remain below.
+
 ### Latest direction: genuine PCCC color-constancy reproduction
 
 The supervisor's latest direction centers **RGB-D / point-cloud information
