@@ -17,3 +17,6 @@
 *.pdf binary
 *.pptx binary
 *.ply binary
+/phase6_modal/**/*.json -text whitespace=trailing-space,space-before-tab,cr-at-eol
+/phase6_modal/**/*.csv -text -eol whitespace=trailing-space,space-before-tab,cr-at-eol
+*.gif binary

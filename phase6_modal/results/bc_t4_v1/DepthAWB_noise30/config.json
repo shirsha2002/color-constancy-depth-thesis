@@ -1,0 +1,73 @@
+{
+  "scope": "DepthAWB_noise30: Modal T4 run of the frozen phase-5 trainer (steps B/C); geometry set by manifest",
+  "client_date": "2026-11-09",
+  "manifest_path": "phase6_modal/inputs/DepthAWB_noise30/manifest.json",
+  "manifest_sha256": "42a96d694d6a4e823d0abc348bf8b5f6878046fe9920a43f146145c22a364830",
+  "sources": {
+    "phase5_pccc/train.py": "d7c20b8d47f88617e89bb41e9a53fefaa6913dd08ba8a43f6ac5316129b6f245",
+    "phase5_pccc/model.py": "0ca3438ab916d9dd968a4dbc52d54896b1ef5c13e10e3cb8ca7c862647948645",
+    "phase4_pccc/pilot.py": "51d5fc62d1c3a3074e36954c0ba69a59235654efc4a1a7123697e886f142ee3e",
+    "phase4_pccc/upstream.py": "38d4d527aeeac8deec41c41ff7fd1868869638b03131a4c623b2b0cfc1b06722"
+  },
+  "upstream": {
+    "repository": "https://github.com/xyxingx/Point-Cloud-Color-Constancy",
+    "revision": "ddc8770e04ef5509a621c5a7ee04e330b9204a93",
+    "files": {
+      "pointnet/model.py": "c2d0eb43366a45a759b6d2ec66500e364cc9ee2384762ee0e51cac3ad8583e6c",
+      "pointnet/dataloader.py": "1cd6a191fc4fb571712d61e1f931e3d75ed04f49943164dd580090a3b96352d7",
+      "utils_p.py": "81986c71764aa79b5dc1754ac3d517e4e1922ed90b845abbaeb86a35091ad8a0",
+      "train_main.py": "c1e48f6383c7daaae0c89e263fcc2ab288806fdd1879782e45c8226e0ed8573d"
+    }
+  },
+  "device": "cuda",
+  "torch": "2.5.1+cu124",
+  "threads": 8,
+  "epochs": 10000,
+  "batch_size": 16,
+  "learning_rate": 0.0003,
+  "optimizer": "Adam default parameters",
+  "variants": {
+    "weighted_real": [
+      "weighted",
+      "real",
+      0.15
+    ],
+    "weighted_flat": [
+      "weighted",
+      "flat",
+      0.15
+    ],
+    "released_real": [
+      "released",
+      "real",
+      0.2
+    ],
+    "released_flat": [
+      "released",
+      "flat",
+      0.2
+    ]
+  },
+  "folds": [
+    0,
+    1,
+    2
+  ],
+  "seed_rule": "20261109+officialfold",
+  "primary_checkpoint": "Fixed final epoch; no held-out selection or early stopping",
+  "author_reference_checkpoint": "Lowest repeatedly observed held-out-fold angular loss; explicitly test-selected and optimistic",
+  "test_labels_in_optimizer": false,
+  "metric": "Recovery angular degrees, float64 score with original cosine clamp0.999999",
+  "mixed_precision": false,
+  "deterministic_algorithms": true,
+  "checkpoint_interval": 50,
+  "geometry_control": "ValidXYZ/abs(Z) to planeZ=-1; keep nativeRGB, rays and invalidXYZ0; not pureRGB or exact fullRGBD rebuild",
+  "known_prior_data_access": "Allfolds appeared in the earlier adapted pilot. Reproduction, not independent newconfirmation.",
+  "scope_limitations": [
+    "Original published code has3-channel sum versus4-channel weighted head in paper.",
+    "Families also differ in intensity SD. Head comparison is not isolated.",
+    "One predeclared training seed per official fold, not a seed-variance study.",
+    "Physical room independence and native sensor registration cannot be verified from sparse release alone."
+  ],
+  "sha256": "5b6caf1bf76014e142eac7bfc3b2e6e48fc6fc3a4c36a8bf1e2e72283aed61f7"
+}

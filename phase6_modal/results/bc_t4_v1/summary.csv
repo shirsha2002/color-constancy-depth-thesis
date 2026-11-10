@@ -1,0 +1,39 @@
+dataset,condition,method,selection,n,mean,median,trimean,best25,worst25
+ETH3D,ETH3D_real,PCCC released,fixed_final,195.0,0.98,0.5192,0.6342,0.1084,2.6592
+ETH3D,ETH3D_real,PCCC released,author_test_selected,195.0,0.817,0.4795,0.5975,0.111,2.0734
+ETH3D,ETH3D_real,PCCC weighted,fixed_final,195.0,0.9822,0.5102,0.6622,0.1034,2.6158
+ETH3D,ETH3D_real,PCCC weighted,author_test_selected,195.0,0.7838,0.4087,0.5137,0.0989,2.0679
+ETH3D,ETH3D_flat,PCCC released,fixed_final,195.0,1.3136,0.7052,0.8769,0.1471,3.5107
+ETH3D,ETH3D_flat,PCCC released,author_test_selected,195.0,1.0279,0.6662,0.7169,0.1265,2.6544
+ETH3D,ETH3D_flat,PCCC weighted,fixed_final,195.0,1.3457,0.7486,0.9276,0.1264,3.5504
+ETH3D,ETH3D_flat,PCCC weighted,author_test_selected,195.0,1.0825,0.7291,0.7966,0.1244,2.765
+NYU_DIODE,NYU_DIODE_real,PCCC released,fixed_final,324.0,2.6135,1.7623,1.9903,0.3744,6.285
+NYU_DIODE,NYU_DIODE_real,PCCC released,author_test_selected,324.0,2.157,1.4627,1.6271,0.4068,5.0856
+NYU_DIODE,NYU_DIODE_real,PCCC weighted,fixed_final,324.0,2.624,1.8091,1.9422,0.3651,6.379
+NYU_DIODE,NYU_DIODE_real,PCCC weighted,author_test_selected,324.0,2.2068,1.4038,1.6313,0.3354,5.3592
+NYU_DIODE,NYU_DIODE_flat,PCCC released,fixed_final,324.0,2.5061,1.6522,1.8413,0.3869,6.1271
+NYU_DIODE,NYU_DIODE_flat,PCCC released,author_test_selected,324.0,2.2035,1.4414,1.6427,0.339,5.3263
+NYU_DIODE,NYU_DIODE_flat,PCCC weighted,fixed_final,324.0,2.6068,1.7609,1.9367,0.3751,6.3113
+NYU_DIODE,NYU_DIODE_flat,PCCC weighted,author_test_selected,324.0,2.2216,1.4338,1.6489,0.3413,5.5162
+DepthAWB,DepthAWB_noise10,PCCC released,fixed_final,185.0,1.7097,0.801,0.9466,0.0978,4.9513
+DepthAWB,DepthAWB_noise10,PCCC released,author_test_selected,185.0,1.3013,0.6587,0.778,0.0896,3.6634
+DepthAWB,DepthAWB_noise30,PCCC released,fixed_final,185.0,2.0138,1.2634,1.2982,0.1191,5.5105
+DepthAWB,DepthAWB_noise30,PCCC released,author_test_selected,185.0,1.5816,0.8735,1.0061,0.1224,4.2516
+DepthAWB,DepthAWB_drop50,PCCC released,fixed_final,185.0,1.6718,0.7566,0.9468,0.0836,4.8446
+DepthAWB,DepthAWB_drop50,PCCC released,author_test_selected,185.0,1.377,0.8485,0.9265,0.1044,3.6478
+DepthAWB,DepthAWB_shuffle,PCCC released,fixed_final,185.0,1.9835,0.796,1.0383,0.0939,5.7828
+DepthAWB,DepthAWB_shuffle,PCCC released,author_test_selected,185.0,1.4518,0.6734,0.8918,0.1322,3.8891
+DepthAWB,DepthAWB_real,PCCC released,fixed_final,185.0,1.7729,0.7448,0.9442,0.0905,5.2726
+DepthAWB,DepthAWB_real,PCCC released,author_test_selected,185.0,1.3229,0.5602,0.7227,0.0839,3.751
+DepthAWB,DepthAWB_flat,PCCC released,fixed_final,185.0,1.8591,0.8139,0.9935,0.0857,5.3559
+DepthAWB,DepthAWB_flat,PCCC released,author_test_selected,185.0,1.3535,0.6637,0.8235,0.1119,3.7823
+ETH3D,ETH3D,gray_world,baseline,195.0,14.5238,14.8732,14.984,4.5855,23.0513
+ETH3D,ETH3D,training_mean,baseline,195.0,6.8501,6.7254,6.6813,2.427,11.5849
+NYU_DIODE,NYU_DIODE,gray_world,baseline,324.0,7.2678,5.9148,6.2541,2.8868,14.0718
+NYU_DIODE,NYU_DIODE,training_mean,baseline,324.0,3.7882,2.4536,2.8366,0.8929,8.5851
+DepthAWB,DepthAWB,gray_world,baseline,185.0,12.8401,12.4379,12.5198,11.3926,14.9492
+DepthAWB,DepthAWB,training_mean,baseline,185.0,3.6283,2.8505,3.0853,1.1606,7.6517
+DepthAWB,DepthAWB_noise10,"PCCC released, trained on clean depth",inference_only_fixed_final,185.0,1.7586,0.7437,0.9175,0.095,5.2748
+DepthAWB,DepthAWB_noise30,"PCCC released, trained on clean depth",inference_only_fixed_final,185.0,1.9637,0.8874,1.0767,0.1546,5.6268
+DepthAWB,DepthAWB_drop50,"PCCC released, trained on clean depth",inference_only_fixed_final,185.0,1.9789,0.9301,1.1064,0.1303,5.5923
+DepthAWB,DepthAWB_shuffle,"PCCC released, trained on clean depth",inference_only_fixed_final,185.0,2.3583,1.3308,1.5694,0.301,6.179

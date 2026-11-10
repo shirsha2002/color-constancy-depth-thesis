@@ -1,0 +1,5007 @@
+{
+ "note": "Every 10th epoch of history.json; the full per-epoch file stays local (too large for Git).",
+ "full_history_sha256": "7d185e60d54be3f8bf421dea0c5a187bcf8503afce06805e65b89caa57047890",
+ "full_history_epochs": 10000,
+ "rows": [
+  {
+   "epoch": 10,
+   "training_loss_deg": 15.091169233244608,
+   "author_reference_heldout_loss_deg": 7.388359181342587
+  },
+  {
+   "epoch": 20,
+   "training_loss_deg": 5.622894101026581,
+   "author_reference_heldout_loss_deg": 4.053124113188636
+  },
+  {
+   "epoch": 30,
+   "training_loss_deg": 3.5973541329546674,
+   "author_reference_heldout_loss_deg": 3.88940616697073
+  },
+  {
+   "epoch": 40,
+   "training_loss_deg": 3.639931919128914,
+   "author_reference_heldout_loss_deg": 3.6261149000736976
+  },
+  {
+   "epoch": 50,
+   "training_loss_deg": 3.3336559737600933,
+   "author_reference_heldout_loss_deg": 3.922295956842361
+  },
+  {
+   "epoch": 60,
+   "training_loss_deg": 3.210088510823444,
+   "author_reference_heldout_loss_deg": 3.5618517917971455
+  },
+  {
+   "epoch": 70,
+   "training_loss_deg": 3.086398865149273,
+   "author_reference_heldout_loss_deg": 3.89048919466234
+  },
+  {
+   "epoch": 80,
+   "training_loss_deg": 2.8968933675347306,
+   "author_reference_heldout_loss_deg": 3.606550785322343
+  },
+  {
+   "epoch": 90,
+   "training_loss_deg": 2.5379703665167335,
+   "author_reference_heldout_loss_deg": 3.33256623677669
+  },
+  {
+   "epoch": 100,
+   "training_loss_deg": 2.587732950846354,
+   "author_reference_heldout_loss_deg": 3.605022801506904
+  },
+  {
+   "epoch": 110,
+   "training_loss_deg": 2.807301445705135,
+   "author_reference_heldout_loss_deg": 2.9711107428996795
+  },
+  {
+   "epoch": 120,
+   "training_loss_deg": 2.308920807954742,
+   "author_reference_heldout_loss_deg": 3.162259786840408
+  },
+  {
+   "epoch": 130,
+   "training_loss_deg": 2.203058649853962,
+   "author_reference_heldout_loss_deg": 3.05107816164532
+  },
+  {
+   "epoch": 140,
+   "training_loss_deg": 2.488039737794457,
+   "author_reference_heldout_loss_deg": 3.063208670385422
+  },
+  {
+   "epoch": 150,
+   "training_loss_deg": 2.1329521415679435,
+   "author_reference_heldout_loss_deg": 3.3253694724652076
+  },
+  {
+   "epoch": 160,
+   "training_loss_deg": 2.257727601663853,
+   "author_reference_heldout_loss_deg": 3.0763653406212406
+  },
+  {
+   "epoch": 170,
+   "training_loss_deg": 2.106074728616854,
+   "author_reference_heldout_loss_deg": 2.745164646136184
+  },
+  {
+   "epoch": 180,
+   "training_loss_deg": 2.4281920960279013,
+   "author_reference_heldout_loss_deg": 2.9017561217469554
+  },
+  {
+   "epoch": 190,
+   "training_loss_deg": 2.2981340167968254,
+   "author_reference_heldout_loss_deg": 2.811766532159621
+  },
+  {
+   "epoch": 200,
+   "training_loss_deg": 1.9699219630016545,
+   "author_reference_heldout_loss_deg": 2.681637718312202
+  },
+  {
+   "epoch": 210,
+   "training_loss_deg": 1.974494358388389,
+   "author_reference_heldout_loss_deg": 2.8621827121223173
+  },
+  {
+   "epoch": 220,
+   "training_loss_deg": 1.728802859298582,
+   "author_reference_heldout_loss_deg": 2.870446708894545
+  },
+  {
+   "epoch": 230,
+   "training_loss_deg": 1.9792395413406496,
+   "author_reference_heldout_loss_deg": 2.596822389071026
+  },
+  {
+   "epoch": 240,
+   "training_loss_deg": 1.736726716281922,
+   "author_reference_heldout_loss_deg": 2.616003642399465
+  },
+  {
+   "epoch": 250,
+   "training_loss_deg": 1.8189607044545615,
+   "author_reference_heldout_loss_deg": 2.652988847945967
+  },
+  {
+   "epoch": 260,
+   "training_loss_deg": 1.7609246940147587,
+   "author_reference_heldout_loss_deg": 2.5587503842769133
+  },
+  {
+   "epoch": 270,
+   "training_loss_deg": 1.779341472842829,
+   "author_reference_heldout_loss_deg": 2.4066085935600343
+  },
+  {
+   "epoch": 280,
+   "training_loss_deg": 1.5467143252613098,
+   "author_reference_heldout_loss_deg": 2.811207155066152
+  },
+  {
+   "epoch": 290,
+   "training_loss_deg": 1.5754813140000754,
+   "author_reference_heldout_loss_deg": 2.714266773673796
+  },
+  {
+   "epoch": 300,
+   "training_loss_deg": 2.0033946909555573,
+   "author_reference_heldout_loss_deg": 2.4851892315331967
+  },
+  {
+   "epoch": 310,
+   "training_loss_deg": 1.4795147597305174,
+   "author_reference_heldout_loss_deg": 2.531251874181532
+  },
+  {
+   "epoch": 320,
+   "training_loss_deg": 1.652368358480252,
+   "author_reference_heldout_loss_deg": 2.59030283410703
+  },
+  {
+   "epoch": 330,
+   "training_loss_deg": 1.449467604722434,
+   "author_reference_heldout_loss_deg": 2.4426822604671603
+  },
+  {
+   "epoch": 340,
+   "training_loss_deg": 1.4682370637490498,
+   "author_reference_heldout_loss_deg": 2.4379134245457186
+  },
+  {
+   "epoch": 350,
+   "training_loss_deg": 1.3041828599402574,
+   "author_reference_heldout_loss_deg": 2.285334916965615
+  },
+  {
+   "epoch": 360,
+   "training_loss_deg": 1.4869402152736013,
+   "author_reference_heldout_loss_deg": 2.2047991255118
+  },
+  {
+   "epoch": 370,
+   "training_loss_deg": 1.5518284658106363,
+   "author_reference_heldout_loss_deg": 2.5941924851748253
+  },
+  {
+   "epoch": 380,
+   "training_loss_deg": 1.4145571390787761,
+   "author_reference_heldout_loss_deg": 2.7675445999108974
+  },
+  {
+   "epoch": 390,
+   "training_loss_deg": 1.2727678810677878,
+   "author_reference_heldout_loss_deg": 2.3308074259229246
+  },
+  {
+   "epoch": 400,
+   "training_loss_deg": 1.2220949612981904,
+   "author_reference_heldout_loss_deg": 2.455663916564757
+  },
+  {
+   "epoch": 410,
+   "training_loss_deg": 1.2976019537545802,
+   "author_reference_heldout_loss_deg": 2.3232268369005573
+  },
+  {
+   "epoch": 420,
+   "training_loss_deg": 1.2602105722194765,
+   "author_reference_heldout_loss_deg": 2.4647386122134423
+  },
+  {
+   "epoch": 430,
+   "training_loss_deg": 1.2679593126948288,
+   "author_reference_heldout_loss_deg": 2.352121964818047
+  },
+  {
+   "epoch": 440,
+   "training_loss_deg": 1.6049369922498378,
+   "author_reference_heldout_loss_deg": 2.4134491677245786
+  },
+  {
+   "epoch": 450,
+   "training_loss_deg": 1.1201410342038163,
+   "author_reference_heldout_loss_deg": 2.1981718549805302
+  },
+  {
+   "epoch": 460,
+   "training_loss_deg": 1.457661303078256,
+   "author_reference_heldout_loss_deg": 2.623554372499066
+  },
+  {
+   "epoch": 470,
+   "training_loss_deg": 1.3395610039796286,
+   "author_reference_heldout_loss_deg": 2.356135666730904
+  },
+  {
+   "epoch": 480,
+   "training_loss_deg": 1.4148607360638255,
+   "author_reference_heldout_loss_deg": 2.3097208529230087
+  },
+  {
+   "epoch": 490,
+   "training_loss_deg": 1.1751556323795784,
+   "author_reference_heldout_loss_deg": 2.4497682300786816
+  },
+  {
+   "epoch": 500,
+   "training_loss_deg": 1.1905535885958167,
+   "author_reference_heldout_loss_deg": 2.33480203728522
+  },
+  {
+   "epoch": 510,
+   "training_loss_deg": 0.9885436800437245,
+   "author_reference_heldout_loss_deg": 2.2469433322548866
+  },
+  {
+   "epoch": 520,
+   "training_loss_deg": 1.1126001530546483,
+   "author_reference_heldout_loss_deg": 2.2978520161442217
+  },
+  {
+   "epoch": 530,
+   "training_loss_deg": 1.0219268798828125,
+   "author_reference_heldout_loss_deg": 2.187788985669613
+  },
+  {
+   "epoch": 540,
+   "training_loss_deg": 1.3837205220044144,
+   "author_reference_heldout_loss_deg": 2.1911036757932556
+  },
+  {
+   "epoch": 550,
+   "training_loss_deg": 1.0342402797404344,
+   "author_reference_heldout_loss_deg": 2.2694735957249517
+  },
+  {
+   "epoch": 560,
+   "training_loss_deg": 1.1878288218645545,
+   "author_reference_heldout_loss_deg": 2.4863612473972383
+  },
+  {
+   "epoch": 570,
+   "training_loss_deg": 1.002523570525937,
+   "author_reference_heldout_loss_deg": 2.191657210069318
+  },
+  {
+   "epoch": 580,
+   "training_loss_deg": 0.9214192381719264,
+   "author_reference_heldout_loss_deg": 2.373694070284405
+  },
+  {
+   "epoch": 590,
+   "training_loss_deg": 0.995224418678904,
+   "author_reference_heldout_loss_deg": 2.216005982410523
+  },
+  {
+   "epoch": 600,
+   "training_loss_deg": 0.9110024828251785,
+   "author_reference_heldout_loss_deg": 2.2334299923912173
+  },
+  {
+   "epoch": 610,
+   "training_loss_deg": 0.8997406746313824,
+   "author_reference_heldout_loss_deg": 2.1964712830320483
+  },
+  {
+   "epoch": 620,
+   "training_loss_deg": 0.9108734145397093,
+   "author_reference_heldout_loss_deg": 2.276044162531053
+  },
+  {
+   "epoch": 630,
+   "training_loss_deg": 0.8863767831306147,
+   "author_reference_heldout_loss_deg": 2.153740024134036
+  },
+  {
+   "epoch": 640,
+   "training_loss_deg": 0.9434516686734146,
+   "author_reference_heldout_loss_deg": 2.064901303139425
+  },
+  {
+   "epoch": 650,
+   "training_loss_deg": 0.9626597922022749,
+   "author_reference_heldout_loss_deg": 2.2080952281192427
+  },
+  {
+   "epoch": 660,
+   "training_loss_deg": 1.0131183218180648,
+   "author_reference_heldout_loss_deg": 2.2246107557608235
+  },
+  {
+   "epoch": 670,
+   "training_loss_deg": 0.8363771172073798,
+   "author_reference_heldout_loss_deg": 2.092892694016618
+  },
+  {
+   "epoch": 680,
+   "training_loss_deg": 0.8930608591413111,
+   "author_reference_heldout_loss_deg": 2.3896083003811297
+  },
+  {
+   "epoch": 690,
+   "training_loss_deg": 0.8097422985526604,
+   "author_reference_heldout_loss_deg": 2.176711041480303
+  },
+  {
+   "epoch": 700,
+   "training_loss_deg": 0.7410487106175927,
+   "author_reference_heldout_loss_deg": 2.2099395060250835
+  },
+  {
+   "epoch": 710,
+   "training_loss_deg": 0.7786396596489883,
+   "author_reference_heldout_loss_deg": 2.184484288817452
+  },
+  {
+   "epoch": 720,
+   "training_loss_deg": 0.830245508895657,
+   "author_reference_heldout_loss_deg": 2.1729861801910784
+  },
+  {
+   "epoch": 730,
+   "training_loss_deg": 1.0087417412579545,
+   "author_reference_heldout_loss_deg": 2.1285158756279174
+  },
+  {
+   "epoch": 740,
+   "training_loss_deg": 0.9037242168333472,
+   "author_reference_heldout_loss_deg": 2.1651757927911897
+  },
+  {
+   "epoch": 750,
+   "training_loss_deg": 0.7863079818283639,
+   "author_reference_heldout_loss_deg": 2.305597246414231
+  },
+  {
+   "epoch": 760,
+   "training_loss_deg": 0.6573373781956309,
+   "author_reference_heldout_loss_deg": 2.192557477181958
+  },
+  {
+   "epoch": 770,
+   "training_loss_deg": 0.6757197200767393,
+   "author_reference_heldout_loss_deg": 2.240522780726033
+  },
+  {
+   "epoch": 780,
+   "training_loss_deg": 0.7108810398636795,
+   "author_reference_heldout_loss_deg": 2.257178180160061
+  },
+  {
+   "epoch": 790,
+   "training_loss_deg": 0.8570342034828372,
+   "author_reference_heldout_loss_deg": 2.2214026516002994
+  },
+  {
+   "epoch": 800,
+   "training_loss_deg": 0.6884178301183189,
+   "author_reference_heldout_loss_deg": 2.287353377188406
+  },
+  {
+   "epoch": 810,
+   "training_loss_deg": 0.6562465162781196,
+   "author_reference_heldout_loss_deg": 2.246687820241336
+  },
+  {
+   "epoch": 820,
+   "training_loss_deg": 0.7313587462029806,
+   "author_reference_heldout_loss_deg": 2.251146364596582
+  },
+  {
+   "epoch": 830,
+   "training_loss_deg": 0.7445042530695597,
+   "author_reference_heldout_loss_deg": 2.202485444324632
+  },
+  {
+   "epoch": 840,
+   "training_loss_deg": 0.6446881720690223,
+   "author_reference_heldout_loss_deg": 2.2147539000838035
+  },
+  {
+   "epoch": 850,
+   "training_loss_deg": 0.5538141649913012,
+   "author_reference_heldout_loss_deg": 2.0278597273413212
+  },
+  {
+   "epoch": 860,
+   "training_loss_deg": 0.6599714605788874,
+   "author_reference_heldout_loss_deg": 2.445104519806562
+  },
+  {
+   "epoch": 870,
+   "training_loss_deg": 0.8081715465561161,
+   "author_reference_heldout_loss_deg": 2.4730404437549653
+  },
+  {
+   "epoch": 880,
+   "training_loss_deg": 0.7174647261456746,
+   "author_reference_heldout_loss_deg": 2.310293643585136
+  },
+  {
+   "epoch": 890,
+   "training_loss_deg": 0.5590911415534291,
+   "author_reference_heldout_loss_deg": 2.455597927373263
+  },
+  {
+   "epoch": 900,
+   "training_loss_deg": 0.5939229397269769,
+   "author_reference_heldout_loss_deg": 2.3421332521304006
+  },
+  {
+   "epoch": 910,
+   "training_loss_deg": 0.5708273925432344,
+   "author_reference_heldout_loss_deg": 2.320822862006964
+  },
+  {
+   "epoch": 920,
+   "training_loss_deg": 0.5636407795960341,
+   "author_reference_heldout_loss_deg": 2.0349172538807316
+  },
+  {
+   "epoch": 930,
+   "training_loss_deg": 0.7966025980507455,
+   "author_reference_heldout_loss_deg": 2.4186956249177456
+  },
+  {
+   "epoch": 940,
+   "training_loss_deg": 0.6241459793191615,
+   "author_reference_heldout_loss_deg": 2.4338571893111354
+  },
+  {
+   "epoch": 950,
+   "training_loss_deg": 0.7612272966198805,
+   "author_reference_heldout_loss_deg": 2.1406310001207935
+  },
+  {
+   "epoch": 960,
+   "training_loss_deg": 0.7219288717440473,
+   "author_reference_heldout_loss_deg": 2.1918511057813324
+  },
+  {
+   "epoch": 970,
+   "training_loss_deg": 0.5904324374547819,
+   "author_reference_heldout_loss_deg": 2.236075686471116
+  },
+  {
+   "epoch": 980,
+   "training_loss_deg": 0.6219968907232207,
+   "author_reference_heldout_loss_deg": 2.316870096950762
+  },
+  {
+   "epoch": 990,
+   "training_loss_deg": 0.7546820640563965,
+   "author_reference_heldout_loss_deg": 2.392595632061843
+  },
+  {
+   "epoch": 1000,
+   "training_loss_deg": 0.7569543123245239,
+   "author_reference_heldout_loss_deg": 2.33806374849331
+  },
+  {
+   "epoch": 1010,
+   "training_loss_deg": 0.5968475458098621,
+   "author_reference_heldout_loss_deg": 2.2820581963225717
+  },
+  {
+   "epoch": 1020,
+   "training_loss_deg": 0.7169176974916845,
+   "author_reference_heldout_loss_deg": 2.1524489673395313
+  },
+  {
+   "epoch": 1030,
+   "training_loss_deg": 0.5971300960556278,
+   "author_reference_heldout_loss_deg": 2.2106744952259527
+  },
+  {
+   "epoch": 1040,
+   "training_loss_deg": 0.5038534509457224,
+   "author_reference_heldout_loss_deg": 2.394686049751697
+  },
+  {
+   "epoch": 1050,
+   "training_loss_deg": 0.6739349176244038,
+   "author_reference_heldout_loss_deg": 2.365643546946587
+  },
+  {
+   "epoch": 1060,
+   "training_loss_deg": 0.6328329652305541,
+   "author_reference_heldout_loss_deg": 2.3448574275018705
+  },
+  {
+   "epoch": 1070,
+   "training_loss_deg": 0.652465768461305,
+   "author_reference_heldout_loss_deg": 2.475604363266499
+  },
+  {
+   "epoch": 1080,
+   "training_loss_deg": 0.5730122928696919,
+   "author_reference_heldout_loss_deg": 2.3634096100445716
+  },
+  {
+   "epoch": 1090,
+   "training_loss_deg": 0.5852468827875649,
+   "author_reference_heldout_loss_deg": 2.3865926381080382
+  },
+  {
+   "epoch": 1100,
+   "training_loss_deg": 0.5511785503325424,
+   "author_reference_heldout_loss_deg": 2.3647940057900643
+  },
+  {
+   "epoch": 1110,
+   "training_loss_deg": 0.4358996181953244,
+   "author_reference_heldout_loss_deg": 2.3492631014556653
+  },
+  {
+   "epoch": 1120,
+   "training_loss_deg": 0.5201980864129415,
+   "author_reference_heldout_loss_deg": 2.3073083340160307
+  },
+  {
+   "epoch": 1130,
+   "training_loss_deg": 0.4306720076053123,
+   "author_reference_heldout_loss_deg": 2.1838111125173105
+  },
+  {
+   "epoch": 1140,
+   "training_loss_deg": 0.7247264937656682,
+   "author_reference_heldout_loss_deg": 2.394517825495812
+  },
+  {
+   "epoch": 1150,
+   "training_loss_deg": 0.4006185240861846,
+   "author_reference_heldout_loss_deg": 2.079067172182183
+  },
+  {
+   "epoch": 1160,
+   "training_loss_deg": 0.5622448502032737,
+   "author_reference_heldout_loss_deg": 2.1543565677298653
+  },
+  {
+   "epoch": 1170,
+   "training_loss_deg": 0.396072270908976,
+   "author_reference_heldout_loss_deg": 2.2953164839456157
+  },
+  {
+   "epoch": 1180,
+   "training_loss_deg": 0.45400023654224425,
+   "author_reference_heldout_loss_deg": 2.41523270609398
+  },
+  {
+   "epoch": 1190,
+   "training_loss_deg": 0.5807432071949409,
+   "author_reference_heldout_loss_deg": 2.3274394339851794
+  },
+  {
+   "epoch": 1200,
+   "training_loss_deg": 0.5061056134177417,
+   "author_reference_heldout_loss_deg": 2.152484547827513
+  },
+  {
+   "epoch": 1210,
+   "training_loss_deg": 0.41352993686024736,
+   "author_reference_heldout_loss_deg": 2.1678364052166863
+  },
+  {
+   "epoch": 1220,
+   "training_loss_deg": 0.4710374033547998,
+   "author_reference_heldout_loss_deg": 2.22842334643487
+  },
+  {
+   "epoch": 1230,
+   "training_loss_deg": 0.4943670809753542,
+   "author_reference_heldout_loss_deg": 2.3167234253018134
+  },
+  {
+   "epoch": 1240,
+   "training_loss_deg": 0.3994012806958299,
+   "author_reference_heldout_loss_deg": 2.2735379441611228
+  },
+  {
+   "epoch": 1250,
+   "training_loss_deg": 0.6319361052862028,
+   "author_reference_heldout_loss_deg": 2.2859360442286536
+  },
+  {
+   "epoch": 1260,
+   "training_loss_deg": 0.4630486810110449,
+   "author_reference_heldout_loss_deg": 2.307660304851109
+  },
+  {
+   "epoch": 1270,
+   "training_loss_deg": 0.4920240408036767,
+   "author_reference_heldout_loss_deg": 2.509710207942032
+  },
+  {
+   "epoch": 1280,
+   "training_loss_deg": 0.3952724982083328,
+   "author_reference_heldout_loss_deg": 2.255328896665765
+  },
+  {
+   "epoch": 1290,
+   "training_loss_deg": 0.43305367085991836,
+   "author_reference_heldout_loss_deg": 2.2887474436673427
+  },
+  {
+   "epoch": 1300,
+   "training_loss_deg": 0.40864742819855854,
+   "author_reference_heldout_loss_deg": 2.2260035199503743
+  },
+  {
+   "epoch": 1310,
+   "training_loss_deg": 0.4766663361371048,
+   "author_reference_heldout_loss_deg": 2.2624689816467223
+  },
+  {
+   "epoch": 1320,
+   "training_loss_deg": 0.5122179471380343,
+   "author_reference_heldout_loss_deg": 2.330513626216881
+  },
+  {
+   "epoch": 1330,
+   "training_loss_deg": 0.37387387539313094,
+   "author_reference_heldout_loss_deg": 2.104245390382505
+  },
+  {
+   "epoch": 1340,
+   "training_loss_deg": 0.4847234806151894,
+   "author_reference_heldout_loss_deg": 2.3090322018871383
+  },
+  {
+   "epoch": 1350,
+   "training_loss_deg": 0.4097749697483652,
+   "author_reference_heldout_loss_deg": 2.158021949111454
+  },
+  {
+   "epoch": 1360,
+   "training_loss_deg": 0.3389023263764575,
+   "author_reference_heldout_loss_deg": 2.062258570785484
+  },
+  {
+   "epoch": 1370,
+   "training_loss_deg": 0.42499823298880723,
+   "author_reference_heldout_loss_deg": 2.3471229021106996
+  },
+  {
+   "epoch": 1380,
+   "training_loss_deg": 0.3472936608927037,
+   "author_reference_heldout_loss_deg": 2.141583693123633
+  },
+  {
+   "epoch": 1390,
+   "training_loss_deg": 0.3408832411940505,
+   "author_reference_heldout_loss_deg": 2.1029892609484735
+  },
+  {
+   "epoch": 1400,
+   "training_loss_deg": 0.3328762594761887,
+   "author_reference_heldout_loss_deg": 2.2174826165841472
+  },
+  {
+   "epoch": 1410,
+   "training_loss_deg": 0.32368500155162033,
+   "author_reference_heldout_loss_deg": 2.2108865924660237
+  },
+  {
+   "epoch": 1420,
+   "training_loss_deg": 0.3271979645984929,
+   "author_reference_heldout_loss_deg": 2.1657530167891132
+  },
+  {
+   "epoch": 1430,
+   "training_loss_deg": 0.3399846343005576,
+   "author_reference_heldout_loss_deg": 2.0913043560520297
+  },
+  {
+   "epoch": 1440,
+   "training_loss_deg": 0.5296526798387853,
+   "author_reference_heldout_loss_deg": 2.228523062602166
+  },
+  {
+   "epoch": 1450,
+   "training_loss_deg": 0.3860593835512797,
+   "author_reference_heldout_loss_deg": 2.2534960739074217
+  },
+  {
+   "epoch": 1460,
+   "training_loss_deg": 0.4090995933951401,
+   "author_reference_heldout_loss_deg": 2.125448445879644
+  },
+  {
+   "epoch": 1470,
+   "training_loss_deg": 0.3740783072099453,
+   "author_reference_heldout_loss_deg": 2.178043025996416
+  },
+  {
+   "epoch": 1480,
+   "training_loss_deg": 0.32026505567194,
+   "author_reference_heldout_loss_deg": 2.1381799651970788
+  },
+  {
+   "epoch": 1490,
+   "training_loss_deg": 0.454733323033263,
+   "author_reference_heldout_loss_deg": 2.1314840756597055
+  },
+  {
+   "epoch": 1500,
+   "training_loss_deg": 0.560299943617689,
+   "author_reference_heldout_loss_deg": 1.937348809093237
+  },
+  {
+   "epoch": 1510,
+   "training_loss_deg": 0.38091501181687765,
+   "author_reference_heldout_loss_deg": 2.1290716623827333
+  },
+  {
+   "epoch": 1520,
+   "training_loss_deg": 0.2834505642332682,
+   "author_reference_heldout_loss_deg": 2.1696929897992843
+  },
+  {
+   "epoch": 1530,
+   "training_loss_deg": 0.2756780303590666,
+   "author_reference_heldout_loss_deg": 2.043154560990872
+  },
+  {
+   "epoch": 1540,
+   "training_loss_deg": 0.29993331141588164,
+   "author_reference_heldout_loss_deg": 2.087070785943539
+  },
+  {
+   "epoch": 1550,
+   "training_loss_deg": 0.38620744488103603,
+   "author_reference_heldout_loss_deg": 2.1143965140706107
+  },
+  {
+   "epoch": 1560,
+   "training_loss_deg": 0.32058492278665063,
+   "author_reference_heldout_loss_deg": 2.0724176568610053
+  },
+  {
+   "epoch": 1570,
+   "training_loss_deg": 0.30290619556496784,
+   "author_reference_heldout_loss_deg": 1.9693432779562088
+  },
+  {
+   "epoch": 1580,
+   "training_loss_deg": 0.2862927588990064,
+   "author_reference_heldout_loss_deg": 1.9593904687752646
+  },
+  {
+   "epoch": 1590,
+   "training_loss_deg": 0.2886700518732149,
+   "author_reference_heldout_loss_deg": 2.0040729653931435
+  },
+  {
+   "epoch": 1600,
+   "training_loss_deg": 0.28868230983493776,
+   "author_reference_heldout_loss_deg": 2.2228806096940272
+  },
+  {
+   "epoch": 1610,
+   "training_loss_deg": 0.28038034279172014,
+   "author_reference_heldout_loss_deg": 2.203901701997365
+  },
+  {
+   "epoch": 1620,
+   "training_loss_deg": 0.3168006929440227,
+   "author_reference_heldout_loss_deg": 2.097218830739298
+  },
+  {
+   "epoch": 1630,
+   "training_loss_deg": 0.5929624278370927,
+   "author_reference_heldout_loss_deg": 2.006280881623107
+  },
+  {
+   "epoch": 1640,
+   "training_loss_deg": 0.29564920576607306,
+   "author_reference_heldout_loss_deg": 2.1136575189809643
+  },
+  {
+   "epoch": 1650,
+   "training_loss_deg": 0.2918068761748027,
+   "author_reference_heldout_loss_deg": 2.065812292238397
+  },
+  {
+   "epoch": 1660,
+   "training_loss_deg": 0.3045889194903335,
+   "author_reference_heldout_loss_deg": 2.222557611643307
+  },
+  {
+   "epoch": 1670,
+   "training_loss_deg": 0.32513405394747974,
+   "author_reference_heldout_loss_deg": 2.100539239544061
+  },
+  {
+   "epoch": 1680,
+   "training_loss_deg": 0.4133954428560366,
+   "author_reference_heldout_loss_deg": 2.0239539256980343
+  },
+  {
+   "epoch": 1690,
+   "training_loss_deg": 0.3482224822528963,
+   "author_reference_heldout_loss_deg": 2.2361356926060494
+  },
+  {
+   "epoch": 1700,
+   "training_loss_deg": 0.25389332281864757,
+   "author_reference_heldout_loss_deg": 2.184228933506435
+  },
+  {
+   "epoch": 1710,
+   "training_loss_deg": 0.307596814826252,
+   "author_reference_heldout_loss_deg": 2.106000335466477
+  },
+  {
+   "epoch": 1720,
+   "training_loss_deg": 0.32424319662698886,
+   "author_reference_heldout_loss_deg": 1.9842096529901028
+  },
+  {
+   "epoch": 1730,
+   "training_loss_deg": 0.3399640728787678,
+   "author_reference_heldout_loss_deg": 2.130955042017083
+  },
+  {
+   "epoch": 1740,
+   "training_loss_deg": 0.2763333467206335,
+   "author_reference_heldout_loss_deg": 2.246518954754837
+  },
+  {
+   "epoch": 1750,
+   "training_loss_deg": 0.2302138478290744,
+   "author_reference_heldout_loss_deg": 2.263130994213204
+  },
+  {
+   "epoch": 1760,
+   "training_loss_deg": 0.2700235928461804,
+   "author_reference_heldout_loss_deg": 2.340951174737946
+  },
+  {
+   "epoch": 1770,
+   "training_loss_deg": 0.5058068577351609,
+   "author_reference_heldout_loss_deg": 2.195474856923665
+  },
+  {
+   "epoch": 1780,
+   "training_loss_deg": 0.3381566000663168,
+   "author_reference_heldout_loss_deg": 2.134034924809971
+  },
+  {
+   "epoch": 1790,
+   "training_loss_deg": 0.3056130055489579,
+   "author_reference_heldout_loss_deg": 2.195317913567828
+  },
+  {
+   "epoch": 1800,
+   "training_loss_deg": 0.3452375938252705,
+   "author_reference_heldout_loss_deg": 2.2450140790352897
+  },
+  {
+   "epoch": 1810,
+   "training_loss_deg": 0.21820612009463272,
+   "author_reference_heldout_loss_deg": 2.2521989505377507
+  },
+  {
+   "epoch": 1820,
+   "training_loss_deg": 0.22606830625999264,
+   "author_reference_heldout_loss_deg": 2.3081515701788087
+  },
+  {
+   "epoch": 1830,
+   "training_loss_deg": 0.254019294570132,
+   "author_reference_heldout_loss_deg": 2.300698774115693
+  },
+  {
+   "epoch": 1840,
+   "training_loss_deg": 0.3189072134048958,
+   "author_reference_heldout_loss_deg": 2.1723264370474125
+  },
+  {
+   "epoch": 1850,
+   "training_loss_deg": 0.3056290338679058,
+   "author_reference_heldout_loss_deg": 2.275568843729073
+  },
+  {
+   "epoch": 1860,
+   "training_loss_deg": 0.2526504392546367,
+   "author_reference_heldout_loss_deg": 2.287907355615208
+  },
+  {
+   "epoch": 1870,
+   "training_loss_deg": 0.3118799319112204,
+   "author_reference_heldout_loss_deg": 2.1169450297471015
+  },
+  {
+   "epoch": 1880,
+   "training_loss_deg": 0.2623487713375712,
+   "author_reference_heldout_loss_deg": 2.202232384513463
+  },
+  {
+   "epoch": 1890,
+   "training_loss_deg": 0.2751219497948158,
+   "author_reference_heldout_loss_deg": 2.1292239101904054
+  },
+  {
+   "epoch": 1900,
+   "training_loss_deg": 0.2573535694339411,
+   "author_reference_heldout_loss_deg": 2.2661320980518096
+  },
+  {
+   "epoch": 1910,
+   "training_loss_deg": 0.39521810000504903,
+   "author_reference_heldout_loss_deg": 2.270148087172739
+  },
+  {
+   "epoch": 1920,
+   "training_loss_deg": 0.2220517661028761,
+   "author_reference_heldout_loss_deg": 2.353270404882008
+  },
+  {
+   "epoch": 1930,
+   "training_loss_deg": 0.24104749296254258,
+   "author_reference_heldout_loss_deg": 2.1966074940658387
+  },
+  {
+   "epoch": 1940,
+   "training_loss_deg": 0.27025860378412697,
+   "author_reference_heldout_loss_deg": 2.157248732063078
+  },
+  {
+   "epoch": 1950,
+   "training_loss_deg": 0.27341875966971485,
+   "author_reference_heldout_loss_deg": 2.238628234473928
+  },
+  {
+   "epoch": 1960,
+   "training_loss_deg": 0.23609999112966584,
+   "author_reference_heldout_loss_deg": 2.1580169073516324
+  },
+  {
+   "epoch": 1970,
+   "training_loss_deg": 0.31953524452884025,
+   "author_reference_heldout_loss_deg": 2.2230683505054443
+  },
+  {
+   "epoch": 1980,
+   "training_loss_deg": 0.25569307525468066,
+   "author_reference_heldout_loss_deg": 2.3236930932729476
+  },
+  {
+   "epoch": 1990,
+   "training_loss_deg": 0.24167721227901737,
+   "author_reference_heldout_loss_deg": 2.3623205693739076
+  },
+  {
+   "epoch": 2000,
+   "training_loss_deg": 0.256397418980676,
+   "author_reference_heldout_loss_deg": 2.2349705246667706
+  },
+  {
+   "epoch": 2010,
+   "training_loss_deg": 0.23284612838330307,
+   "author_reference_heldout_loss_deg": 2.2154450954929477
+  },
+  {
+   "epoch": 2020,
+   "training_loss_deg": 0.2534217351093525,
+   "author_reference_heldout_loss_deg": 2.1660341131350687
+  },
+  {
+   "epoch": 2030,
+   "training_loss_deg": 0.2865483666338572,
+   "author_reference_heldout_loss_deg": 2.0979033434583294
+  },
+  {
+   "epoch": 2040,
+   "training_loss_deg": 0.256170265315994,
+   "author_reference_heldout_loss_deg": 2.2055966283284847
+  },
+  {
+   "epoch": 2050,
+   "training_loss_deg": 0.35539321007767344,
+   "author_reference_heldout_loss_deg": 2.129210660294179
+  },
+  {
+   "epoch": 2060,
+   "training_loss_deg": 0.2582229700514941,
+   "author_reference_heldout_loss_deg": 2.1529562426430564
+  },
+  {
+   "epoch": 2070,
+   "training_loss_deg": 0.18408904448757327,
+   "author_reference_heldout_loss_deg": 1.999571668164384
+  },
+  {
+   "epoch": 2080,
+   "training_loss_deg": 0.2785768407147105,
+   "author_reference_heldout_loss_deg": 2.2032872187274117
+  },
+  {
+   "epoch": 2090,
+   "training_loss_deg": 0.25343866452453584,
+   "author_reference_heldout_loss_deg": 2.241444475708469
+  },
+  {
+   "epoch": 2100,
+   "training_loss_deg": 0.20833845436573029,
+   "author_reference_heldout_loss_deg": 2.008288118747934
+  },
+  {
+   "epoch": 2110,
+   "training_loss_deg": 0.2425846788214474,
+   "author_reference_heldout_loss_deg": 2.239777070860709
+  },
+  {
+   "epoch": 2120,
+   "training_loss_deg": 0.40310831598150054,
+   "author_reference_heldout_loss_deg": 2.32416235619495
+  },
+  {
+   "epoch": 2130,
+   "training_loss_deg": 0.19156413434482203,
+   "author_reference_heldout_loss_deg": 2.3084231195670943
+  },
+  {
+   "epoch": 2140,
+   "training_loss_deg": 0.3459758438715121,
+   "author_reference_heldout_loss_deg": 2.2306593852418084
+  },
+  {
+   "epoch": 2150,
+   "training_loss_deg": 0.33872380973846933,
+   "author_reference_heldout_loss_deg": 2.287787118506047
+  },
+  {
+   "epoch": 2160,
+   "training_loss_deg": 0.21580320402858702,
+   "author_reference_heldout_loss_deg": 2.1011077803709814
+  },
+  {
+   "epoch": 2170,
+   "training_loss_deg": 0.1845792948715086,
+   "author_reference_heldout_loss_deg": 2.175317628970069
+  },
+  {
+   "epoch": 2180,
+   "training_loss_deg": 0.2001387447845645,
+   "author_reference_heldout_loss_deg": 2.060510360545689
+  },
+  {
+   "epoch": 2190,
+   "training_loss_deg": 0.23161540138043038,
+   "author_reference_heldout_loss_deg": 2.139412080929164
+  },
+  {
+   "epoch": 2200,
+   "training_loss_deg": 0.23462345384485353,
+   "author_reference_heldout_loss_deg": 2.2146047156664634
+  },
+  {
+   "epoch": 2210,
+   "training_loss_deg": 0.25582575458821244,
+   "author_reference_heldout_loss_deg": 2.110821682959795
+  },
+  {
+   "epoch": 2220,
+   "training_loss_deg": 0.25353297663898,
+   "author_reference_heldout_loss_deg": 2.219422573764478
+  },
+  {
+   "epoch": 2230,
+   "training_loss_deg": 0.3589964901528707,
+   "author_reference_heldout_loss_deg": 2.188121804186413
+  },
+  {
+   "epoch": 2240,
+   "training_loss_deg": 0.21459390307829632,
+   "author_reference_heldout_loss_deg": 2.2562618319305683
+  },
+  {
+   "epoch": 2250,
+   "training_loss_deg": 0.24644385338798772,
+   "author_reference_heldout_loss_deg": 2.253034401564829
+  },
+  {
+   "epoch": 2260,
+   "training_loss_deg": 0.2851659001373663,
+   "author_reference_heldout_loss_deg": 2.19717050728298
+  },
+  {
+   "epoch": 2270,
+   "training_loss_deg": 0.22014063742102646,
+   "author_reference_heldout_loss_deg": 1.999213256903233
+  },
+  {
+   "epoch": 2280,
+   "training_loss_deg": 0.23763180360561464,
+   "author_reference_heldout_loss_deg": 2.25823141586396
+  },
+  {
+   "epoch": 2290,
+   "training_loss_deg": 0.18286447638903208,
+   "author_reference_heldout_loss_deg": 2.064363863198988
+  },
+  {
+   "epoch": 2300,
+   "training_loss_deg": 0.1863071000188347,
+   "author_reference_heldout_loss_deg": 2.288268276039631
+  },
+  {
+   "epoch": 2310,
+   "training_loss_deg": 0.24271854104065313,
+   "author_reference_heldout_loss_deg": 2.112304822571816
+  },
+  {
+   "epoch": 2320,
+   "training_loss_deg": 0.2415598776282334,
+   "author_reference_heldout_loss_deg": 2.1960975339095437
+  },
+  {
+   "epoch": 2330,
+   "training_loss_deg": 0.20585357258474923,
+   "author_reference_heldout_loss_deg": 2.2269400909783377
+  },
+  {
+   "epoch": 2340,
+   "training_loss_deg": 0.18826086964549088,
+   "author_reference_heldout_loss_deg": 2.314860066338893
+  },
+  {
+   "epoch": 2350,
+   "training_loss_deg": 0.18306625955473116,
+   "author_reference_heldout_loss_deg": 2.241995088635914
+  },
+  {
+   "epoch": 2360,
+   "training_loss_deg": 0.25154758081203554,
+   "author_reference_heldout_loss_deg": 2.410552104634623
+  },
+  {
+   "epoch": 2370,
+   "training_loss_deg": 0.30392538144336484,
+   "author_reference_heldout_loss_deg": 2.1822173328649614
+  },
+  {
+   "epoch": 2380,
+   "training_loss_deg": 0.19265322738546667,
+   "author_reference_heldout_loss_deg": 2.2029488888238706
+  },
+  {
+   "epoch": 2390,
+   "training_loss_deg": 0.23890272933777754,
+   "author_reference_heldout_loss_deg": 2.316793062634045
+  },
+  {
+   "epoch": 2400,
+   "training_loss_deg": 0.21110000685463107,
+   "author_reference_heldout_loss_deg": 2.08306988641139
+  },
+  {
+   "epoch": 2410,
+   "training_loss_deg": 0.15079902379008814,
+   "author_reference_heldout_loss_deg": 2.029841973776779
+  },
+  {
+   "epoch": 2420,
+   "training_loss_deg": 0.17167791784778844,
+   "author_reference_heldout_loss_deg": 1.9932395526238027
+  },
+  {
+   "epoch": 2430,
+   "training_loss_deg": 0.26939018373566914,
+   "author_reference_heldout_loss_deg": 2.1751961806608784
+  },
+  {
+   "epoch": 2440,
+   "training_loss_deg": 0.19577858142736482,
+   "author_reference_heldout_loss_deg": 2.3079818123050275
+  },
+  {
+   "epoch": 2450,
+   "training_loss_deg": 0.2303419074391931,
+   "author_reference_heldout_loss_deg": 2.2991458485203404
+  },
+  {
+   "epoch": 2460,
+   "training_loss_deg": 0.2249238510441974,
+   "author_reference_heldout_loss_deg": 2.0676261488228076
+  },
+  {
+   "epoch": 2470,
+   "training_loss_deg": 0.24581178804723228,
+   "author_reference_heldout_loss_deg": 2.087638790568998
+  },
+  {
+   "epoch": 2480,
+   "training_loss_deg": 0.20934081707543473,
+   "author_reference_heldout_loss_deg": 2.049953082035626
+  },
+  {
+   "epoch": 2490,
+   "training_loss_deg": 0.18831894334738816,
+   "author_reference_heldout_loss_deg": 2.0824371380431037
+  },
+  {
+   "epoch": 2500,
+   "training_loss_deg": 0.20154288580747154,
+   "author_reference_heldout_loss_deg": 2.1637655794620514
+  },
+  {
+   "epoch": 2510,
+   "training_loss_deg": 0.19801085666427767,
+   "author_reference_heldout_loss_deg": 2.1365548047807907
+  },
+  {
+   "epoch": 2520,
+   "training_loss_deg": 0.18983652315488675,
+   "author_reference_heldout_loss_deg": 2.112249120709396
+  },
+  {
+   "epoch": 2530,
+   "training_loss_deg": 0.19636722769194503,
+   "author_reference_heldout_loss_deg": 2.270687320299687
+  },
+  {
+   "epoch": 2540,
+   "training_loss_deg": 0.22957083098287503,
+   "author_reference_heldout_loss_deg": 2.187058845234494
+  },
+  {
+   "epoch": 2550,
+   "training_loss_deg": 0.30286157203883657,
+   "author_reference_heldout_loss_deg": 2.2216513721692945
+  },
+  {
+   "epoch": 2560,
+   "training_loss_deg": 0.19601873314477564,
+   "author_reference_heldout_loss_deg": 2.0513813882585494
+  },
+  {
+   "epoch": 2570,
+   "training_loss_deg": 0.18020582053719497,
+   "author_reference_heldout_loss_deg": 2.019685528691738
+  },
+  {
+   "epoch": 2580,
+   "training_loss_deg": 0.16451666267906748,
+   "author_reference_heldout_loss_deg": 2.16444003630069
+  },
+  {
+   "epoch": 2590,
+   "training_loss_deg": 0.20538178134739885,
+   "author_reference_heldout_loss_deg": 2.1633096760319126
+  },
+  {
+   "epoch": 2600,
+   "training_loss_deg": 0.18491013844807944,
+   "author_reference_heldout_loss_deg": 2.2144572841784647
+  },
+  {
+   "epoch": 2610,
+   "training_loss_deg": 0.19074116768391153,
+   "author_reference_heldout_loss_deg": 2.2308702379945786
+  },
+  {
+   "epoch": 2620,
+   "training_loss_deg": 0.17428850715722494,
+   "author_reference_heldout_loss_deg": 2.085269112620623
+  },
+  {
+   "epoch": 2630,
+   "training_loss_deg": 0.17081028089775302,
+   "author_reference_heldout_loss_deg": 2.2660730674622522
+  },
+  {
+   "epoch": 2640,
+   "training_loss_deg": 0.2116905269099445,
+   "author_reference_heldout_loss_deg": 2.2074398070333467
+  },
+  {
+   "epoch": 2650,
+   "training_loss_deg": 0.13240049246365462,
+   "author_reference_heldout_loss_deg": 2.121189737992902
+  },
+  {
+   "epoch": 2660,
+   "training_loss_deg": 0.14654416427379702,
+   "author_reference_heldout_loss_deg": 2.1614531705216056
+  },
+  {
+   "epoch": 2670,
+   "training_loss_deg": 0.23272682290251662,
+   "author_reference_heldout_loss_deg": 2.0484150445028657
+  },
+  {
+   "epoch": 2680,
+   "training_loss_deg": 0.147092389018555,
+   "author_reference_heldout_loss_deg": 2.2280276231467724
+  },
+  {
+   "epoch": 2690,
+   "training_loss_deg": 0.16550657128900048,
+   "author_reference_heldout_loss_deg": 2.112540423389404
+  },
+  {
+   "epoch": 2700,
+   "training_loss_deg": 0.16279868672533734,
+   "author_reference_heldout_loss_deg": 2.1623126542375934
+  },
+  {
+   "epoch": 2710,
+   "training_loss_deg": 0.21370914336142502,
+   "author_reference_heldout_loss_deg": 2.0974125745556047
+  },
+  {
+   "epoch": 2720,
+   "training_loss_deg": 0.15025805893952285,
+   "author_reference_heldout_loss_deg": 2.214114780027059
+  },
+  {
+   "epoch": 2730,
+   "training_loss_deg": 0.19134285052617392,
+   "author_reference_heldout_loss_deg": 2.285365914385165
+  },
+  {
+   "epoch": 2740,
+   "training_loss_deg": 0.27277261551802723,
+   "author_reference_heldout_loss_deg": 2.2420750777086904
+  },
+  {
+   "epoch": 2750,
+   "training_loss_deg": 0.2129860394369296,
+   "author_reference_heldout_loss_deg": 2.0186502051449593
+  },
+  {
+   "epoch": 2760,
+   "training_loss_deg": 0.17280567903828814,
+   "author_reference_heldout_loss_deg": 2.04714376972087
+  },
+  {
+   "epoch": 2770,
+   "training_loss_deg": 0.17359011662684806,
+   "author_reference_heldout_loss_deg": 2.0214569759705374
+  },
+  {
+   "epoch": 2780,
+   "training_loss_deg": 0.1692902264071674,
+   "author_reference_heldout_loss_deg": 2.1271648629298134
+  },
+  {
+   "epoch": 2790,
+   "training_loss_deg": 0.1763420732525306,
+   "author_reference_heldout_loss_deg": 2.000662795117786
+  },
+  {
+   "epoch": 2800,
+   "training_loss_deg": 0.17504921410141921,
+   "author_reference_heldout_loss_deg": 2.1366523111299163
+  },
+  {
+   "epoch": 2810,
+   "training_loss_deg": 0.2194868154157468,
+   "author_reference_heldout_loss_deg": 2.1282601052474592
+  },
+  {
+   "epoch": 2820,
+   "training_loss_deg": 0.18354585185283567,
+   "author_reference_heldout_loss_deg": 2.0324974338854513
+  },
+  {
+   "epoch": 2830,
+   "training_loss_deg": 0.17849615410091432,
+   "author_reference_heldout_loss_deg": 2.1739607130087193
+  },
+  {
+   "epoch": 2840,
+   "training_loss_deg": 0.17649760490995112,
+   "author_reference_heldout_loss_deg": 2.1520280284025977
+  },
+  {
+   "epoch": 2850,
+   "training_loss_deg": 0.21063286477957316,
+   "author_reference_heldout_loss_deg": 2.1900143345757836
+  },
+  {
+   "epoch": 2860,
+   "training_loss_deg": 0.17132488983433422,
+   "author_reference_heldout_loss_deg": 2.361474443106882
+  },
+  {
+   "epoch": 2870,
+   "training_loss_deg": 0.173786840787748,
+   "author_reference_heldout_loss_deg": 2.0429313811323335
+  },
+  {
+   "epoch": 2880,
+   "training_loss_deg": 0.17185409669953633,
+   "author_reference_heldout_loss_deg": 2.121369357791639
+  },
+  {
+   "epoch": 2890,
+   "training_loss_deg": 0.20571990614014912,
+   "author_reference_heldout_loss_deg": 2.209793835157348
+  },
+  {
+   "epoch": 2900,
+   "training_loss_deg": 0.1797968203701624,
+   "author_reference_heldout_loss_deg": 2.4670885158402305
+  },
+  {
+   "epoch": 2910,
+   "training_loss_deg": 0.14676945274922906,
+   "author_reference_heldout_loss_deg": 2.0989102759668903
+  },
+  {
+   "epoch": 2920,
+   "training_loss_deg": 0.15785205364227295,
+   "author_reference_heldout_loss_deg": 2.099505758934444
+  },
+  {
+   "epoch": 2930,
+   "training_loss_deg": 0.2309426956060456,
+   "author_reference_heldout_loss_deg": 2.24081324269214
+  },
+  {
+   "epoch": 2940,
+   "training_loss_deg": 0.17362894699340914,
+   "author_reference_heldout_loss_deg": 2.1417090172969524
+  },
+  {
+   "epoch": 2950,
+   "training_loss_deg": 0.20667133098695337,
+   "author_reference_heldout_loss_deg": 2.219197401236142
+  },
+  {
+   "epoch": 2960,
+   "training_loss_deg": 0.32516386353872656,
+   "author_reference_heldout_loss_deg": 2.250520026251193
+  },
+  {
+   "epoch": 2970,
+   "training_loss_deg": 0.18423908512766768,
+   "author_reference_heldout_loss_deg": 2.2208135868272474
+  },
+  {
+   "epoch": 2980,
+   "training_loss_deg": 0.15777802842903912,
+   "author_reference_heldout_loss_deg": 2.19496583085387
+  },
+  {
+   "epoch": 2990,
+   "training_loss_deg": 0.2163072476784388,
+   "author_reference_heldout_loss_deg": 2.086886779675561
+  },
+  {
+   "epoch": 3000,
+   "training_loss_deg": 0.18925805886586508,
+   "author_reference_heldout_loss_deg": 2.144042807000299
+  },
+  {
+   "epoch": 3010,
+   "training_loss_deg": 0.17537278591132746,
+   "author_reference_heldout_loss_deg": 2.1292891602122013
+  },
+  {
+   "epoch": 3020,
+   "training_loss_deg": 0.16671170354858647,
+   "author_reference_heldout_loss_deg": 2.0719579384932594
+  },
+  {
+   "epoch": 3030,
+   "training_loss_deg": 0.19057693277917256,
+   "author_reference_heldout_loss_deg": 2.0603788453004053
+  },
+  {
+   "epoch": 3040,
+   "training_loss_deg": 0.15011117746674918,
+   "author_reference_heldout_loss_deg": 2.149877122573314
+  },
+  {
+   "epoch": 3050,
+   "training_loss_deg": 0.1405613739800647,
+   "author_reference_heldout_loss_deg": 2.106888859863243
+  },
+  {
+   "epoch": 3060,
+   "training_loss_deg": 0.15410047503021673,
+   "author_reference_heldout_loss_deg": 2.188558034358486
+  },
+  {
+   "epoch": 3070,
+   "training_loss_deg": 0.2039713749313742,
+   "author_reference_heldout_loss_deg": 2.143264497119573
+  },
+  {
+   "epoch": 3080,
+   "training_loss_deg": 0.15351200733727555,
+   "author_reference_heldout_loss_deg": 2.1747594872309315
+  },
+  {
+   "epoch": 3090,
+   "training_loss_deg": 0.14623355326371465,
+   "author_reference_heldout_loss_deg": 2.1525072332832123
+  },
+  {
+   "epoch": 3100,
+   "training_loss_deg": 0.13908405674666893,
+   "author_reference_heldout_loss_deg": 2.2304640437566463
+  },
+  {
+   "epoch": 3110,
+   "training_loss_deg": 0.17254296017856133,
+   "author_reference_heldout_loss_deg": 2.163999133893559
+  },
+  {
+   "epoch": 3120,
+   "training_loss_deg": 0.15749217824238101,
+   "author_reference_heldout_loss_deg": 2.0919873480114246
+  },
+  {
+   "epoch": 3130,
+   "training_loss_deg": 0.15976148456092773,
+   "author_reference_heldout_loss_deg": 1.989239865132878
+  },
+  {
+   "epoch": 3140,
+   "training_loss_deg": 0.1466615927534375,
+   "author_reference_heldout_loss_deg": 2.030166352588323
+  },
+  {
+   "epoch": 3150,
+   "training_loss_deg": 0.14407808145856468,
+   "author_reference_heldout_loss_deg": 2.0829306143906807
+  },
+  {
+   "epoch": 3160,
+   "training_loss_deg": 0.13475640475507675,
+   "author_reference_heldout_loss_deg": 2.094265885771282
+  },
+  {
+   "epoch": 3170,
+   "training_loss_deg": 0.1375211717152014,
+   "author_reference_heldout_loss_deg": 2.151757694660656
+  },
+  {
+   "epoch": 3180,
+   "training_loss_deg": 0.1673991200400562,
+   "author_reference_heldout_loss_deg": 2.1773112970254114
+  },
+  {
+   "epoch": 3190,
+   "training_loss_deg": 0.1528233150398828,
+   "author_reference_heldout_loss_deg": 2.1022051558379204
+  },
+  {
+   "epoch": 3200,
+   "training_loss_deg": 0.14700765556436243,
+   "author_reference_heldout_loss_deg": 2.1507509469745623
+  },
+  {
+   "epoch": 3210,
+   "training_loss_deg": 0.17608023380360951,
+   "author_reference_heldout_loss_deg": 1.9938087771015782
+  },
+  {
+   "epoch": 3220,
+   "training_loss_deg": 0.14085021978471338,
+   "author_reference_heldout_loss_deg": 2.08471440547897
+  },
+  {
+   "epoch": 3230,
+   "training_loss_deg": 0.14214848296913674,
+   "author_reference_heldout_loss_deg": 2.0529256193868575
+  },
+  {
+   "epoch": 3240,
+   "training_loss_deg": 0.14812168497137906,
+   "author_reference_heldout_loss_deg": 2.195972464618183
+  },
+  {
+   "epoch": 3250,
+   "training_loss_deg": 0.15343906045929204,
+   "author_reference_heldout_loss_deg": 1.9985635994422821
+  },
+  {
+   "epoch": 3260,
+   "training_loss_deg": 0.17007189237974524,
+   "author_reference_heldout_loss_deg": 2.025321653052684
+  },
+  {
+   "epoch": 3270,
+   "training_loss_deg": 0.17040875275445178,
+   "author_reference_heldout_loss_deg": 2.1829634962543363
+  },
+  {
+   "epoch": 3280,
+   "training_loss_deg": 0.1903736823942603,
+   "author_reference_heldout_loss_deg": 2.029091358064644
+  },
+  {
+   "epoch": 3290,
+   "training_loss_deg": 0.15627919815904726,
+   "author_reference_heldout_loss_deg": 2.248745936539865
+  },
+  {
+   "epoch": 3300,
+   "training_loss_deg": 0.1758073558652304,
+   "author_reference_heldout_loss_deg": 2.1955217930578415
+  },
+  {
+   "epoch": 3310,
+   "training_loss_deg": 0.16911500038170232,
+   "author_reference_heldout_loss_deg": 2.0934194726569038
+  },
+  {
+   "epoch": 3320,
+   "training_loss_deg": 0.13846224001268062,
+   "author_reference_heldout_loss_deg": 1.9546781619710307
+  },
+  {
+   "epoch": 3330,
+   "training_loss_deg": 0.16307773386559835,
+   "author_reference_heldout_loss_deg": 2.1018629179846857
+  },
+  {
+   "epoch": 3340,
+   "training_loss_deg": 0.1468701182099862,
+   "author_reference_heldout_loss_deg": 1.9996991591347801
+  },
+  {
+   "epoch": 3350,
+   "training_loss_deg": 0.14488037487840263,
+   "author_reference_heldout_loss_deg": 2.0036486553088313
+  },
+  {
+   "epoch": 3360,
+   "training_loss_deg": 0.16016868713910018,
+   "author_reference_heldout_loss_deg": 2.108511393349017
+  },
+  {
+   "epoch": 3370,
+   "training_loss_deg": 0.15317632803102818,
+   "author_reference_heldout_loss_deg": 2.1090001439855945
+  },
+  {
+   "epoch": 3380,
+   "training_loss_deg": 0.1266751087051097,
+   "author_reference_heldout_loss_deg": 2.0098608749047404
+  },
+  {
+   "epoch": 3390,
+   "training_loss_deg": 0.14835713185915134,
+   "author_reference_heldout_loss_deg": 1.959313936411373
+  },
+  {
+   "epoch": 3400,
+   "training_loss_deg": 0.12858720438751747,
+   "author_reference_heldout_loss_deg": 2.062815045997981
+  },
+  {
+   "epoch": 3410,
+   "training_loss_deg": 0.16974247034972276,
+   "author_reference_heldout_loss_deg": 2.158028951936191
+  },
+  {
+   "epoch": 3420,
+   "training_loss_deg": 0.39638261115405615,
+   "author_reference_heldout_loss_deg": 2.2398269612702633
+  },
+  {
+   "epoch": 3430,
+   "training_loss_deg": 0.2878558890121739,
+   "author_reference_heldout_loss_deg": 2.0404113836346136
+  },
+  {
+   "epoch": 3440,
+   "training_loss_deg": 0.21359316532204792,
+   "author_reference_heldout_loss_deg": 2.0424159283359207
+  },
+  {
+   "epoch": 3450,
+   "training_loss_deg": 0.15236026721029747,
+   "author_reference_heldout_loss_deg": 2.11689103803327
+  },
+  {
+   "epoch": 3460,
+   "training_loss_deg": 0.17217070179256966,
+   "author_reference_heldout_loss_deg": 2.1978889858770754
+  },
+  {
+   "epoch": 3470,
+   "training_loss_deg": 0.17969823792213346,
+   "author_reference_heldout_loss_deg": 1.97056050899048
+  },
+  {
+   "epoch": 3480,
+   "training_loss_deg": 0.16451950964888906,
+   "author_reference_heldout_loss_deg": 2.238907358699268
+  },
+  {
+   "epoch": 3490,
+   "training_loss_deg": 0.14374913141979434,
+   "author_reference_heldout_loss_deg": 2.1499779225597457
+  },
+  {
+   "epoch": 3500,
+   "training_loss_deg": 0.1478919905375659,
+   "author_reference_heldout_loss_deg": 2.2056210478467326
+  },
+  {
+   "epoch": 3510,
+   "training_loss_deg": 0.24543070550856552,
+   "author_reference_heldout_loss_deg": 2.048882117194514
+  },
+  {
+   "epoch": 3520,
+   "training_loss_deg": 0.16873571046484195,
+   "author_reference_heldout_loss_deg": 1.9976622060902658
+  },
+  {
+   "epoch": 3530,
+   "training_loss_deg": 0.16532970032071678,
+   "author_reference_heldout_loss_deg": 2.0254815487611677
+  },
+  {
+   "epoch": 3540,
+   "training_loss_deg": 0.2414069942584852,
+   "author_reference_heldout_loss_deg": 2.0850241829551037
+  },
+  {
+   "epoch": 3550,
+   "training_loss_deg": 0.1384689922982115,
+   "author_reference_heldout_loss_deg": 2.269717250980677
+  },
+  {
+   "epoch": 3560,
+   "training_loss_deg": 0.1637716853037113,
+   "author_reference_heldout_loss_deg": 1.996649416223649
+  },
+  {
+   "epoch": 3570,
+   "training_loss_deg": 0.13989348721698047,
+   "author_reference_heldout_loss_deg": 1.9775935930590476
+  },
+  {
+   "epoch": 3580,
+   "training_loss_deg": 0.1593863985887388,
+   "author_reference_heldout_loss_deg": 2.007339740232114
+  },
+  {
+   "epoch": 3590,
+   "training_loss_deg": 0.13228204882726435,
+   "author_reference_heldout_loss_deg": 1.9366748755978
+  },
+  {
+   "epoch": 3600,
+   "training_loss_deg": 0.13896742741751478,
+   "author_reference_heldout_loss_deg": 1.8399624841347817
+  },
+  {
+   "epoch": 3610,
+   "training_loss_deg": 0.17375314332605377,
+   "author_reference_heldout_loss_deg": 1.9744660874768611
+  },
+  {
+   "epoch": 3620,
+   "training_loss_deg": 0.20247224373061481,
+   "author_reference_heldout_loss_deg": 1.7980186311948685
+  },
+  {
+   "epoch": 3630,
+   "training_loss_deg": 0.11741805427927311,
+   "author_reference_heldout_loss_deg": 1.916118046328906
+  },
+  {
+   "epoch": 3640,
+   "training_loss_deg": 0.16906903187433878,
+   "author_reference_heldout_loss_deg": 1.9274921222559867
+  },
+  {
+   "epoch": 3650,
+   "training_loss_deg": 0.17254113254508352,
+   "author_reference_heldout_loss_deg": 1.982142185612071
+  },
+  {
+   "epoch": 3660,
+   "training_loss_deg": 0.17254209045956775,
+   "author_reference_heldout_loss_deg": 2.0249152034521103
+  },
+  {
+   "epoch": 3670,
+   "training_loss_deg": 0.15911371170020686,
+   "author_reference_heldout_loss_deg": 1.997254112795476
+  },
+  {
+   "epoch": 3680,
+   "training_loss_deg": 0.15145005540149967,
+   "author_reference_heldout_loss_deg": 2.0785552741539095
+  },
+  {
+   "epoch": 3690,
+   "training_loss_deg": 0.12610168088742388,
+   "author_reference_heldout_loss_deg": 2.0454954279045903
+  },
+  {
+   "epoch": 3700,
+   "training_loss_deg": 0.12592210420748082,
+   "author_reference_heldout_loss_deg": 1.9899952750532859
+  },
+  {
+   "epoch": 3710,
+   "training_loss_deg": 0.13514981897381262,
+   "author_reference_heldout_loss_deg": 2.019006490467056
+  },
+  {
+   "epoch": 3720,
+   "training_loss_deg": 0.13231587737071804,
+   "author_reference_heldout_loss_deg": 1.9893123455826314
+  },
+  {
+   "epoch": 3730,
+   "training_loss_deg": 0.14481553423210858,
+   "author_reference_heldout_loss_deg": 2.0932735989411033
+  },
+  {
+   "epoch": 3740,
+   "training_loss_deg": 0.12012531868810576,
+   "author_reference_heldout_loss_deg": 1.9688705565227616
+  },
+  {
+   "epoch": 3750,
+   "training_loss_deg": 0.1658314493128924,
+   "author_reference_heldout_loss_deg": 2.0221895999725787
+  },
+  {
+   "epoch": 3760,
+   "training_loss_deg": 0.15327407577173496,
+   "author_reference_heldout_loss_deg": 2.219511220411908
+  },
+  {
+   "epoch": 3770,
+   "training_loss_deg": 0.13056959775162907,
+   "author_reference_heldout_loss_deg": 2.0147526022647657
+  },
+  {
+   "epoch": 3780,
+   "training_loss_deg": 0.1587846586859323,
+   "author_reference_heldout_loss_deg": 2.000897024067179
+  },
+  {
+   "epoch": 3790,
+   "training_loss_deg": 0.18563221152720413,
+   "author_reference_heldout_loss_deg": 2.0596180883867126
+  },
+  {
+   "epoch": 3800,
+   "training_loss_deg": 0.13669005963133601,
+   "author_reference_heldout_loss_deg": 1.9561477707278343
+  },
+  {
+   "epoch": 3810,
+   "training_loss_deg": 0.1230942678403079,
+   "author_reference_heldout_loss_deg": 1.9520299475519889
+  },
+  {
+   "epoch": 3820,
+   "training_loss_deg": 0.1731136816788495,
+   "author_reference_heldout_loss_deg": 1.9565341434171122
+  },
+  {
+   "epoch": 3830,
+   "training_loss_deg": 0.1512249880205325,
+   "author_reference_heldout_loss_deg": 1.948262298059079
+  },
+  {
+   "epoch": 3840,
+   "training_loss_deg": 0.10919212047162095,
+   "author_reference_heldout_loss_deg": 1.8226084164794414
+  },
+  {
+   "epoch": 3850,
+   "training_loss_deg": 0.15696462964623925,
+   "author_reference_heldout_loss_deg": 2.0053831478280406
+  },
+  {
+   "epoch": 3860,
+   "training_loss_deg": 0.14234663400708175,
+   "author_reference_heldout_loss_deg": 2.083297677578465
+  },
+  {
+   "epoch": 3870,
+   "training_loss_deg": 0.13078586314994145,
+   "author_reference_heldout_loss_deg": 1.9895475943002008
+  },
+  {
+   "epoch": 3880,
+   "training_loss_deg": 0.16168543672173974,
+   "author_reference_heldout_loss_deg": 2.042047271444913
+  },
+  {
+   "epoch": 3890,
+   "training_loss_deg": 0.13992899523033359,
+   "author_reference_heldout_loss_deg": 1.9748232882590062
+  },
+  {
+   "epoch": 3900,
+   "training_loss_deg": 0.17621614475075792,
+   "author_reference_heldout_loss_deg": 1.8796337291357978
+  },
+  {
+   "epoch": 3910,
+   "training_loss_deg": 0.13503377951257597,
+   "author_reference_heldout_loss_deg": 1.7949624903980763
+  },
+  {
+   "epoch": 3920,
+   "training_loss_deg": 0.14657770448583898,
+   "author_reference_heldout_loss_deg": 1.9624689227390675
+  },
+  {
+   "epoch": 3930,
+   "training_loss_deg": 0.13124176968888537,
+   "author_reference_heldout_loss_deg": 1.7696079641820923
+  },
+  {
+   "epoch": 3940,
+   "training_loss_deg": 0.1439688829629402,
+   "author_reference_heldout_loss_deg": 2.0221140870163516
+  },
+  {
+   "epoch": 3950,
+   "training_loss_deg": 0.1363051012764132,
+   "author_reference_heldout_loss_deg": 2.032787926975758
+  },
+  {
+   "epoch": 3960,
+   "training_loss_deg": 0.16135291452330303,
+   "author_reference_heldout_loss_deg": 1.7661938184211332
+  },
+  {
+   "epoch": 3970,
+   "training_loss_deg": 0.12647481444405345,
+   "author_reference_heldout_loss_deg": 1.9837401669111945
+  },
+  {
+   "epoch": 3980,
+   "training_loss_deg": 0.15445273630018155,
+   "author_reference_heldout_loss_deg": 2.2548601342545402
+  },
+  {
+   "epoch": 3990,
+   "training_loss_deg": 0.21586579678019857,
+   "author_reference_heldout_loss_deg": 2.1727298942785107
+  },
+  {
+   "epoch": 4000,
+   "training_loss_deg": 0.12131190215184437,
+   "author_reference_heldout_loss_deg": 1.713416257212239
+  },
+  {
+   "epoch": 4010,
+   "training_loss_deg": 0.12356629337721724,
+   "author_reference_heldout_loss_deg": 1.6667176063262648
+  },
+  {
+   "epoch": 4020,
+   "training_loss_deg": 0.13170976040324545,
+   "author_reference_heldout_loss_deg": 1.7935193995794942
+  },
+  {
+   "epoch": 4030,
+   "training_loss_deg": 0.13090898217709085,
+   "author_reference_heldout_loss_deg": 1.7602983052211423
+  },
+  {
+   "epoch": 4040,
+   "training_loss_deg": 0.15763097977250573,
+   "author_reference_heldout_loss_deg": 1.9260363368497742
+  },
+  {
+   "epoch": 4050,
+   "training_loss_deg": 0.1373567765321189,
+   "author_reference_heldout_loss_deg": 1.7071689041631837
+  },
+  {
+   "epoch": 4060,
+   "training_loss_deg": 0.15190508549775533,
+   "author_reference_heldout_loss_deg": 1.767529496742833
+  },
+  {
+   "epoch": 4070,
+   "training_loss_deg": 0.13437482532931538,
+   "author_reference_heldout_loss_deg": 1.7643253006521733
+  },
+  {
+   "epoch": 4080,
+   "training_loss_deg": 0.11071898879074468,
+   "author_reference_heldout_loss_deg": 1.7088873274624348
+  },
+  {
+   "epoch": 4090,
+   "training_loss_deg": 0.13817149788383545,
+   "author_reference_heldout_loss_deg": 2.032511602245992
+  },
+  {
+   "epoch": 4100,
+   "training_loss_deg": 0.16458812598290481,
+   "author_reference_heldout_loss_deg": 1.8589873897933191
+  },
+  {
+   "epoch": 4110,
+   "training_loss_deg": 0.14456291702704702,
+   "author_reference_heldout_loss_deg": 1.8921469490854972
+  },
+  {
+   "epoch": 4120,
+   "training_loss_deg": 0.12281055833266033,
+   "author_reference_heldout_loss_deg": 2.019264372606431
+  },
+  {
+   "epoch": 4130,
+   "training_loss_deg": 0.1910559818512056,
+   "author_reference_heldout_loss_deg": 2.034310221311546
+  },
+  {
+   "epoch": 4140,
+   "training_loss_deg": 0.17561907593796894,
+   "author_reference_heldout_loss_deg": 1.9037662626754852
+  },
+  {
+   "epoch": 4150,
+   "training_loss_deg": 0.17394507379551244,
+   "author_reference_heldout_loss_deg": 1.8737387778537888
+  },
+  {
+   "epoch": 4160,
+   "training_loss_deg": 0.1563992701410278,
+   "author_reference_heldout_loss_deg": 1.9114165526003606
+  },
+  {
+   "epoch": 4170,
+   "training_loss_deg": 0.1495759082518942,
+   "author_reference_heldout_loss_deg": 2.0192470200840504
+  },
+  {
+   "epoch": 4180,
+   "training_loss_deg": 0.14007667264318077,
+   "author_reference_heldout_loss_deg": 2.114518783746227
+  },
+  {
+   "epoch": 4190,
+   "training_loss_deg": 0.14151595932681385,
+   "author_reference_heldout_loss_deg": 2.1422954633110955
+  },
+  {
+   "epoch": 4200,
+   "training_loss_deg": 0.1311716333152802,
+   "author_reference_heldout_loss_deg": 2.1335509373776373
+  },
+  {
+   "epoch": 4210,
+   "training_loss_deg": 0.12225111919205363,
+   "author_reference_heldout_loss_deg": 2.0064227512526895
+  },
+  {
+   "epoch": 4220,
+   "training_loss_deg": 0.128086650759224,
+   "author_reference_heldout_loss_deg": 2.016639318317175
+  },
+  {
+   "epoch": 4230,
+   "training_loss_deg": 0.14488377985430928,
+   "author_reference_heldout_loss_deg": 1.9726805605234639
+  },
+  {
+   "epoch": 4240,
+   "training_loss_deg": 0.13596750904874103,
+   "author_reference_heldout_loss_deg": 1.9569966159760952
+  },
+  {
+   "epoch": 4250,
+   "training_loss_deg": 0.14806715913904392,
+   "author_reference_heldout_loss_deg": 2.0050953175992734
+  },
+  {
+   "epoch": 4260,
+   "training_loss_deg": 0.1261579659653873,
+   "author_reference_heldout_loss_deg": 1.939619723226755
+  },
+  {
+   "epoch": 4270,
+   "training_loss_deg": 0.1297713832520857,
+   "author_reference_heldout_loss_deg": 2.2031781926991476
+  },
+  {
+   "epoch": 4280,
+   "training_loss_deg": 0.16049104638215972,
+   "author_reference_heldout_loss_deg": 2.0317625267611397
+  },
+  {
+   "epoch": 4290,
+   "training_loss_deg": 0.11847225740188505,
+   "author_reference_heldout_loss_deg": 2.033993442092211
+  },
+  {
+   "epoch": 4300,
+   "training_loss_deg": 0.1356683173557607,
+   "author_reference_heldout_loss_deg": 2.0884073317771956
+  },
+  {
+   "epoch": 4310,
+   "training_loss_deg": 0.18230791026499213,
+   "author_reference_heldout_loss_deg": 2.1138107591579036
+  },
+  {
+   "epoch": 4320,
+   "training_loss_deg": 0.12015574794959247,
+   "author_reference_heldout_loss_deg": 2.210228195353862
+  },
+  {
+   "epoch": 4330,
+   "training_loss_deg": 0.12747583604925047,
+   "author_reference_heldout_loss_deg": 2.095595999590812
+  },
+  {
+   "epoch": 4340,
+   "training_loss_deg": 0.1295999927007086,
+   "author_reference_heldout_loss_deg": 2.109586277075352
+  },
+  {
+   "epoch": 4350,
+   "training_loss_deg": 0.1721000834936049,
+   "author_reference_heldout_loss_deg": 2.0227776222652003
+  },
+  {
+   "epoch": 4360,
+   "training_loss_deg": 0.12595269459534467,
+   "author_reference_heldout_loss_deg": 2.0398720895811433
+  },
+  {
+   "epoch": 4370,
+   "training_loss_deg": 0.13615456465783157,
+   "author_reference_heldout_loss_deg": 2.0109132354057606
+  },
+  {
+   "epoch": 4380,
+   "training_loss_deg": 0.12160257449964197,
+   "author_reference_heldout_loss_deg": 2.080000883388904
+  },
+  {
+   "epoch": 4390,
+   "training_loss_deg": 0.12304252640503209,
+   "author_reference_heldout_loss_deg": 2.1110858567539723
+  },
+  {
+   "epoch": 4400,
+   "training_loss_deg": 0.11239644024914842,
+   "author_reference_heldout_loss_deg": 2.0205798563697646
+  },
+  {
+   "epoch": 4410,
+   "training_loss_deg": 0.18182959098641466,
+   "author_reference_heldout_loss_deg": 2.012973244632444
+  },
+  {
+   "epoch": 4420,
+   "training_loss_deg": 0.17076019397596034,
+   "author_reference_heldout_loss_deg": 2.2665109380839334
+  },
+  {
+   "epoch": 4430,
+   "training_loss_deg": 0.16777214298887952,
+   "author_reference_heldout_loss_deg": 1.9040555838615663
+  },
+  {
+   "epoch": 4440,
+   "training_loss_deg": 0.11345315421742153,
+   "author_reference_heldout_loss_deg": 1.8918538585064872
+  },
+  {
+   "epoch": 4450,
+   "training_loss_deg": 0.12416130098385539,
+   "author_reference_heldout_loss_deg": 2.0109108110829705
+  },
+  {
+   "epoch": 4460,
+   "training_loss_deg": 0.11969669417637151,
+   "author_reference_heldout_loss_deg": 1.931689676858725
+  },
+  {
+   "epoch": 4470,
+   "training_loss_deg": 0.11947813787596012,
+   "author_reference_heldout_loss_deg": 1.95647951107352
+  },
+  {
+   "epoch": 4480,
+   "training_loss_deg": 0.17671382306067923,
+   "author_reference_heldout_loss_deg": 1.95533554556389
+  },
+  {
+   "epoch": 4490,
+   "training_loss_deg": 0.1481984782267392,
+   "author_reference_heldout_loss_deg": 2.0335956172597025
+  },
+  {
+   "epoch": 4500,
+   "training_loss_deg": 0.1322722347771249,
+   "author_reference_heldout_loss_deg": 1.9686488718275101
+  },
+  {
+   "epoch": 4510,
+   "training_loss_deg": 0.15383488775753393,
+   "author_reference_heldout_loss_deg": 1.9582685549413004
+  },
+  {
+   "epoch": 4520,
+   "training_loss_deg": 0.14661548486570034,
+   "author_reference_heldout_loss_deg": 2.017279300478197
+  },
+  {
+   "epoch": 4530,
+   "training_loss_deg": 0.12238745785098736,
+   "author_reference_heldout_loss_deg": 2.0418796895011777
+  },
+  {
+   "epoch": 4540,
+   "training_loss_deg": 0.12608500103640363,
+   "author_reference_heldout_loss_deg": 1.9858666974450312
+  },
+  {
+   "epoch": 4550,
+   "training_loss_deg": 0.1125239609339373,
+   "author_reference_heldout_loss_deg": 2.129074745120541
+  },
+  {
+   "epoch": 4560,
+   "training_loss_deg": 0.1377196865595453,
+   "author_reference_heldout_loss_deg": 2.072447650014393
+  },
+  {
+   "epoch": 4570,
+   "training_loss_deg": 0.11540071878249084,
+   "author_reference_heldout_loss_deg": 2.046598266690008
+  },
+  {
+   "epoch": 4580,
+   "training_loss_deg": 0.12557730726837144,
+   "author_reference_heldout_loss_deg": 2.053326184711149
+  },
+  {
+   "epoch": 4590,
+   "training_loss_deg": 0.13337917056510118,
+   "author_reference_heldout_loss_deg": 2.1177304358251634
+  },
+  {
+   "epoch": 4600,
+   "training_loss_deg": 0.1323888446015071,
+   "author_reference_heldout_loss_deg": 2.0497084062907005
+  },
+  {
+   "epoch": 4610,
+   "training_loss_deg": 0.14120170425593367,
+   "author_reference_heldout_loss_deg": 2.085667743437713
+  },
+  {
+   "epoch": 4620,
+   "training_loss_deg": 0.1139418232004817,
+   "author_reference_heldout_loss_deg": 2.0929315651376403
+  },
+  {
+   "epoch": 4630,
+   "training_loss_deg": 0.1313055164324559,
+   "author_reference_heldout_loss_deg": 2.083635727244039
+  },
+  {
+   "epoch": 4640,
+   "training_loss_deg": 0.10742626981279714,
+   "author_reference_heldout_loss_deg": 2.0636941458909743
+  },
+  {
+   "epoch": 4650,
+   "training_loss_deg": 0.12347215747203284,
+   "author_reference_heldout_loss_deg": 2.0162662539270615
+  },
+  {
+   "epoch": 4660,
+   "training_loss_deg": 0.12854820816982082,
+   "author_reference_heldout_loss_deg": 1.997425625881841
+  },
+  {
+   "epoch": 4670,
+   "training_loss_deg": 0.11038961740044075,
+   "author_reference_heldout_loss_deg": 1.9267203434100073
+  },
+  {
+   "epoch": 4680,
+   "training_loss_deg": 0.1164711188010084,
+   "author_reference_heldout_loss_deg": 1.91827177304414
+  },
+  {
+   "epoch": 4690,
+   "training_loss_deg": 0.12456534027568693,
+   "author_reference_heldout_loss_deg": 2.1308510351565575
+  },
+  {
+   "epoch": 4700,
+   "training_loss_deg": 0.1457671834443643,
+   "author_reference_heldout_loss_deg": 1.9488148405667274
+  },
+  {
+   "epoch": 4710,
+   "training_loss_deg": 0.12360090901696585,
+   "author_reference_heldout_loss_deg": 1.8624328379669497
+  },
+  {
+   "epoch": 4720,
+   "training_loss_deg": 0.12323000033696492,
+   "author_reference_heldout_loss_deg": 1.9327344154157946
+  },
+  {
+   "epoch": 4730,
+   "training_loss_deg": 0.12640243459765504,
+   "author_reference_heldout_loss_deg": 1.9676451554461833
+  },
+  {
+   "epoch": 4740,
+   "training_loss_deg": 0.12083137083828933,
+   "author_reference_heldout_loss_deg": 1.8781926855444908
+  },
+  {
+   "epoch": 4750,
+   "training_loss_deg": 0.12011645710080619,
+   "author_reference_heldout_loss_deg": 1.9154921004608754
+  },
+  {
+   "epoch": 4760,
+   "training_loss_deg": 0.11384882832445749,
+   "author_reference_heldout_loss_deg": 2.0870827014648143
+  },
+  {
+   "epoch": 4770,
+   "training_loss_deg": 0.14258718520887498,
+   "author_reference_heldout_loss_deg": 2.0843289031857446
+  },
+  {
+   "epoch": 4780,
+   "training_loss_deg": 0.13007855996852968,
+   "author_reference_heldout_loss_deg": 1.9714729080517446
+  },
+  {
+   "epoch": 4790,
+   "training_loss_deg": 0.1151163071636262,
+   "author_reference_heldout_loss_deg": 1.9956509035921866
+  },
+  {
+   "epoch": 4800,
+   "training_loss_deg": 0.10280338172020952,
+   "author_reference_heldout_loss_deg": 2.0331597885777875
+  },
+  {
+   "epoch": 4810,
+   "training_loss_deg": 0.11757505351934976,
+   "author_reference_heldout_loss_deg": 2.0727818093953596
+  },
+  {
+   "epoch": 4820,
+   "training_loss_deg": 0.12370397320123223,
+   "author_reference_heldout_loss_deg": 2.0050886454841783
+  },
+  {
+   "epoch": 4830,
+   "training_loss_deg": 0.2023895218120358,
+   "author_reference_heldout_loss_deg": 2.217348508416645
+  },
+  {
+   "epoch": 4840,
+   "training_loss_deg": 0.14638909261401106,
+   "author_reference_heldout_loss_deg": 2.092947543388413
+  },
+  {
+   "epoch": 4850,
+   "training_loss_deg": 0.12598869761800377,
+   "author_reference_heldout_loss_deg": 2.0975015565993322
+  },
+  {
+   "epoch": 4860,
+   "training_loss_deg": 0.16657288384631397,
+   "author_reference_heldout_loss_deg": 2.0595625973036213
+  },
+  {
+   "epoch": 4870,
+   "training_loss_deg": 0.12916150349911634,
+   "author_reference_heldout_loss_deg": 2.0878842077668636
+  },
+  {
+   "epoch": 4880,
+   "training_loss_deg": 0.12639201377950063,
+   "author_reference_heldout_loss_deg": 2.2053778234028045
+  },
+  {
+   "epoch": 4890,
+   "training_loss_deg": 0.10945089300715827,
+   "author_reference_heldout_loss_deg": 2.0950015637903445
+  },
+  {
+   "epoch": 4900,
+   "training_loss_deg": 0.099848895538144,
+   "author_reference_heldout_loss_deg": 2.076585487492623
+  },
+  {
+   "epoch": 4910,
+   "training_loss_deg": 0.1389295400037029,
+   "author_reference_heldout_loss_deg": 2.040406630044022
+  },
+  {
+   "epoch": 4920,
+   "training_loss_deg": 0.12341161447811902,
+   "author_reference_heldout_loss_deg": 2.0987996183816464
+  },
+  {
+   "epoch": 4930,
+   "training_loss_deg": 0.10846475093829923,
+   "author_reference_heldout_loss_deg": 2.0809215130584855
+  },
+  {
+   "epoch": 4940,
+   "training_loss_deg": 0.11540989674688355,
+   "author_reference_heldout_loss_deg": 2.0633313438344385
+  },
+  {
+   "epoch": 4950,
+   "training_loss_deg": 0.10425070255267911,
+   "author_reference_heldout_loss_deg": 2.13672682510749
+  },
+  {
+   "epoch": 4960,
+   "training_loss_deg": 0.11563831270952535,
+   "author_reference_heldout_loss_deg": 2.135546924726617
+  },
+  {
+   "epoch": 4970,
+   "training_loss_deg": 0.1211923395957404,
+   "author_reference_heldout_loss_deg": 2.09646056328089
+  },
+  {
+   "epoch": 4980,
+   "training_loss_deg": 0.14954383707628016,
+   "author_reference_heldout_loss_deg": 2.045771247557094
+  },
+  {
+   "epoch": 4990,
+   "training_loss_deg": 0.11068048709776343,
+   "author_reference_heldout_loss_deg": 1.9952004221418211
+  },
+  {
+   "epoch": 5000,
+   "training_loss_deg": 0.12405154799542777,
+   "author_reference_heldout_loss_deg": 2.000692609817751
+  },
+  {
+   "epoch": 5010,
+   "training_loss_deg": 0.13390523437562027,
+   "author_reference_heldout_loss_deg": 1.9943742288216468
+  },
+  {
+   "epoch": 5020,
+   "training_loss_deg": 0.12025261803613446,
+   "author_reference_heldout_loss_deg": 1.9071763442648995
+  },
+  {
+   "epoch": 5030,
+   "training_loss_deg": 0.11300897707299488,
+   "author_reference_heldout_loss_deg": 1.9530716966236792
+  },
+  {
+   "epoch": 5040,
+   "training_loss_deg": 0.15114274717927947,
+   "author_reference_heldout_loss_deg": 1.9303061350459052
+  },
+  {
+   "epoch": 5050,
+   "training_loss_deg": 0.1274605650242751,
+   "author_reference_heldout_loss_deg": 1.9177824495540512
+  },
+  {
+   "epoch": 5060,
+   "training_loss_deg": 0.14654542402765616,
+   "author_reference_heldout_loss_deg": 1.997148887043999
+  },
+  {
+   "epoch": 5070,
+   "training_loss_deg": 0.1283399809182175,
+   "author_reference_heldout_loss_deg": 2.0445433943983047
+  },
+  {
+   "epoch": 5080,
+   "training_loss_deg": 0.24293354080944526,
+   "author_reference_heldout_loss_deg": 2.395395723802428
+  },
+  {
+   "epoch": 5090,
+   "training_loss_deg": 0.1327844879976133,
+   "author_reference_heldout_loss_deg": 2.0352961042475317
+  },
+  {
+   "epoch": 5100,
+   "training_loss_deg": 0.1407090218328848,
+   "author_reference_heldout_loss_deg": 1.8436230524413046
+  },
+  {
+   "epoch": 5110,
+   "training_loss_deg": 0.14046443502108255,
+   "author_reference_heldout_loss_deg": 2.0126707932401087
+  },
+  {
+   "epoch": 5120,
+   "training_loss_deg": 0.1377516744461486,
+   "author_reference_heldout_loss_deg": 2.0444011042916004
+  },
+  {
+   "epoch": 5130,
+   "training_loss_deg": 0.1375280477530588,
+   "author_reference_heldout_loss_deg": 2.087377661178189
+  },
+  {
+   "epoch": 5140,
+   "training_loss_deg": 0.16801271193880377,
+   "author_reference_heldout_loss_deg": 2.1333781818468727
+  },
+  {
+   "epoch": 5150,
+   "training_loss_deg": 0.12985678138287088,
+   "author_reference_heldout_loss_deg": 2.1049169294776453
+  },
+  {
+   "epoch": 5160,
+   "training_loss_deg": 0.12189401928486863,
+   "author_reference_heldout_loss_deg": 2.070256226966458
+  },
+  {
+   "epoch": 5170,
+   "training_loss_deg": 0.13708551131128296,
+   "author_reference_heldout_loss_deg": 2.0879640777505215
+  },
+  {
+   "epoch": 5180,
+   "training_loss_deg": 0.1141816576927658,
+   "author_reference_heldout_loss_deg": 2.187827119784009
+  },
+  {
+   "epoch": 5190,
+   "training_loss_deg": 0.11681280012537794,
+   "author_reference_heldout_loss_deg": 2.2207863321227412
+  },
+  {
+   "epoch": 5200,
+   "training_loss_deg": 0.14772897304558172,
+   "author_reference_heldout_loss_deg": 2.110855458604713
+  },
+  {
+   "epoch": 5210,
+   "training_loss_deg": 0.147870514329856,
+   "author_reference_heldout_loss_deg": 1.9967885512498118
+  },
+  {
+   "epoch": 5220,
+   "training_loss_deg": 0.11035195477609712,
+   "author_reference_heldout_loss_deg": 2.028803554513762
+  },
+  {
+   "epoch": 5230,
+   "training_loss_deg": 0.12567473366493132,
+   "author_reference_heldout_loss_deg": 2.188911860988986
+  },
+  {
+   "epoch": 5240,
+   "training_loss_deg": 0.1164247343937556,
+   "author_reference_heldout_loss_deg": 2.137430924922228
+  },
+  {
+   "epoch": 5250,
+   "training_loss_deg": 0.11534096567126793,
+   "author_reference_heldout_loss_deg": 2.0889767895062126
+  },
+  {
+   "epoch": 5260,
+   "training_loss_deg": 0.11211784601938433,
+   "author_reference_heldout_loss_deg": 2.086308579531408
+  },
+  {
+   "epoch": 5270,
+   "training_loss_deg": 0.10758699107218564,
+   "author_reference_heldout_loss_deg": 2.1422641326583203
+  },
+  {
+   "epoch": 5280,
+   "training_loss_deg": 0.20058779830370493,
+   "author_reference_heldout_loss_deg": 2.101638875300846
+  },
+  {
+   "epoch": 5290,
+   "training_loss_deg": 0.1523203363990396,
+   "author_reference_heldout_loss_deg": 2.1285093879747774
+  },
+  {
+   "epoch": 5300,
+   "training_loss_deg": 0.14318220420339242,
+   "author_reference_heldout_loss_deg": 2.1031945359803017
+  },
+  {
+   "epoch": 5310,
+   "training_loss_deg": 0.21314402784758468,
+   "author_reference_heldout_loss_deg": 2.179479672543464
+  },
+  {
+   "epoch": 5320,
+   "training_loss_deg": 0.12581292461089003,
+   "author_reference_heldout_loss_deg": 2.090325819508683
+  },
+  {
+   "epoch": 5330,
+   "training_loss_deg": 0.1086387585818283,
+   "author_reference_heldout_loss_deg": 1.9972924224791988
+  },
+  {
+   "epoch": 5340,
+   "training_loss_deg": 0.1046026910587055,
+   "author_reference_heldout_loss_deg": 1.9462346996991866
+  },
+  {
+   "epoch": 5350,
+   "training_loss_deg": 0.1110905443992072,
+   "author_reference_heldout_loss_deg": 1.9355049463770082
+  },
+  {
+   "epoch": 5360,
+   "training_loss_deg": 0.1819288323565227,
+   "author_reference_heldout_loss_deg": 2.065284281488388
+  },
+  {
+   "epoch": 5370,
+   "training_loss_deg": 0.18045111400325123,
+   "author_reference_heldout_loss_deg": 2.0165986010143833
+  },
+  {
+   "epoch": 5380,
+   "training_loss_deg": 0.13997478964852123,
+   "author_reference_heldout_loss_deg": 1.8307274566783058
+  },
+  {
+   "epoch": 5390,
+   "training_loss_deg": 0.1522470539420601,
+   "author_reference_heldout_loss_deg": 2.04195028122875
+  },
+  {
+   "epoch": 5400,
+   "training_loss_deg": 0.16199774955346333,
+   "author_reference_heldout_loss_deg": 1.9012984006154923
+  },
+  {
+   "epoch": 5410,
+   "training_loss_deg": 0.12373918785554607,
+   "author_reference_heldout_loss_deg": 1.8752602574325377
+  },
+  {
+   "epoch": 5420,
+   "training_loss_deg": 0.13437932850868722,
+   "author_reference_heldout_loss_deg": 1.8562206108002894
+  },
+  {
+   "epoch": 5430,
+   "training_loss_deg": 0.12294851195036881,
+   "author_reference_heldout_loss_deg": 1.8389245848501883
+  },
+  {
+   "epoch": 5440,
+   "training_loss_deg": 0.18693102375278628,
+   "author_reference_heldout_loss_deg": 1.835054274648428
+  },
+  {
+   "epoch": 5450,
+   "training_loss_deg": 0.11046648067914373,
+   "author_reference_heldout_loss_deg": 1.8181170791147216
+  },
+  {
+   "epoch": 5460,
+   "training_loss_deg": 0.11165557365591933,
+   "author_reference_heldout_loss_deg": 1.7372545909977728
+  },
+  {
+   "epoch": 5470,
+   "training_loss_deg": 0.12714643122219457,
+   "author_reference_heldout_loss_deg": 1.8308370875254754
+  },
+  {
+   "epoch": 5480,
+   "training_loss_deg": 0.10630199979475843,
+   "author_reference_heldout_loss_deg": 1.8212578630735796
+  },
+  {
+   "epoch": 5490,
+   "training_loss_deg": 0.19434542384574083,
+   "author_reference_heldout_loss_deg": 1.8205126615301255
+  },
+  {
+   "epoch": 5500,
+   "training_loss_deg": 0.13318549811355468,
+   "author_reference_heldout_loss_deg": 1.8607067083639484
+  },
+  {
+   "epoch": 5510,
+   "training_loss_deg": 0.10568995240742599,
+   "author_reference_heldout_loss_deg": 1.932418350731173
+  },
+  {
+   "epoch": 5520,
+   "training_loss_deg": 0.12010341852418775,
+   "author_reference_heldout_loss_deg": 1.9742151802826313
+  },
+  {
+   "epoch": 5530,
+   "training_loss_deg": 0.15072185261462762,
+   "author_reference_heldout_loss_deg": 1.9649172150079282
+  },
+  {
+   "epoch": 5540,
+   "training_loss_deg": 0.1080989913969505,
+   "author_reference_heldout_loss_deg": 1.9216419687915234
+  },
+  {
+   "epoch": 5550,
+   "training_loss_deg": 0.10230638553214268,
+   "author_reference_heldout_loss_deg": 1.8665124451921833
+  },
+  {
+   "epoch": 5560,
+   "training_loss_deg": 0.10205702089924153,
+   "author_reference_heldout_loss_deg": 1.866639085955197
+  },
+  {
+   "epoch": 5570,
+   "training_loss_deg": 0.11179348820351004,
+   "author_reference_heldout_loss_deg": 1.991681698469385
+  },
+  {
+   "epoch": 5580,
+   "training_loss_deg": 0.10726693109041308,
+   "author_reference_heldout_loss_deg": 1.9535424292327896
+  },
+  {
+   "epoch": 5590,
+   "training_loss_deg": 0.12339068828074913,
+   "author_reference_heldout_loss_deg": 1.973954536982121
+  },
+  {
+   "epoch": 5600,
+   "training_loss_deg": 0.09995891735321139,
+   "author_reference_heldout_loss_deg": 2.0702056454554683
+  },
+  {
+   "epoch": 5610,
+   "training_loss_deg": 0.16466920695653775,
+   "author_reference_heldout_loss_deg": 2.06872640261727
+  },
+  {
+   "epoch": 5620,
+   "training_loss_deg": 0.1361733987563994,
+   "author_reference_heldout_loss_deg": 2.131244496111908
+  },
+  {
+   "epoch": 5630,
+   "training_loss_deg": 0.10437581227804588,
+   "author_reference_heldout_loss_deg": 2.0409843436171933
+  },
+  {
+   "epoch": 5640,
+   "training_loss_deg": 0.11102537247465878,
+   "author_reference_heldout_loss_deg": 1.954784665136568
+  },
+  {
+   "epoch": 5650,
+   "training_loss_deg": 0.10469192230119938,
+   "author_reference_heldout_loss_deg": 1.9391437431256617
+  },
+  {
+   "epoch": 5660,
+   "training_loss_deg": 0.1132124937404462,
+   "author_reference_heldout_loss_deg": 1.950336621653649
+  },
+  {
+   "epoch": 5670,
+   "training_loss_deg": 0.10080636201835261,
+   "author_reference_heldout_loss_deg": 1.9271333121484326
+  },
+  {
+   "epoch": 5680,
+   "training_loss_deg": 0.11487604302119434,
+   "author_reference_heldout_loss_deg": 2.020141895620092
+  },
+  {
+   "epoch": 5690,
+   "training_loss_deg": 0.13207809366588671,
+   "author_reference_heldout_loss_deg": 2.002730464983371
+  },
+  {
+   "epoch": 5700,
+   "training_loss_deg": 0.13349692626454965,
+   "author_reference_heldout_loss_deg": 2.078647014715018
+  },
+  {
+   "epoch": 5710,
+   "training_loss_deg": 0.12508860781667677,
+   "author_reference_heldout_loss_deg": 1.9902825476902146
+  },
+  {
+   "epoch": 5720,
+   "training_loss_deg": 0.1202348873503809,
+   "author_reference_heldout_loss_deg": 1.9632625091941125
+  },
+  {
+   "epoch": 5730,
+   "training_loss_deg": 0.12209369823700045,
+   "author_reference_heldout_loss_deg": 1.9516694337850617
+  },
+  {
+   "epoch": 5740,
+   "training_loss_deg": 0.1401021553248894,
+   "author_reference_heldout_loss_deg": 1.9844329726071126
+  },
+  {
+   "epoch": 5750,
+   "training_loss_deg": 0.12684392680724463,
+   "author_reference_heldout_loss_deg": 2.0031483851132856
+  },
+  {
+   "epoch": 5760,
+   "training_loss_deg": 0.11949949208798448,
+   "author_reference_heldout_loss_deg": 2.0178720842926734
+  },
+  {
+   "epoch": 5770,
+   "training_loss_deg": 0.12468554297598397,
+   "author_reference_heldout_loss_deg": 1.959046739604204
+  },
+  {
+   "epoch": 5780,
+   "training_loss_deg": 0.14723326932124006,
+   "author_reference_heldout_loss_deg": 2.174587278356475
+  },
+  {
+   "epoch": 5790,
+   "training_loss_deg": 0.1151332893991858,
+   "author_reference_heldout_loss_deg": 2.2163375145004642
+  },
+  {
+   "epoch": 5800,
+   "training_loss_deg": 0.1001402367421282,
+   "author_reference_heldout_loss_deg": 2.158132004521547
+  },
+  {
+   "epoch": 5810,
+   "training_loss_deg": 0.11102364454569856,
+   "author_reference_heldout_loss_deg": 2.1591263094977027
+  },
+  {
+   "epoch": 5820,
+   "training_loss_deg": 0.10585830463626521,
+   "author_reference_heldout_loss_deg": 2.0005832727878325
+  },
+  {
+   "epoch": 5830,
+   "training_loss_deg": 0.1124001791079839,
+   "author_reference_heldout_loss_deg": 1.9963385534863318
+  },
+  {
+   "epoch": 5840,
+   "training_loss_deg": 0.09855256005515897,
+   "author_reference_heldout_loss_deg": 2.032711432705964
+  },
+  {
+   "epoch": 5850,
+   "training_loss_deg": 0.10402641899702025,
+   "author_reference_heldout_loss_deg": 2.067218373619741
+  },
+  {
+   "epoch": 5860,
+   "training_loss_deg": 0.1365701673718972,
+   "author_reference_heldout_loss_deg": 2.0277053459036734
+  },
+  {
+   "epoch": 5870,
+   "training_loss_deg": 0.1293157377863318,
+   "author_reference_heldout_loss_deg": 1.9619263057266512
+  },
+  {
+   "epoch": 5880,
+   "training_loss_deg": 0.11208627221545553,
+   "author_reference_heldout_loss_deg": 1.969545592343615
+  },
+  {
+   "epoch": 5890,
+   "training_loss_deg": 0.12923916544371505,
+   "author_reference_heldout_loss_deg": 1.9165287812150293
+  },
+  {
+   "epoch": 5900,
+   "training_loss_deg": 0.13808483491098977,
+   "author_reference_heldout_loss_deg": 1.8787563499664106
+  },
+  {
+   "epoch": 5910,
+   "training_loss_deg": 0.14089870816323816,
+   "author_reference_heldout_loss_deg": 1.9630197701194594
+  },
+  {
+   "epoch": 5920,
+   "training_loss_deg": 0.11012932355326366,
+   "author_reference_heldout_loss_deg": 2.0687437617490367
+  },
+  {
+   "epoch": 5930,
+   "training_loss_deg": 0.11664900413858212,
+   "author_reference_heldout_loss_deg": 2.078962300934138
+  },
+  {
+   "epoch": 5940,
+   "training_loss_deg": 0.1033867378302706,
+   "author_reference_heldout_loss_deg": 1.978319164726042
+  },
+  {
+   "epoch": 5950,
+   "training_loss_deg": 0.10982542309334607,
+   "author_reference_heldout_loss_deg": 2.0134942290042677
+  },
+  {
+   "epoch": 5960,
+   "training_loss_deg": 0.11293741648759299,
+   "author_reference_heldout_loss_deg": 2.000882901852169
+  },
+  {
+   "epoch": 5970,
+   "training_loss_deg": 0.11217015908985603,
+   "author_reference_heldout_loss_deg": 2.0039305308413122
+  },
+  {
+   "epoch": 5980,
+   "training_loss_deg": 0.10247492239000351,
+   "author_reference_heldout_loss_deg": 1.9365110394935454
+  },
+  {
+   "epoch": 5990,
+   "training_loss_deg": 0.10538310206275646,
+   "author_reference_heldout_loss_deg": 2.025523794033835
+  },
+  {
+   "epoch": 6000,
+   "training_loss_deg": 0.11846093463946164,
+   "author_reference_heldout_loss_deg": 1.916304277196046
+  },
+  {
+   "epoch": 6010,
+   "training_loss_deg": 0.11682882238694323,
+   "author_reference_heldout_loss_deg": 2.0131279053466935
+  },
+  {
+   "epoch": 6020,
+   "training_loss_deg": 0.10238000859574574,
+   "author_reference_heldout_loss_deg": 2.08888448474388
+  },
+  {
+   "epoch": 6030,
+   "training_loss_deg": 0.1358286904367974,
+   "author_reference_heldout_loss_deg": 2.0610604614259733
+  },
+  {
+   "epoch": 6040,
+   "training_loss_deg": 0.1281702686252633,
+   "author_reference_heldout_loss_deg": 2.0361315396524247
+  },
+  {
+   "epoch": 6050,
+   "training_loss_deg": 0.1548476267636307,
+   "author_reference_heldout_loss_deg": 2.0207975401032354
+  },
+  {
+   "epoch": 6060,
+   "training_loss_deg": 0.13572329403908273,
+   "author_reference_heldout_loss_deg": 1.9551486984616326
+  },
+  {
+   "epoch": 6070,
+   "training_loss_deg": 0.11323228048357536,
+   "author_reference_heldout_loss_deg": 2.0167176957813
+  },
+  {
+   "epoch": 6080,
+   "training_loss_deg": 0.1153935138287583,
+   "author_reference_heldout_loss_deg": 1.9534592999806326
+  },
+  {
+   "epoch": 6090,
+   "training_loss_deg": 0.11089067524526178,
+   "author_reference_heldout_loss_deg": 1.942415258216281
+  },
+  {
+   "epoch": 6100,
+   "training_loss_deg": 0.11685735853464622,
+   "author_reference_heldout_loss_deg": 2.024277804719825
+  },
+  {
+   "epoch": 6110,
+   "training_loss_deg": 0.1151562841927133,
+   "author_reference_heldout_loss_deg": 2.024863754549334
+  },
+  {
+   "epoch": 6120,
+   "training_loss_deg": 0.13421914841586013,
+   "author_reference_heldout_loss_deg": 1.9745145816235774
+  },
+  {
+   "epoch": 6130,
+   "training_loss_deg": 0.11027467693012905,
+   "author_reference_heldout_loss_deg": 2.022772337159803
+  },
+  {
+   "epoch": 6140,
+   "training_loss_deg": 0.12724479075854386,
+   "author_reference_heldout_loss_deg": 1.9249514514400112
+  },
+  {
+   "epoch": 6150,
+   "training_loss_deg": 0.10238153033140229,
+   "author_reference_heldout_loss_deg": 1.9581466818288449
+  },
+  {
+   "epoch": 6160,
+   "training_loss_deg": 0.11266163815327776,
+   "author_reference_heldout_loss_deg": 1.982704542457096
+  },
+  {
+   "epoch": 6170,
+   "training_loss_deg": 0.09854701137155052,
+   "author_reference_heldout_loss_deg": 1.9054867684120131
+  },
+  {
+   "epoch": 6180,
+   "training_loss_deg": 0.11508679365724082,
+   "author_reference_heldout_loss_deg": 1.987690267183127
+  },
+  {
+   "epoch": 6190,
+   "training_loss_deg": 0.10294285973882288,
+   "author_reference_heldout_loss_deg": 1.9223093094844972
+  },
+  {
+   "epoch": 6200,
+   "training_loss_deg": 0.10372332319980715,
+   "author_reference_heldout_loss_deg": 1.84456800176732
+  },
+  {
+   "epoch": 6210,
+   "training_loss_deg": 0.21400249852397576,
+   "author_reference_heldout_loss_deg": 2.443724098465135
+  },
+  {
+   "epoch": 6220,
+   "training_loss_deg": 0.15511254554356985,
+   "author_reference_heldout_loss_deg": 2.1483967724827027
+  },
+  {
+   "epoch": 6230,
+   "training_loss_deg": 0.13962531120069627,
+   "author_reference_heldout_loss_deg": 1.999440243167262
+  },
+  {
+   "epoch": 6240,
+   "training_loss_deg": 0.10895014820786995,
+   "author_reference_heldout_loss_deg": 2.04461146686827
+  },
+  {
+   "epoch": 6250,
+   "training_loss_deg": 0.10209733798978775,
+   "author_reference_heldout_loss_deg": 2.1148849309932802
+  },
+  {
+   "epoch": 6260,
+   "training_loss_deg": 0.10701185670810018,
+   "author_reference_heldout_loss_deg": 2.0330649768152544
+  },
+  {
+   "epoch": 6270,
+   "training_loss_deg": 0.10621582020104416,
+   "author_reference_heldout_loss_deg": 2.032509889693991
+  },
+  {
+   "epoch": 6280,
+   "training_loss_deg": 0.10061261839256054,
+   "author_reference_heldout_loss_deg": 2.0608846413031703
+  },
+  {
+   "epoch": 6290,
+   "training_loss_deg": 0.11160709236453219,
+   "author_reference_heldout_loss_deg": 1.9904669784009457
+  },
+  {
+   "epoch": 6300,
+   "training_loss_deg": 0.1065159821655692,
+   "author_reference_heldout_loss_deg": 2.048396875060374
+  },
+  {
+   "epoch": 6310,
+   "training_loss_deg": 0.09621512841403,
+   "author_reference_heldout_loss_deg": 2.0370985148174148
+  },
+  {
+   "epoch": 6320,
+   "training_loss_deg": 0.10435221047420812,
+   "author_reference_heldout_loss_deg": 2.023051475805621
+  },
+  {
+   "epoch": 6330,
+   "training_loss_deg": 0.11347107904228737,
+   "author_reference_heldout_loss_deg": 2.184405223376328
+  },
+  {
+   "epoch": 6340,
+   "training_loss_deg": 0.10553163895762063,
+   "author_reference_heldout_loss_deg": 2.226087033508285
+  },
+  {
+   "epoch": 6350,
+   "training_loss_deg": 0.12417493130617994,
+   "author_reference_heldout_loss_deg": 2.1676482987259664
+  },
+  {
+   "epoch": 6360,
+   "training_loss_deg": 0.15601316506300517,
+   "author_reference_heldout_loss_deg": 2.0082942129623507
+  },
+  {
+   "epoch": 6370,
+   "training_loss_deg": 0.12195944180333518,
+   "author_reference_heldout_loss_deg": 1.9905367432342422
+  },
+  {
+   "epoch": 6380,
+   "training_loss_deg": 0.1139893686868311,
+   "author_reference_heldout_loss_deg": 1.8861095973801227
+  },
+  {
+   "epoch": 6390,
+   "training_loss_deg": 0.12158290908588626,
+   "author_reference_heldout_loss_deg": 1.9304885393188846
+  },
+  {
+   "epoch": 6400,
+   "training_loss_deg": 0.10994495451450348,
+   "author_reference_heldout_loss_deg": 1.8567909666847797
+  },
+  {
+   "epoch": 6410,
+   "training_loss_deg": 0.14060339028757762,
+   "author_reference_heldout_loss_deg": 2.045998507089192
+  },
+  {
+   "epoch": 6420,
+   "training_loss_deg": 0.1390016052296491,
+   "author_reference_heldout_loss_deg": 2.078739165779083
+  },
+  {
+   "epoch": 6430,
+   "training_loss_deg": 0.1024681933648218,
+   "author_reference_heldout_loss_deg": 2.018633599363027
+  },
+  {
+   "epoch": 6440,
+   "training_loss_deg": 0.11065568829455026,
+   "author_reference_heldout_loss_deg": 2.0490314459368104
+  },
+  {
+   "epoch": 6450,
+   "training_loss_deg": 0.09699802791200034,
+   "author_reference_heldout_loss_deg": 2.0037609760559376
+  },
+  {
+   "epoch": 6460,
+   "training_loss_deg": 0.10076346218101377,
+   "author_reference_heldout_loss_deg": 2.135000656328855
+  },
+  {
+   "epoch": 6470,
+   "training_loss_deg": 0.11031395838997228,
+   "author_reference_heldout_loss_deg": 1.9259857922311752
+  },
+  {
+   "epoch": 6480,
+   "training_loss_deg": 0.11757886815604156,
+   "author_reference_heldout_loss_deg": 2.4353652801965513
+  },
+  {
+   "epoch": 6490,
+   "training_loss_deg": 0.11558063079913457,
+   "author_reference_heldout_loss_deg": 2.097637461197953
+  },
+  {
+   "epoch": 6500,
+   "training_loss_deg": 0.11442148443160018,
+   "author_reference_heldout_loss_deg": 2.038943180393788
+  },
+  {
+   "epoch": 6510,
+   "training_loss_deg": 0.17065111372044417,
+   "author_reference_heldout_loss_deg": 2.133086476595171
+  },
+  {
+   "epoch": 6520,
+   "training_loss_deg": 0.11085346680346543,
+   "author_reference_heldout_loss_deg": 2.112281110498213
+  },
+  {
+   "epoch": 6530,
+   "training_loss_deg": 0.09958772591459072,
+   "author_reference_heldout_loss_deg": 2.0768164098262787
+  },
+  {
+   "epoch": 6540,
+   "training_loss_deg": 0.1242337197186501,
+   "author_reference_heldout_loss_deg": 1.8827130192470165
+  },
+  {
+   "epoch": 6550,
+   "training_loss_deg": 0.12737195030218218,
+   "author_reference_heldout_loss_deg": 1.9108944465556452
+  },
+  {
+   "epoch": 6560,
+   "training_loss_deg": 0.09698209851011028,
+   "author_reference_heldout_loss_deg": 1.8541984212013982
+  },
+  {
+   "epoch": 6570,
+   "training_loss_deg": 0.1569373597943686,
+   "author_reference_heldout_loss_deg": 1.86034538500732
+  },
+  {
+   "epoch": 6580,
+   "training_loss_deg": 0.10695458912267918,
+   "author_reference_heldout_loss_deg": 2.0339890129623877
+  },
+  {
+   "epoch": 6590,
+   "training_loss_deg": 0.10937017166033024,
+   "author_reference_heldout_loss_deg": 1.9669475769323688
+  },
+  {
+   "epoch": 6600,
+   "training_loss_deg": 0.09694649285174967,
+   "author_reference_heldout_loss_deg": 2.0768871255699666
+  },
+  {
+   "epoch": 6610,
+   "training_loss_deg": 0.10776574013194418,
+   "author_reference_heldout_loss_deg": 2.000147194271126
+  },
+  {
+   "epoch": 6620,
+   "training_loss_deg": 0.10368675532622065,
+   "author_reference_heldout_loss_deg": 1.9668823910817024
+  },
+  {
+   "epoch": 6630,
+   "training_loss_deg": 0.1731660054708884,
+   "author_reference_heldout_loss_deg": 1.941687174501919
+  },
+  {
+   "epoch": 6640,
+   "training_loss_deg": 0.1398996341276944,
+   "author_reference_heldout_loss_deg": 1.9370037501137103
+  },
+  {
+   "epoch": 6650,
+   "training_loss_deg": 0.1106269881735003,
+   "author_reference_heldout_loss_deg": 1.9321746967973248
+  },
+  {
+   "epoch": 6660,
+   "training_loss_deg": 0.12433423004983886,
+   "author_reference_heldout_loss_deg": 1.9762237501000204
+  },
+  {
+   "epoch": 6670,
+   "training_loss_deg": 0.10364585696924024,
+   "author_reference_heldout_loss_deg": 1.8586194249651125
+  },
+  {
+   "epoch": 6680,
+   "training_loss_deg": 0.11261193817708551,
+   "author_reference_heldout_loss_deg": 1.940457997062514
+  },
+  {
+   "epoch": 6690,
+   "training_loss_deg": 0.09432221034435721,
+   "author_reference_heldout_loss_deg": 1.8475442126152977
+  },
+  {
+   "epoch": 6700,
+   "training_loss_deg": 0.16653455030627368,
+   "author_reference_heldout_loss_deg": 2.0312445237030907
+  },
+  {
+   "epoch": 6710,
+   "training_loss_deg": 0.12623317745642934,
+   "author_reference_heldout_loss_deg": 1.9850785427035824
+  },
+  {
+   "epoch": 6720,
+   "training_loss_deg": 0.12045040847809334,
+   "author_reference_heldout_loss_deg": 2.0291667917082385
+  },
+  {
+   "epoch": 6730,
+   "training_loss_deg": 0.10916633328528909,
+   "author_reference_heldout_loss_deg": 2.023396697255873
+  },
+  {
+   "epoch": 6740,
+   "training_loss_deg": 0.12271432990465707,
+   "author_reference_heldout_loss_deg": 1.9941673790735583
+  },
+  {
+   "epoch": 6750,
+   "training_loss_deg": 0.10797950122656862,
+   "author_reference_heldout_loss_deg": 1.9751221771922804
+  },
+  {
+   "epoch": 6760,
+   "training_loss_deg": 0.10225048412879308,
+   "author_reference_heldout_loss_deg": 1.9320384801155137
+  },
+  {
+   "epoch": 6770,
+   "training_loss_deg": 0.10541658218556303,
+   "author_reference_heldout_loss_deg": 1.9379655694769276
+  },
+  {
+   "epoch": 6780,
+   "training_loss_deg": 0.16784121774561037,
+   "author_reference_heldout_loss_deg": 2.0041561014950275
+  },
+  {
+   "epoch": 6790,
+   "training_loss_deg": 0.11290263499670881,
+   "author_reference_heldout_loss_deg": 1.9247667197017901
+  },
+  {
+   "epoch": 6800,
+   "training_loss_deg": 0.10946991046269734,
+   "author_reference_heldout_loss_deg": 2.0058205810285386
+  },
+  {
+   "epoch": 6810,
+   "training_loss_deg": 0.12231899567735874,
+   "author_reference_heldout_loss_deg": 2.1003528835792697
+  },
+  {
+   "epoch": 6820,
+   "training_loss_deg": 0.11598692380073594,
+   "author_reference_heldout_loss_deg": 2.102439816800817
+  },
+  {
+   "epoch": 6830,
+   "training_loss_deg": 0.13435610680560756,
+   "author_reference_heldout_loss_deg": 2.1309434638148352
+  },
+  {
+   "epoch": 6840,
+   "training_loss_deg": 0.09543732820245308,
+   "author_reference_heldout_loss_deg": 2.18183573311375
+  },
+  {
+   "epoch": 6850,
+   "training_loss_deg": 0.11618914109904592,
+   "author_reference_heldout_loss_deg": 2.0564451357049327
+  },
+  {
+   "epoch": 6860,
+   "training_loss_deg": 0.11569179031180173,
+   "author_reference_heldout_loss_deg": 1.9484100982306465
+  },
+  {
+   "epoch": 6870,
+   "training_loss_deg": 0.12070151769775685,
+   "author_reference_heldout_loss_deg": 1.984077474282634
+  },
+  {
+   "epoch": 6880,
+   "training_loss_deg": 0.10545098987536702,
+   "author_reference_heldout_loss_deg": 1.9159244751978306
+  },
+  {
+   "epoch": 6890,
+   "training_loss_deg": 0.10504738053655237,
+   "author_reference_heldout_loss_deg": 1.8648823527318816
+  },
+  {
+   "epoch": 6900,
+   "training_loss_deg": 0.09977824634652797,
+   "author_reference_heldout_loss_deg": 1.8586062769736014
+  },
+  {
+   "epoch": 6910,
+   "training_loss_deg": 0.09873247267754097,
+   "author_reference_heldout_loss_deg": 1.872146285349323
+  },
+  {
+   "epoch": 6920,
+   "training_loss_deg": 0.10729226566911713,
+   "author_reference_heldout_loss_deg": 1.9495798000885594
+  },
+  {
+   "epoch": 6930,
+   "training_loss_deg": 0.09978714621648556,
+   "author_reference_heldout_loss_deg": 1.8646986752508148
+  },
+  {
+   "epoch": 6940,
+   "training_loss_deg": 0.11125640559002636,
+   "author_reference_heldout_loss_deg": 1.8458232767879963
+  },
+  {
+   "epoch": 6950,
+   "training_loss_deg": 0.10606079475908745,
+   "author_reference_heldout_loss_deg": 1.8780843968833647
+  },
+  {
+   "epoch": 6960,
+   "training_loss_deg": 0.10023029875464556,
+   "author_reference_heldout_loss_deg": 1.8515571468780119
+  },
+  {
+   "epoch": 6970,
+   "training_loss_deg": 0.10269719598496832,
+   "author_reference_heldout_loss_deg": 1.8684344052547408
+  },
+  {
+   "epoch": 6980,
+   "training_loss_deg": 0.10281760275848513,
+   "author_reference_heldout_loss_deg": 1.9034364915663196
+  },
+  {
+   "epoch": 6990,
+   "training_loss_deg": 0.11206346895636582,
+   "author_reference_heldout_loss_deg": 1.9390709002412134
+  },
+  {
+   "epoch": 7000,
+   "training_loss_deg": 0.10620502824705791,
+   "author_reference_heldout_loss_deg": 1.928268656615288
+  },
+  {
+   "epoch": 7010,
+   "training_loss_deg": 0.09891299636867958,
+   "author_reference_heldout_loss_deg": 1.8476934389721962
+  },
+  {
+   "epoch": 7020,
+   "training_loss_deg": 0.22810433599037852,
+   "author_reference_heldout_loss_deg": 2.09127778716145
+  },
+  {
+   "epoch": 7030,
+   "training_loss_deg": 0.09905220949795188,
+   "author_reference_heldout_loss_deg": 2.124481280845019
+  },
+  {
+   "epoch": 7040,
+   "training_loss_deg": 0.11877287827371581,
+   "author_reference_heldout_loss_deg": 2.0318831836263977
+  },
+  {
+   "epoch": 7050,
+   "training_loss_deg": 0.12849240089819683,
+   "author_reference_heldout_loss_deg": 2.2036925602343773
+  },
+  {
+   "epoch": 7060,
+   "training_loss_deg": 0.09478479920606303,
+   "author_reference_heldout_loss_deg": 2.036757218981943
+  },
+  {
+   "epoch": 7070,
+   "training_loss_deg": 0.10917735426891141,
+   "author_reference_heldout_loss_deg": 2.127837618873004
+  },
+  {
+   "epoch": 7080,
+   "training_loss_deg": 0.1047370216953076,
+   "author_reference_heldout_loss_deg": 1.9512518814975215
+  },
+  {
+   "epoch": 7090,
+   "training_loss_deg": 0.10024898965668873,
+   "author_reference_heldout_loss_deg": 1.8925084081147947
+  },
+  {
+   "epoch": 7100,
+   "training_loss_deg": 0.10763461039802892,
+   "author_reference_heldout_loss_deg": 1.9355418293947173
+  },
+  {
+   "epoch": 7110,
+   "training_loss_deg": 0.10976151613200583,
+   "author_reference_heldout_loss_deg": 1.9548202994610033
+  },
+  {
+   "epoch": 7120,
+   "training_loss_deg": 0.10578047659823565,
+   "author_reference_heldout_loss_deg": 2.120050658141413
+  },
+  {
+   "epoch": 7130,
+   "training_loss_deg": 0.15053035282507177,
+   "author_reference_heldout_loss_deg": 2.1161687711794532
+  },
+  {
+   "epoch": 7140,
+   "training_loss_deg": 0.11565617453761218,
+   "author_reference_heldout_loss_deg": 1.9744729632812161
+  },
+  {
+   "epoch": 7150,
+   "training_loss_deg": 0.1570613192833536,
+   "author_reference_heldout_loss_deg": 1.8894248491814059
+  },
+  {
+   "epoch": 7160,
+   "training_loss_deg": 0.11170871507346146,
+   "author_reference_heldout_loss_deg": 1.9336839542994577
+  },
+  {
+   "epoch": 7170,
+   "training_loss_deg": 0.10280847167823373,
+   "author_reference_heldout_loss_deg": 1.97670385337645
+  },
+  {
+   "epoch": 7180,
+   "training_loss_deg": 0.09445709177875906,
+   "author_reference_heldout_loss_deg": 2.028650560205983
+  },
+  {
+   "epoch": 7190,
+   "training_loss_deg": 0.10277505800491427,
+   "author_reference_heldout_loss_deg": 1.950018054895824
+  },
+  {
+   "epoch": 7200,
+   "training_loss_deg": 0.1120944866319982,
+   "author_reference_heldout_loss_deg": 1.8492165532323621
+  },
+  {
+   "epoch": 7210,
+   "training_loss_deg": 0.1106356190956705,
+   "author_reference_heldout_loss_deg": 1.8744707873031017
+  },
+  {
+   "epoch": 7220,
+   "training_loss_deg": 0.11918618523977637,
+   "author_reference_heldout_loss_deg": 2.313978605092533
+  },
+  {
+   "epoch": 7230,
+   "training_loss_deg": 0.10255865583090278,
+   "author_reference_heldout_loss_deg": 1.937402043491602
+  },
+  {
+   "epoch": 7240,
+   "training_loss_deg": 0.10655949949249019,
+   "author_reference_heldout_loss_deg": 1.9709712122717211
+  },
+  {
+   "epoch": 7250,
+   "training_loss_deg": 0.09302283587252222,
+   "author_reference_heldout_loss_deg": 1.9483896225931183
+  },
+  {
+   "epoch": 7260,
+   "training_loss_deg": 0.11429089138178321,
+   "author_reference_heldout_loss_deg": 1.9145609784510829
+  },
+  {
+   "epoch": 7270,
+   "training_loss_deg": 0.09886667538222259,
+   "author_reference_heldout_loss_deg": 1.9753976199896104
+  },
+  {
+   "epoch": 7280,
+   "training_loss_deg": 0.114374818537778,
+   "author_reference_heldout_loss_deg": 1.914686649557083
+  },
+  {
+   "epoch": 7290,
+   "training_loss_deg": 0.10833019109033956,
+   "author_reference_heldout_loss_deg": 1.9417212649939521
+  },
+  {
+   "epoch": 7300,
+   "training_loss_deg": 0.11177836273743855,
+   "author_reference_heldout_loss_deg": 1.8976338523770533
+  },
+  {
+   "epoch": 7310,
+   "training_loss_deg": 0.10022780686859192,
+   "author_reference_heldout_loss_deg": 1.9250086246719282
+  },
+  {
+   "epoch": 7320,
+   "training_loss_deg": 0.10422324789006536,
+   "author_reference_heldout_loss_deg": 1.8742207630026726
+  },
+  {
+   "epoch": 7330,
+   "training_loss_deg": 0.09030239774686534,
+   "author_reference_heldout_loss_deg": 1.9697632694676999
+  },
+  {
+   "epoch": 7340,
+   "training_loss_deg": 0.11270115463956584,
+   "author_reference_heldout_loss_deg": 1.9039521748500485
+  },
+  {
+   "epoch": 7350,
+   "training_loss_deg": 0.09998147395568166,
+   "author_reference_heldout_loss_deg": 1.9533767012819168
+  },
+  {
+   "epoch": 7360,
+   "training_loss_deg": 0.10889337981134896,
+   "author_reference_heldout_loss_deg": 1.9158547264674017
+  },
+  {
+   "epoch": 7370,
+   "training_loss_deg": 0.11815742385096667,
+   "author_reference_heldout_loss_deg": 1.9829958208626317
+  },
+  {
+   "epoch": 7380,
+   "training_loss_deg": 0.10039298836050964,
+   "author_reference_heldout_loss_deg": 1.9389721984344144
+  },
+  {
+   "epoch": 7390,
+   "training_loss_deg": 0.09287234492660539,
+   "author_reference_heldout_loss_deg": 1.9512917838029322
+  },
+  {
+   "epoch": 7400,
+   "training_loss_deg": 0.1026249564275509,
+   "author_reference_heldout_loss_deg": 2.1503648429868685
+  },
+  {
+   "epoch": 7410,
+   "training_loss_deg": 0.11705789890715747,
+   "author_reference_heldout_loss_deg": 2.402255490422249
+  },
+  {
+   "epoch": 7420,
+   "training_loss_deg": 0.13085964346319678,
+   "author_reference_heldout_loss_deg": 2.053743047339301
+  },
+  {
+   "epoch": 7430,
+   "training_loss_deg": 0.12678092421312642,
+   "author_reference_heldout_loss_deg": 2.1942467839727477
+  },
+  {
+   "epoch": 7440,
+   "training_loss_deg": 0.10562085838821846,
+   "author_reference_heldout_loss_deg": 2.1083982013646634
+  },
+  {
+   "epoch": 7450,
+   "training_loss_deg": 0.12364933948691298,
+   "author_reference_heldout_loss_deg": 2.0329472438221976
+  },
+  {
+   "epoch": 7460,
+   "training_loss_deg": 0.10703754534081715,
+   "author_reference_heldout_loss_deg": 2.0223697045397375
+  },
+  {
+   "epoch": 7470,
+   "training_loss_deg": 0.11001418954957791,
+   "author_reference_heldout_loss_deg": 2.011151738585003
+  },
+  {
+   "epoch": 7480,
+   "training_loss_deg": 0.1136106294466228,
+   "author_reference_heldout_loss_deg": 1.9003301074187602
+  },
+  {
+   "epoch": 7490,
+   "training_loss_deg": 0.10701306691256965,
+   "author_reference_heldout_loss_deg": 1.9190739270660184
+  },
+  {
+   "epoch": 7500,
+   "training_loss_deg": 0.12262896733070777,
+   "author_reference_heldout_loss_deg": 2.0258598217079715
+  },
+  {
+   "epoch": 7510,
+   "training_loss_deg": 0.13637772147975316,
+   "author_reference_heldout_loss_deg": 2.089962026404758
+  },
+  {
+   "epoch": 7520,
+   "training_loss_deg": 0.1410300823731151,
+   "author_reference_heldout_loss_deg": 1.8685260952240037
+  },
+  {
+   "epoch": 7530,
+   "training_loss_deg": 0.11654904024387763,
+   "author_reference_heldout_loss_deg": 2.0294292682120876
+  },
+  {
+   "epoch": 7540,
+   "training_loss_deg": 0.1018222014351589,
+   "author_reference_heldout_loss_deg": 1.9143125605919669
+  },
+  {
+   "epoch": 7550,
+   "training_loss_deg": 0.1168391692444561,
+   "author_reference_heldout_loss_deg": 1.850364841640957
+  },
+  {
+   "epoch": 7560,
+   "training_loss_deg": 0.09457130839185017,
+   "author_reference_heldout_loss_deg": 1.9580611633437295
+  },
+  {
+   "epoch": 7570,
+   "training_loss_deg": 0.16833786963205027,
+   "author_reference_heldout_loss_deg": 1.9604377080836604
+  },
+  {
+   "epoch": 7580,
+   "training_loss_deg": 0.12008202342483086,
+   "author_reference_heldout_loss_deg": 2.187498884936494
+  },
+  {
+   "epoch": 7590,
+   "training_loss_deg": 0.12281617328403442,
+   "author_reference_heldout_loss_deg": 1.9961732637978369
+  },
+  {
+   "epoch": 7600,
+   "training_loss_deg": 0.10058975904210796,
+   "author_reference_heldout_loss_deg": 1.9911034269438637
+  },
+  {
+   "epoch": 7610,
+   "training_loss_deg": 0.10722635856004266,
+   "author_reference_heldout_loss_deg": 2.111058242859379
+  },
+  {
+   "epoch": 7620,
+   "training_loss_deg": 0.11508377780759238,
+   "author_reference_heldout_loss_deg": 2.1072261544965927
+  },
+  {
+   "epoch": 7630,
+   "training_loss_deg": 0.11519383584580771,
+   "author_reference_heldout_loss_deg": 2.1094653104101457
+  },
+  {
+   "epoch": 7640,
+   "training_loss_deg": 0.11163343234760005,
+   "author_reference_heldout_loss_deg": 1.962175413245155
+  },
+  {
+   "epoch": 7650,
+   "training_loss_deg": 0.09492910144532599,
+   "author_reference_heldout_loss_deg": 1.8901983702615384
+  },
+  {
+   "epoch": 7660,
+   "training_loss_deg": 0.1014082145279016,
+   "author_reference_heldout_loss_deg": 2.0369954007046838
+  },
+  {
+   "epoch": 7670,
+   "training_loss_deg": 0.09668381063918757,
+   "author_reference_heldout_loss_deg": 2.008317586515219
+  },
+  {
+   "epoch": 7680,
+   "training_loss_deg": 0.10358553325257651,
+   "author_reference_heldout_loss_deg": 2.358163373484727
+  },
+  {
+   "epoch": 7690,
+   "training_loss_deg": 0.1028554638226827,
+   "author_reference_heldout_loss_deg": 2.1722226090008214
+  },
+  {
+   "epoch": 7700,
+   "training_loss_deg": 0.12032192218594434,
+   "author_reference_heldout_loss_deg": 2.0085055819682536
+  },
+  {
+   "epoch": 7710,
+   "training_loss_deg": 0.1272171328707439,
+   "author_reference_heldout_loss_deg": 1.9935358804800818
+  },
+  {
+   "epoch": 7720,
+   "training_loss_deg": 0.10470710937085191,
+   "author_reference_heldout_loss_deg": 1.9725156440850227
+  },
+  {
+   "epoch": 7730,
+   "training_loss_deg": 0.11109706553501811,
+   "author_reference_heldout_loss_deg": 2.102537704211089
+  },
+  {
+   "epoch": 7740,
+   "training_loss_deg": 0.09838103321267337,
+   "author_reference_heldout_loss_deg": 1.9784092959617414
+  },
+  {
+   "epoch": 7750,
+   "training_loss_deg": 0.09532143096855986,
+   "author_reference_heldout_loss_deg": 1.9100371463404548
+  },
+  {
+   "epoch": 7760,
+   "training_loss_deg": 0.11118360693619503,
+   "author_reference_heldout_loss_deg": 1.9405586992300325
+  },
+  {
+   "epoch": 7770,
+   "training_loss_deg": 0.10576123659445988,
+   "author_reference_heldout_loss_deg": 1.8975757421745407
+  },
+  {
+   "epoch": 7780,
+   "training_loss_deg": 0.11687660932056303,
+   "author_reference_heldout_loss_deg": 1.879597431229007
+  },
+  {
+   "epoch": 7790,
+   "training_loss_deg": 0.10475068751389419,
+   "author_reference_heldout_loss_deg": 1.9363554439717723
+  },
+  {
+   "epoch": 7800,
+   "training_loss_deg": 0.11617515363344331,
+   "author_reference_heldout_loss_deg": 2.005896347544847
+  },
+  {
+   "epoch": 7810,
+   "training_loss_deg": 0.10693955912095744,
+   "author_reference_heldout_loss_deg": 2.058863246032307
+  },
+  {
+   "epoch": 7820,
+   "training_loss_deg": 0.14064739487035488,
+   "author_reference_heldout_loss_deg": 2.1951088412634787
+  },
+  {
+   "epoch": 7830,
+   "training_loss_deg": 0.1075244106776346,
+   "author_reference_heldout_loss_deg": 2.0914808649930263
+  },
+  {
+   "epoch": 7840,
+   "training_loss_deg": 0.11229215392736884,
+   "author_reference_heldout_loss_deg": 2.1445155874375375
+  },
+  {
+   "epoch": 7850,
+   "training_loss_deg": 0.09368895230496802,
+   "author_reference_heldout_loss_deg": 2.1523711964968713
+  },
+  {
+   "epoch": 7860,
+   "training_loss_deg": 0.16964545918674004,
+   "author_reference_heldout_loss_deg": 2.0190739565558973
+  },
+  {
+   "epoch": 7870,
+   "training_loss_deg": 0.17790645984857062,
+   "author_reference_heldout_loss_deg": 2.0239076223825254
+  },
+  {
+   "epoch": 7880,
+   "training_loss_deg": 0.10611896683287815,
+   "author_reference_heldout_loss_deg": 1.9609937130683852
+  },
+  {
+   "epoch": 7890,
+   "training_loss_deg": 0.09896946934665121,
+   "author_reference_heldout_loss_deg": 1.9899607055610227
+  },
+  {
+   "epoch": 7900,
+   "training_loss_deg": 0.10440942154424947,
+   "author_reference_heldout_loss_deg": 2.0487594752302094
+  },
+  {
+   "epoch": 7910,
+   "training_loss_deg": 0.09559160573938029,
+   "author_reference_heldout_loss_deg": 1.9264970838783249
+  },
+  {
+   "epoch": 7920,
+   "training_loss_deg": 0.12376067611744733,
+   "author_reference_heldout_loss_deg": 1.9434822079154752
+  },
+  {
+   "epoch": 7930,
+   "training_loss_deg": 0.1000216191377097,
+   "author_reference_heldout_loss_deg": 1.858395861161332
+  },
+  {
+   "epoch": 7940,
+   "training_loss_deg": 0.09784094686430644,
+   "author_reference_heldout_loss_deg": 1.8996107269439004
+  },
+  {
+   "epoch": 7950,
+   "training_loss_deg": 0.10757406201304459,
+   "author_reference_heldout_loss_deg": 1.864159493556907
+  },
+  {
+   "epoch": 7960,
+   "training_loss_deg": 0.09745820169526387,
+   "author_reference_heldout_loss_deg": 1.8011128344843466
+  },
+  {
+   "epoch": 7970,
+   "training_loss_deg": 0.18769522944116981,
+   "author_reference_heldout_loss_deg": 1.771638854496902
+  },
+  {
+   "epoch": 7980,
+   "training_loss_deg": 0.12527192989742852,
+   "author_reference_heldout_loss_deg": 1.9046505151256439
+  },
+  {
+   "epoch": 7990,
+   "training_loss_deg": 0.13241814597835386,
+   "author_reference_heldout_loss_deg": 1.9359250265744425
+  },
+  {
+   "epoch": 8000,
+   "training_loss_deg": 0.09922356473478844,
+   "author_reference_heldout_loss_deg": 1.8891552818879005
+  },
+  {
+   "epoch": 8010,
+   "training_loss_deg": 0.11787944250717396,
+   "author_reference_heldout_loss_deg": 2.121313539363684
+  },
+  {
+   "epoch": 8020,
+   "training_loss_deg": 0.1193421730181066,
+   "author_reference_heldout_loss_deg": 1.8932269410260263
+  },
+  {
+   "epoch": 8030,
+   "training_loss_deg": 0.11704835792382558,
+   "author_reference_heldout_loss_deg": 1.8473502511699353
+  },
+  {
+   "epoch": 8040,
+   "training_loss_deg": 0.09932204123919572,
+   "author_reference_heldout_loss_deg": 1.8189879779613787
+  },
+  {
+   "epoch": 8050,
+   "training_loss_deg": 0.11450431338412975,
+   "author_reference_heldout_loss_deg": 1.752929893953185
+  },
+  {
+   "epoch": 8060,
+   "training_loss_deg": 0.09486737962418455,
+   "author_reference_heldout_loss_deg": 1.7569053856836212
+  },
+  {
+   "epoch": 8070,
+   "training_loss_deg": 0.1010169569796663,
+   "author_reference_heldout_loss_deg": 1.7529456583001921
+  },
+  {
+   "epoch": 8080,
+   "training_loss_deg": 0.11466602557073764,
+   "author_reference_heldout_loss_deg": 1.7544724890781986
+  },
+  {
+   "epoch": 8090,
+   "training_loss_deg": 0.1389896734579792,
+   "author_reference_heldout_loss_deg": 1.7713011514034964
+  },
+  {
+   "epoch": 8100,
+   "training_loss_deg": 0.10260773141209673,
+   "author_reference_heldout_loss_deg": 1.7472889592810985
+  },
+  {
+   "epoch": 8110,
+   "training_loss_deg": 0.09427228061164297,
+   "author_reference_heldout_loss_deg": 1.8271086283268467
+  },
+  {
+   "epoch": 8120,
+   "training_loss_deg": 0.09446635593970616,
+   "author_reference_heldout_loss_deg": 1.792177088919186
+  },
+  {
+   "epoch": 8130,
+   "training_loss_deg": 0.10760729578210086,
+   "author_reference_heldout_loss_deg": 1.8377276964245304
+  },
+  {
+   "epoch": 8140,
+   "training_loss_deg": 0.09771332362803017,
+   "author_reference_heldout_loss_deg": 1.8058615612887567
+  },
+  {
+   "epoch": 8150,
+   "training_loss_deg": 0.09152040079357178,
+   "author_reference_heldout_loss_deg": 1.7660475251895766
+  },
+  {
+   "epoch": 8160,
+   "training_loss_deg": 0.09353521060410554,
+   "author_reference_heldout_loss_deg": 1.7908679260121239
+  },
+  {
+   "epoch": 8170,
+   "training_loss_deg": 0.09855223216903888,
+   "author_reference_heldout_loss_deg": 1.7828074864322139
+  },
+  {
+   "epoch": 8180,
+   "training_loss_deg": 0.10421646737713154,
+   "author_reference_heldout_loss_deg": 1.771413630415355
+  },
+  {
+   "epoch": 8190,
+   "training_loss_deg": 0.1028471139630651,
+   "author_reference_heldout_loss_deg": 1.7133339200048678
+  },
+  {
+   "epoch": 8200,
+   "training_loss_deg": 0.14694336892628088,
+   "author_reference_heldout_loss_deg": 2.120870036824096
+  },
+  {
+   "epoch": 8210,
+   "training_loss_deg": 0.14474425331606128,
+   "author_reference_heldout_loss_deg": 1.7322255793598391
+  },
+  {
+   "epoch": 8220,
+   "training_loss_deg": 0.10383662654132378,
+   "author_reference_heldout_loss_deg": 1.706316959713736
+  },
+  {
+   "epoch": 8230,
+   "training_loss_deg": 0.1317222417612386,
+   "author_reference_heldout_loss_deg": 1.7852545583680752
+  },
+  {
+   "epoch": 8240,
+   "training_loss_deg": 0.11222782718941449,
+   "author_reference_heldout_loss_deg": 2.001758670494441
+  },
+  {
+   "epoch": 8250,
+   "training_loss_deg": 0.11319670771680228,
+   "author_reference_heldout_loss_deg": 1.7849110673752524
+  },
+  {
+   "epoch": 8260,
+   "training_loss_deg": 0.10078332397511335,
+   "author_reference_heldout_loss_deg": 1.6996822262242917
+  },
+  {
+   "epoch": 8270,
+   "training_loss_deg": 0.1139445306082082,
+   "author_reference_heldout_loss_deg": 1.6993450595726889
+  },
+  {
+   "epoch": 8280,
+   "training_loss_deg": 0.10696410636107127,
+   "author_reference_heldout_loss_deg": 1.7509572830411695
+  },
+  {
+   "epoch": 8290,
+   "training_loss_deg": 0.09849197780940591,
+   "author_reference_heldout_loss_deg": 1.8026183477092175
+  },
+  {
+   "epoch": 8300,
+   "training_loss_deg": 0.09827988413048953,
+   "author_reference_heldout_loss_deg": 1.8209617367434887
+  },
+  {
+   "epoch": 8310,
+   "training_loss_deg": 0.2686268106950977,
+   "author_reference_heldout_loss_deg": 1.8078248651037294
+  },
+  {
+   "epoch": 8320,
+   "training_loss_deg": 0.11115035917458495,
+   "author_reference_heldout_loss_deg": 1.9445591010153294
+  },
+  {
+   "epoch": 8330,
+   "training_loss_deg": 0.10603915094360103,
+   "author_reference_heldout_loss_deg": 1.9856698677664804
+  },
+  {
+   "epoch": 8340,
+   "training_loss_deg": 0.12127006459769195,
+   "author_reference_heldout_loss_deg": 2.0776740667079725
+  },
+  {
+   "epoch": 8350,
+   "training_loss_deg": 0.10682333072995752,
+   "author_reference_heldout_loss_deg": 1.9925297645311202
+  },
+  {
+   "epoch": 8360,
+   "training_loss_deg": 0.09901219267186111,
+   "author_reference_heldout_loss_deg": 1.94410828669225
+  },
+  {
+   "epoch": 8370,
+   "training_loss_deg": 0.09309099935661487,
+   "author_reference_heldout_loss_deg": 1.900103141824084
+  },
+  {
+   "epoch": 8380,
+   "training_loss_deg": 0.10540866409617711,
+   "author_reference_heldout_loss_deg": 1.8940038635365424
+  },
+  {
+   "epoch": 8390,
+   "training_loss_deg": 0.09573296748283433,
+   "author_reference_heldout_loss_deg": 2.017718949265057
+  },
+  {
+   "epoch": 8400,
+   "training_loss_deg": 0.09792774019202566,
+   "author_reference_heldout_loss_deg": 1.937403254571461
+  },
+  {
+   "epoch": 8410,
+   "training_loss_deg": 0.09910185931901622,
+   "author_reference_heldout_loss_deg": 1.9122333489358425
+  },
+  {
+   "epoch": 8420,
+   "training_loss_deg": 0.09068160867545663,
+   "author_reference_heldout_loss_deg": 1.9251459076279593
+  },
+  {
+   "epoch": 8430,
+   "training_loss_deg": 0.09255121969352893,
+   "author_reference_heldout_loss_deg": 1.8795556440468757
+  },
+  {
+   "epoch": 8440,
+   "training_loss_deg": 0.10584194679570393,
+   "author_reference_heldout_loss_deg": 1.7827215975811403
+  },
+  {
+   "epoch": 8450,
+   "training_loss_deg": 0.09356138594751436,
+   "author_reference_heldout_loss_deg": 1.783387962608568
+  },
+  {
+   "epoch": 8460,
+   "training_loss_deg": 0.09353166430946289,
+   "author_reference_heldout_loss_deg": 1.8707148837706735
+  },
+  {
+   "epoch": 8470,
+   "training_loss_deg": 0.09480278496819783,
+   "author_reference_heldout_loss_deg": 1.837741531071163
+  },
+  {
+   "epoch": 8480,
+   "training_loss_deg": 0.09474239982967454,
+   "author_reference_heldout_loss_deg": 1.799410037215679
+  },
+  {
+   "epoch": 8490,
+   "training_loss_deg": 0.12206066212033838,
+   "author_reference_heldout_loss_deg": 1.7875644830205748
+  },
+  {
+   "epoch": 8500,
+   "training_loss_deg": 0.1015090973881202,
+   "author_reference_heldout_loss_deg": 1.7969363600977006
+  },
+  {
+   "epoch": 8510,
+   "training_loss_deg": 0.09338135284379245,
+   "author_reference_heldout_loss_deg": 1.782352332866961
+  },
+  {
+   "epoch": 8520,
+   "training_loss_deg": 0.09227983059921885,
+   "author_reference_heldout_loss_deg": 1.7958378065978327
+  },
+  {
+   "epoch": 8530,
+   "training_loss_deg": 0.09425761205394094,
+   "author_reference_heldout_loss_deg": 1.8040726409564096
+  },
+  {
+   "epoch": 8540,
+   "training_loss_deg": 0.09805969391169587,
+   "author_reference_heldout_loss_deg": 1.848938276810992
+  },
+  {
+   "epoch": 8550,
+   "training_loss_deg": 0.09976911405480005,
+   "author_reference_heldout_loss_deg": 1.777309292867299
+  },
+  {
+   "epoch": 8560,
+   "training_loss_deg": 0.09399921616645364,
+   "author_reference_heldout_loss_deg": 1.96108573374729
+  },
+  {
+   "epoch": 8570,
+   "training_loss_deg": 0.113108685588449,
+   "author_reference_heldout_loss_deg": 1.794670719292856
+  },
+  {
+   "epoch": 8580,
+   "training_loss_deg": 0.10466627861426128,
+   "author_reference_heldout_loss_deg": 1.8122635934381717
+  },
+  {
+   "epoch": 8590,
+   "training_loss_deg": 0.1002546318662845,
+   "author_reference_heldout_loss_deg": 1.8321936843135664
+  },
+  {
+   "epoch": 8600,
+   "training_loss_deg": 0.1222342263634612,
+   "author_reference_heldout_loss_deg": 2.239879084811095
+  },
+  {
+   "epoch": 8610,
+   "training_loss_deg": 0.11238022536281647,
+   "author_reference_heldout_loss_deg": 2.0215179003294437
+  },
+  {
+   "epoch": 8620,
+   "training_loss_deg": 0.09571742357277288,
+   "author_reference_heldout_loss_deg": 1.960935398816101
+  },
+  {
+   "epoch": 8630,
+   "training_loss_deg": 0.10523554773592367,
+   "author_reference_heldout_loss_deg": 2.068973947316408
+  },
+  {
+   "epoch": 8640,
+   "training_loss_deg": 0.09727692337540107,
+   "author_reference_heldout_loss_deg": 2.042334725058848
+  },
+  {
+   "epoch": 8650,
+   "training_loss_deg": 0.09712440653787396,
+   "author_reference_heldout_loss_deg": 1.9987940538314082
+  },
+  {
+   "epoch": 8660,
+   "training_loss_deg": 0.08913023297379656,
+   "author_reference_heldout_loss_deg": 1.937290629792598
+  },
+  {
+   "epoch": 8670,
+   "training_loss_deg": 0.10394664817466968,
+   "author_reference_heldout_loss_deg": 1.843955339803811
+  },
+  {
+   "epoch": 8680,
+   "training_loss_deg": 0.0955751446810195,
+   "author_reference_heldout_loss_deg": 1.8615864577793306
+  },
+  {
+   "epoch": 8690,
+   "training_loss_deg": 0.11013556604947501,
+   "author_reference_heldout_loss_deg": 1.940851014347807
+  },
+  {
+   "epoch": 8700,
+   "training_loss_deg": 0.09675604965144056,
+   "author_reference_heldout_loss_deg": 1.9376566568689961
+  },
+  {
+   "epoch": 8710,
+   "training_loss_deg": 0.10417410664684404,
+   "author_reference_heldout_loss_deg": 2.0539447708475973
+  },
+  {
+   "epoch": 8720,
+   "training_loss_deg": 0.09554738072845025,
+   "author_reference_heldout_loss_deg": 2.05607766898409
+  },
+  {
+   "epoch": 8730,
+   "training_loss_deg": 0.10140065739794475,
+   "author_reference_heldout_loss_deg": 2.083937089049047
+  },
+  {
+   "epoch": 8740,
+   "training_loss_deg": 0.09931662636316889,
+   "author_reference_heldout_loss_deg": 1.9377665381518103
+  },
+  {
+   "epoch": 8750,
+   "training_loss_deg": 0.096962828401143,
+   "author_reference_heldout_loss_deg": 2.018975945369851
+  },
+  {
+   "epoch": 8760,
+   "training_loss_deg": 0.11106183325372092,
+   "author_reference_heldout_loss_deg": 2.124972806822869
+  },
+  {
+   "epoch": 8770,
+   "training_loss_deg": 0.1029338769432975,
+   "author_reference_heldout_loss_deg": 2.111967933754767
+  },
+  {
+   "epoch": 8780,
+   "training_loss_deg": 0.10534268078522954,
+   "author_reference_heldout_loss_deg": 1.9616245162342825
+  },
+  {
+   "epoch": 8790,
+   "training_loss_deg": 0.10452277201220272,
+   "author_reference_heldout_loss_deg": 2.1546476142060373
+  },
+  {
+   "epoch": 8800,
+   "training_loss_deg": 0.10850878804922104,
+   "author_reference_heldout_loss_deg": 2.147899588990596
+  },
+  {
+   "epoch": 8810,
+   "training_loss_deg": 0.10987845711349471,
+   "author_reference_heldout_loss_deg": 2.1324887145911493
+  },
+  {
+   "epoch": 8820,
+   "training_loss_deg": 0.09755850462167244,
+   "author_reference_heldout_loss_deg": 2.2850822503528287
+  },
+  {
+   "epoch": 8830,
+   "training_loss_deg": 0.10708273553509053,
+   "author_reference_heldout_loss_deg": 2.1963087498180327
+  },
+  {
+   "epoch": 8840,
+   "training_loss_deg": 0.0945959237169444,
+   "author_reference_heldout_loss_deg": 2.2087932203806218
+  },
+  {
+   "epoch": 8850,
+   "training_loss_deg": 0.09956084518897824,
+   "author_reference_heldout_loss_deg": 2.128793750318789
+  },
+  {
+   "epoch": 8860,
+   "training_loss_deg": 0.09395030734500265,
+   "author_reference_heldout_loss_deg": 1.9484893148464542
+  },
+  {
+   "epoch": 8870,
+   "training_loss_deg": 0.09149334095115584,
+   "author_reference_heldout_loss_deg": 1.9015497733508386
+  },
+  {
+   "epoch": 8880,
+   "training_loss_deg": 0.10382579157992107,
+   "author_reference_heldout_loss_deg": 1.880903401922795
+  },
+  {
+   "epoch": 8890,
+   "training_loss_deg": 0.1027083881502229,
+   "author_reference_heldout_loss_deg": 1.837181445932196
+  },
+  {
+   "epoch": 8900,
+   "training_loss_deg": 0.12972952407307742,
+   "author_reference_heldout_loss_deg": 2.023086618271566
+  },
+  {
+   "epoch": 8910,
+   "training_loss_deg": 0.09065272804440522,
+   "author_reference_heldout_loss_deg": 1.9293833338925916
+  },
+  {
+   "epoch": 8920,
+   "training_loss_deg": 0.09757336701561765,
+   "author_reference_heldout_loss_deg": 1.9637981767375623
+  },
+  {
+   "epoch": 8930,
+   "training_loss_deg": 0.09651144381945695,
+   "author_reference_heldout_loss_deg": 1.8850779500940154
+  },
+  {
+   "epoch": 8940,
+   "training_loss_deg": 0.10028931631789945,
+   "author_reference_heldout_loss_deg": 1.993369571864605
+  },
+  {
+   "epoch": 8950,
+   "training_loss_deg": 0.09232767083780552,
+   "author_reference_heldout_loss_deg": 1.9793099646847094
+  },
+  {
+   "epoch": 8960,
+   "training_loss_deg": 0.10622671464594399,
+   "author_reference_heldout_loss_deg": 2.1564403238796417
+  },
+  {
+   "epoch": 8970,
+   "training_loss_deg": 0.09869182606538136,
+   "author_reference_heldout_loss_deg": 2.228565182296499
+  },
+  {
+   "epoch": 8980,
+   "training_loss_deg": 0.10101662303616361,
+   "author_reference_heldout_loss_deg": 2.1009915116573534
+  },
+  {
+   "epoch": 8990,
+   "training_loss_deg": 0.09600427443903636,
+   "author_reference_heldout_loss_deg": 2.085481473515111
+  },
+  {
+   "epoch": 9000,
+   "training_loss_deg": 0.09809862731433497,
+   "author_reference_heldout_loss_deg": 2.0821348296538478
+  },
+  {
+   "epoch": 9010,
+   "training_loss_deg": 0.10010911148738086,
+   "author_reference_heldout_loss_deg": 2.1271275421304088
+  },
+  {
+   "epoch": 9020,
+   "training_loss_deg": 0.10330500059980686,
+   "author_reference_heldout_loss_deg": 2.1641293225749845
+  },
+  {
+   "epoch": 9030,
+   "training_loss_deg": 0.09880804530973357,
+   "author_reference_heldout_loss_deg": 2.128980304685331
+  },
+  {
+   "epoch": 9040,
+   "training_loss_deg": 0.0909845046396178,
+   "author_reference_heldout_loss_deg": 2.108502143453206
+  },
+  {
+   "epoch": 9050,
+   "training_loss_deg": 0.11453569323066773,
+   "author_reference_heldout_loss_deg": 2.082415709452283
+  },
+  {
+   "epoch": 9060,
+   "training_loss_deg": 0.1506468159396474,
+   "author_reference_heldout_loss_deg": 2.036020988057698
+  },
+  {
+   "epoch": 9070,
+   "training_loss_deg": 0.09208359466335637,
+   "author_reference_heldout_loss_deg": 2.049340846197259
+  },
+  {
+   "epoch": 9080,
+   "training_loss_deg": 0.12721887091553308,
+   "author_reference_heldout_loss_deg": 2.0413074273495906
+  },
+  {
+   "epoch": 9090,
+   "training_loss_deg": 0.09275703259357591,
+   "author_reference_heldout_loss_deg": 2.016479513457706
+  },
+  {
+   "epoch": 9100,
+   "training_loss_deg": 0.11509294262746485,
+   "author_reference_heldout_loss_deg": 2.1887441537072583
+  },
+  {
+   "epoch": 9110,
+   "training_loss_deg": 0.10070662412459289,
+   "author_reference_heldout_loss_deg": 2.2632865956233394
+  },
+  {
+   "epoch": 9120,
+   "training_loss_deg": 0.10456734084016908,
+   "author_reference_heldout_loss_deg": 2.135409235473602
+  },
+  {
+   "epoch": 9130,
+   "training_loss_deg": 0.14659908153419574,
+   "author_reference_heldout_loss_deg": 2.076114694317502
+  },
+  {
+   "epoch": 9140,
+   "training_loss_deg": 0.109490214324579,
+   "author_reference_heldout_loss_deg": 1.8631195059466747
+  },
+  {
+   "epoch": 9150,
+   "training_loss_deg": 0.09261420048106976,
+   "author_reference_heldout_loss_deg": 1.8078422851620182
+  },
+  {
+   "epoch": 9160,
+   "training_loss_deg": 0.09212515018577498,
+   "author_reference_heldout_loss_deg": 1.8056079872673558
+  },
+  {
+   "epoch": 9170,
+   "training_loss_deg": 0.11702792818953352,
+   "author_reference_heldout_loss_deg": 1.8567902109315317
+  },
+  {
+   "epoch": 9180,
+   "training_loss_deg": 0.10166939596335094,
+   "author_reference_heldout_loss_deg": 1.799281466992632
+  },
+  {
+   "epoch": 9190,
+   "training_loss_deg": 0.10148669452202029,
+   "author_reference_heldout_loss_deg": 1.960783993404719
+  },
+  {
+   "epoch": 9200,
+   "training_loss_deg": 0.11635761065938609,
+   "author_reference_heldout_loss_deg": 2.0605854170937694
+  },
+  {
+   "epoch": 9210,
+   "training_loss_deg": 0.0990433199255447,
+   "author_reference_heldout_loss_deg": 1.9384594838465414
+  },
+  {
+   "epoch": 9220,
+   "training_loss_deg": 0.09245646599589324,
+   "author_reference_heldout_loss_deg": 2.1299446161475872
+  },
+  {
+   "epoch": 9230,
+   "training_loss_deg": 0.1068526126020323,
+   "author_reference_heldout_loss_deg": 1.9620055398873744
+  },
+  {
+   "epoch": 9240,
+   "training_loss_deg": 0.10100778531495148,
+   "author_reference_heldout_loss_deg": 1.8665493542869245
+  },
+  {
+   "epoch": 9250,
+   "training_loss_deg": 0.11663353758129646,
+   "author_reference_heldout_loss_deg": 1.8609808777128496
+  },
+  {
+   "epoch": 9260,
+   "training_loss_deg": 0.10075336343389217,
+   "author_reference_heldout_loss_deg": 1.915366932869919
+  },
+  {
+   "epoch": 9270,
+   "training_loss_deg": 0.09266444653030334,
+   "author_reference_heldout_loss_deg": 2.0118594651501023
+  },
+  {
+   "epoch": 9280,
+   "training_loss_deg": 0.09513494529859806,
+   "author_reference_heldout_loss_deg": 1.8808274074427542
+  },
+  {
+   "epoch": 9290,
+   "training_loss_deg": 0.10635607937971751,
+   "author_reference_heldout_loss_deg": 1.8984259910160495
+  },
+  {
+   "epoch": 9300,
+   "training_loss_deg": 0.09807336669627244,
+   "author_reference_heldout_loss_deg": 1.9285588973472196
+  },
+  {
+   "epoch": 9310,
+   "training_loss_deg": 0.09529242137583291,
+   "author_reference_heldout_loss_deg": 2.0081876417802227
+  },
+  {
+   "epoch": 9320,
+   "training_loss_deg": 0.10333909372973248,
+   "author_reference_heldout_loss_deg": 2.0981722261396145
+  },
+  {
+   "epoch": 9330,
+   "training_loss_deg": 0.10115462626383556,
+   "author_reference_heldout_loss_deg": 2.071999374897249
+  },
+  {
+   "epoch": 9340,
+   "training_loss_deg": 0.10194866013963048,
+   "author_reference_heldout_loss_deg": 2.0102273088789757
+  },
+  {
+   "epoch": 9350,
+   "training_loss_deg": 0.09166338488580734,
+   "author_reference_heldout_loss_deg": 1.9796850887998458
+  },
+  {
+   "epoch": 9360,
+   "training_loss_deg": 0.09914063692577486,
+   "author_reference_heldout_loss_deg": 1.9568497787319845
+  },
+  {
+   "epoch": 9370,
+   "training_loss_deg": 0.09689759299522493,
+   "author_reference_heldout_loss_deg": 2.0637497853848243
+  },
+  {
+   "epoch": 9380,
+   "training_loss_deg": 0.09924699572043691,
+   "author_reference_heldout_loss_deg": 1.9168678816528089
+  },
+  {
+   "epoch": 9390,
+   "training_loss_deg": 0.09908692332787242,
+   "author_reference_heldout_loss_deg": 2.0237962947257104
+  },
+  {
+   "epoch": 9400,
+   "training_loss_deg": 0.10640019711440171,
+   "author_reference_heldout_loss_deg": 2.10905638457306
+  },
+  {
+   "epoch": 9410,
+   "training_loss_deg": 0.10341167474180703,
+   "author_reference_heldout_loss_deg": 2.165007963536247
+  },
+  {
+   "epoch": 9420,
+   "training_loss_deg": 0.09158950638238007,
+   "author_reference_heldout_loss_deg": 2.158457480250828
+  },
+  {
+   "epoch": 9430,
+   "training_loss_deg": 0.1070824625288568,
+   "author_reference_heldout_loss_deg": 2.14712770980212
+  },
+  {
+   "epoch": 9440,
+   "training_loss_deg": 0.09435166703249381,
+   "author_reference_heldout_loss_deg": 2.18112869464582
+  },
+  {
+   "epoch": 9450,
+   "training_loss_deg": 0.10376074407401124,
+   "author_reference_heldout_loss_deg": 2.1173003394036525
+  },
+  {
+   "epoch": 9460,
+   "training_loss_deg": 0.09696139213515491,
+   "author_reference_heldout_loss_deg": 2.1406838192093756
+  },
+  {
+   "epoch": 9470,
+   "training_loss_deg": 0.10067418629561013,
+   "author_reference_heldout_loss_deg": 2.1561368598091986
+  },
+  {
+   "epoch": 9480,
+   "training_loss_deg": 0.10242739955826503,
+   "author_reference_heldout_loss_deg": 2.0967355293612324
+  },
+  {
+   "epoch": 9490,
+   "training_loss_deg": 0.09419591852077623,
+   "author_reference_heldout_loss_deg": 1.9835907169167073
+  },
+  {
+   "epoch": 9500,
+   "training_loss_deg": 0.09584028522173564,
+   "author_reference_heldout_loss_deg": 1.966281082841658
+  },
+  {
+   "epoch": 9510,
+   "training_loss_deg": 0.09258369459369319,
+   "author_reference_heldout_loss_deg": 1.8218193300549061
+  },
+  {
+   "epoch": 9520,
+   "training_loss_deg": 0.09273758706280856,
+   "author_reference_heldout_loss_deg": 1.892968661362125
+  },
+  {
+   "epoch": 9530,
+   "training_loss_deg": 0.10226791285402406,
+   "author_reference_heldout_loss_deg": 1.802412200358606
+  },
+  {
+   "epoch": 9540,
+   "training_loss_deg": 0.11942078730439752,
+   "author_reference_heldout_loss_deg": 1.9091181318846442
+  },
+  {
+   "epoch": 9550,
+   "training_loss_deg": 0.1145917253523338,
+   "author_reference_heldout_loss_deg": 1.9515764778179507
+  },
+  {
+   "epoch": 9560,
+   "training_loss_deg": 0.10766398185879235,
+   "author_reference_heldout_loss_deg": 2.091408251153846
+  },
+  {
+   "epoch": 9570,
+   "training_loss_deg": 0.11818787746313142,
+   "author_reference_heldout_loss_deg": 2.0268062482918463
+  },
+  {
+   "epoch": 9580,
+   "training_loss_deg": 0.11392468916691416,
+   "author_reference_heldout_loss_deg": 2.072648499161005
+  },
+  {
+   "epoch": 9590,
+   "training_loss_deg": 0.09774257315368187,
+   "author_reference_heldout_loss_deg": 2.072576384751066
+  },
+  {
+   "epoch": 9600,
+   "training_loss_deg": 0.11030785060994994,
+   "author_reference_heldout_loss_deg": 2.0126551187807515
+  },
+  {
+   "epoch": 9610,
+   "training_loss_deg": 0.10877948108969665,
+   "author_reference_heldout_loss_deg": 1.8786291643496482
+  },
+  {
+   "epoch": 9620,
+   "training_loss_deg": 0.09736299944844673,
+   "author_reference_heldout_loss_deg": 1.8915085230142838
+  },
+  {
+   "epoch": 9630,
+   "training_loss_deg": 0.11266934593033985,
+   "author_reference_heldout_loss_deg": 1.9174020948909944
+  },
+  {
+   "epoch": 9640,
+   "training_loss_deg": 0.09282814929398095,
+   "author_reference_heldout_loss_deg": 1.9269148065678534
+  },
+  {
+   "epoch": 9650,
+   "training_loss_deg": 0.09366353092397131,
+   "author_reference_heldout_loss_deg": 1.8696791219615168
+  },
+  {
+   "epoch": 9660,
+   "training_loss_deg": 0.09053104806963991,
+   "author_reference_heldout_loss_deg": 1.9657850093658893
+  },
+  {
+   "epoch": 9670,
+   "training_loss_deg": 0.10703743327923906,
+   "author_reference_heldout_loss_deg": 1.9698457991884601
+  },
+  {
+   "epoch": 9680,
+   "training_loss_deg": 0.09851842791568942,
+   "author_reference_heldout_loss_deg": 1.8573196424591927
+  },
+  {
+   "epoch": 9690,
+   "training_loss_deg": 0.09122104712618076,
+   "author_reference_heldout_loss_deg": 1.932005240191375
+  },
+  {
+   "epoch": 9700,
+   "training_loss_deg": 0.08638000155125207,
+   "author_reference_heldout_loss_deg": 1.8900099157566024
+  },
+  {
+   "epoch": 9710,
+   "training_loss_deg": 0.10452337381316394,
+   "author_reference_heldout_loss_deg": 2.022630116511737
+  },
+  {
+   "epoch": 9720,
+   "training_loss_deg": 0.09050204150560426,
+   "author_reference_heldout_loss_deg": 2.020088769134975
+  },
+  {
+   "epoch": 9730,
+   "training_loss_deg": 0.11803363645222129,
+   "author_reference_heldout_loss_deg": 1.9456149188260878
+  },
+  {
+   "epoch": 9740,
+   "training_loss_deg": 0.09412406172936524,
+   "author_reference_heldout_loss_deg": 1.9490650814146764
+  },
+  {
+   "epoch": 9750,
+   "training_loss_deg": 0.09565055309756984,
+   "author_reference_heldout_loss_deg": 1.9356395687547423
+  },
+  {
+   "epoch": 9760,
+   "training_loss_deg": 0.1755530223613832,
+   "author_reference_heldout_loss_deg": 2.2775384758508976
+  },
+  {
+   "epoch": 9770,
+   "training_loss_deg": 0.10240482726717383,
+   "author_reference_heldout_loss_deg": 1.921915870640547
+  },
+  {
+   "epoch": 9780,
+   "training_loss_deg": 0.11180060641552375,
+   "author_reference_heldout_loss_deg": 1.972005995170724
+  },
+  {
+   "epoch": 9790,
+   "training_loss_deg": 0.1056801919045487,
+   "author_reference_heldout_loss_deg": 1.8428778375589079
+  },
+  {
+   "epoch": 9800,
+   "training_loss_deg": 0.09841616597117447,
+   "author_reference_heldout_loss_deg": 1.8997812337212023
+  },
+  {
+   "epoch": 9810,
+   "training_loss_deg": 0.09477526337150635,
+   "author_reference_heldout_loss_deg": 1.8340545171691525
+  },
+  {
+   "epoch": 9820,
+   "training_loss_deg": 0.10100433926999085,
+   "author_reference_heldout_loss_deg": 1.759056921807989
+  },
+  {
+   "epoch": 9830,
+   "training_loss_deg": 0.10900540565087544,
+   "author_reference_heldout_loss_deg": 1.7859911022167052
+  },
+  {
+   "epoch": 9840,
+   "training_loss_deg": 0.11020513490690448,
+   "author_reference_heldout_loss_deg": 1.863643568009138
+  },
+  {
+   "epoch": 9850,
+   "training_loss_deg": 0.0979212387427082,
+   "author_reference_heldout_loss_deg": 1.8587865307927132
+  },
+  {
+   "epoch": 9860,
+   "training_loss_deg": 0.10581186038207233,
+   "author_reference_heldout_loss_deg": 1.7801475969533767
+  },
+  {
+   "epoch": 9870,
+   "training_loss_deg": 0.09213636706515056,
+   "author_reference_heldout_loss_deg": 1.9728066898401706
+  },
+  {
+   "epoch": 9880,
+   "training_loss_deg": 0.09132436959724116,
+   "author_reference_heldout_loss_deg": 1.8768101655427487
+  },
+  {
+   "epoch": 9890,
+   "training_loss_deg": 0.11405350364805238,
+   "author_reference_heldout_loss_deg": 1.827271510035761
+  },
+  {
+   "epoch": 9900,
+   "training_loss_deg": 0.09113865787905406,
+   "author_reference_heldout_loss_deg": 1.8141558682245593
+  },
+  {
+   "epoch": 9910,
+   "training_loss_deg": 0.09614670385674733,
+   "author_reference_heldout_loss_deg": 1.8634959885910634
+  },
+  {
+   "epoch": 9920,
+   "training_loss_deg": 0.10234970084535397,
+   "author_reference_heldout_loss_deg": 1.7291884614575295
+  },
+  {
+   "epoch": 9930,
+   "training_loss_deg": 0.08769029348604078,
+   "author_reference_heldout_loss_deg": 1.7192465537978756
+  },
+  {
+   "epoch": 9940,
+   "training_loss_deg": 0.09741960150924156,
+   "author_reference_heldout_loss_deg": 1.7304147742688656
+  },
+  {
+   "epoch": 9950,
+   "training_loss_deg": 0.10465750401097584,
+   "author_reference_heldout_loss_deg": 1.6874443182060797
+  },
+  {
+   "epoch": 9960,
+   "training_loss_deg": 0.10829634491990252,
+   "author_reference_heldout_loss_deg": 1.7379079844442107
+  },
+  {
+   "epoch": 9970,
+   "training_loss_deg": 0.0943519240472375,
+   "author_reference_heldout_loss_deg": 1.8414088211232615
+  },
+  {
+   "epoch": 9980,
+   "training_loss_deg": 0.10359679053469402,
+   "author_reference_heldout_loss_deg": 1.8189621454765719
+  },
+  {
+   "epoch": 9990,
+   "training_loss_deg": 0.09138968350683771,
+   "author_reference_heldout_loss_deg": 1.9652999631099162
+  },
+  {
+   "epoch": 10000,
+   "training_loss_deg": 0.092732706084484,
+   "author_reference_heldout_loss_deg": 1.8228660141748767
+  }
+ ]
+}

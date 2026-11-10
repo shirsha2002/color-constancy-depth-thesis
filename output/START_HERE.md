@@ -1,5 +1,17 @@
 # Thesis progress: start here
 
+## Latest: full PCCC on a cloud GPU, 10 November
+
+1. [Report (PDF)](pdf/Shirsha_Mitra_PCCC_GPU_Update_2026_11_10.pdf).
+2. Animations: [ETH3D real vs flat](gif/pccc_eth3d_real_vs_flat.gif) and
+   [DepthAWB depth damage](gif/pccc_depthawb_depth_damage.gif).
+3. [Short English QQ message](QQ_PCCC_GPU_Update_2026_11_10_English.txt).
+4. [Code, results and how to rerun](../phase6_modal/README.md).
+
+48 models at the paper's 10,000 epochs on Modal T4 GPUs, all three PCCC datasets. Main numbers:
+ETH3D 0.98 vs 1.31 degrees (real 3D vs no depth, a clear gain), DepthAWB 1.77 vs 1.86 and
+NYU-v2 + DIODE 2.61 vs 2.51 (no clear difference). The fusion idea in the report is a plan, not a result.
+
 ## Paper-budget follow-up cancelled
 
 The user cancelled this long run on9November. Both CPU and XPU workers are

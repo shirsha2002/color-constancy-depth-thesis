@@ -1,0 +1,125 @@
+{
+  "rows": [
+    {
+      "selection": "fixed_final",
+      "method": "released_real",
+      "n": 185.0,
+      "mean": 1.7729,
+      "median": 0.7448,
+      "trimean": 0.9442,
+      "best25": 0.0905,
+      "worst25": 5.2726
+    },
+    {
+      "selection": "fixed_final",
+      "method": "released_flat",
+      "n": 185.0,
+      "mean": 1.8591,
+      "median": 0.8139,
+      "trimean": 0.9935,
+      "best25": 0.0857,
+      "worst25": 5.3559
+    },
+    {
+      "selection": "fixed_final",
+      "method": "weighted_real",
+      "n": 185.0,
+      "mean": 1.8728,
+      "median": 0.8557,
+      "trimean": 1.0434,
+      "best25": 0.0893,
+      "worst25": 5.4357
+    },
+    {
+      "selection": "fixed_final",
+      "method": "weighted_flat",
+      "n": 185.0,
+      "mean": 1.9238,
+      "median": 0.9191,
+      "trimean": 1.0865,
+      "best25": 0.0966,
+      "worst25": 5.5222
+    },
+    {
+      "selection": "author_test_selected",
+      "method": "released_real",
+      "n": 185.0,
+      "mean": 1.3229,
+      "median": 0.5602,
+      "trimean": 0.7227,
+      "best25": 0.0839,
+      "worst25": 3.751
+    },
+    {
+      "selection": "author_test_selected",
+      "method": "released_flat",
+      "n": 185.0,
+      "mean": 1.3535,
+      "median": 0.6637,
+      "trimean": 0.8235,
+      "best25": 0.1119,
+      "worst25": 3.7823
+    },
+    {
+      "selection": "author_test_selected",
+      "method": "weighted_real",
+      "n": 185.0,
+      "mean": 1.3806,
+      "median": 0.7324,
+      "trimean": 0.8638,
+      "best25": 0.0884,
+      "worst25": 3.7919
+    },
+    {
+      "selection": "author_test_selected",
+      "method": "weighted_flat",
+      "n": 185.0,
+      "mean": 1.4906,
+      "median": 0.6863,
+      "trimean": 0.8577,
+      "best25": 0.1156,
+      "worst25": 4.2452
+    },
+    {
+      "selection": "baseline",
+      "method": "gray_world",
+      "n": 185.0,
+      "mean": 12.8401,
+      "median": 12.4379,
+      "trimean": 12.5198,
+      "best25": 11.3926,
+      "worst25": 14.9492
+    },
+    {
+      "selection": "baseline",
+      "method": "training_mean",
+      "n": 185.0,
+      "mean": 3.6283,
+      "median": 2.8505,
+      "trimean": 3.0853,
+      "best25": 1.1606,
+      "worst25": 7.6517
+    },
+    {
+      "selection": "published",
+      "method": "paper 256 points, with depth",
+      "n": 185,
+      "mean": 1.05,
+      "median": 0.37,
+      "trimean": 0.55,
+      "best25": 0.09,
+      "worst25": 3.02
+    },
+    {
+      "selection": "published",
+      "method": "paper 256 points, w/o depth",
+      "n": 185,
+      "mean": 2.39,
+      "median": 1.75,
+      "trimean": 1.9,
+      "best25": 0.42,
+      "worst25": 5.5
+    }
+  ],
+  "max_recompute_discrepancy_deg": 1.7763568394002505e-15
+}

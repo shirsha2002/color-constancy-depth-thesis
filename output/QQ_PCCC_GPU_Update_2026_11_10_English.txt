@@ -1,0 +1,26 @@
+Professor, here is my update. Following your advice from 8 November, I worked directly on PCCC with the authors' official code and their released data.
+
+What I did:
+I rented a cloud GPU on Modal (NVIDIA T4) and trained PCCC with the paper's full setting (10,000 epochs) on all three PCCC datasets: DepthAWB, ETH3D and NYU-v2 + DIODE (704 real RGB-D scenes, official 3-fold splits). In total I trained 48 models, about 22.5 GPU-hours. On every dataset I trained the model twice, once with the real 3D points and once with the depth removed, to see what 3D really adds.
+
+Results:
+1. Reproduction: with the same checkpoint rule as the released code, I get 0.82° on ETH3D (paper 0.88°), 2.16° on NYU-v2 + DIODE (paper 2.20°) and 1.32° on DepthAWB (paper 1.05°).
+2. 3D clearly helps on ETH3D: 0.98° with depth vs 1.31° without depth (final-epoch model; 3D is better on 120 of 195 scenes). On DepthAWB (1.77° vs 1.86°) and NYU-v2 + DIODE (2.61° vs 2.51°) there is no clear difference.
+3. Depth quality matters: when I damage the real depth on purpose (noise, missing depth or shuffled 3D positions), a model trained on clean depth gets worse, up to 1.77° -> 2.36°.
+
+The problem I found:
+The gain from 3D is not stable. It depends on how good and how consistent the depth is. For example, inside NYU-v2 + DIODE the two sources store depth in different formats (opposite sign and about 221 times different scale), and PCCC treats good and bad depth in the same way.
+
+My idea (not implemented yet):
+A depth-reliability-aware fusion. First normalise the depth format, then use a colour branch and a geometry branch, and give every point a depth-reliability score that decides how much its geometry is used. It is trained with random depth damage. The goal is to keep the 3D gain when the depth is good and not lose accuracy when the depth is bad.
+
+Next plan (2 weeks):
+- Test the depth-format explanation directly (fix the NYU + DIODE format, rescale the ETH3D depth).
+- Replace the sensor depth with depth predicted from the RGB image (Depth Anything V2) on ETH3D, to see whether the depth algorithm matters. This also connects PCCC with my monocular depth thesis topic.
+- Add more seeds, then implement the fusion method and test it on all three datasets.
+- After that, look for multi-illuminant data.
+
+I attached the report (PDF) and two GIFs. The code and all results are on my GitHub:
+https://github.com/shirsha2002/color-constancy-depth-thesis/tree/main/phase6_modal
+
+Could you please give me your feedback, especially on whether this reliability-aware fusion is a good direction for the paper?

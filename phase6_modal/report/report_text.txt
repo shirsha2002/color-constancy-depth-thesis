@@ -1,0 +1,635 @@
+WEEKLY RESEARCH UPDATE  ·  10 NOVEMBER 2026
+Point Cloud Color Constancy on all three PCCC datasets
+A full 10,000-epoch reproduction on a rented cloud GPU, and a test of when 3D information really helps
+Shirsha Mitra  ·  Student ID 2023521460130  ·  Sichuan University
+Summary
+This week I followed your advice and worked directly on PCCC (CVPR 2022). I used the authors' official code and their released real RGB-D data, and I rented a cloud GPU (Modal, NVIDIA T4) so I could train with the paper's full setting of 10,000 epochs.
+Scale: 3 datasets, 704 real RGB-D scenes, the official 3-fold splits, 48 trained models (about 22.5 GPU-hours).
+Reproduction: with the same checkpoint rule as the released code, PCCC reaches 0.82° on ETH3D (paper 0.88°), 2.16° on NYU-v2 + DIODE (paper 2.20°) and 1.32° on DepthAWB (paper 1.05°).
+Main finding: real 3D clearly helps on ETH3D (0.98° vs 1.31° without depth; better on 120 of 195 scenes). On DepthAWB (1.77° vs 1.86°) and NYU-v2 + DIODE (2.61° vs 2.51°) there is no clear difference.
+Depth quality matters: a model trained on clean depth gets worse when its test depth is damaged (with shuffled 3D positions: 1.77° to 2.36°).
+Problem and idea: the benefit of 3D depends on how good and how consistent the depth is. I propose a depth-reliability-aware fusion that uses geometry only where the depth can be trusted (idea only, not implemented yet).
+Unless marked otherwise, numbers are the mean angular error in degrees (lower is better) of the final-epoch model, pooled over all test scenes of the three folds.
+1  Your feedback and what I did
+Your feedback (8 November)
+What I did this week
+There was no PCCC dataset or result in my material.
+Used the official PCCC release (point clouds and illuminant labels of all three datasets) and trained the authors' network on every official fold.
+Do not create the problem yourself; work on real problems and real data.
+Every scene here is real captured RGB-D data released by the PCCC authors. The only artificial part is Step C, where I damage the real depth on purpose as a controlled test.
+Understand why 3D information can improve colour constancy.
+Trained every model twice, once with the real 3D points and once with the depth removed, on all three datasets.
+How is RGB matched to the point cloud, and does the depth source matter?
+Checked how each dataset was captured and registered (Section 2) and measured how damaged depth changes the error (Section 4).
+Fuse the modalities better; later, multiple light sources.
+From the results I propose a reliability-aware fusion (Section 6). Multi-illuminant work is planned after it.
+Rent a GPU online.
+Used Modal cloud GPUs (NVIDIA T4). One full model took 21 to 45 minutes; all 48 models used about 22.5 GPU-hours (about $13 at the list price).
+2  Data and setup
+PCCC turns an RGB-D image into a coloured point cloud: every point has a 3D position (x, y, z) and a colour (r, g, b). The authors release 256-point clouds (a 16 × 16 grid of the image) and one illuminant label per scene. I used these files exactly as released, with the official 3-fold splits.
+Dataset
+Scenes
+Camera and depth sensor
+Test scenes per fold
+Points without depth
+DepthAWB
+185
+LUMIX GH5S camera + Intel RealSense L515
+62 / 62 / 61
+23.5%
+ETH3D
+195
+DSLR raw images + laser-scanner depth
+65 / 65 / 65
+26.1%
+NYU-v2 + DIODE
+324 (258 + 66)
+Kinect (NYU) and laser scanner (DIODE); sRGB images linearised by the PCCC authors
+114 / 100 / 110
+0.02%
+Sensors as described in the PCCC paper (Section 4) and the original dataset papers.
+How RGB is matched to depth. The colour image and the depth map come from different sensors. The authors calibrate the two cameras and project every depth pixel into the colour image (paper Section 3.2, Eq. 2). The released clouds are already registered, so I could not re-check this step myself.
+I ran three steps. Step A: PCCC on DepthAWB, real 3D and flat, both output layers, all three folds (12 models). Step B: the same on ETH3D and NYU-v2 + DIODE (24 models). Step C: a depth-quality test on DepthAWB (12 models).
+Real RGB-D scene
+PCCC release, 3 datasets
+256 coloured points
+(x, y, z, r, g, b)
+PCCC network
+authors' code, 10,000 epochs
+Illuminant colour
+angular error vs. label
+Which depth the network sees
+Steps A+B: real 3D or flat (depth removed)   |   Step C: noise, removed, shuffled
+Figure 1. What I ran. Only the depth part of each point changes between experiments; the colours and labels are never changed.
+Network: the authors' PointNet-based code at a fixed commit (ddc8770). I only made execution fixes that do not change the maths: a return-value unpacking error that crashes the released code, moving one constant matrix to the right device, and skipping a 256-to-256 pooling layer that is an exact identity for 256 points. Main results use the released output layer (3 channels, summed over points); the paper's 4-channel weighted layer (Eq. 4) gives very similar numbers and is in Appendix A.
+Training: Adam, learning rate 0.0003, batch 16, 10,000 epochs, the authors' rotation and brightness augmentation, one fixed seed per fold.
+Real vs. flat: real = clouds as released. Flat = each point's (x, y, z) divided by |z|, so the point keeps its pixel direction and colour but loses its depth; points without depth stay at zero. This is close to, but not exactly, the paper's "w/o depth" setting (depth set to 1).
+Metric: recovery angular error between the predicted and the true illuminant, in degrees. I pool all test scenes of the three folds and report mean, median, trimean, best 25% and worst 25%.
+Two checkpoint rules. (1) Final epoch: the model after epoch 10,000. These are my main numbers, because the test fold never chooses anything. (2) Best test-fold epoch: the released training script keeps the epoch with the lowest test-fold error, so I also report this rule to compare with the paper. It is optimistic.
+Checking: every score was recomputed from the saved predictions; the largest difference was below 1e-14 degrees.
+3  Does real 3D information help? (Steps A and B)
+Table 1. Mean (median) angular error in degrees, all test scenes of the three folds.
+Method
+ETH3D
+DepthAWB
+NYU-v2 + DIODE
+Gray-World (classic statistics)
+14.52 (14.87)
+12.84 (12.44)
+7.27 (5.91)
+Average training illuminant
+6.85 (6.73)
+3.63 (2.85)
+3.79 (2.45)
+PCCC flat, final epoch
+1.31 (0.71)
+1.86 (0.81)
+2.51 (1.65)
+PCCC real 3D, final epoch
+0.98 (0.52)
+1.77 (0.74)
+2.61 (1.76)
+PCCC flat, best test-fold epoch
+1.03 (0.67)
+1.35 (0.66)
+2.20 (1.44)
+PCCC real 3D, best test-fold epoch
+0.82 (0.48)
+1.32 (0.56)
+2.16 (1.46)
+Paper, w/o depth
+1.42 (1.02)
+2.39 (1.75)
+2.80 (1.89)
+Paper, with depth
+0.88 (0.53)
+1.05 (0.37)
+2.20 (1.42)
+Figure 2. Mean error with real 3D and with the depth removed (final epoch). Diamonds are the paper's values (Table 2, 256 points).
+Table 2. Paired difference per scene. Negative means real 3D is better; if the interval does not include 0 the difference is clear.
+Dataset
+Final epoch: real minus flat (95% CI)
+Scenes where 3D is better
+Best test-fold epoch: real minus flat (95% CI)
+ETH3D
+−0.33 (−0.52 to −0.17)
+120 of 195
+−0.21 (−0.37 to −0.06)
+DepthAWB
+−0.09 (−0.36 to 0.18)
+78 of 185
+−0.03 (−0.20 to 0.14)
+NYU-v2 + DIODE
++0.11 (−0.16 to 0.38)
+155 of 324
+−0.05 (−0.26 to 0.16)
+The 95% intervals come from 10,000 bootstrap resamples of the test scenes.
+Figure 3. Every test scene, real 3D vs. flat. The authors' angle function clips very small errors at about 0.08°, which explains the rows of dots at the bottom and left.
+What this shows
+The full training works. In my earlier 100-epoch laptop pilot (fold 0 only) the DepthAWB error was about 3.7°. With 10,000 epochs it is 1.77° (final epoch) and 1.32° (best epoch).
+Close to the paper on two datasets. With the paper's checkpoint rule I get 0.82° on ETH3D and 2.16° on NYU-v2 + DIODE, close to the paper. On DepthAWB I am 0.27° worse than the paper.
+3D helps only on ETH3D. There the gain is clear for both checkpoint rules (and for both output layers, Appendix A). On DepthAWB and NYU-v2 + DIODE the intervals include zero. My models without depth are also better than the paper's "w/o depth" numbers on all three datasets (for example DepthAWB 1.86° vs 2.39°), so the large depth gain reported in the paper appears only on ETH3D in my runs.
+4  Does depth quality matter? (Step C, DepthAWB)
+To answer whether the depth source and its quality matter, I took the real DepthAWB depth and damaged it in four controlled ways. The damage is fixed for each scene, and the colours are never changed:
+10% / 30% noise: every point is moved along its own pixel ray: its (x, y, z) is multiplied by (1 + e), where e is Gaussian with a standard deviation of 10% or 30%.
+50% removed: half of the points that have depth lose it, as if the sensor had missed them.
+3D positions shuffled: the 3D positions are mixed between the points, so each colour no longer sits at its own position.
+I tested this in two ways: (a) retrain PCCC on the damaged depth (12 new models), and (b) take the models trained on clean depth and only test them on damaged depth.
+Table 3. DepthAWB, mean error of final-epoch models (released output layer). (a) retrained on that depth; (b) trained on clean depth, tested on that depth. Positive change means worse.
+Depth used
+(a) Retrained
+Change vs. clean (95% CI)
+(b) Clean-trained
+Change vs. clean (95% CI)
+Clean (as released)
+1.77
+–
+1.77
+–
+10% depth noise
+1.71
+−0.06 (−0.30 to 0.16)
+1.76
+−0.01 (−0.08 to 0.05)
+30% depth noise
+2.01
++0.24 (0.01 to 0.48)
+1.96
++0.19 (0.04 to 0.36)
+50% of depth removed
+1.67
+−0.10 (−0.37 to 0.16)
+1.98
++0.21 (0.02 to 0.40)
+3D positions shuffled
+1.98
++0.21 (−0.09 to 0.50)
+2.36
++0.59 (0.28 to 0.89)
+Flat (no depth), for reference
+1.86
+
+
+
+Figure 4. Mean error on DepthAWB for each kind of depth. Exact values and intervals are in Table 3.
+What this shows
+The network really uses the 3D positions. When the 3D positions no longer match the colours (shuffled), the clean-trained model gets 0.59° worse (95% CI 0.28 to 0.89).
+A normally trained PCCC is fragile. 30% noise or 50% missing depth at test time also hurt (+0.19° and +0.21°).
+Retraining adapts to missing depth, but not to strong noise: after retraining, 50% missing depth is no longer worse, while 30% noise is still 0.24° worse (95% CI 0.01 to 0.48).
+So on DepthAWB the model does lean on the 3D positions, but it does not end up better than a model trained without depth (Section 3). The quality of the depth decides whether 3D is useful.
+5  Example scenes
+Figure 5. One test scene per dataset, chosen only by ID (the first fold-0 test scene), not by error. The 16 × 16 grids are the 256 released points, not full photographs; colours use a display gamma. DepthAWB scene 25 is a hard case: 172 of its 256 points have no depth, and here the real-3D model is worse than the flat one (11.08° vs 5.66°).
+Figure 6. First frame of the attached animation pccc_eth3d_real_vs_flat.gif: the same ETH3D scene with real depth and with the depth removed.
+Figure 7. First frame of pccc_depthawb_depth_damage.gif. DepthAWB scene 81 was chosen as the fold-0 test scene with the fewest missing depth points, so the damage is easy to see. One scene varies a lot; the mean over all 185 scenes is printed under each panel.
+6  What I learned, and my idea
+The problem
+The gain from 3D is not stable. It is clear on ETH3D, but on DepthAWB and NYU-v2 + DIODE a network without depth does just as well.
+Depth quality matters, and the network has no way to know which depth values it can trust (Step C).
+The depth format is not consistent inside NYU-v2 + DIODE. The 258 NYU clouds have positive z values with a per-scene median of 0.001 to 0.005, while the 66 DIODE clouds have negative z values with a per-scene median of 0.12 to 3.80; at the median, DIODE depth values are about 221 times larger. The network sees two different geometries for the same kind of indoor scene. In ETH3D, where 3D helps, all 195 clouds use one convention.
+Why DepthAWB does not gain is still open (its depth range, only about 123 training scenes per fold, or label noise). I have not tested these yet.
+My idea: depth-reliability-aware fusion (not implemented yet)
+PCCC simply puts (x, y, z, r, g, b) together at the input, so good and bad depth are treated the same. I want to change this:
+One depth convention: normalise the depth of every scene (one sign and one scale), so geometry means the same thing in every dataset.
+Two branches: a colour branch (r, g, b and the pixel direction) and a geometry branch (3D position and local shape).
+A reliability gate: every point gets a depth-reliability score (for example from missing depth and from how well its depth agrees with its neighbours). Where the depth is reliable, the geometry features count more; where it is not, the network falls back to colour.
+Training with depth damage: random noise, missing depth and shuffled positions (the Step C operations) during training, so the gate learns when to trust depth.
+Goal: keep the ETH3D gain, and never be worse than the no-depth model when the depth is poor. I will test it with exactly the protocol of this report. I know that gating and confidence weighting already exist in other fusion work (PCCC itself has a point-weighting layer), so I will review related work carefully before calling anything new.
+7  Next plan (two weeks)
+Week 1
+Test the depth-format explanation directly: retrain NYU-v2 + DIODE with one consistent depth convention (it should start to gain from 3D if the explanation is right), and retrain ETH3D with its depth rescaled per scene (to see whether the absolute depth scale is what helps).
+Replace the sensor depth with depth predicted from the RGB image (Depth Anything V2) on ETH3D, where the full images are public. This answers "does the depth algorithm matter?" and connects PCCC with monocular depth estimation, my thesis topic.
+Repeat the main real/flat runs with two more seeds per fold.
+Week 2
+Implement the reliability-aware fusion and its ablations (no gate, no damage training, no normalisation).
+Evaluate on all three datasets and under the Step C damage, against PCCC real and flat.
+After that
+Look for data with per-pixel or multiple-illuminant labels (your third point) and extend the per-point illuminant output of PCCC to mixed lighting.
+Limitations of this report
+One training seed per fold (48 models in total), so differences of about 0.2° or less should be read with care.
+Only the 256-point clouds; I have not run the 4096-point setting yet.
+"Best test-fold epoch" numbers are optimistic, because the test fold chooses the epoch.
+My flat setting is close to, but not identical to, the paper's "w/o depth" setting.
+The clouds are already registered by the authors, so I could not check the registration.
+The Step C damage is simulated on real depth: it is a controlled test, not new sensor data.
+Appendix A  Full statistics
+Dataset
+Model
+Checkpoint
+Mean
+Median
+Trimean
+Best 25%
+Worst 25%
+ETH3D
+PCCC real 3D, released layer
+final epoch
+0.98
+0.52
+0.63
+0.11
+2.66
+ETH3D
+PCCC real 3D, released layer
+best test-fold
+0.82
+0.48
+0.60
+0.11
+2.07
+ETH3D
+PCCC flat, released layer
+final epoch
+1.31
+0.71
+0.88
+0.15
+3.51
+ETH3D
+PCCC flat, released layer
+best test-fold
+1.03
+0.67
+0.72
+0.13
+2.65
+ETH3D
+PCCC real 3D, weighted layer
+final epoch
+0.98
+0.51
+0.66
+0.10
+2.62
+ETH3D
+PCCC real 3D, weighted layer
+best test-fold
+0.78
+0.41
+0.51
+0.10
+2.07
+ETH3D
+PCCC flat, weighted layer
+final epoch
+1.35
+0.75
+0.93
+0.13
+3.55
+ETH3D
+PCCC flat, weighted layer
+best test-fold
+1.08
+0.73
+0.80
+0.12
+2.77
+ETH3D
+Gray-World
+–
+14.52
+14.87
+14.98
+4.59
+23.05
+ETH3D
+Average training illuminant
+–
+6.85
+6.73
+6.68
+2.43
+11.58
+ETH3D
+Paper, w/o depth
+–
+1.42
+1.02
+1.08
+0.33
+3.11
+ETH3D
+Paper, with depth
+–
+0.88
+0.53
+0.62
+0.17
+2.15
+DepthAWB
+PCCC real 3D, released layer
+final epoch
+1.77
+0.74
+0.94
+0.09
+5.27
+DepthAWB
+PCCC real 3D, released layer
+best test-fold
+1.32
+0.56
+0.72
+0.08
+3.75
+DepthAWB
+PCCC flat, released layer
+final epoch
+1.86
+0.81
+0.99
+0.09
+5.36
+DepthAWB
+PCCC flat, released layer
+best test-fold
+1.35
+0.66
+0.82
+0.11
+3.78
+DepthAWB
+PCCC real 3D, weighted layer
+final epoch
+1.87
+0.86
+1.04
+0.09
+5.44
+DepthAWB
+PCCC real 3D, weighted layer
+best test-fold
+1.38
+0.73
+0.86
+0.09
+3.79
+DepthAWB
+PCCC flat, weighted layer
+final epoch
+1.92
+0.92
+1.09
+0.10
+5.52
+DepthAWB
+PCCC flat, weighted layer
+best test-fold
+1.49
+0.69
+0.86
+0.12
+4.25
+DepthAWB
+Gray-World
+–
+12.84
+12.44
+12.52
+11.39
+14.95
+DepthAWB
+Average training illuminant
+–
+3.63
+2.85
+3.09
+1.16
+7.65
+DepthAWB
+Paper, w/o depth
+–
+2.39
+1.75
+1.90
+0.42
+5.50
+DepthAWB
+Paper, with depth
+–
+1.05
+0.37
+0.55
+0.09
+3.02
+NYU-v2 + DIODE
+PCCC real 3D, released layer
+final epoch
+2.61
+1.76
+1.99
+0.37
+6.29
+NYU-v2 + DIODE
+PCCC real 3D, released layer
+best test-fold
+2.16
+1.46
+1.63
+0.41
+5.09
+NYU-v2 + DIODE
+PCCC flat, released layer
+final epoch
+2.51
+1.65
+1.84
+0.39
+6.13
+NYU-v2 + DIODE
+PCCC flat, released layer
+best test-fold
+2.20
+1.44
+1.64
+0.34
+5.33
+NYU-v2 + DIODE
+PCCC real 3D, weighted layer
+final epoch
+2.62
+1.81
+1.94
+0.37
+6.38
+NYU-v2 + DIODE
+PCCC real 3D, weighted layer
+best test-fold
+2.21
+1.40
+1.63
+0.34
+5.36
+NYU-v2 + DIODE
+PCCC flat, weighted layer
+final epoch
+2.61
+1.76
+1.94
+0.38
+6.31
+NYU-v2 + DIODE
+PCCC flat, weighted layer
+best test-fold
+2.22
+1.43
+1.65
+0.34
+5.52
+NYU-v2 + DIODE
+Gray-World
+–
+7.27
+5.91
+6.25
+2.89
+14.07
+NYU-v2 + DIODE
+Average training illuminant
+–
+3.79
+2.45
+2.84
+0.89
+8.59
+NYU-v2 + DIODE
+Paper, w/o depth
+–
+2.80
+1.89
+2.22
+0.57
+6.39
+NYU-v2 + DIODE
+Paper, with depth
+–
+2.20
+1.42
+1.58
+0.34
+5.30
+Weighted layer = the paper's Eq. 4 (4 channels, softmax weights over points); its brightness augmentation is 0.15 as in the paper, while the released code uses 0.20, so the two layers also differ in augmentation.
+Real minus flat with the weighted layer
+Weighted layer
+Final epoch: real minus flat (95% CI)
+Scenes where 3D is better
+Best test-fold: real minus flat (95% CI)
+ETH3D
+−0.36 (−0.55 to −0.18)
+115 of 195
+−0.30 (−0.46 to −0.14)
+DepthAWB
+−0.05 (−0.36 to 0.24)
+91 of 185
+−0.11 (−0.33 to 0.11)
+NYU-v2 + DIODE
++0.02 (−0.25 to 0.28)
+170 of 324
+−0.01 (−0.26 to 0.23)
+Step C, all statistics
+Depth used (DepthAWB)
+Model
+Mean
+Median
+Trimean
+Best 25%
+Worst 25%
+10% depth noise
+retrained, final epoch
+1.71
+0.80
+0.95
+0.10
+4.95
+10% depth noise
+retrained, best test-fold
+1.30
+0.66
+0.78
+0.09
+3.66
+10% depth noise
+clean-trained, final epoch
+1.76
+0.74
+0.92
+0.10
+5.27
+30% depth noise
+retrained, final epoch
+2.01
+1.26
+1.30
+0.12
+5.51
+30% depth noise
+retrained, best test-fold
+1.58
+0.87
+1.01
+0.12
+4.25
+30% depth noise
+clean-trained, final epoch
+1.96
+0.89
+1.08
+0.15
+5.63
+50% of depth removed
+retrained, final epoch
+1.67
+0.76
+0.95
+0.08
+4.84
+50% of depth removed
+retrained, best test-fold
+1.38
+0.85
+0.93
+0.10
+3.65
+50% of depth removed
+clean-trained, final epoch
+1.98
+0.93
+1.11
+0.13
+5.59
+3D positions shuffled
+retrained, final epoch
+1.98
+0.80
+1.04
+0.09
+5.78
+3D positions shuffled
+retrained, best test-fold
+1.45
+0.67
+0.89
+0.13
+3.89
+3D positions shuffled
+clean-trained, final epoch
+2.36
+1.33
+1.57
+0.30
+6.18
+Appendix B  Training curve
+ETH3D, fold 0, released layer. Test-fold error recorded after every epoch (thin lines) and its 100-epoch average (thick lines). The gap between real 3D and flat stays over the whole run. These curves are for monitoring only; the main results use the final epoch.
+Appendix C  How to reproduce
+Code and results: GitHub repository shirsha2002/color-constancy-depth-thesis, folder phase6_modal/.
+Runs: run_depthawb.py (Step A) and run_bc.py (Steps B and C) on Modal; inputs for B and C from make_inputs.py; analysis: analyze_a.py, analyze_bc.py; figures and this report: make_figures.py, build_report.py.
+Every input file is listed with its SHA-256 in the manifests; every saved prediction is re-scored by the analysis scripts.
+Compute: 48 models × 10,000 epochs on NVIDIA T4, about 22.5 GPU-hours.
+References
+[1] X. Xing, Y. Qian, S. Feng, Y. Dong, J. Matas. Point Cloud Color Constancy. CVPR 2022, pp. 19750–19759.
+[2] Official PCCC code and data: github.com/xyxingx/Point-Cloud-Color-Constancy.
+[3] C. R. Qi, H. Su, K. Mo, L. J. Guibas. PointNet: Deep learning on point sets for 3D classification and segmentation. CVPR 2017.
+[4] T. Schöps et al. A multi-view stereo benchmark with high-resolution images and multi-camera videos (ETH3D). CVPR 2017.
+[5] N. Silberman, D. Hoiem, P. Kohli, R. Fergus. Indoor segmentation and support inference from RGBD images (NYU-v2). ECCV 2012.
+[6] I. Vasiljevic et al. DIODE: A Dense Indoor and Outdoor DEpth Dataset. arXiv:1908.00463, 2019.
+[7] L. Yang et al. Depth Anything V2. NeurIPS 2024.

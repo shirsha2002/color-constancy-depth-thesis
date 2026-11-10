@@ -3,6 +3,16 @@
 Undergraduate thesis project by **Shirsha Mitra**, student ID **2023521460130**,
 Sichuan University.
 
+## Latest: full PCCC on all three datasets with a cloud GPU, 10 November
+
+PCCC was trained with the paper's full budget (**10,000 epochs**, official 3-fold splits) on
+**DepthAWB, ETH3D and NYU-v2 + DIODE** on rented Modal NVIDIA T4 GPUs: 48 models, about
+22.5 GPU-hours. Real 3D clearly helps on ETH3D (0.98 vs 1.31 degrees without depth) but not on
+DepthAWB (1.77 vs 1.86) or NYU-v2 + DIODE (2.61 vs 2.51). A depth-quality test shows that damaged
+depth hurts a normally trained model. Read [phase6_modal/README.md](phase6_modal/README.md) and
+[the report](output/pdf/Shirsha_Mitra_PCCC_GPU_Update_2026_11_10.pdf). This supersedes the
+cancelled laptop run below; that run's partial checkpoints stay local and unused.
+
 ## Paper-budget reproduction cancelled, 9 November
 
 **Cancelled at the user's request because of runtime. Both CPU and GPU workers

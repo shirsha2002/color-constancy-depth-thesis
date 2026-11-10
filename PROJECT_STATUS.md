@@ -1,12 +1,20 @@
 # Thesis project status and repository scope
 
 Shirsha Mitra, student ID 2023521460130, Sichuan University.
-Status checked on 9 November 2026.
+Status checked on 10 November 2026.
 
 Thesis: **Design and Implementation of a Color-Constancy-Assisted Monocular
 Depth Estimation System**.
 
 ## Completed work
+
+### Full PCCC on all three datasets with a cloud GPU (10 November)
+
+Completed on Modal NVIDIA T4 GPUs: 48 models at 10,000 epochs (about 22.5 GPU-hours) on DepthAWB,
+ETH3D and NYU-v2 + DIODE, real 3D vs flat geometry, plus a DepthAWB depth-quality test. Real 3D
+helps clearly only on ETH3D. See [phase6_modal/README.md](phase6_modal/README.md) and the
+[report](output/pdf/Shirsha_Mitra_PCCC_GPU_Update_2026_11_10.pdf). One seed per fold; the
+reliability-aware fusion in the report is a proposal, not an implemented result.
 
 ### Cancelled follow-up: paper-budget PCCC reproduction
 
