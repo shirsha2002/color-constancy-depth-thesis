@@ -60,8 +60,9 @@ def main():
         write_status('downloading_complete_results')
         OUT.parent.mkdir(parents=True,exist_ok=True)
         assert not OUT.exists(),'Refuse to overwrite a local result tree'
-        run(CLIENT,'volume','get','pccc-results','nyu_frame_v1',OUT)
-        # Some CLI versions nest the remote basename; resolve explicitly.
+        # Modal preserves the remote basename inside an existing destination.
+        # Pass the existing parent, so the result becomes exactly OUT.
+        run(CLIENT,'volume','get','pccc-results','nyu_frame_v1',OUT.parent)
         if not (OUT/'camera_real').exists():
             raise RuntimeError('Unexpected download layout; manual review required, no move/delete')
         write_status('independent_audit')
