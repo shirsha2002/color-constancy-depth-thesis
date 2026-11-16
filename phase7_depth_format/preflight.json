@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "transformed_clouds_checked": 972,
+  "samples": 324,
+  "conditions": [
+    "camera_real",
+    "camera_unitdepth",
+    "camera_flat"
+  ],
+  "rgb_bitwise_unchanged": true,
+  "labels_unchanged": true,
+  "canonical_rays_and_relative_depth_checked": true,
+  "proper_rotations_only": true,
+  "groups": {
+    "DIODE": {
+      "n": 66,
+      "rotations": [
+        [
+          1,
+          -1,
+          -1
+        ]
+      ],
+      "median_native_abs_z": 0.545737836509943
+    },
+    "NYU": {
+      "n": 258,
+      "rotations": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "median_native_abs_z": 0.0024705883115530014
+    }
+  },
+  "protocol_sha256": "3ebeae3e45330daf36e27c767dc75b5207f37ab28ad280009632f05fc8bbb309"
+}
