@@ -1,0 +1,72 @@
+{
+  "scope": "Input-only geometry audit, no model outputs or illumination errors used",
+  "grid_requirement": "Axis convention inference requires the released ordered16x16 grid; not a general unordered-cloud calibration method",
+  "conditions": {
+    "camera_real": {
+      "DIODE": {
+        "n": 66,
+        "missing_points": 15,
+        "total_points": 16896,
+        "median_of_capture_medians": 0.545737836509943,
+        "capture_median_range": [
+          0.11902886629104614,
+          3.799043983221054
+        ]
+      },
+      "NYU": {
+        "n": 258,
+        "missing_points": 0,
+        "total_points": 66048,
+        "median_of_capture_medians": 0.0024705883115530014,
+        "capture_median_range": [
+          0.0009950980602297932,
+          0.004985294246580452
+        ]
+      }
+    },
+    "camera_unitdepth": {
+      "DIODE": {
+        "n": 66,
+        "missing_points": 15,
+        "total_points": 16896,
+        "median_of_capture_medians": 1.0,
+        "capture_median_range": [
+          1.0,
+          1.0
+        ]
+      },
+      "NYU": {
+        "n": 258,
+        "missing_points": 0,
+        "total_points": 66048,
+        "median_of_capture_medians": 1.0,
+        "capture_median_range": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "camera_flat": {
+      "DIODE": {
+        "n": 66,
+        "missing_points": 15,
+        "total_points": 16896,
+        "median_of_capture_medians": 1.0,
+        "capture_median_range": [
+          1.0,
+          1.0
+        ]
+      },
+      "NYU": {
+        "n": 258,
+        "missing_points": 0,
+        "total_points": 66048,
+        "median_of_capture_medians": 1.0,
+        "capture_median_range": [
+          1.0,
+          1.0
+        ]
+      }
+    }
+  }
+}

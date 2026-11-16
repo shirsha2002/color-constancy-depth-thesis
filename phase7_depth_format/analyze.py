@@ -61,11 +61,21 @@ def main():
             complete=json.loads((job/'complete.json').read_text())
             assert complete['status']=='complete' and complete['epochs']==10000
             assert complete['configuration_sha256']==cfg['sha256']
+            if condition in CONDITIONS:
+                history=json.loads((job/'history.json').read_text())
+                assert [h['epoch'] for h in history]==list(range(1,10001))
+                reference=np.asarray([h['author_reference_heldout_loss_deg'] for h in history])
+                assert np.isfinite(reference).all()
+                assert np.isfinite([h['training_loss_deg'] for h in history]).all()
+                assert int(np.argmin(reference))+1==complete['author_reference_selected_epoch']
+                dump(job/'history_every100.json',dict(full_history_sha256=sha(job/'history.json'),
+                     full_history_epochs=10000,rows=[h for h in history if h['epoch']==1 or h['epoch']%100==0]))
             for selection in selected:
                 p=json.loads((job/f'{selection}_predictions.json').read_text())
                 ids=p['ids'];assert ids==manifest['folds'][str(fold)]['test_ids']
                 assert len(ids)==len(set(ids))
                 assert p['configuration_sha256']==cfg['sha256']
+                assert p['selected_epoch']==(10000 if selection=='fixed_final' else complete['author_reference_selected_epoch'])
                 labels=np.stack([np.load(ROOT/records[i]['label']).astype(np.float32) for i in ids])
                 assert np.array_equal(labels,np.asarray(p['label'],dtype=np.float32))
                 independent=angles(p['prediction'],labels)
@@ -124,6 +134,7 @@ def main():
     jobs=[json.loads(p.read_text()) for p in OUT.glob('*/*/complete.json')]
     seconds=sum(j['training_seconds'] for j in jobs)
     audit=dict(status='PASS',new_trained_models=len(jobs),all_final_checkpoints_reinferred=len(audits),
+               new_training_histories_and_reference_selection_verified=True,
                saved_predictions_checked=len(predictions),max_independent_atan2_discrepancy_deg=max_error,
                cpu_vs_cuda_reinference=audits,protocol_sha256=sha(HOME/'PROTOCOL.md'),
                analyzer_sha256=sha(Path(__file__)),training_gpu_hours=seconds/3600,
