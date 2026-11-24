@@ -2,7 +2,36 @@
 
 শির্ষা মিত্র / 2023521460130 / ১৬ নভেম্বর ২০২৬।
 
-## আমরা এখন কী করছি
+## পরীক্ষা শেষ: আসল ফলাফল
+
+নয়টি নতুন model-এর প্রতিটি 10,000 epoch শেষ করেছে। পুরোনো ছয়টি reference
+model-ও comparison-এ আছে। সব 15টি final checkpoint দিয়ে আবার prediction করা
+হয়েছে এবং 3,240টি saved prediction-এর error স্বাধীনভাবে যাচাই করা হয়েছে।
+Audit PASS। নতুন training বা automatic retry বাকি নেই।
+
+| Input | Mean angular error |
+|---|---:|
+| Native geometry | 2.6135° |
+| শুধু camera axes একই দিকে | 2.5471° |
+| একই axes + median depth দিয়ে normalization | 2.7192° |
+| একই axes-এর flat control | 2.8164° |
+| আগের native flat control | 2.5061° |
+
+কম error ভালো। কিন্তু শুধু গড়ের ছোট পার্থক্য দেখে উন্নতি নিশ্চিত বলা যায় না।
+Normalization বনাম native এবং normalization বনাম matched flat - এই দুটি primary
+comparison-এর interval-এই zero আছে। তাই এই পরীক্ষায় normalization-এর সুবিধা
+প্রতিষ্ঠিত হয়নি। এটিকে “দুই পদ্ধতি নিশ্চিতভাবে সমান” বলাও ঠিক হবে না।
+শুধু axes বদলের ছোট গড় লাভটিও অনিশ্চিত।
+
+DIODE অংশে normalization করার পর mean error 2.6175° থেকে 3.3268° হয়েছে।
+এই খারাপ ফলও রাখতে হবে; একই test দেখে ভালো ফল পাওয়ার জন্য transform বদলানো
+ঠিক হবে না। Dataset ভুল বা scale-এর পার্থক্যই আগের ফলের কারণ - তা প্রমাণ হয়নি।
+
+[English report](../output/pdf/Shirsha_Mitra_PCCC_Depth_Format_Update_2026_11_16.pdf),
+[সব comparison](RESULTS.md), [audit](results/nyu_frame_v1/audit.json) এবং
+[পরের কাজের প্রস্তাব](NEXT_STEPS.md) পড়ো। Reliability gate এখনো তৈরি হয়নি।
+
+## আমরা কী পরীক্ষা করেছি
 
 আমাদের বর্তমান PCCC task হলো রঙিন point cloud থেকে আলোর রং অনুমান করা।
 প্রতিটি point-এ XYZ হলো অবস্থান এবং RGB হলো রং। Model-এর উত্তর একটি global
@@ -42,7 +71,10 @@ label বা model error ব্যবহার করা হয়নি।
 সব নতুন model-এ released PCCC head, একই optimizer, learning rate, augmentation,
 seed rule ও 10,000 epoch রাখা হয়েছে। নতুন reliability gate এখনো নেই।
 
-## ফলাফল কীভাবে বুঝবে
+## আগে নির্ধারিত ফল ব্যাখ্যা করার নিয়ম
+
+নিচের সম্ভাবনাগুলো protocol-এর ব্যাখ্যার নিয়ম; কোনটি বাস্তবে হয়েছে, তা উপরের
+completed ফলাফল থেকে বুঝতে হবে।
 
 - **Normalized geometry native-এর চেয়ে ভালো, matched flat-এর চেয়ে ভালো নয়:**
   normalization উপকারী হতে পারে, কিন্তু relative depth-এর উপকার নিশ্চিত নয়।
@@ -80,10 +112,11 @@ $env:PYTHONUTF8='1'
 ```
 
 STATUS.md-তে human-readable অবস্থা, completion_status.json-এ local audit worker-এর
-অবস্থা থাকবে। Complete and audited না হওয়া পর্যন্ত final result দাবি করবে না।
-RESULTS.md, summary.csv, paired.json এবং audit.json তৈরি হলে সেগুলো পড়বে।
+অবস্থা আছে। বর্তমান অবস্থা Complete and audited। RESULTS.md, summary.csv,
+paired.json এবং audit.json তৈরি হয়েছে; সেগুলোতেই আসল ফল ও সীমাবদ্ধতা আছে।
 
-সর্বোচ্চ cloud budget $8 অনুমোদিত। Failed job বা cancelled laptop run নিজে থেকে
+এই শেষ হওয়া experiment-এর সর্বোচ্চ cloud budget $8 অনুমোদিত ছিল। এই অনুমতি
+নতুন experiment-এর জন্য নয়। Failed job বা cancelled laptop run নিজে থেকে
 পুনরায় চালু হবে না। কোনো completed cloud command শুধু status দেখার জন্য আবার
 চালাবে না।
 

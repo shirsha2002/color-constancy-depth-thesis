@@ -1,0 +1,61 @@
+{
+  "release_tag": "thesis-handoff-2026-11-24",
+  "total_completed_models": 90,
+  "assets": [
+    {
+      "asset": "Phase4_CPU_Pilot_Training.zip",
+      "root": "phase4_pccc/results/cpu_v1",
+      "models": 12,
+      "epochs": 100,
+      "files": 37,
+      "bytes": 75346208,
+      "sha256": "d4a2f9544aa910b618a5851ea2b3cbf5e5193ccc643149fc155b76badeb7de8d",
+      "contents": "Saved checkpoints, training histories, configurations, predictions and completion records"
+    },
+    {
+      "asset": "Phase6_DepthAWB_Training.zip",
+      "root": "phase6_modal/results/depthawb_t4_v1",
+      "models": 12,
+      "epochs": 10000,
+      "files": 113,
+      "bytes": 457534743,
+      "sha256": "6064845aea3d978a824d06a7d61d0f497a6b998d449d318da7719f333d69a3a6",
+      "contents": "Saved checkpoints, training histories, configurations, predictions and completion records"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training.zip",
+      "root": "phase6_modal/results/bc_t4_v1",
+      "models": 36,
+      "epochs": 10000,
+      "files": 336,
+      "bytes": 1374425800,
+      "sha256": "3dbd7517cecbc1c5b2e4082c428ea43d5fd0872ed443a11dd31007567487b063",
+      "contents": "Saved checkpoints, training histories, configurations, predictions and completion records"
+    },
+    {
+      "asset": "Phase7_DepthFormat_Training.zip",
+      "root": "phase7_depth_format/results/nyu_frame_v1",
+      "models": 9,
+      "epochs": 10000,
+      "files": 91,
+      "bytes": 343647855,
+      "sha256": "f302c8f5236d7047fe2b5fd74f3a9b05da837eb185e5c6d406b72bb78ab54861",
+      "contents": "Saved checkpoints, training histories, configurations, predictions and completion records"
+    },
+    {
+      "asset": "Phase9_ETH3D_Fusion_Pilot_Training.zip",
+      "root": "phase9_reliability_fusion/runs/eth3d_pilot_v1",
+      "models": 21,
+      "epochs": 100,
+      "files": 147,
+      "bytes": 42412035,
+      "sha256": "7143b835a0af5b5df560a5a14a0ac3f928d0a44c7a4d2affd0f738a548423e9f",
+      "contents": "Saved checkpoints, training histories, configurations, predictions and completion records"
+    }
+  ],
+  "excluded": [
+    "Downloaded raw datasets and external pretrained weights",
+    "Local environments, credentials and private meeting information",
+    "Temporary renders and smoke-test or cancelled-training checkpoints"
+  ]
+}

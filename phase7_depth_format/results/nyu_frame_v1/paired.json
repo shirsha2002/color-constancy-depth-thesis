@@ -1,0 +1,57 @@
+[
+  {
+    "contrast": "camera_unitdepth minus native",
+    "role": "primary",
+    "mean_deg": 0.10565817737544965,
+    "conditional_capture_bootstrap95": [
+      -0.15335940912756685,
+      0.3709695355099611
+    ],
+    "left_better_captures": 161,
+    "n": 324
+  },
+  {
+    "contrast": "camera_unitdepth minus camera_flat",
+    "role": "primary",
+    "mean_deg": -0.09719043624363173,
+    "conditional_capture_bootstrap95": [
+      -0.33690787287965357,
+      0.14787898723598195
+    ],
+    "left_better_captures": 165,
+    "n": 324
+  },
+  {
+    "contrast": "camera_real minus native",
+    "role": "secondary",
+    "mean_deg": -0.06637673164042071,
+    "conditional_capture_bootstrap95": [
+      -0.23856191392622664,
+      0.10508274672377943
+    ],
+    "left_better_captures": 164,
+    "n": 324
+  },
+  {
+    "contrast": "camera_unitdepth minus camera_real",
+    "role": "secondary",
+    "mean_deg": 0.17203490901587035,
+    "conditional_capture_bootstrap95": [
+      -0.07340437056413159,
+      0.42400271348294305
+    ],
+    "left_better_captures": 141,
+    "n": 324
+  },
+  {
+    "contrast": "camera_flat minus native_flat",
+    "role": "secondary",
+    "mean_deg": 0.31027800948635675,
+    "conditional_capture_bootstrap95": [
+      0.10366577001626948,
+      0.5164743016126176
+    ],
+    "left_better_captures": 148,
+    "n": 324
+  }
+]

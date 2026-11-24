@@ -1,0 +1,30 @@
+THREE MINUTE DEFENSE SCRIPT
+Shirsha Mitra | 25 November 2026
+Target: 180 seconds. Script words: 249. Rehearse aloud; the timing is a target, not a measured speaking time.
+
+Slide 1 - 20 seconds
+Good afternoon. I am Shirsha Mitra. Under my registered thesis title, I am studying depth reliability aware fusion for point cloud color constancy. My current model estimates illumination from RGB and depth.
+
+Slide 2 - 35 seconds
+My starting point is PCCC. In our earlier three-dataset study, real geometry helped clearly on ETH3D, but the other datasets showed no clear benefit. Damaged depth could also hurt performance. This motivates my question: can the model control how much geometry it uses when depth quality varies?
+
+Slide 3 - 40 seconds
+I implemented separate color and geometry branches. A gate uses missing-depth information and local depth disagreement to weight the geometry features. The network then estimates one global illuminant. The gate receives no test errors or corruption labels. I compare it with RGB only, ordinary fusion, mask fusion and original PCCC.
+
+Slide 4 - 55 seconds
+The new ETH3D pilot trained twenty-one models for one hundred epochs across three official folds. All saved checkpoints and prediction scores passed audit. The gate's mean error was about two point five seven degrees, compared with two point five nine for mask fusion and two point three two for PCCC. Both primary uncertainty intervals include zero. Therefore, the pilot does not establish an improvement. This is preliminary evidence that guides the next experiments.
+
+Slide 5 - 30 seconds
+Next I will add a learned constant-gate control, run longer schedules with repeated seeds, and test simulated scenes and additional real data. I will assess geometry from images only after verifying correspondence and illumination labels. I will also confirm alignment with the registered monocular-depth title. Thank you.
+
+STOP AFTER SLIDE 5. Slides 6 and 7 are backups for questions.
+
+বাংলায় মূল কথা
+১। তোমার মূল প্রশ্ন: depth-এর মান সব জায়গায় সমান নয়। Model কি input দেখে geometry কতটা ব্যবহার করবে শিখতে পারে?
+২। XYZ হলো অবস্থান, RGB হলো রং। Gate রং ও geometry feature মেশানোর সময় geometry-র ওজন ঠিক করে।
+৩। বর্তমান output হলো পুরো দৃশ্যের আলোর রং। এটি depth map নয়। Registered monocular-depth title-এর সঙ্গে এই কাজের scope স্যারের সঙ্গে নিশ্চিত করতে হবে।
+৪। নতুন ২১টি model-এর training ও audit শেষ। কিন্তু PCCC baseline ভালো করেছে এবং দুই primary interval-এই zero আছে। তাই improvement বা novelty প্রমাণ হয়েছে বলবে না।
+৫। Proposal-এ তুমি গবেষণার সমস্যা, বানানো prototype, সৎ preliminary ফল এবং পরের পরীক্ষার পরিকল্পনা দেখাবে। পুরো thesis শেষ হয়েছে বলবে না।
+
+অনুশীলন
+প্রথমে প্রতিটি slide নিজের ভাষায় বোঝো। তারপর ইংরেজি script পড়ে timer চালাও। ২ মিনিট ৪৫ সেকেন্ড থেকে ৩ মিনিটের মধ্যে শেষ করার চেষ্টা করো। প্রশ্ন করলে না বুঝলে আবার বলতে অনুরোধ করো; অজানা উত্তর বানিয়ে বলবে না।

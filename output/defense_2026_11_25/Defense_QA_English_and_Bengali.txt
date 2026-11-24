@@ -1,0 +1,62 @@
+DEFENSE QUESTIONS AND SHORT ANSWERS
+Read these for understanding, not as invented claims.
+
+1. What is color constancy?
+It estimates the color of the scene illumination. Our current endpoint is a global illuminant RGB vector.
+বাংলা: আলোর রং অনুমান করা; depth prediction নয়।
+
+2. Why use depth?
+Geometry may help separate useful scene structure from ambiguous color evidence. Our earlier ETH3D comparison showed a benefit, but the benefit did not hold clearly on every dataset.
+বাংলা: সব dataset-এ depth উপকারী হয়েছে বলা যাবে না।
+
+3. What did you implement?
+Separate RGB and geometry branches, an input-derived scalar geometry gate, matched controls and a reproducible training/evaluation pipeline.
+বাংলা: PCCC-র original code ও নিজের candidate আলাদা করে বলবে।
+
+4. Has the new algorithm improved accuracy?
+Not established. The gate scored 2.574 degrees on clean ETH3D inputs versus 2.588 for mask fusion and 2.318 for PCCC. Both primary paired intervals include zero.
+বাংলা: স্পষ্টভাবে বলবে: এখনো improvement প্রমাণ হয়নি।
+
+5. Is gating itself novel?
+No. Gating is established. A contribution would need a justified depth-quality mechanism and reproducible gains beyond stronger controls and prior work.
+বাংলা: শুধু gate যোগ করাকে নতুন গবেষণা বলবে না।
+
+6. What does the gate observe?
+Input validity, valid-depth fraction and local log-depth disagreement. It does not observe test errors, corruption names or hidden clean depth.
+বাংলা: Gate-এর value calibrated reliability নয়।
+
+7. Could a depth boundary be mistaken for bad depth?
+Yes. Real depth discontinuities can raise the disagreement cues. That is a limitation and a reason for better quality supervision and boundary-aware controls.
+বাংলা: এটি কারণ জানার সীমাবদ্ধতা; স্বীকার করবে।
+
+8. How did you prevent leakage?
+Each official fold has 104 training, 26 inner-validation and 65 held-out captures in the pilot. Epoch 100 is primary. Test results did not select checkpoints or hyperparameters. Prior benchmark exposure remains development exposure.
+বাংলা: এগুলো নতুন untouched scenes নয়।
+
+9. Why only 100 epochs?
+This is a reduced-budget feasibility pilot with matched schedules. It is separate from the earlier 10,000-epoch PCCC study. We need longer schedules and repeated seeds before stronger conclusions.
+বাংলা: পুরোনো ০.৯৮ ডিগ্রি আর নতুন pilot-এর ফল একই training budget নয়।
+
+10. Are the damage tests real sensor failures?
+No. They are fixed synthetic depth interventions on real captured point clouds. Rendered-scene simulation and independent real sensor validation are still planned.
+বাংলা: Noise যোগ করা আর আসল simulation scene তৈরি করা এক নয়।
+
+11. How does this fit the monocular-depth thesis title?
+The registered title is retained. The current supervisor-directed module studies RGB-D illumination estimation. I will confirm scope alignment and test RGB-predicted geometry only with verified inputs. I do not claim an improvement in monocular depth accuracy.
+বাংলা: এই পার্থক্য ঢাকবে না; স্যারের সঙ্গে scope ঠিক করা জরুরি।
+
+12. Did you use VGGT, Pi3 or MapAnything?
+Not in these results. They are potential geometry sources for later experiments, requiring original images, correspondence and illumination-label checks.
+বাংলা: ব্যবহার না করলে ব্যবহার করেছি বলবে না।
+
+13. Which GPU did you use?
+The earlier 48-model study used Modal T4 GPUs. This new 21-model fusion pilot used my local Intel GPU. The audit used the saved checkpoints; no new Modal training was needed.
+বাংলা: পুরোনো cloud experiment এবং নতুন local pilot আলাদা।
+
+14. What will you do next?
+Add a learned constant-gate control, budget longer schedules and repeated seeds, then test genuinely simulated scenes and newly held-out real scenes.
+বাংলা: বর্তমান test দেখে ভালো ফল আনার জন্য tuning করবে না।
+
+15. Did you write everything without assistance?
+I used coding assistance to develop the implementation. I am responsible for understanding the method, checking the evidence and explaining the limitations.
+বাংলা: নিজের না-বোঝা অংশ নিজের ভাষায় বুঝে নেবে; বানিয়ে বলবে না।

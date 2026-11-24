@@ -6,6 +6,27 @@ This tests the prior NYU/DIODE coordinate-convention hypothesis. It does not
 implement the proposed reliability-aware fusion. Read [PROTOCOL.md](PROTOCOL.md)
 before interpreting any results. Raw data and previous results remain unchanged.
 
+**Completed and audited.** Read [RESULTS.md](RESULTS.md) for all outcomes and
+[EXECUTION_NOTES.md](EXECUTION_NOTES.md) for the recovered post-save metadata
+error. Neither primary comparison establishes a normalization benefit.
+
+The [English progress report](../output/pdf/Shirsha_Mitra_PCCC_Depth_Format_Update_2026_11_16.pdf)
+shows every declared comparison and the source-specific outcomes. Read the
+[next-step decision](NEXT_STEPS.md) before designing another experiment.
+The [ETH3D readiness check](ETH3D_FEASIBILITY.md) records which inputs are present
+and which original-image/correspondence prerequisites remain missing.
+The [Bengali guide](STUDENT_GUIDE_BN.md) explains the completed findings.
+
+To rebuild the report locally from the saved, audited records:
+
+```powershell
+& .\.venv\Scripts\python.exe phase7_depth_format/build_report.py
+```
+
+The builder verifies the recorded protocol/analyzer hashes and writes
+report_manifest.json with its evidence-source hashes. It allocates no cloud
+resources. Previous reports remain separate historical outputs.
+
 Three new representations (camera-real, camera-unitdepth, camera-flat) x three
 official folds = nine released-head10000epoch models. Existing native and
 native-flat phase-six models are reused. All RGB/labels are unchanged. Input

@@ -1,5 +1,17 @@
 # Sources and attribution
 
+## University forms supplied by the student
+
+The worksheet PDF and bilingual thesis template in `documents/templates/`
+were supplied by the student as Sichuan University reference documents.
+They retain their original institutional attribution and are not covered by
+this project's software license. Completed unsigned forms are in
+`output/proposal_submission/`; they do not represent supervisor approval.
+
+Completed-study model checkpoints and training records are available as separate
+release assets. Downloaded source datasets and external pretrained models remain
+excluded; use the official sources and acquisition scripts below.
+
 ## Depth model
 
 Lihe Yang et al. **Depth Anything V2** (2024).

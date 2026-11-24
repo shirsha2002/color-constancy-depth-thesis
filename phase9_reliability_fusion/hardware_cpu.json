@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "device": "cpu",
+  "torch": "2.14.1+xpu",
+  "hardware": "CPU",
+  "training_only": true,
+  "heldout_samples_used": false,
+  "paid_compute_launched": false,
+  "benchmark_source_sha256": "9df5cad094f92bf23bfa38e915703e41e56aa7c590c48c2c4de5935548c87138",
+  "model_sha256": "b9f049fdb5a8cb3db7b918f2c5f9c90495bdbde6b157c24d25d25a54db68a637",
+  "data_sha256": "e615f896b3e6c4ea425f801c2fb62e484bbda3dcedf2546115a83fbf13772786",
+  "modes": [
+    {
+      "mode": "learned",
+      "status": "PASS",
+      "synchronized_median_seconds_per_step": 0.03623349999907077,
+      "cpu_prediction_max_absolute_difference": 0.0,
+      "cpu_gradient_tolerance_passed": true,
+      "finite_adam_updates": 10,
+      "training_seconds_per_100_epochs_compute_only": 25.36344999934954,
+      "training_seconds_per_10000_epochs_compute_only": 2536.344999934954
+    },
+    {
+      "mode": "mask",
+      "status": "PASS",
+      "synchronized_median_seconds_per_step": 0.014037250002729706,
+      "cpu_prediction_max_absolute_difference": 0.0,
+      "cpu_gradient_tolerance_passed": true,
+      "finite_adam_updates": 10,
+      "training_seconds_per_100_epochs_compute_only": 9.826075001910795,
+      "training_seconds_per_10000_epochs_compute_only": 982.6075001910795
+    },
+    {
+      "mode": "ordinary",
+      "status": "PASS",
+      "synchronized_median_seconds_per_step": 0.013653050002176315,
+      "cpu_prediction_max_absolute_difference": 0.0,
+      "cpu_gradient_tolerance_passed": true,
+      "finite_adam_updates": 10,
+      "training_seconds_per_100_epochs_compute_only": 9.55713500152342,
+      "training_seconds_per_10000_epochs_compute_only": 955.713500152342
+    },
+    {
+      "mode": "rgb",
+      "status": "PASS",
+      "synchronized_median_seconds_per_step": 0.011696599998685997,
+      "cpu_prediction_max_absolute_difference": 0.0,
+      "cpu_gradient_tolerance_passed": true,
+      "finite_adam_updates": 10,
+      "training_seconds_per_100_epochs_compute_only": 8.187619999080198,
+      "training_seconds_per_10000_epochs_compute_only": 818.7619999080198
+    },
+    {
+      "mode": "pccc",
+      "status": "PASS",
+      "synchronized_median_seconds_per_step": 0.22305369999958202,
+      "cpu_prediction_max_absolute_difference": 0.0,
+      "cpu_gradient_tolerance_passed": true,
+      "finite_adam_updates": 10,
+      "training_seconds_per_100_epochs_compute_only": 156.13758999970742,
+      "training_seconds_per_10000_epochs_compute_only": 15613.758999970742
+    }
+  ],
+  "training_ids": [
+    "DSC_9299",
+    "DSC_9260",
+    "DSC_0314",
+    "DSC_0714",
+    "DSC_0644",
+    "DSC_0296",
+    "DSC_6515",
+    "DSC_0276",
+    "DSC_0640",
+    "DSC_9294",
+    "DSC_6504",
+    "DSC_0605",
+    "DSC_9301",
+    "DSC_0272",
+    "DSC_0649",
+    "DSC_0251"
+  ],
+  "batch_size": 16,
+  "manifest_sha256": "1b1503bac40543a0c8a1723e4e644dfd786e3a8d9b36a757a46936f5c2b9c6d4",
+  "time_scope": "Two forward passes, supervised/consistency loss, backward and Adam step; synchronized; two warmups and eight measured steps",
+  "epoch_projection": "Compute only, ceil(train_count/16)*step time; excludes loading, validation, checkpointing and startup"
+}

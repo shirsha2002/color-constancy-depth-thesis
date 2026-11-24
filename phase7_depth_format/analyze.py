@@ -43,7 +43,7 @@ def main():
     manifests.update(native=old_manifest,native_flat=json.loads((ROOT/'phase6_modal/inputs/NYU_DIODE_flat/manifest.json').read_text()))
     all_ids=[r['id'] for r in old_manifest['samples']]
     assert len(all_ids)==len(set(all_ids))==324
-    errors={};rows=[];predictions=[];audits=[];max_error=0.;max_prediction=0.
+    errors={};rows=[];predictions=[];audits=[];max_error=0.;max_prediction=0.;execution_sources={}
     for condition,manifest in manifests.items():
         records={r['id']:r for r in manifest['samples']}
         root=(BASE/('NYU_DIODE_real' if condition=='native' else 'NYU_DIODE_flat')) if condition.startswith('native') else OUT/condition
@@ -51,7 +51,16 @@ def main():
         if condition in CONDITIONS:
             assert cfg['epochs']==10000 and cfg['condition']==condition
             assert sha(HOME/f'inputs/{condition}/manifest.json')==cfg['manifest_sha256']
-            for name,expected in cfg['additional_sources'].items():assert sha(HOME/name)==expected
+            verified={}
+            for name,expected in cfg['additional_sources'].items():
+                path=HOME/name
+                if name=='run_modal.py' and sha(path)!=expected:
+                    # Actual v1 source is preserved byte-for-byte. Only its
+                    # post-commit return metadata was fixed after this run.
+                    path=HOME/'snapshots/run_modal_v1.py'
+                assert sha(path)==expected
+                verified[name]={'verified_path':path.relative_to(ROOT).as_posix(),'sha256':expected}
+            execution_sources[cfg['sha256']]=verified
         for name,expected in cfg['sources'].items():assert sha(ROOT/name)==expected
         for r in records.values():
             for name in ['cloud','label']:assert sha(ROOT/r[name])==r[name+'_sha256']
@@ -137,6 +146,7 @@ def main():
                new_training_histories_and_reference_selection_verified=True,
                saved_predictions_checked=len(predictions),max_independent_atan2_discrepancy_deg=max_error,
                cpu_vs_cuda_reinference=audits,protocol_sha256=sha(HOME/'PROTOCOL.md'),
+               execution_sources_verified=execution_sources,
                analyzer_sha256=sha(Path(__file__)),training_gpu_hours=seconds/3600,
                training_resource_planning_usd_upper=seconds*(budget['t4_usd_per_second']+4*budget['cpu_usd_per_core_second']+4*budget['ram_usd_per_gib_second']),
                billing_note='Estimated compute allowance, not the provider invoice; smoke/build overhead separate.')

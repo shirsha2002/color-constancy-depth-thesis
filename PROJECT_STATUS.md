@@ -1,12 +1,96 @@
 # Thesis project status and repository scope
 
 Shirsha Mitra, student ID 2023521460130, Sichuan University.
-Status checked on 10 November 2026.
+Status checked on 24 November 2026.
+
+The latest public files are indexed in [FRIEND_START_HERE.md](FRIEND_START_HERE.md).
+The illustrated report now has four pages and four experimental figures. Official
+Tables 1-3 have prefilled student sections and three pages of experimental outputs;
+supervisor sections, actual dates and signatures remain outstanding. Fresh local
+Intel-GPU inference reproduced 975 pilot predictions exactly. No new training or
+Modal job was launched for the report update.
 
 Thesis: **Design and Implementation of a Color-Constancy-Assisted Monocular
 Depth Estimation System**.
 
 ## Completed work
+
+### Audited fusion pilot and proposal defense preparation 23 November
+
+All 21 ETH3D fusion-pilot models completed 100 epochs on the local Intel GPU.
+The [results](phase9_reliability_fusion/pilot_v1/RESULTS.md) retain all seven
+methods, five test conditions, three folds and both checkpoint rules. All 42
+checkpoints were re-inferred; 13,650 predictions, 70 summary rows, 210 fold
+summaries and both bootstrap intervals passed independent verification.
+The [audit recovery note](phase9_reliability_fusion/AUDIT_RECOVERY.md) records
+the contiguous-input-layout fix without retraining or altered numerical inputs.
+
+Clean learned-gate mean is 2.5740 degrees, mask 2.5881 and matched PCCC 2.3177.
+Both learned-minus-mask primary intervals include zero. Improvement, novelty,
+full-budget repeated-seed evidence and independent new-scene validation remain
+unestablished. No new cloud job was allocated.
+
+The 25 November [defense materials](output/defense_2026_11_25/START_HERE.txt)
+include a three-minute main talk, two backup slides, written proposal, bilingual
+script/Q&A and a private meeting note excluded from Git. The proposal preserves
+the registered title and explicitly identifies current RGB-D illuminant
+estimation as a scope question for supervisor confirmation. It is prepared for
+review; unconfirmed administrative and approval fields are not invented.
+
+### Initial reliability-aware fusion implementation 16 November
+
+The [phase-nine candidate](phase9_reliability_fusion/README.md) now implements
+separate RGB/geometry branches, a learned input-derived gate, ordinary/mask/RGB
+controls and a pinned original-PCCC adapter. The 34,020-parameter candidate
+passed gradient, missing-depth fallback, permutation and checkpoint checks.
+All 704 released input identities and split membership were checked. A synthetic
+worker test passed optimizer/test separation and saved-model re-inference.
+No full fusion benchmark or paid run has been launched. Performance improvement,
+novelty and new data validation remained outstanding at this stage. This stage
+addresses the teacher's proposed algorithm directly; phase eight remains a
+separate scale-only preparation.
+
+Hardware follow-up: [local Intel GPU checks](phase9_reliability_fusion/HARDWARE.md)
+passed for all four new fusion modes and the complete synthetic worker. Local
+GPU is preferred for modest prototype work under the user's latest instruction.
+Original PCCC initially failed a strict CPU/GPU gradient comparison. Later
+same-XPU repeatability checks passed; all pilot methods then used XPU while
+retaining the unresolved CPU-gradient difference. No canceled job was restarted.
+
+### Current continuation: ETH3D scale inputs prepared (16 November)
+
+The [ETH3D follow-up](phase8_eth3d_scale/README.md) now has a separate frozen
+protocol, 195 locally prepared median-depth-normalized clouds and an independent
+input audit. RGB, labels, native axes and official folds are preserved. The
+existing loader accepted every capture and all six reusable native/flat final
+checkpoint hashes passed. Tiny subthreshold residuals were preserved explicitly.
+This is input preparation, not a new trained experiment or accuracy result.
+Three new models are planned; a bounded runner and new runtime/spending allowance
+remain necessary before paid execution. No training or cloud job was launched.
+
+### Latest: camera-frame and depth-scale diagnostic (16 November)
+
+Completed nine new released-head PCCC models at 10,000 epochs on the official
+NYU-v2 + DIODE folds. Six phase-six native/native-flat references were reused.
+The independent audit passed: 3,240 saved predictions checked and all 15 final
+checkpoints re-inferred. Read the [report](output/pdf/Shirsha_Mitra_PCCC_Depth_Format_Update_2026_11_16.pdf),
+[measured results](phase7_depth_format/RESULTS.md),
+[execution and recovery notes](phase7_depth_format/EXECUTION_NOTES.md), and
+[audit](phase7_depth_format/results/nyu_frame_v1/audit.json).
+
+Native mean angular error is 2.6135°; canonical axes give 2.5471°, canonical axes
+plus per-capture median-depth normalization 2.7192°, and the matched canonical
+flat control 2.8164°. Both primary paired intervals include zero, so neither
+normalization nor relative-depth benefit is established by these comparisons.
+One seed per fold and prior development exposure limit the evidence.
+That diagnostic did not implement a reliability gate or new fusion architecture;
+the subsequent local prototype is recorded above.
+
+New training consumed 5.758 GPU-hours. The training-only resource planning
+allowance is $4.67, excluding smoke/build/startup overhead; it is not an invoice.
+The original approved cap was $8. The application stopped after completion and
+reported zero tasks. No extra training or automatic retry is pending, and the
+cancelled phase-five laptop jobs remain stopped.
 
 ### Full PCCC on all three datasets with a cloud GPU (10 November)
 
@@ -20,18 +104,19 @@ reliability-aware fusion in the report is a proposal, not an implemented result.
 
 Cancelled on9November at the user's explicit request because it takes too much
 time. Both workers are stopped; nothing is scheduled to restart. Partial GPU
-epoch6200 and CPU epoch1550 checkpoints are preserved. No completed10000epoch
-benchmark is claimed. The launch details below are historical.
+epoch6200 and CPU epoch1550 checkpoints are preserved. No completed 10,000-epoch
+benchmark is claimed for this cancelled laptop study. The launch details below
+are historical; the separately completed cloud studies are described above.
 
 The DepthAWB256point, three-fold,10000epoch study was launched on9November.
 Actual PCCC training, CPU source equivalence and exact restart checks passed on
 both CPU and Intel Arc140T XPU. The GPU is the main suite backend; a separate
 CPU fold0 reference was launched too. Check [live-run instructions](phase5_pccc/README.md)
-and [current completion status](phase5_pccc/STATUS.md). Launching is not completing
-the experiment. The worker audits completed numeric results
-and publishes only after verification. Earlier completed studies remain below.
+and [cancellation status](phase5_pccc/STATUS.md). Launching is not completing
+the experiment. No completion or publication worker remains pending for it.
+Earlier completed studies remain below.
 
-### Latest direction: genuine PCCC color-constancy reproduction
+### Earlier PCCC color-constancy reproduction pilot
 
 The supervisor's latest direction centers **RGB-D / point-cloud information
 improving illumination estimation**. It is a different endpoint from the earlier
@@ -136,6 +221,7 @@ physically accurate illuminant recovery.
 | Included on GitHub | Location |
 |---|---|
 | Original experiment code and checks | `scripts/`, `tests/`, `.vscode/` |
+| Latest camera-frame/depth-scale protocol, code, compact results and audit | `phase7_depth_format/` (large checkpoints, clouds and full histories remain local) |
 | Small PCCC CPU reproduction, source wrapper, data identities and CC results | `phase4_pccc/` |
 | Follow-up code, frozen protocols and audit tools | `phase2/mono/`, `phase2/stereo/`, `phase2/audit/`, `phase2/PROTOCOL.md` |
 | Expanded real-data study, protocols, learning and independent analysis | `phase3/README.md`, `phase3/RESULTS.md`, `phase3/learning/`, `phase3/data_tools/`, `phase3/analyze.py` |
@@ -167,7 +253,10 @@ not authored research outputs, and are not added to this public code repository.
 
 ## Read or reproduce
 
-Start with [the PCCC results](phase4_pccc/RESULTS.md) and [the output guide](output/START_HERE.md).
+Start with [the latest PCCC results](phase7_depth_format/RESULTS.md),
+[execution notes](phase7_depth_format/EXECUTION_NOTES.md),
+[independent audit](phase7_depth_format/results/nyu_frame_v1/audit.json), and
+[the output guide](output/START_HERE.md).
 The [7 November report](output/pdf/Shirsha_Mitra_Weekly_Update_2026_11_07.pdf) covers the earlier depth study.
 For exact commands and claim limits, read [the PCCC reproduction guide](phase4_pccc/README.md),
 [the real-light depth study](phase3/README.md), [the prior follow-up README](phase2/README.md),

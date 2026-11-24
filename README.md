@@ -3,7 +3,65 @@
 Undergraduate thesis project by **Shirsha Mitra**, student ID **2023521460130**,
 Sichuan University.
 
-## Latest: full PCCC on all three datasets with a cloud GPU, 10 November
+## Download the latest thesis and presentation files
+
+Updated 24 November 2026. Start with the [friend's presentation guide](FRIEND_START_HERE.md).
+
+- [Download the public presentation materials ZIP](output/defense_2026_11_25/Presentation_Materials_Public.zip)
+- [Editable PowerPoint](output/defense_2026_11_25/Shirsha_Mitra_Proposal_Defense_2026.pptx)
+- [Illustrated proposal PDF](output/defense_2026_11_25/Shirsha_Mitra_Proposal_Report_With_Experiments.pdf)
+- [Editable Word report](output/defense_2026_11_25/Shirsha_Mitra_Proposal_Report_With_Experiments.docx)
+- [Official Tables 1 to 3 unsigned draft](<output/proposal_submission/2023521460130_Shirsha Mitra_Proposal Report Table1_3.pdf>)
+- [Experimental figures](output/defense_2026_11_25/figures) and [slide previews](output/defense_2026_11_25/slide_previews)
+- [Training checkpoints and records](https://github.com/shirsha2002/color-constancy-depth-thesis/releases/tag/thesis-handoff-2026-11-24)
+
+The written report has four pages, four experimental figures and six tables.
+The official form retains seven template pages and appends three pages of
+experimental evidence. It needs supervisor completion, actual dates and signatures.
+The research has not established a reliability-gating improvement. The registered
+title remains unchanged pending supervisor confirmation of the current scope.
+
+## Audited fusion pilot and defense preparation
+
+23 November 2026. The [ETH3D fusion pilot](phase9_reliability_fusion/pilot_v1/RESULTS.md)
+completed 21 local-Intel-GPU models at 100 epochs. All 42 checkpoints and 13,650
+prediction rows passed audit and independent verification. Both primary intervals
+include zero; the gate did not outperform the matched PCCC baseline. No new
+Modal training was used. This is a reduced development pilot, not full-budget
+or independent scene-level validation.
+
+The [defense folder](output/defense_2026_11_25/START_HERE.txt) contains the
+five-main-slide presentation, two backups, written proposal, speaking script
+and English/Bengali questions for 25 November. Student and supervisor details have
+been filled from the student's information; formal title/scope alignment and the
+supervisor-owned form sections still require supervisor confirmation.
+
+Current continuation: [ETH3D scene-scale inputs](phase8_eth3d_scale/README.md)
+are prepared and independently verified for all 195 captures. The protocol is
+frozen; no new training or accuracy result is claimed. The latest completed
+full-budget representation experiment remains the camera-frame study below.
+
+## Earlier camera-frame and depth-scale study, 16 November
+
+**Completed and independently audited.** Nine new PCCC models trained for 10,000
+epochs on the official NYU-v2 + DIODE folds, reusing six native-reference models.
+Mean final-epoch angular errors are 2.6135° for native geometry, 2.5471° for
+canonical camera axes, 2.7192° after median-depth normalization, and 2.8164° for
+the matched canonical flat control. **Neither primary comparison establishes
+a normalization benefit**; both paired 95% intervals include zero.
+
+Read the [16 November report](output/pdf/Shirsha_Mitra_PCCC_Depth_Format_Update_2026_11_16.pdf),
+[all results and limits](phase7_depth_format/RESULTS.md),
+[execution and recovery notes](phase7_depth_format/EXECUTION_NOTES.md), and
+[independent audit](phase7_depth_format/results/nyu_frame_v1/audit.json).
+The audit checked 3,240 saved predictions and re-inferred all 15 final checkpoints.
+This is a representation diagnostic with one seed per fold and prior development
+exposure. That study did not implement reliability-aware fusion; the new local
+prototype is linked above. The cloud application
+is stopped; no extra training or automatic retry is pending. The cancelled
+laptop study remains stopped.
+
+## Earlier: full PCCC on all three datasets with a cloud GPU, 10 November
 
 PCCC was trained with the paper's full budget (**10,000 epochs**, official 3-fold splits) on
 **DepthAWB, ETH3D and NYU-v2 + DIODE** on rented Modal NVIDIA T4 GPUs: 48 models, about
@@ -20,7 +78,7 @@ are stopped; queued jobs and automatic completion publication will not run.**
 Partial checkpoints are preserved locally (GPU epoch6200, CPU epoch1550).
 The earlier completed pilot remains available below. See [cancellation status](phase5_pccc/STATUS.md).
 
-The next experiment runs PCCC at **10000 epochs**, all three official DepthAWB
+The cancelled experiment was planned to run PCCC at **10000 epochs**, all three official DepthAWB
 folds and 256-point input. The **Intel Arc 140T GPU** passed actual training and
 exact restart checks and is the main backend. A separate full-budget CPU
 reference was launched as well. This is the DepthAWB scope, not all experiments
@@ -28,12 +86,12 @@ and datasets in the original paper.
 
 **At launch these new results were not complete.** Read [the current status](phase5_pccc/STATUS.md)
 and [the runnable guide](phase5_pccc/README.md). The completed 100-epoch pilot
-below remains a separate earlier experiment. Completed numeric outputs will
-be independently audited before the authorised publication step uploads them.
+below remains a separate earlier experiment. This cancelled run has no pending
+completion or publication step.
 
-## Latest: small PCCC reproduction, 9 November
+## Earlier: small PCCC reproduction, 9 November
 
-The current follow-up directly follows **Point Cloud Color Constancy (CVPR 2022)**:
+This earlier follow-up directly follows **Point Cloud Color Constancy (CVPR 2022)**:
 RGB plus depth-derived colored points are used to estimate illumination. This
 answers the supervisor's request for PCCC data and CC results; the earlier
 monocular-depth experiments remain separately preserved.
@@ -58,10 +116,10 @@ a claim about depth helping CC.
 
 The default `main` branch also preserves the three earlier research phases. Read
 the [7 November weekly report](output/pdf/Shirsha_Mitra_Weekly_Update_2026_11_07.pdf),
-the [latest measured results](phase3/RESULTS.md) and the
+the [phase-three measured results](phase3/RESULTS.md) and the
 [current project status](PROJECT_STATUS.md).
 
-The latest study acquires **735 captured real-light ReMID images** and
+The 7 November study acquires **735 captured real-light ReMID images** and
 **368 new NYU RGB-D scenes** (200 training / 40 validation / 128 test).
 It compares **15 trained variants plus the frozen model**, with 26,224 unique
 evaluated predictions and a separate 640-prediction floating-point color/exposure
@@ -83,8 +141,10 @@ frozen model must be distinguished from a color-specific contribution.
 
 | Material | Scope |
 |---|---|
-| [Current PCCC results](phase4_pccc/RESULTS.md) | Small CPU reproduction on genuine DepthAWB, source/paper distinctions and geometry controls |
-| [Latest English QQ update](output/QQ_PCCC_CPU_Pilot_English.txt) | Short message based on the audited PCCC pilot |
+| [16 November depth-format report](output/pdf/Shirsha_Mitra_PCCC_Depth_Format_Update_2026_11_16.pdf) | Latest camera-frame and depth-scale diagnostic; both primary contrasts remain inconclusive |
+| [Latest measured PCCC results](phase7_depth_format/RESULTS.md) / [audit](phase7_depth_format/results/nyu_frame_v1/audit.json) | Nine new 10,000-epoch models, six reused references and independent prediction/checkpoint checks |
+| [Latest English QQ draft](phase7_depth_format/QQ_Update_English.txt) | Short message based on the audited 16 November study |
+| [Earlier PCCC pilot results](phase4_pccc/RESULTS.md) | Small CPU reproduction on genuine DepthAWB, source/paper distinctions and geometry controls |
 | [7 November research report](output/pdf/Shirsha_Mitra_Weekly_Update_2026_11_07.pdf) | Earlier ReMID/NYU depth study, simulated controls, internal methods and loss ablations |
 | [Previous phase-two report](output/pdf/Shirsha_Mitra_Phase2_Research_Update.pdf) | Earlier Vari prototype and real-light stereo diagnostic |
 | [Original PowerPoint](output/Shirsha_Mitra_Thesis_Progress.pptx) / [slide PDF](output/Shirsha_Mitra_Thesis_Progress_Slides.pdf) | Initial NYU preprocessing pilot; this earlier deck does not contain the follow-up experiments |

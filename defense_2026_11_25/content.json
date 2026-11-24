@@ -1,0 +1,193 @@
+{
+  "title": "Design and Implementation of a Color-Constancy-Assisted Monocular Depth Estimation System",
+  "focus": "Depth Reliability Aware Fusion for Point Cloud Color Constancy",
+  "student": "Shirsha Mitra",
+  "student_id": "2023521460130",
+  "university": "Sichuan University",
+  "preparation_date": "23 November 2026",
+  "defense_date": "25 November 2026",
+  "main_slides": 5,
+  "backup_slides": 2,
+  "talk_seconds": 180,
+  "talk_word_count": 249,
+  "metrics": {
+    "rgb": {
+      "clean": 2.6819436961700234,
+      "noise10": 2.6819436961700234,
+      "noise30": 2.6819436961700234,
+      "drop50": 2.6819436961700234,
+      "shuffle": 2.6819436961700234,
+      "damaged_mean": 2.6819436961700234
+    },
+    "ordinary": {
+      "clean": 2.560830645131982,
+      "noise10": 2.593959910875809,
+      "noise30": 2.874802934875323,
+      "drop50": 2.563831980383761,
+      "shuffle": 2.606542325058445,
+      "damaged_mean": 2.6597842877983346
+    },
+    "mask": {
+      "clean": 2.58809418139109,
+      "noise10": 2.6060082667087907,
+      "noise30": 2.7451569703817027,
+      "drop50": 2.954188477912436,
+      "shuffle": 2.638073014161631,
+      "damaged_mean": 2.73585668229114
+    },
+    "learned": {
+      "clean": 2.573986617274009,
+      "noise10": 2.5740593045193174,
+      "noise30": 2.6487529026908008,
+      "drop50": 2.7603257346087933,
+      "shuffle": 2.5988952967692,
+      "damaged_mean": 2.645508309647028
+    },
+    "learned_clean": {
+      "clean": 2.8127737034457976,
+      "noise10": 2.8074304164782387,
+      "noise30": 2.8967670259229394,
+      "drop50": 3.315414516525886,
+      "shuffle": 2.823282389580667,
+      "damaged_mean": 2.9607235871269326
+    },
+    "learned_no_consistency": {
+      "clean": 2.594367248732894,
+      "noise10": 2.5938350480214214,
+      "noise30": 2.6690303517478156,
+      "drop50": 2.7775750701548754,
+      "shuffle": 2.615812773889722,
+      "damaged_mean": 2.6640633109534586
+    },
+    "pccc": {
+      "clean": 2.3177084102376226,
+      "noise10": 2.3055690849581523,
+      "noise30": 2.6299250322150125,
+      "drop50": 2.3318909744090646,
+      "shuffle": 2.397773776140942,
+      "damaged_mean": 2.416289716930793
+    }
+  },
+  "labels": {
+    "rgb": "RGB only",
+    "ordinary": "Ordinary fusion",
+    "mask": "Mask fusion",
+    "learned": "Learned gate",
+    "learned_clean": "Gate without damage training",
+    "learned_no_consistency": "Gate without consistency",
+    "pccc": "Original PCCC"
+  },
+  "order": [
+    "rgb",
+    "ordinary",
+    "mask",
+    "learned",
+    "learned_clean",
+    "learned_no_consistency",
+    "pccc"
+  ],
+  "historical": [
+    {
+      "dataset": "ETH3D",
+      "label": "ETH3D",
+      "real": 0.98,
+      "flat": 1.3136
+    },
+    {
+      "dataset": "DepthAWB",
+      "label": "DepthAWB",
+      "real": 1.7729,
+      "flat": 1.8591
+    },
+    {
+      "dataset": "NYU_DIODE",
+      "label": "NYU-v2 + DIODE",
+      "real": 2.6135,
+      "flat": 2.5061
+    }
+  ],
+  "primary": [
+    {
+      "contrast": "learned minus mask",
+      "endpoint": "clean",
+      "role": "primary",
+      "mean_deg": -0.01410756411708134,
+      "conditional_capture_bootstrap95": [
+        -0.11708577262531444,
+        0.08492489263869644
+      ],
+      "n": 195
+    },
+    {
+      "contrast": "learned minus mask",
+      "endpoint": "average_damaged",
+      "role": "primary",
+      "mean_deg": -0.09034837264411236,
+      "conditional_capture_bootstrap95": [
+        -0.18279178035817678,
+        0.0022272124159293137
+      ],
+      "n": 195
+    }
+  ],
+  "script": [
+    {
+      "slide": "Slide 1",
+      "seconds": 20,
+      "text": "Good afternoon. I am Shirsha Mitra. Under my registered thesis title, I am studying depth reliability aware fusion for point cloud color constancy. My current model estimates illumination from RGB and depth."
+    },
+    {
+      "slide": "Slide 2",
+      "seconds": 35,
+      "text": "My starting point is PCCC. In our earlier three-dataset study, real geometry helped clearly on ETH3D, but the other datasets showed no clear benefit. Damaged depth could also hurt performance. This motivates my question: can the model control how much geometry it uses when depth quality varies?"
+    },
+    {
+      "slide": "Slide 3",
+      "seconds": 40,
+      "text": "I implemented separate color and geometry branches. A gate uses missing-depth information and local depth disagreement to weight the geometry features. The network then estimates one global illuminant. The gate receives no test errors or corruption labels. I compare it with RGB only, ordinary fusion, mask fusion and original PCCC."
+    },
+    {
+      "slide": "Slide 4",
+      "seconds": 55,
+      "text": "The new ETH3D pilot trained twenty-one models for one hundred epochs across three official folds. All saved checkpoints and prediction scores passed audit. The gate's mean error was about two point five seven degrees, compared with two point five nine for mask fusion and two point three two for PCCC. Both primary uncertainty intervals include zero. Therefore, the pilot does not establish an improvement. This is preliminary evidence that guides the next experiments."
+    },
+    {
+      "slide": "Slide 5",
+      "seconds": 30,
+      "text": "Next I will add a learned constant-gate control, run longer schedules with repeated seeds, and test simulated scenes and additional real data. I will assess geometry from images only after verifying correspondence and illumination labels. I will also confirm alignment with the registered monocular-depth title. Thank you."
+    }
+  ],
+  "references": [
+    [
+      "Xing X, Qian Y, Feng S, Dong Y, Matas J. Point Cloud Color Constancy. CVPR, 2022, 19750-19759.",
+      "https://openaccess.thecvf.com/content/CVPR2022/html/Xing_Point_Cloud_Color_Constancy_CVPR_2022_paper.html"
+    ],
+    [
+      "Qi C R, Su H, Mo K, Guibas L J. PointNet Deep Learning on Point Sets for 3D Classification and Segmentation. CVPR, 2017.",
+      "https://arxiv.org/abs/1612.00593"
+    ],
+    [
+      "Arevalo J, Solorio T, Montes-y-Gomez M, Gonzalez F A. Gated Multimodal Units for Information Fusion. arXiv:1702.01992, 2017.",
+      "https://arxiv.org/abs/1702.01992"
+    ],
+    [
+      "Wang J et al. VGGT Visual Geometry Grounded Transformer. CVPR, 2025, 5294-5306.",
+      "https://openaccess.thecvf.com/content/CVPR2025/html/Wang_VGGT_Visual_Geometry_Grounded_Transformer_CVPR_2025_paper.html"
+    ],
+    [
+      "Wang Y et al. Pi3 Permutation-Equivariant Visual Geometry Learning. arXiv:2507.13347, 2025.",
+      "https://arxiv.org/abs/2507.13347"
+    ],
+    [
+      "Keetha N et al. MapAnything Universal Feed-Forward Metric 3D Reconstruction. Official research project.",
+      "https://github.com/facebookresearch/map-anything"
+    ]
+  ],
+  "evidence_sha256": {
+    "summary.json": "58e72ea908bb5b5ba971dfdb112db65fcbf72de0ccdebf332a7347cef1e125c1",
+    "paired.json": "0b341383b91fb0dc2afbcb76fd46061c5024aa730bb3ef8f3c521ca56aedab8e",
+    "audit.json": "4dee9ea03df39e39ab66fa04ac8667e88feb323a6cecf54d45291a24dd3abec2",
+    "independent_verification.json": "ab113f91ca4296003829b13af77dcf3df1a00b4c848a9a2e3cc26adff1c93832",
+    "frozen_run.json": "28c01bdc3c2479840b76d8ba933f732e04322b36d524f2ce233d6499e862b4c5"
+  }
+}

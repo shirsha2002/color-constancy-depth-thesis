@@ -1,0 +1,63 @@
+{
+  "status": "PASS_LOCAL_READINESS",
+  "reusable_final_baselines": [
+    {
+      "condition": "ETH3D_real",
+      "fold": 0,
+      "config_file_sha256": "4379fab1f6e7703a79c3762a8320b3df8b091cf1b1e3a80374f5e86e966ad3b5",
+      "checkpoint": "phase6_modal/results/bc_t4_v1/ETH3D_real/released_real_fold0/checkpoints/fixed_final.pt",
+      "checkpoint_sha256": "89b3ff027ba22ddbc8d584a673bcc89e385ea0a35413cb3553f088505238867e"
+    },
+    {
+      "condition": "ETH3D_real",
+      "fold": 1,
+      "config_file_sha256": "4379fab1f6e7703a79c3762a8320b3df8b091cf1b1e3a80374f5e86e966ad3b5",
+      "checkpoint": "phase6_modal/results/bc_t4_v1/ETH3D_real/released_real_fold1/checkpoints/fixed_final.pt",
+      "checkpoint_sha256": "e9cd18ede59c76a70a1dc15e497372f1f7dfd6b7848ca8f62580c655237fd824"
+    },
+    {
+      "condition": "ETH3D_real",
+      "fold": 2,
+      "config_file_sha256": "4379fab1f6e7703a79c3762a8320b3df8b091cf1b1e3a80374f5e86e966ad3b5",
+      "checkpoint": "phase6_modal/results/bc_t4_v1/ETH3D_real/released_real_fold2/checkpoints/fixed_final.pt",
+      "checkpoint_sha256": "8338f5a074e74b7def8998250297a09115d8e9788d5eef003f28f853ef695676"
+    },
+    {
+      "condition": "ETH3D_flat",
+      "fold": 0,
+      "config_file_sha256": "75dc970c0b30ecc98ff0f92aa71f39f0b3ec0f2248312d782fa225794800079d",
+      "checkpoint": "phase6_modal/results/bc_t4_v1/ETH3D_flat/released_real_fold0/checkpoints/fixed_final.pt",
+      "checkpoint_sha256": "4ec2755259af53e8c53ea7fed85820d14e791c6c8f289d3942b9bf3e215da153"
+    },
+    {
+      "condition": "ETH3D_flat",
+      "fold": 1,
+      "config_file_sha256": "75dc970c0b30ecc98ff0f92aa71f39f0b3ec0f2248312d782fa225794800079d",
+      "checkpoint": "phase6_modal/results/bc_t4_v1/ETH3D_flat/released_real_fold1/checkpoints/fixed_final.pt",
+      "checkpoint_sha256": "0e101c852a88532315f7e22628b405c889a60b4e6ab99fa7b969991f0ef51217"
+    },
+    {
+      "condition": "ETH3D_flat",
+      "fold": 2,
+      "config_file_sha256": "75dc970c0b30ecc98ff0f92aa71f39f0b3ec0f2248312d782fa225794800079d",
+      "checkpoint": "phase6_modal/results/bc_t4_v1/ETH3D_flat/released_real_fold2/checkpoints/fixed_final.pt",
+      "checkpoint_sha256": "930768b811b1bd60a2622a2e2300a3273a720ebef9c6ea26da950b274d741738"
+    }
+  ],
+  "frozen_numerical_sources": {
+    "phase5_pccc/train.py": "d7c20b8d47f88617e89bb41e9a53fefaa6913dd08ba8a43f6ac5316129b6f245",
+    "phase5_pccc/model.py": "0ca3438ab916d9dd968a4dbc52d54896b1ef5c13e10e3cb8ca7c862647948645",
+    "phase4_pccc/pilot.py": "51d5fc62d1c3a3074e36954c0ba69a59235654efc4a1a7123697e886f142ee3e",
+    "phase4_pccc/upstream.py": "38d4d527aeeac8deec41c41ff7fd1868869638b03131a4c623b2b0cfc1b06722"
+  },
+  "loader_captures_checked": 195,
+  "new_manifest_sha256": "0639d72b31749cd41474e3f26b2021d5a1ccff5d0903a6600e33850fa274df9f",
+  "checker_sha256": "f2deda007b19200ea00a0bddc4d1bcb9cdec5cb87ad9cf050a7cd80afaeaa5ea",
+  "model_instantiated": false,
+  "training_launched": false,
+  "cloud_launch_ready": false,
+  "remaining": [
+    "Bounded execution runner, new timing/cost allowance and explicit new spending authorization",
+    "Original RGB/correspondence prerequisites for separate predicted-depth study"
+  ]
+}

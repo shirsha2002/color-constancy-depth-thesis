@@ -1,0 +1,31 @@
+{
+  "status": "PASS_SAME_XPU_REPEATABILITY",
+  "ten_finite_updates_per_repeat": true,
+  "exact_repeated_losses": true,
+  "exact_repeated_final_state": true,
+  "cpu_xpu_initial_prediction_max_angle_difference_deg": 0.000714107202092486,
+  "earlier_strict_cpu_xpu_gradient_comparison": "FAILED; retained; not waived or claimed to pass",
+  "interpretation": "Backend is operational and repeatable; all pilot methods must use XPU. Cross-backend gradient identity is not established.",
+  "training_ids": [
+    "DSC_9299",
+    "DSC_9260",
+    "DSC_0314",
+    "DSC_0714",
+    "DSC_0644",
+    "DSC_0296",
+    "DSC_6515",
+    "DSC_0276",
+    "DSC_0640",
+    "DSC_9294",
+    "DSC_6504",
+    "DSC_0605",
+    "DSC_9301",
+    "DSC_0272",
+    "DSC_0649",
+    "DSC_0251"
+  ],
+  "heldout_used": false,
+  "model_sha256": "b9f049fdb5a8cb3db7b918f2c5f9c90495bdbde6b157c24d25d25a54db68a637",
+  "checker_sha256": "ad4035bb2864ce6a8250a42852e2c3097a3862c37a34ef72e372d38c86a9a7e6",
+  "paid_compute_launched": false
+}

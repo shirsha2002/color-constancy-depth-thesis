@@ -1,0 +1,129 @@
+{
+  "status": "PASS_IMPLEMENTATION_CHECKS",
+  "scope": "Not an accuracy study",
+  "inventories": {
+    "DepthAWB": {
+      "samples": 185,
+      "folds": {
+        "0": {
+          "train": 98,
+          "validation": 25,
+          "test": 62
+        },
+        "1": {
+          "train": 98,
+          "validation": 25,
+          "test": 62
+        },
+        "2": {
+          "train": 99,
+          "validation": 25,
+          "test": 61
+        }
+      }
+    },
+    "ETH3D": {
+      "samples": 195,
+      "folds": {
+        "0": {
+          "train": 104,
+          "validation": 26,
+          "test": 65
+        },
+        "1": {
+          "train": 104,
+          "validation": 26,
+          "test": 65
+        },
+        "2": {
+          "train": 104,
+          "validation": 26,
+          "test": 65
+        }
+      }
+    },
+    "NYU_DIODE": {
+      "samples": 324,
+      "folds": {
+        "0": {
+          "train": 168,
+          "validation": 42,
+          "test": 114
+        },
+        "1": {
+          "train": 179,
+          "validation": 45,
+          "test": 100
+        },
+        "2": {
+          "train": 171,
+          "validation": 43,
+          "test": 110
+        }
+      }
+    }
+  },
+  "tested_training_capture_ids": [
+    "DSC_9299",
+    "DSC_9260",
+    "DSC_0314",
+    "DSC_0714"
+  ],
+  "tested_dataset": "ETH3D",
+  "tested_outer_fold": 0,
+  "forward_finite": true,
+  "missing_geometry_rgb_fallback_exact": true,
+  "permutation_invariance_checked": true,
+  "gate_excludes_rgb_labels_and_corruption_metadata": true,
+  "nonfinite_input_rejected": true,
+  "deterministic_corruptions_checked": [
+    "clean",
+    "noise10",
+    "noise30",
+    "drop50",
+    "shuffle"
+  ],
+  "one_optimizer_step_per_mode": true,
+  "learned_branch_gradient_l1": {
+    "color": 336.3289895057678,
+    "geometry": 209.69035863876343,
+    "gate": 1.6308216899633408,
+    "head": 2200.1156845092773
+  },
+  "save_load_exact": true,
+  "capacity": {
+    "rgb": {
+      "allocated": 34020,
+      "active": 29507
+    },
+    "ordinary": {
+      "allocated": 34020,
+      "active": 33923
+    },
+    "mask": {
+      "allocated": 34020,
+      "active": 33923
+    },
+    "learned": {
+      "allocated": 34020,
+      "active": 34020
+    },
+    "pccc": {
+      "allocated": 1677479,
+      "active": 1677479
+    }
+  },
+  "source_sha256": {
+    "model.py": "b9f049fdb5a8cb3db7b918f2c5f9c90495bdbde6b157c24d25d25a54db68a637",
+    "data.py": "e615f896b3e6c4ea425f801c2fb62e484bbda3dcedf2546115a83fbf13772786",
+    "train.py": "c5f001f722702696f5af08a9cb498c89944cdd03b97feea07d33ee1fe30f64f5",
+    "smoke.py": "0273bb4abe618132c89a78ba8c1ab20e7a2c1bf50c69d9e766eb98899379b041",
+    "DESIGN.md": "e637f0e4c925bec6c1498fc91442f53f58db139c1d78fe7d440dd3e98e74064d"
+  },
+  "manifest_sha256": {
+    "DepthAWB": "375ee2ba6c9ad02e07e952717162fb301a83a5bab53d28fd961ed14c8743c978",
+    "ETH3D": "1b1503bac40543a0c8a1723e4e644dfd786e3a8d9b36a757a46936f5c2b9c6d4",
+    "NYU_DIODE": "c50fcf125af69e2de07a1f37e25916ad85b145af8ecad0c7b53e8b133f4cd46b"
+  },
+  "paid_compute_launched": false
+}

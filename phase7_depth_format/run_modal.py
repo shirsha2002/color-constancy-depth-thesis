@@ -108,7 +108,8 @@ def train(condition:str,fold:int):
     assert t5.sha(manifest_path)==cfg['manifest_sha256']
     result=t5.train_job(out,cfg,manifest,'released_real',fold)
     volume.commit()
-    return dict(condition=condition,fold=fold,**result)
+    assert result['fold']==fold
+    return {**result,'condition':condition}
 
 
 @app.local_entrypoint()

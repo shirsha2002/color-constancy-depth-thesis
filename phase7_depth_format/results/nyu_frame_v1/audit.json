@@ -1,0 +1,164 @@
+{
+  "status": "PASS",
+  "new_trained_models": 9,
+  "all_final_checkpoints_reinferred": 15,
+  "new_training_histories_and_reference_selection_verified": true,
+  "saved_predictions_checked": 3240,
+  "max_independent_atan2_discrepancy_deg": 1.2715883901392999e-11,
+  "cpu_vs_cuda_reinference": [
+    {
+      "condition": "camera_real",
+      "fold": 0,
+      "checkpoint_sha256": "7b9b57c61fb70a84daad9207cd8248b9674a2981cb198442ca540ad5865a9101",
+      "max_component_difference_cpu_vs_cuda": 0.00286865234375,
+      "max_angular_difference_cpu_vs_cuda_deg": 1.3897284769859297e-05
+    },
+    {
+      "condition": "camera_real",
+      "fold": 1,
+      "checkpoint_sha256": "fedd2dca534c1a0e49c4294abdfb3043a3dc960c04b9ecabdc72121f15392f7c",
+      "max_component_difference_cpu_vs_cuda": 0.01171875,
+      "max_angular_difference_cpu_vs_cuda_deg": 2.5000935643726407e-05
+    },
+    {
+      "condition": "camera_real",
+      "fold": 2,
+      "checkpoint_sha256": "b0a147a6ec217e80ccd383809164b120745afdc151e3b1af497f409318354bce",
+      "max_component_difference_cpu_vs_cuda": 0.0018310546875,
+      "max_angular_difference_cpu_vs_cuda_deg": 2.652568693495283e-05
+    },
+    {
+      "condition": "camera_unitdepth",
+      "fold": 0,
+      "checkpoint_sha256": "9037bb0e475408fe320a7c61e4a022f42139db7951057676f56740143de2a6bc",
+      "max_component_difference_cpu_vs_cuda": 0.00244140625,
+      "max_angular_difference_cpu_vs_cuda_deg": 1.5402272869557976e-05
+    },
+    {
+      "condition": "camera_unitdepth",
+      "fold": 1,
+      "checkpoint_sha256": "d7e56f8ea7c9dc05c89e30ece99fbe2e05e6d336c9e9836544086e24e6d3051d",
+      "max_component_difference_cpu_vs_cuda": 0.00244140625,
+      "max_angular_difference_cpu_vs_cuda_deg": 9.962882367098302e-06
+    },
+    {
+      "condition": "camera_unitdepth",
+      "fold": 2,
+      "checkpoint_sha256": "3b80dc0937b2947dc6aa80b74c7de60971fbea3d10eab59c6490e076b03d87eb",
+      "max_component_difference_cpu_vs_cuda": 0.001708984375,
+      "max_angular_difference_cpu_vs_cuda_deg": 1.4497021195714055e-05
+    },
+    {
+      "condition": "camera_flat",
+      "fold": 0,
+      "checkpoint_sha256": "b45d924cba38259909b3edbc5a0382d8b2027325f983baf21017aaf27c9ba3c7",
+      "max_component_difference_cpu_vs_cuda": 0.00244140625,
+      "max_angular_difference_cpu_vs_cuda_deg": 1.6939864265541615e-05
+    },
+    {
+      "condition": "camera_flat",
+      "fold": 1,
+      "checkpoint_sha256": "56afcfcce3eeb90f8ca7089343c71c6b440158ba7ceaacb370b3b42e99660bf2",
+      "max_component_difference_cpu_vs_cuda": 0.0050048828125,
+      "max_angular_difference_cpu_vs_cuda_deg": 4.399935344601147e-05
+    },
+    {
+      "condition": "camera_flat",
+      "fold": 2,
+      "checkpoint_sha256": "595b248901f9a8d78cfbb8b1d6d5788ca9bb2e0cf89ba70429e0c0ac91db3d85",
+      "max_component_difference_cpu_vs_cuda": 0.0018310546875,
+      "max_angular_difference_cpu_vs_cuda_deg": 1.50470382095369e-05
+    },
+    {
+      "condition": "native",
+      "fold": 0,
+      "checkpoint_sha256": "adcaad08a42afe7b5d7bc0b30294fbbc6418f6bd2239c6a23770981584e60842",
+      "max_component_difference_cpu_vs_cuda": 0.003173828125,
+      "max_angular_difference_cpu_vs_cuda_deg": 1.3619618093763108e-05
+    },
+    {
+      "condition": "native",
+      "fold": 1,
+      "checkpoint_sha256": "949cf17940ca6a2683fe6c10907a936c75462bc20b8d0171879d5353b08826c7",
+      "max_component_difference_cpu_vs_cuda": 0.001953125,
+      "max_angular_difference_cpu_vs_cuda_deg": 3.688498417719899e-05
+    },
+    {
+      "condition": "native",
+      "fold": 2,
+      "checkpoint_sha256": "097948fa9894396d4263c379d43631361f4dc61dd0536ca0993424871fcd5ecb",
+      "max_component_difference_cpu_vs_cuda": 0.0030517578125,
+      "max_angular_difference_cpu_vs_cuda_deg": 2.464057522777452e-05
+    },
+    {
+      "condition": "native_flat",
+      "fold": 0,
+      "checkpoint_sha256": "b9f87f3dc55093f7e3ce2c35fac8b4b5bdbca42ef21c0da452baef46ea99b6eb",
+      "max_component_difference_cpu_vs_cuda": 0.002685546875,
+      "max_angular_difference_cpu_vs_cuda_deg": 8.283588601720737e-06
+    },
+    {
+      "condition": "native_flat",
+      "fold": 1,
+      "checkpoint_sha256": "1826ce3f6edc3c709b167cf682941086406ff7ecc66d1d53a1325ebd7e76375c",
+      "max_component_difference_cpu_vs_cuda": 0.002197265625,
+      "max_angular_difference_cpu_vs_cuda_deg": 1.9511003829686402e-05
+    },
+    {
+      "condition": "native_flat",
+      "fold": 2,
+      "checkpoint_sha256": "60ba656c4b579299042d9a03c9edcfb7a7fb7daa7f9662c6b2e0adafd41c4ee6",
+      "max_component_difference_cpu_vs_cuda": 0.0030517578125,
+      "max_angular_difference_cpu_vs_cuda_deg": 1.055161740737276e-05
+    }
+  ],
+  "protocol_sha256": "3ebeae3e45330daf36e27c767dc75b5207f37ab28ad280009632f05fc8bbb309",
+  "execution_sources_verified": {
+    "2d496781963bd1dc69390f6f5d849bad5c2363849378cad826d6f22de2c20d5d": {
+      "PROTOCOL.md": {
+        "verified_path": "phase7_depth_format/PROTOCOL.md",
+        "sha256": "3ebeae3e45330daf36e27c767dc75b5207f37ab28ad280009632f05fc8bbb309"
+      },
+      "prepare.py": {
+        "verified_path": "phase7_depth_format/prepare.py",
+        "sha256": "9b7a3ba404d188f8a1ece4b885cb6b3ac8f90994ff143503bd18fdf8e4a9238b"
+      },
+      "run_modal.py": {
+        "verified_path": "phase7_depth_format/snapshots/run_modal_v1.py",
+        "sha256": "5fe1a80ec7e60d4140f3ff819a0747ae4ca43aa0ed31fde4cdc3506476e14a58"
+      }
+    },
+    "93f83fd98785bca81f9d21f5b2f28d0c4327bb6eabbeed366fbd64a094f3a34c": {
+      "PROTOCOL.md": {
+        "verified_path": "phase7_depth_format/PROTOCOL.md",
+        "sha256": "3ebeae3e45330daf36e27c767dc75b5207f37ab28ad280009632f05fc8bbb309"
+      },
+      "prepare.py": {
+        "verified_path": "phase7_depth_format/prepare.py",
+        "sha256": "9b7a3ba404d188f8a1ece4b885cb6b3ac8f90994ff143503bd18fdf8e4a9238b"
+      },
+      "run_modal.py": {
+        "verified_path": "phase7_depth_format/snapshots/run_modal_v1.py",
+        "sha256": "5fe1a80ec7e60d4140f3ff819a0747ae4ca43aa0ed31fde4cdc3506476e14a58"
+      }
+    },
+    "6b45d27d47735dbb7a3ccdf53427ccfb2acfe1ca6a03ea6d2d854324defd177d": {
+      "PROTOCOL.md": {
+        "verified_path": "phase7_depth_format/PROTOCOL.md",
+        "sha256": "3ebeae3e45330daf36e27c767dc75b5207f37ab28ad280009632f05fc8bbb309"
+      },
+      "prepare.py": {
+        "verified_path": "phase7_depth_format/prepare.py",
+        "sha256": "9b7a3ba404d188f8a1ece4b885cb6b3ac8f90994ff143503bd18fdf8e4a9238b"
+      },
+      "run_modal.py": {
+        "verified_path": "phase7_depth_format/snapshots/run_modal_v1.py",
+        "sha256": "5fe1a80ec7e60d4140f3ff819a0747ae4ca43aa0ed31fde4cdc3506476e14a58"
+      }
+    }
+  },
+  "analyzer_sha256": "11f334a07c31a68c82786476052993e57b8f900aea8bdd3f5f9ae7ff124a2247",
+  "training_gpu_hours": 5.757657320140834,
+  "training_resource_planning_usd_upper": 4.669506147892777,
+  "billing_note": "Estimated compute allowance, not the provider invoice; smoke/build overhead separate."
+}

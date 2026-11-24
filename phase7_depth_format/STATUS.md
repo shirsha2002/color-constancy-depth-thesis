@@ -1,31 +1,7 @@
-# Camera-frame and scale study: training launched
+# Camera-frame and scale study: completed and audited
 
-16 November 2026. User-approved cloud cap: US$8.
+16 November 2026. Nine new released-head PCCC models completed10000epochs on the official NYU/DIODE folds. Read RESULTS.md and results/nyu_frame_v1/audit.json for all measured results and limits. No reliability gate has been implemented.
 
-The 972 transformed inputs passed RGB, labels, proper-rotation, ray and
-relative-depth checks. A 40-epoch training-only T4 timing test passed.
-Estimated total including a50% training-time margin and overhead reserve is
-about$7.23; actual provider charges are not yet known.
+Training time: 5.758 GPU-hours. Training compute planning allowance (GPU+maximum CPU/RAM): $4.67; smoke/startup/build overhead is additional. This is not an invoice. User-approved cap was$8. No extra training or automatic retry is pending. The cancelled laptop study remains stopped.
 
-Nine10000epoch jobs have been submitted. This is not a completed result.
-No accuracy or improvement is claimed while training is running.
-
-Cloud application:
-https://modal.com/apps/shirsamitra22/main/ap-dVtAGklMO3lKAygdynLAK9
-
-Read existing progress without starting a GPU:
-
-```powershell
-$env:PYTHONUTF8='1'
-& .\.venv-modal\Scripts\python.exe phase7_depth_format/status.py
-```
-
-The first timing attempt completed its calculation but returned a TorchVersion
-object that the lightweight local Modal client could not deserialize. It was
-corrected to return a plain string and the short timing test repeated. This
-engineering overhead is covered by the reserve; no held-out accuracy informed
-the change. No full training job is automatically retried.
-
-Original phase-six results, raw inputs, cancelled phase-five checkpoints and
-the user's modified PDFs remain intact.
-
+An initial short timing run returned a TorchVersion object incompatible with the lightweight client; it was changed to a plain string and the timing test repeated. This overhead is covered by the reserve.

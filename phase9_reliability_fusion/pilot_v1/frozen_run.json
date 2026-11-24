@@ -1,0 +1,64 @@
+{
+  "scope": "ETH3D three-fold reduced-budget development pilot",
+  "epochs": 100,
+  "conditions": {
+    "rgb": [
+      "rgb",
+      true,
+      0.1
+    ],
+    "ordinary": [
+      "ordinary",
+      true,
+      0.1
+    ],
+    "mask": [
+      "mask",
+      true,
+      0.1
+    ],
+    "learned": [
+      "learned",
+      true,
+      0.1
+    ],
+    "learned_clean": [
+      "learned",
+      false,
+      0.1
+    ],
+    "learned_no_consistency": [
+      "learned",
+      true,
+      0.0
+    ],
+    "pccc": [
+      "pccc",
+      true,
+      0.1
+    ]
+  },
+  "folds": [
+    0,
+    1,
+    2
+  ],
+  "models": 21,
+  "device": "xpu",
+  "seed_rule": "20261116+fold",
+  "source_sha256": {
+    "model.py": "b9f049fdb5a8cb3db7b918f2c5f9c90495bdbde6b157c24d25d25a54db68a637",
+    "data.py": "e615f896b3e6c4ea425f801c2fb62e484bbda3dcedf2546115a83fbf13772786",
+    "train.py": "d925f9dc54187070fe1d0a8fdd9f9874c4f07a24ae57624404cfc74efa152ef6",
+    "DESIGN.md": "e637f0e4c925bec6c1498fc91442f53f58db139c1d78fe7d440dd3e98e74064d",
+    "PILOT_PROTOCOL.md": "3599ade2519b126eb9be9eff3ea0e7ad73ae96cf85b2806bc28c94490fb920e4",
+    "run_pilot.py": "c68f739a5e8599c1cc66e62526f939ff1021d2b228f74091cbc073daa5aaad18",
+    "analyze_pilot.py": "a6e4931c663820f024cd50f34e26aac9116c16b58716285ecd53a429e368e093",
+    "check_pccc_xpu.py": "ad4035bb2864ce6a8250a42852e2c3097a3862c37a34ef72e372d38c86a9a7e6",
+    "pccc_xpu_repeatability.json": "ca348b5b603ffa51c6f4e93b93a7192389de88afd94fcdef23ab8ff3aa55709b"
+  },
+  "evaluation_manifest_sha256": "c05627343acbf19e4e7eaf1a6a450e764242c4916ceb8f1f2fe736fa33e34462",
+  "per_job_timeout_seconds": 900,
+  "suite_timeout_seconds": 5400,
+  "paid_compute": false
+}

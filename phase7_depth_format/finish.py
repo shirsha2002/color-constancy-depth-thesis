@@ -46,11 +46,17 @@ def main():
         while True:
             launch=json.loads((HOME/'launch.json').read_text())
             jobs=list(launch['jobs'].values())
-            failed=[j for j in jobs if j['status']=='failed']
+            post_save=[j for j in jobs if j['status']=='failed' and
+                       "dict() got multiple values for keyword argument 'fold'" in j.get('error','')]
+            failed=[j for j in jobs if j['status']=='failed' and j not in post_save]
             if failed:raise RuntimeError(f'Cloud training failure: {failed}; no retry')
             complete=sum(j['status']=='complete' for j in jobs)
-            write_status('waiting_for_cloud',complete_jobs=complete,total_jobs=len(jobs))
-            if len(jobs)==9 and complete==9:break
+            write_status('waiting_for_cloud',complete_jobs=complete,total_jobs=len(jobs),
+                         saved_result_return_errors_requiring_audit=len(post_save))
+            # The v1 wrapper raises only after train_job saves all artifacts and
+            # volume.commit returns. Do not rerun paid training. Download after
+            # all calls end, then require nine complete records plus full audit.
+            if len(jobs)==9 and complete+len(post_save)==9:break
             if datetime.now(timezone.utc)>DEADLINE:
                 # Global safeguard: stop this owned app rather than leave inputs
                 # queued/retried indefinitely. This allocates no new compute.

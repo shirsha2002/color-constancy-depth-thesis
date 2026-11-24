@@ -1,6 +1,59 @@
 # Thesis progress: start here
 
-## Latest: full PCCC on a cloud GPU, 10 November
+For downloads, start with the [presentation handoff guide](../FRIEND_START_HERE.md)
+or the [public materials ZIP](defense_2026_11_25/Presentation_Materials_Public.zip).
+The official Tables 1-3 PDF is in proposal_submission. It is prefilled but unsigned
+and needs supervisor completion before the 11 December electronic submission.
+
+## Proposal defense on 25 November 2026
+
+Updated 24 November: use the [illustrated proposal PDF](defense_2026_11_25/Shirsha_Mitra_Proposal_Report_With_Experiments.pdf)
+or [editable Word report](defense_2026_11_25/Shirsha_Mitra_Proposal_Report_With_Experiments.docx).
+The current report has four pages, four real experimental figures, six black
+and white tables and completed student/supervisor details. Local-GPU inference
+reproduced 975 saved predictions exactly; no new training or Modal job was needed.
+The private ZIP now contains this report. The older report is a previous version.
+
+Open the [defense preparation guide](defense_2026_11_25/START_HERE.txt).
+The folder contains the main presentation, proposal in Word/PDF, bilingual
+speaking script and Q&A. Five main slides target three minutes; two additional
+slides are backups only. Private meeting credentials are excluded from Git.
+
+The new [fusion pilot is audited](../phase9_reliability_fusion/pilot_v1/RESULTS.md):
+21 models, 100 epochs, 42 checkpoints and 13,650 prediction rows. The results
+do not establish a gating benefit; PCCC performs better in the matched pilot.
+
+Current algorithm work: [reliability-aware fusion prototype](../phase9_reliability_fusion/README.md)
+is implemented and passes local software checks. Its reduced 100-epoch pilot is
+complete and audited as described above; a full repeated-seed study remains future work.
+
+Current local continuation: [ETH3D scene-scale preparation](../phase8_eth3d_scale/README.md)
+has 195 verified derived clouds and a frozen follow-up protocol. No new model
+training or accuracy result is complete for that follow-up.
+
+## Latest: camera-frame and depth-scale diagnostic, 16 November
+
+1. [16 November report (PDF)](pdf/Shirsha_Mitra_PCCC_Depth_Format_Update_2026_11_16.pdf).
+2. [Measured results and claim limits](../phase7_depth_format/RESULTS.md).
+3. [Execution and recovered metadata-error notes](../phase7_depth_format/EXECUTION_NOTES.md).
+4. [Independent prediction/checkpoint audit](../phase7_depth_format/results/nyu_frame_v1/audit.json).
+5. [Short English QQ draft](../phase7_depth_format/QQ_Update_English.txt).
+6. [Next-step plan](../phase7_depth_format/NEXT_STEPS.md) and
+   [ETH3D input readiness](../phase7_depth_format/ETH3D_FEASIBILITY.md).
+
+Nine new PCCC models completed 10,000 epochs on the official NYU-v2 + DIODE
+folds, reusing six earlier reference models. All 3,240 saved predictions and
+15 final checkpoints passed independent checks. Native mean angular error is
+2.6135°; canonical axes give 2.5471°, axes plus median-depth normalization
+2.7192°, and canonical flat geometry 2.8164°. **Both primary paired intervals
+include zero: a normalization or relative-depth benefit is not established.**
+This is a representation diagnostic with one seed per fold and prior development
+exposure. Reliability-aware fusion was a proposal at that stage; its subsequent
+local prototype is linked above. The cloud application
+is stopped, no extra training or automatic retry is pending, and the cancelled
+laptop study remains stopped.
+
+## Earlier: full PCCC on a cloud GPU, 10 November
 
 1. [Report (PDF)](pdf/Shirsha_Mitra_PCCC_GPU_Update_2026_11_10.pdf).
 2. Animations: [ETH3D real vs flat](gif/pccc_eth3d_real_vs_flat.gif) and
@@ -15,7 +68,8 @@ NYU-v2 + DIODE 2.61 vs 2.51 (no clear difference). The fusion idea in the report
 ## Paper-budget follow-up cancelled
 
 The user cancelled this long run on9November. Both CPU and XPU workers are
-stopped; partial checkpoints are preserved. No new10000epoch result is complete.
+stopped; partial checkpoints are preserved. No 10,000-epoch result was completed
+for this cancelled laptop study. The separate completed cloud studies are above.
 See [cancellation status](../phase5_pccc/STATUS.md). The launch description below
 is historical; the earlier completed pilot remains available.
 
@@ -27,7 +81,7 @@ below remains separate.
 
 ## PCCC reproduction pilot, 9 November
 
-The latest study follows the supervisor's request to run **PCCC on its own real
+This earlier study follows the supervisor's request to run **PCCC on its own real
 RGB-D / point-cloud color-constancy data**. Start with:
 
 1. [PCCC measured results](../phase4_pccc/RESULTS.md).
@@ -39,13 +93,13 @@ This 100-epoch, one-outer-fold study is an adapted reproduction pilot, not a
 full replication of the paper's published numerical results. The earlier
 reports below remain historical records of the separate depth experiments.
 
-## Latest follow-up after supervisor feedback
+## Earlier depth follow-up after supervisor feedback, 7 November
 
-The latest work is the 7 November real-light and explicit chromatic-control
+The 7 November work is the real-light and explicit chromatic-control
 study. Read these first:
 
 1. [Weekly research report](pdf/Shirsha_Mitra_Weekly_Update_2026_11_07.pdf).
-2. [Latest short English QQ reply](QQ_Weekly_Update_2026_11_07_English.txt).
+2. [7 November short English QQ draft](QQ_Weekly_Update_2026_11_07_English.txt).
 3. [Measured results and claim limits](../phase3/RESULTS.md).
 4. [Plain-English student guide](../phase3/STUDENT_GUIDE.md), [full methods](../phase3/README.md)
    and [current project status](../PROJECT_STATUS.md).

@@ -1,4 +1,5 @@
 # Keep the byte hashes in frozen research snapshots reproducible on Windows.
+# New frozen study files retain exact bytes on every platform.
 *.py text eol=lf
 *.ps1 text eol=lf
 *.md text eol=lf
@@ -22,3 +23,11 @@
 *.gif binary
 /phase7_depth_format/**/*.json -text whitespace=trailing-space,space-before-tab,cr-at-eol
 /phase7_depth_format/**/*.csv -text -eol whitespace=trailing-space,space-before-tab,cr-at-eol
+/phase8_eth3d_scale/** -text whitespace=trailing-space,space-before-tab,cr-at-eol
+/phase9_reliability_fusion/** -text whitespace=trailing-space,space-before-tab,cr-at-eol
+/defense_2026_11_25/**/*.json -text whitespace=trailing-space,space-before-tab,cr-at-eol
+/phase7_depth_format/snapshots/** -text whitespace=trailing-space,space-before-tab,cr-at-eol
+# Preserve archived byte hashes, including their original final blank line.
+/phase7_depth_format/snapshots/run_modal_v1.py whitespace=trailing-space,space-before-tab,cr-at-eol,-blank-at-eof
+/phase8_eth3d_scale/PROTOCOL.md whitespace=trailing-space,space-before-tab,cr-at-eol,-blank-at-eof
+/phase8_eth3d_scale/prepare.py whitespace=trailing-space,space-before-tab,cr-at-eol,-blank-at-eof
