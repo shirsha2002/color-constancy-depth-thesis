@@ -1,56 +1,539 @@
 {
   "release_tag": "thesis-handoff-2026-11-24",
   "total_completed_models": 90,
-  "assets": [
+  "download_format": "Independent ZIP parts. Extract every part into the same destination. No concatenation is needed.",
+  "studies": [
     {
-      "asset": "Phase4_CPU_Pilot_Training.zip",
       "root": "phase4_pccc/results/cpu_v1",
       "models": 12,
       "epochs": 100,
       "files": 37,
-      "bytes": 75346208,
-      "sha256": "d4a2f9544aa910b618a5851ea2b3cbf5e5193ccc643149fc155b76badeb7de8d",
-      "contents": "Saved checkpoints, training histories, configurations, predictions and completion records"
+      "contents": "Saved checkpoints, training histories, configurations, predictions and completion records",
+      "study": "Phase4_CPU_Pilot_Training",
+      "archives": [
+        "Phase4_CPU_Pilot_Training_part01.zip",
+        "Phase4_CPU_Pilot_Training_part02.zip"
+      ]
     },
     {
-      "asset": "Phase6_DepthAWB_Training.zip",
       "root": "phase6_modal/results/depthawb_t4_v1",
       "models": 12,
       "epochs": 10000,
       "files": 113,
-      "bytes": 457534743,
-      "sha256": "6064845aea3d978a824d06a7d61d0f497a6b998d449d318da7719f333d69a3a6",
-      "contents": "Saved checkpoints, training histories, configurations, predictions and completion records"
+      "contents": "Saved checkpoints, training histories, configurations, predictions and completion records",
+      "study": "Phase6_DepthAWB_Training",
+      "archives": [
+        "Phase6_DepthAWB_Training_part01.zip",
+        "Phase6_DepthAWB_Training_part02.zip",
+        "Phase6_DepthAWB_Training_part03.zip",
+        "Phase6_DepthAWB_Training_part04.zip",
+        "Phase6_DepthAWB_Training_part05.zip",
+        "Phase6_DepthAWB_Training_part06.zip",
+        "Phase6_DepthAWB_Training_part07.zip",
+        "Phase6_DepthAWB_Training_part08.zip",
+        "Phase6_DepthAWB_Training_part09.zip",
+        "Phase6_DepthAWB_Training_part10.zip",
+        "Phase6_DepthAWB_Training_part11.zip",
+        "Phase6_DepthAWB_Training_part12.zip"
+      ]
     },
     {
-      "asset": "Phase6_AllDatasets_Training.zip",
       "root": "phase6_modal/results/bc_t4_v1",
       "models": 36,
       "epochs": 10000,
       "files": 336,
-      "bytes": 1374425800,
-      "sha256": "3dbd7517cecbc1c5b2e4082c428ea43d5fd0872ed443a11dd31007567487b063",
-      "contents": "Saved checkpoints, training histories, configurations, predictions and completion records"
+      "contents": "Saved checkpoints, training histories, configurations, predictions and completion records",
+      "study": "Phase6_AllDatasets_Training",
+      "archives": [
+        "Phase6_AllDatasets_Training_part01.zip",
+        "Phase6_AllDatasets_Training_part02.zip",
+        "Phase6_AllDatasets_Training_part03.zip",
+        "Phase6_AllDatasets_Training_part04.zip",
+        "Phase6_AllDatasets_Training_part05.zip",
+        "Phase6_AllDatasets_Training_part06.zip",
+        "Phase6_AllDatasets_Training_part07.zip",
+        "Phase6_AllDatasets_Training_part08.zip",
+        "Phase6_AllDatasets_Training_part09.zip",
+        "Phase6_AllDatasets_Training_part10.zip",
+        "Phase6_AllDatasets_Training_part11.zip",
+        "Phase6_AllDatasets_Training_part12.zip",
+        "Phase6_AllDatasets_Training_part13.zip",
+        "Phase6_AllDatasets_Training_part14.zip",
+        "Phase6_AllDatasets_Training_part15.zip",
+        "Phase6_AllDatasets_Training_part16.zip",
+        "Phase6_AllDatasets_Training_part17.zip",
+        "Phase6_AllDatasets_Training_part18.zip",
+        "Phase6_AllDatasets_Training_part19.zip",
+        "Phase6_AllDatasets_Training_part20.zip",
+        "Phase6_AllDatasets_Training_part21.zip",
+        "Phase6_AllDatasets_Training_part22.zip",
+        "Phase6_AllDatasets_Training_part23.zip",
+        "Phase6_AllDatasets_Training_part24.zip",
+        "Phase6_AllDatasets_Training_part25.zip",
+        "Phase6_AllDatasets_Training_part26.zip",
+        "Phase6_AllDatasets_Training_part27.zip",
+        "Phase6_AllDatasets_Training_part28.zip",
+        "Phase6_AllDatasets_Training_part29.zip",
+        "Phase6_AllDatasets_Training_part30.zip",
+        "Phase6_AllDatasets_Training_part31.zip",
+        "Phase6_AllDatasets_Training_part32.zip",
+        "Phase6_AllDatasets_Training_part33.zip",
+        "Phase6_AllDatasets_Training_part34.zip",
+        "Phase6_AllDatasets_Training_part35.zip",
+        "Phase6_AllDatasets_Training_part36.zip"
+      ]
     },
     {
-      "asset": "Phase7_DepthFormat_Training.zip",
       "root": "phase7_depth_format/results/nyu_frame_v1",
       "models": 9,
       "epochs": 10000,
       "files": 91,
-      "bytes": 343647855,
-      "sha256": "f302c8f5236d7047fe2b5fd74f3a9b05da837eb185e5c6d406b72bb78ab54861",
-      "contents": "Saved checkpoints, training histories, configurations, predictions and completion records"
+      "contents": "Saved checkpoints, training histories, configurations, predictions and completion records",
+      "study": "Phase7_DepthFormat_Training",
+      "archives": [
+        "Phase7_DepthFormat_Training_part01.zip",
+        "Phase7_DepthFormat_Training_part02.zip",
+        "Phase7_DepthFormat_Training_part03.zip",
+        "Phase7_DepthFormat_Training_part04.zip",
+        "Phase7_DepthFormat_Training_part05.zip",
+        "Phase7_DepthFormat_Training_part06.zip",
+        "Phase7_DepthFormat_Training_part07.zip",
+        "Phase7_DepthFormat_Training_part08.zip",
+        "Phase7_DepthFormat_Training_part09.zip"
+      ]
     },
     {
-      "asset": "Phase9_ETH3D_Fusion_Pilot_Training.zip",
       "root": "phase9_reliability_fusion/runs/eth3d_pilot_v1",
       "models": 21,
       "epochs": 100,
       "files": 147,
-      "bytes": 42412035,
-      "sha256": "7143b835a0af5b5df560a5a14a0ac3f928d0a44c7a4d2affd0f738a548423e9f",
-      "contents": "Saved checkpoints, training histories, configurations, predictions and completion records"
+      "contents": "Saved checkpoints, training histories, configurations, predictions and completion records",
+      "study": "Phase9_ETH3D_Fusion_Pilot_Training",
+      "archives": [
+        "Phase9_ETH3D_Fusion_Pilot_Training_part01.zip"
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "asset": "Phase4_CPU_Pilot_Training_part01.zip",
+      "study": "Phase4_CPU_Pilot_Training",
+      "files": 30,
+      "bytes": 56597644,
+      "sha256": "cfa441d5273061fd181cc536b4fd4e2a0cfa537418c878a458d4f5feef9fcf20"
+    },
+    {
+      "asset": "Phase4_CPU_Pilot_Training_part02.zip",
+      "study": "Phase4_CPU_Pilot_Training",
+      "files": 7,
+      "bytes": 18748898,
+      "sha256": "22e5575f1c1a7d68f672cc5207a188b06d4ceaff1a4d946c2ce42de520e41958"
+    },
+    {
+      "asset": "Phase6_DepthAWB_Training_part01.zip",
+      "study": "Phase6_DepthAWB_Training",
+      "files": 15,
+      "bytes": 50722038,
+      "sha256": "35fe6c581b95695f3c281847aee52296e51d1e96e77c0697093fd8434d27c38c"
+    },
+    {
+      "asset": "Phase6_DepthAWB_Training_part02.zip",
+      "study": "Phase6_DepthAWB_Training",
+      "files": 9,
+      "bytes": 38139354,
+      "sha256": "ff2bb5a07cfe96c7f2d5cfa4d29b24d584d5ab5c097eafb7bafc34e72b7186c6"
+    },
+    {
+      "asset": "Phase6_DepthAWB_Training_part03.zip",
+      "study": "Phase6_DepthAWB_Training",
+      "files": 9,
+      "bytes": 38126214,
+      "sha256": "12fda85afbd7b49b3615ed4559dac6c19afe0fde334010ecae493d9b8b85cac1"
+    },
+    {
+      "asset": "Phase6_DepthAWB_Training_part04.zip",
+      "study": "Phase6_DepthAWB_Training",
+      "files": 9,
+      "bytes": 38118977,
+      "sha256": "15cdace38076291eccdc79527495af65596ee760f62354aa3db80ed964c72bd9"
+    },
+    {
+      "asset": "Phase6_DepthAWB_Training_part05.zip",
+      "study": "Phase6_DepthAWB_Training",
+      "files": 9,
+      "bytes": 38081950,
+      "sha256": "44ac3b40dd161c7d19f03c0e9561a21b2f7fc42302e0fa99cb5ef46c1065a216"
+    },
+    {
+      "asset": "Phase6_DepthAWB_Training_part06.zip",
+      "study": "Phase6_DepthAWB_Training",
+      "files": 11,
+      "bytes": 38086436,
+      "sha256": "e09aea8a60cc1fb8116a4b3c64f591a79a4b0933531505faf59c7981507c7e09"
+    },
+    {
+      "asset": "Phase6_DepthAWB_Training_part07.zip",
+      "study": "Phase6_DepthAWB_Training",
+      "files": 9,
+      "bytes": 38148672,
+      "sha256": "56e4caf76083d0f5f5e110691c1ce851a3a1543088df0e5c0273772159c30d22"
+    },
+    {
+      "asset": "Phase6_DepthAWB_Training_part08.zip",
+      "study": "Phase6_DepthAWB_Training",
+      "files": 9,
+      "bytes": 38166426,
+      "sha256": "ba56786f78c551fa3dd3b6cda47369a59ddc123123aa6c83803a0a651a977dfe"
+    },
+    {
+      "asset": "Phase6_DepthAWB_Training_part09.zip",
+      "study": "Phase6_DepthAWB_Training",
+      "files": 9,
+      "bytes": 38174591,
+      "sha256": "9e92c4c20f7be473d9407d47441dd97a172e558bd63730c5a8b67ed5bd041e30"
+    },
+    {
+      "asset": "Phase6_DepthAWB_Training_part10.zip",
+      "study": "Phase6_DepthAWB_Training",
+      "files": 9,
+      "bytes": 38109705,
+      "sha256": "d44842ae33c885b8b725381f7a81017c3972eb5f1cda7d2aeafd9dbd351eaeb6"
+    },
+    {
+      "asset": "Phase6_DepthAWB_Training_part11.zip",
+      "study": "Phase6_DepthAWB_Training",
+      "files": 9,
+      "bytes": 38114101,
+      "sha256": "c607d484dd2fb78598ef93466a9380c3cec5dcce816d6815a6c12f6d6d874eef"
+    },
+    {
+      "asset": "Phase6_DepthAWB_Training_part12.zip",
+      "study": "Phase6_DepthAWB_Training",
+      "files": 6,
+      "bytes": 25550208,
+      "sha256": "0fd0d6ef40e310224cbd94641dddc734ee1876afe7c6f227d8e77ec19822ef5e"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part01.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 13,
+      "bytes": 50660268,
+      "sha256": "849de81bc5e603fd7adf6dfb18e32f6dd7a93f537bbbb63df2ab2c746ebd36d4"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part02.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38094235,
+      "sha256": "b2dcedfaf20a188a954a44e9f2019b0f037ac883bb69f69e09fa6a452f4cf8da"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part03.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 10,
+      "bytes": 38086850,
+      "sha256": "4f3291e02c7760d68888f42892689d895c326561483ec687e5f887916f2c2605"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part04.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38088879,
+      "sha256": "a5153459da167bad749e7b06c5987e123a95d8268da094958e08012ff1d90b51"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part05.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38085922,
+      "sha256": "181262872a36a62b15235d6fe1e5ac96a0717fcd2f909946787f3694684741b3"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part06.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 10,
+      "bytes": 38086890,
+      "sha256": "34aadd46529c47cdae5daaf9a21e6bcc23bbd20a0a62f0235ab35caefb588c86"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part07.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38104184,
+      "sha256": "8951675b5c719ff4b238f26e0e92fc14673ddf8701f0cd0b5906cab6f8d55526"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part08.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38080181,
+      "sha256": "93cdf7c4be059705e5496ca8a4a10ad21b990d1071115f1290b713a8fb0d8a17"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part09.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 10,
+      "bytes": 38105735,
+      "sha256": "a1dece3d372095d7d1468e9f8a7e65612d373a3ded5aaf455fce5b6d4772fe81"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part10.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38091662,
+      "sha256": "c493f333334b9d0ec27d9ad1299617a2756919548d428c439ed16c8e85e746ba"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part11.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38077913,
+      "sha256": "6d4cfe3a03899fbff05e07fa1b476818c1bb93f3acd5925666d84f1476ab4f96"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part12.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 10,
+      "bytes": 38079540,
+      "sha256": "3d7c119cf75d1f9879ff5da9a3def8a8529e98b862a2b00cf9d2511d6dcf5f51"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part13.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38239078,
+      "sha256": "d2b15fa23ddf436c7f61cad15533213140b9323316f86b4db494e2b709703aed"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part14.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38238783,
+      "sha256": "0cd615da60a4f8d528e4d161fa9dbd4720b11f56df71a115650687b8218ef8c3"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part15.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38224476,
+      "sha256": "ab8c4d733f2dddd65487e266ad312c030b39e5fb903a69b159a9e02aa67f1ac6"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part16.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38259662,
+      "sha256": "f185a6167d0e4e2fedf84b40136211059bdae6e372d49e208d52f6b4673e4bd7"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part17.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38250668,
+      "sha256": "544d6b891099a46d60a0f7849074bbe5c70c50242f248c3d159836bc3309fa96"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part18.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 10,
+      "bytes": 38266808,
+      "sha256": "04eb28a25a6403238ab071ce3d3b01a50ce91c197cc503e78a7ee58aeadfd2a5"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part19.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38229837,
+      "sha256": "7dd38933126910fc2cb6d848920701f1273d22e39bebc2fd3b8a0ee1966eed8b"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part20.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38230781,
+      "sha256": "8089669064d3d89cd5ac7988944710adc3a07362477a52fd9e98b49f649fe385"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part21.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38235575,
+      "sha256": "022e7e044daa2f2cd0689bd712d22dc7ebe00951e2f3b5737a275ebd2dac9520"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part22.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38261961,
+      "sha256": "04e25520917b459aeb1249e248c557eb9c052b9428bcced7b4956dca99f9d415"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part23.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38267344,
+      "sha256": "4bd28f465be6fb5ca9abd00f8dc40cab385449b145b6c4597b4277b9704b4618"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part24.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 10,
+      "bytes": 38258541,
+      "sha256": "ab7f31a98a3424fd62b82c4801ced4f2920b772ee168213a9a3ab05c5de907e3"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part25.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38194381,
+      "sha256": "ffb95846a99c68dd76dbf0a14a63685f0c5ae777628dee1503a1a9e2456e7782"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part26.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38092006,
+      "sha256": "d4be475750464fd740966b64e312898ff30db81e456bc8dc4bab29061d39ae02"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part27.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38133594,
+      "sha256": "e3270f690da6565ed2dfdbcfdb2e90e66dabaef862d7a3f6643d2777b55c192c"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part28.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38217073,
+      "sha256": "4b9bbc0a542cfe8c5e11ef5825c7b62350aa1338ecea442265e38d535870ba52"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part29.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38160661,
+      "sha256": "d576855b33b1aa7b63453fc347acade21185a47941e4fddf1cd1b87122da96fd"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part30.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 10,
+      "bytes": 38166363,
+      "sha256": "6bc79a4c7ebaa242d5cad35d56e20a102e06fb957cce9528f624d9359927c147"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part31.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38278132,
+      "sha256": "e6485f1b45ceee1f5b75f577b5397c9c6201f5baaa16bce2e0fa481d3bab586c"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part32.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38137535,
+      "sha256": "3bac86336a0dc38a13ac1d170621fb13d0dffdd53bcad3f99b3b181965b51edd"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part33.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38163749,
+      "sha256": "2f2a541b480b16c8b1cf8a6e60e62050b161c7f14fb2b2e23e17350b2655e573"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part34.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38303605,
+      "sha256": "abd961760039c7c5fdf863aac235d6c9d1b243f39f27f96048b87b32e592099e"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part35.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 9,
+      "bytes": 38230769,
+      "sha256": "48db9e7fa96c097dfa04b8a6f8443447b735007e8b29a452c1b67f467fb3fafa"
+    },
+    {
+      "asset": "Phase6_AllDatasets_Training_part36.zip",
+      "study": "Phase6_AllDatasets_Training",
+      "files": 10,
+      "bytes": 25755086,
+      "sha256": "f86ec182dcc043d034c3ef9f40ccc1771c4359b9f80f11a10a75090fa2a97e5f"
+    },
+    {
+      "asset": "Phase7_DepthFormat_Training_part01.zip",
+      "study": "Phase7_DepthFormat_Training",
+      "files": 14,
+      "bytes": 50780689,
+      "sha256": "90e672ff1896d9e0f70dd5287f866ddc27023bef286e22a362723e72f9435962"
+    },
+    {
+      "asset": "Phase7_DepthFormat_Training_part02.zip",
+      "study": "Phase7_DepthFormat_Training",
+      "files": 9,
+      "bytes": 38095746,
+      "sha256": "c146cac89bb5a1f92a37ac6b2ae826905b3c375a13b040a6da17b720eed2c4cf"
+    },
+    {
+      "asset": "Phase7_DepthFormat_Training_part03.zip",
+      "study": "Phase7_DepthFormat_Training",
+      "files": 10,
+      "bytes": 38089515,
+      "sha256": "434626f9f390d5c2d423a09969df4989e2a39488094aecc292bfa66898a9765c"
+    },
+    {
+      "asset": "Phase7_DepthFormat_Training_part04.zip",
+      "study": "Phase7_DepthFormat_Training",
+      "files": 9,
+      "bytes": 38249997,
+      "sha256": "d089d0af47e60d3a2c7ec04a8f08b1ff634730b1e0fff7ca7239868391385ae9"
+    },
+    {
+      "asset": "Phase7_DepthFormat_Training_part05.zip",
+      "study": "Phase7_DepthFormat_Training",
+      "files": 9,
+      "bytes": 38128254,
+      "sha256": "9e91153c89791c7ab78d70262ae3d6d5d3c37423bbdf562ce1003bb27532e1de"
+    },
+    {
+      "asset": "Phase7_DepthFormat_Training_part06.zip",
+      "study": "Phase7_DepthFormat_Training",
+      "files": 10,
+      "bytes": 38166046,
+      "sha256": "25c5034291ffc6630c3405709674b54a56e8a64a8025a92a10fb5a79c327c58c"
+    },
+    {
+      "asset": "Phase7_DepthFormat_Training_part07.zip",
+      "study": "Phase7_DepthFormat_Training",
+      "files": 9,
+      "bytes": 38198222,
+      "sha256": "8f71fc6f6ac6fec8a1e716f5fbc61b51eff507fd62ce6e1bde5bfb2e61dcf034"
+    },
+    {
+      "asset": "Phase7_DepthFormat_Training_part08.zip",
+      "study": "Phase7_DepthFormat_Training",
+      "files": 9,
+      "bytes": 38054847,
+      "sha256": "a26f469f18af329c0de9242b8d58743352e1372c6458d9b2bf85a02e3eb63501"
+    },
+    {
+      "asset": "Phase7_DepthFormat_Training_part09.zip",
+      "study": "Phase7_DepthFormat_Training",
+      "files": 12,
+      "bytes": 25887549,
+      "sha256": "472a7a12cf3fe6efc8ca2da4cd0555bf4ca350fbd5f6fead040ceb41ec264e6d"
+    },
+    {
+      "asset": "Phase9_ETH3D_Fusion_Pilot_Training_part01.zip",
+      "study": "Phase9_ETH3D_Fusion_Pilot_Training",
+      "files": 147,
+      "bytes": 42412097,
+      "sha256": "a354c5fe527d3c70b5685c7c7ad91e61c9755ab801e24ba15ce10a37590ba89c"
     }
   ],
   "excluded": [
